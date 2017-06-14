@@ -1,13 +1,8 @@
-function delClass() {
-  var $body = $("body");
-  setTimeout(function(){
-    $body.removeClass('js-loading');
-  }, 5400);
-}
 function showPage() {
-  $(".loader").delay(5900).fadeOut(100);
-  delClass();
-};
+  $(".loader_inner").fadeOut();
+  $(".loader").delay(400).hide();
+  setTimeout(document.body.classList.remove('js-loading'), 6000);  
+}
 document.body.classList.add('js-loading');
 
 window.addEventListener("load", showPage, false);

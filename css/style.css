@@ -9,33 +9,6 @@
 	width: 100%;
 	z-index: 9999;
 }
-.loader__wave {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.water-fill {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	animation: wave 0.7s infinite linear forwards, fill-up 6s ease-out forwards;
-}
-@keyframes wave {
-	0% { x: -400px; }
-	100% { x: 0; }
-}
-@keyframes fill-up {
-	0% {height: 10px; y: 290px;}
-	100% {height: 190px; y: -200px;}
-}
-.water-other {animation: move-up 6s ease-out forwards;}
-
-@keyframes move-up {
-  0% {y: 280px;}
-  100% {y: -20px;}
-}
 .loader__img {
 	position: absolute;
 	top: 50%;
@@ -59,7 +32,7 @@
 	width: 25vw;
 	height: 100vh;
 	top: 0;
-	background: #e25f07;
+	background: #fff;
 	opacity: 1;
 	transform-origin: 50% 100% 0px;
 	transform: scaleY(1);
