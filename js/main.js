@@ -217,6 +217,55 @@ $(document).ready(function(){
      classToAdd: 'opplay',
      offset: 150
    });
+
+   //HOVERS
+   $('#loc-switzerland').hover(function() {
+      $('#switzerland').css({fill: '#ff6b02', opacity: '1'});
+      $('#marker-switz').css({fill: '#ff6b02', animation: '1.2s shake'});      
+   }, function() {
+     $('#switzerland').css({fill: '#fff', opacity: '0.58'});
+     $('#marker-switz').css({fill: '#fff', animation: 'none'}); 
+   });
+   $('#loc-usa').hover(function() {
+      $('#usa').css({fill: '#ff6b02', opacity: '1'});
+   }, function() {
+     $('#usa').css({fill: '#fff', opacity: '0.58'});
+   });
+   $('#loc-uae').hover(function() {
+      $('#uae').css({fill: '#ff6b02', opacity: '1'});
+   }, function() {
+     $('#uae').css({fill: '#fff', opacity: '0.58'});
+   });
+   $('#loc-africa').hover(function() {
+      $('#africa').css({fill: '#ff6b02', opacity: '1'});
+   }, function() {
+     $('#africa').css({fill: '#fff', opacity: '0.58'});
+   });
+   $('#loc-china').hover(function() {
+      $('#china').css({fill: '#ff6b02', opacity: '1'});
+   }, function() {
+     $('#china').css({fill: '#fff', opacity: '0.58'});
+   });
+   $('#loc-s-korea').hover(function() {
+      $('#s-korea').css({fill: '#ff6b02', opacity: '1'});
+   }, function() {
+     $('#s-korea').css({fill: '#fff', opacity: '0.58'});
+   });
+   $('#loc-singapore').hover(function() {
+      $('#singapore').css({fill: '#ff6b02', opacity: '1'});
+   }, function() {
+     $('#singapore').css({fill: '#fff', opacity: '0.58'});
+   });
+   $('#loc-malaysia').hover(function() {
+      $('#malaysia').css({fill: '#ff6b02', opacity: '1'});
+   }, function() {
+     $('#malaysia').css({fill: '#fff', opacity: '0.58'});
+   });
+   $('#loc-indonesia').hover(function() {
+      $('#indonesia').css({fill: '#ff6b02', opacity: '1'});
+   }, function() {
+     $('#indonesia').css({fill: '#fff', opacity: '0.58'});
+   });
     
 
      

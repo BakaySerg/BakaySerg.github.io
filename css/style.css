@@ -767,6 +767,10 @@ h2 {
 	z-index: 1;
 	animation-delay: .3s;
 }
+.supply__globe svg {
+	position: relative;
+	bottom: -5px;
+}
 .supply__globe:after {
 	content: '';
 	position: absolute;
@@ -797,8 +801,24 @@ h2 {
 	margin-bottom: 11px;
 	padding: 13px 0;
 	cursor: default;
+	transition: .3s;
 	user-select: none;
 }
+@keyframes shake {
+  0% {transform: rotateZ(0)}
+  10% {transform: rotateZ(-30deg)}
+  20% {transform: rotateZ(15deg)}
+  30% {transform: rotateZ(-10deg)}
+  40% {transform: rotateZ(7.5deg)}
+  50% {transform: rotateZ(-6deg)}
+  60% {transform: rotateZ(5deg)}
+  70% {transform: rotateZ(-4.28571deg)}
+  80% {transform: rotateZ(3.75deg)}
+  90% {transform: rotateZ(-3.33333deg)}
+  100% {transform: rotateZ(0)}
+}
+.supply__location:hover {background-color: #f4f4f4;}
+
 .supply__location:nth-child(1){
 	flex: 1 1 98%;
 	padding: 20px 3px;
