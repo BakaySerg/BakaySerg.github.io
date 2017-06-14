@@ -9,25 +9,57 @@
 	width: 100%;
 	z-index: 9999;
 }
+.loader__wave {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.water-fill {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	animation: wave 0.7s infinite linear forwards, fill-up 6s ease-out forwards;
+}
+@keyframes wave {
+	0% { x: -400px; }
+	100% { x: 0; }
+}
+@keyframes fill-up {
+	0% {height: 10px; y: 290px;}
+	100% {height: 190px; y: -200px;}
+}
+.water-other {animation: move-up 6s ease-out forwards;}
+
+@keyframes move-up {
+  0% {y: 280px;}
+  100% {y: -20px;}
+}
+.loader__img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 260px;
+	height: auto;
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
 .decolines--fixed {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	z-index: 9999;
+	z-index: 999;
 	top: 0;
 	left: 0;
 	pointer-events: none;
-}
-@keyframes z {
-	from {z-index: 9999;}
-	to {z-index: -10;}
 }
 .decoline {
 	position: absolute;
 	width: 25vw;
 	height: 100vh;
 	top: 0;
-	background: #fff;
+	background: #e25f07;
 	opacity: 1;
 	transform-origin: 50% 100% 0px;
 	transform: scaleY(1);
@@ -43,7 +75,7 @@
 .decoline:nth-child(3){left: 50%;animation-delay: .7s}
 .decoline:nth-child(4){left: 75%;animation-delay: .8s}
 
-.js-loading .decoline {animation-play-state: paused !important;}
+.js-loading .decoline,.js-loading .trnsl {animation-play-state: paused !important;}
 
 ::selection {background: #e35f08;color: #fff;}
 
@@ -124,11 +156,8 @@ p {padding-bottom: 15px;}
 	width: 100%;
 	max-width: 1220px;
 }
-.hidden{opacity:0;}
 
-.visible{opacity:1;transition: opacity 1s;}
-
-/*Intro - animations*/
+/*Scroll - animations*/
 .clip {
    /*overflow: hidden;*/   
 	will-change: clip-path;
@@ -309,11 +338,11 @@ li:hover a.top__link:before,.top__contact a:hover:after,.supply__link a:hover:af
 	opacity: .96;
 	will-change: transform;
 }
-
 .intro-slider__img .owl-item div img{
 	width: 100%;
-	transition: 6s ease;	
+	transition: 7s ease;	
 	transform: scale(1) rotate(0deg);
+	will-change: transform;
 }
 .intro-slider__img .owl-item.active div img {transform: scale(1.04) rotate(0.5deg);}
 
@@ -393,12 +422,6 @@ li:hover a.top__link:before,.top__contact a:hover:after,.supply__link a:hover:af
 	animation-name: scaleDownUp;
 	animation-duration: 6s;
 	animation-fill-mode: forwards;
-}
-.fxSoftScaleOutPrev {
-	animation-name: scaleDown;
-}
-.fxSoftScaleInPrev {
-	animation-name: scaleUpDown;
 }
 @keyframes scaleUp {
   0% {opacity: 1;}
@@ -809,6 +832,8 @@ h2 {
 	text-align: center;
 	margin-bottom: 11px;
 	padding: 13px 0;
+	cursor: default;
+	user-select: none;
 }
 .supply__location:nth-child(1){
 	flex: 1 1 98%;
@@ -942,6 +967,8 @@ address{
 .form__btn:hover {color: #000;}
 
 .form__btn:active {color: #e25f07;}
+
+.form__btn span {display: block;margin: auto;}
 
 .form__btn:before {
 	content: '';

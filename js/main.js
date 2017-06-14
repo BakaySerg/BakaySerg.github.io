@@ -1,8 +1,13 @@
-function showPage() {
-  $(".loader_inner").fadeOut();
-  $(".loader").delay(400).hide();
-  setTimeout(document.body.classList.remove('js-loading'), 6000);  
+function delClass() {
+  var $body = $("body");
+  setTimeout(function(){
+    $body.removeClass('js-loading');
+  }, 5400);
 }
+function showPage() {
+  $(".loader").delay(5900).fadeOut(100);
+  delClass();
+};
 document.body.classList.add('js-loading');
 
 window.addEventListener("load", showPage, false);
@@ -11,13 +16,20 @@ $(document).ready(function(){
     "use strict";
 
     // Ruffles
-    $('.about__title-container,#tab-menu,#history,.about__tab-note,.title-box,.article__text,.article__img').addClass("clip").viewportChecker({
+    var ww = $(document).width();
+    if ( ww > 1280) {
+      $('.about__title-container,#tab-menu,.tab-content').addClass("clip").viewportChecker({
+        classToAdd: 'clipplay',
+        offset: 0
+      });
+    }
+    $('.about__tab-note,.s-product .title-box,.s-catalog .title-box,.s-supply .title-box,.article__text,.article__img').addClass("clip").viewportChecker({
       classToAdd: 'clipplay',
-      offset: 140
+      offset: 0
     }); 
     $('.top,.catalog__item,.supply__globe,.supply__location').addClass("trnsl").viewportChecker({
       classToAdd: 'trnslplay',
-      offset: 150
+      offset: 100
     }); 
   
     // Nav    
@@ -67,7 +79,7 @@ $(document).ready(function(){
     sync2.owlCarousel({
         items : 1,
         dots: true,
-        margin:30,
+        margin:60,
         mouseDrag: false,
         touchDrag: false,
         nav: false,

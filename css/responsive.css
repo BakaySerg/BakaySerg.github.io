@@ -71,6 +71,8 @@
 	.article{max-width: 1360px;margin: auto;}
 }
 @media(min-width: 2500px){
+	.tab-menu .tab {font-size: 1.64em;}
+	.tab-pane p {font-size: 1.3em;}
 	.top{top: 110px;}
 	.title-box{padding-left: 16%;}
 	.s-about .title-box{padding-left: 39%;}
@@ -78,6 +80,7 @@
 	.about__title-container {background-size: 53% auto; background-position: right bottom;}
 	.single-intro {padding-top: 440px;}
 	.single-intro__title{left: 0;}
+	.tab-menu {margin-bottom: 50px;}
 }
 @media(max-width: 1600px){
 	.single-intro__title{left: -2.4%;}
@@ -89,13 +92,13 @@
 	.intro-slider__text{line-height: 1.3;}
 	.tab-content>.tab-pane.active {min-height: 300px;}
 	.single-intro__title{min-width: 700px;}
+	.article__text {padding: 40px 60px 20px; padding-left: calc(5% + 15px);}
 }
 @media(max-width: 1200px){
 	.supply__location{padding: 9px 0;}
 	.supply__location:nth-child(1){padding: 16px 3px;}
 	.article__img {padding: 22px;}
 	.article__text {padding: 26px 25px 15px 40px;}
-
 }
 @media(max-width: 1025px){
 	h4 {padding-bottom: 15px;}
@@ -192,7 +195,8 @@
 	[class^=s-] .title-box i {display: block;text-align: right;margin-left: 17px;}
 	.about__tab-box p{max-width: none;}
 	.tab-content>.tab-pane.active {min-height: auto; padding-bottom: 20px;}
-	.about__tab-note{padding: 15px 30px;width: calc(100% + 60px); margin-right: -30px;margin-left: -30px;}
+	.about__tab-note{padding: 15px 30px;width: calc(100% + 60px); margin-right: -30px;margin-left: -30px; margin-bottom: 20px;}
+	.s-product .title-box {margin-bottom: 15px;}
 	.product__slide--descr {padding: 42px 45px 15px;}
 	.product__slide--descr:before{top: 19px;}
 	.intro-slider__text {top: 0; bottom: 0; left: 0; right: 0; padding: 7px 65px 7px 30px; transform: none; width: 100%;min-width: 100vw;height: 100%; border-bottom: 1px solid #ecebeb;text-shadow: 0 0 22px #000;}
@@ -202,6 +206,18 @@
 	.intro-slider__text:before {background-color: rgba(0,0,0,.5);transform: none;}
 	.about__title-container{min-height: auto;background: none;}
 	.article__text{padding: 0 25px;}
+}
+@media (max-width: 768px), (orientation: portrait){
+	.water-fill {animation: wave 0.7s infinite linear forwards, fill-up-mobil 6s ease-out forwards;}
+	@keyframes fill-up-mobil {
+		0% {height: 20px; y: 490px;}
+		100% {height: 190px; y: -500px;}
+	}
+	.water-other {animation: move-up-mobil 6s ease-out forwards;}
+	@keyframes move-up-mobil {
+	  0% {y: 480px;}
+	  100% {y: -340px;}
+	}
 }
 @media (max-width: 720px){
 	.catalog-container{max-width: 640px;padding: 40px 15px;}
@@ -240,6 +256,7 @@
 }
 @media (max-width: 380px){
 	.intro-slider__text{font-weight: normal;}
+	.intro-slider__text .owl-stage-outer {width: calc(100% - 95px);}
 	.intro-slider__text .owl-dots{right: 20px;}
 	[class^=s-] .title-box i {margin-left: 15px; padding-right: 24px;}
 	.s-about .title-box h2 {padding-left: 20px;}
