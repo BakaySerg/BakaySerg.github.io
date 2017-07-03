@@ -967,6 +967,7 @@ a.top__link:hover:before{
 	min-height: 350px;
 	padding: 0;
 	color: #fff;
+	background: inherit;
 	text-align: center;
 	box-shadow: 0 7px 33px -1px rgba(0,0,0,0.15);
 	margin: 0 10px;

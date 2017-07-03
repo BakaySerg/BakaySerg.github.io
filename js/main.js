@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     //FullPage
     function init_scroll() {
-      // if (ww >= 991 && wh > 580) { 
+      if (ww >= 991 && wh > 580) { 
         $('section').removeAttr('id');       
         $('#fullpage').fullpage({
             sectionSelector: 'section',
@@ -37,7 +37,13 @@ $(document).ready(function(){
               }
             }
         });        
-      // } else {return false;}
+      } else {
+        var i = 1;
+        $('section').each(function(){
+            $(this).attr('id','slide_'+i);
+            i++;
+        });
+      }
     }   
 
     init_scroll();
@@ -112,7 +118,6 @@ $(document).ready(function(){
     sync2.owlCarousel({
         items : 1,
         dots: true,
-        margin:60,
         mouseDrag: false,
         touchDrag: false,
         nav: false,
