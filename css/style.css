@@ -545,7 +545,7 @@ a.top__link:hover:before{
 	opacity: 0;
 	transform: translateY(50px);
 }
-.trnsl.trnslplay {animation: 1s trnslplay ease forwards;}
+.trnsl.trnslplay {animation: .8s trnslplay ease forwards;}
 
 @keyframes trnslplay { 
 	0% { opacity: 0;transform: translateY(50px);} 

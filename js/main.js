@@ -16,14 +16,14 @@ $(document).ready(function(){
     if ( ww > 1280) {
       $('.about__brand,.salon__content-box').addClass("clip2").viewportChecker({
         classToAdd: 'clipplay2',
-        offset: 200
+        offset: 60
       });
     }
     // $('.about__tab-note').addClass("clip").viewportChecker({
     //   classToAdd: 'clipplay',
     //   offset: 0
     // });
-    
+
     $('.about__adv-item,.salon__adv-item').addClass("trnsl").viewportChecker({
       classToAdd: 'trnslplay'
     }); 
