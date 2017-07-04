@@ -8,7 +8,7 @@
 @media(min-width: 1600px){
 	.container {width: 100%; max-width: 1400px;}
 	.intro-slider__text-item h1, .intro-slider__text-item span{padding-bottom: 30px;}
-	.about__brand {padding: 8vh 35px;}
+	.about__brand {padding: 11vh 35px;}
 	.about__adv {padding-left: 160px;padding-right: 50px;}
 }
 
@@ -57,7 +57,7 @@
 	.main-page .container {padding-left: 12vw;}
 }
 		@media(max-height: 750px){
-			.about__brand {padding: 6vh 25px;}
+			.about__brand {padding: 9vh 25px 6vh;}
 			.about__brand img {display: block; margin: 30px auto;max-width: 220px;}
 			.about__adv-descr{padding-bottom: 20px;}
 		}
@@ -83,8 +83,8 @@
 	.intro-slider__text-item h1, .intro-slider__text-item span {font-size: 2.2em;}
 	.navline__item a span {display: none;}
 	.navline__item {width: 40px; height: 40px;}
+	.about__brand{padding: 13vh 25px 9vh;}
 	.about__brand p{font-weight: 300;}
-	.about__brand{padding: 40px 20px 20px;}
 	.services__slide {width: 260px; min-width: 260px;}
 	.services__slide.active {width: 300px; min-width: 300px;}
 	.frame {width: 950px;}
@@ -107,6 +107,7 @@
 	.footer__address{padding: 10px 0 35px;}
 }
 @media(max-width: 1023px){
+	.main-page .container {padding-left: 15px;}
 	.intro-slider__container{width: 100%;}
 	.intro-slider{width: 100%;}
 }
@@ -119,7 +120,7 @@
 	.intro-slider__img{max-width: 300px;margin: auto;}
 	.is-scroll-down{display: none;}
 	.s-about{background: none}
-	.about__brand{padding: 35px;min-height: auto;margin-top: 40px; border: 1px solid #fff;}
+	.about__brand{padding: 35px;min-height: auto;margin-top: 40px; border: 1px solid #fff;background-color: #242424;}
 	.about__brand,.about__adv{float: none;width: 100%;max-width: 600px;margin-left: auto;margin-right: auto;min-height: auto;}
 	.about__brand img {margin: 10px auto 30px; max-width: 120px;}
 	.about__brand:before{content: none;}
@@ -128,6 +129,7 @@
 	.about__adv-descr {max-width: 340px; padding-bottom: 40px;}
 	.about__adv-descr p {padding-right: 0;}
 	.navline{display: none;}
+	.form > div:first-child{padding-left: 15px;}
 }
 			@media(max-height: 580px){
 				.header{min-height: 580px;}
@@ -168,6 +170,7 @@
 	.form textarea {min-height: 110px;}
 	.gallery-paginator > li{margin: 0 6px;}
 	.s-product .frame{min-height: 480px; padding-bottom: 30px;}
+	.form > div{padding-left: 15px;}
 }
 
 @media (max-width: 719px){

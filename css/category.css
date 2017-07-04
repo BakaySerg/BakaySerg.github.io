@@ -44,6 +44,7 @@
 	min-height: auto;
 	margin-top: 0;
 	background-color: #242424;
+	padding-bottom: 140px;
 }
 .s-salon .container {
 	padding-top: 80px;
@@ -60,14 +61,14 @@
 	z-index: -1;
 }
 .s-salon:before {
-	right: 50%;
+	right: 49.99%;
 	-ms-transform: skewY(4deg);
 	transform: skewY(4deg);
 	-ms-transform-origin: right top;
 	transform-origin: right top;
 }
 .s-salon:after {
-	left: 50%;
+	left: 49.99%;
 	-ms-transform: skewY(-4deg);
 	transform: skewY(-4deg);
 	-ms-transform-origin: left top;
@@ -75,8 +76,11 @@
 }
 .salon__content-box {padding: 25px 30px 20px;}
 
-.salon__content {padding: 0 40px;}
-
+.salon__content {
+	padding: 0 40px;
+	max-width: 650px;
+	margin: auto;
+}
 .salon__content img {margin-bottom: 45px;}
 
 .s-salon h2 {
@@ -89,9 +93,9 @@
 	content: attr(data-text);
 	position: absolute;
 	top: 50%;
-	left: -15px;
+	left: -20px;
 	width: 100%;
-	transform: translateY(-48%);
+	transform: translateY(-55%);
 	font-size: 2.9em;
 	font-weight: 700;
 	line-height: .9;
@@ -104,7 +108,7 @@
 	justify-content: space-around;
 	padding: 25px 15px 25px 25px;
 	border: 1px solid transparent;
-	max-width: 500px;
+	max-width: 540px;
 	margin: auto;
 	cursor: default;
 }
@@ -140,8 +144,10 @@
 }
 .salon__adv-item:hover i:before {background-image: url(../img/category-page/spin-hov.png);}
 
-.salon__adv-descr {max-width: 296px;}
+.salon__adv-descr {max-width: 310px;}
 
 .salon__adv-descr h3 {padding-bottom: 11px; }
 
 .salon__adv-descr p {padding-bottom: 0; }
+
+.re-equipment-page .s-services .row {margin: auto;}

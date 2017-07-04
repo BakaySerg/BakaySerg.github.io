@@ -13,8 +13,8 @@ $(document).ready(function(){
     var ww = $(window).width(),
         wh = $(window).height();
 
-    if ( ww > 1280) {
-      $('.about__brand,.salon__content-box').addClass("clip2").viewportChecker({
+    if ( ww > 1023) {
+      $('.about__brand').addClass("clip2").viewportChecker({
         classToAdd: 'clipplay2',
         offset: 60
       });
@@ -24,7 +24,7 @@ $(document).ready(function(){
     //   offset: 0
     // });
 
-    $('.about__adv-item,.salon__adv-item').addClass("trnsl").viewportChecker({
+    $('.about__adv-item,.salon__adv-item,.salon__content-box').addClass("trnsl").viewportChecker({
       classToAdd: 'trnslplay'
     }); 
     
