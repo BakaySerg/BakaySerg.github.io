@@ -1,0 +1,147 @@
+
+.header__re-equipment {
+	background: #242424 url(../img/category-page/bg-1.jpg) center no-repeat;
+	background-size: cover;
+}
+.header__re-equipment:before,.header__re-equipment:after{background: #242424;}
+
+.header__re-equipment .navbar,.header__re-equipment .top__contact a,.header__re-equipment .logo {
+	background-color: rgba(0,0,0,.8);
+	box-shadow: 2px 4px 11px rgba(0,0,0,.08);
+}
+.title-container {
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	align-items: flex-end;
+}
+.title-container h1 {
+	font-size: 2.57em;
+	font-weight: 700;
+	padding: 32px 28px;
+}
+.title-container h1,.title-container em {
+	flex: 1 1 97%;
+	display: inline-block;
+	width: 100%;
+	max-width: 64%;
+	background-color: rgba(0,0,0,.8);
+	text-shadow: 0 0 5px #000;
+}
+.title-container em {
+	margin-top: 2px;
+	font-size: 1.1em;
+	font-style: normal;
+	padding: 15px 28px;
+}
+
+/*===============================
+  переоборудование салонов
+================================*/
+.s-salon {
+	z-index: 10;
+	min-height: auto;
+	margin-top: 0;
+	background-color: #242424;
+}
+.s-salon .container {
+	padding-top: 80px;
+	/*margin-top: -40px;*/
+}
+.s-salon:before,.s-salon:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -70px;
+	width: 50%;
+	background: inherit;
+	height: 100px;
+	z-index: -1;
+}
+.s-salon:before {
+	right: 50%;
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
+	-ms-transform-origin: right top;
+	transform-origin: right top;
+}
+.s-salon:after {
+	left: 50%;
+	-ms-transform: skewY(-4deg);
+	transform: skewY(-4deg);
+	-ms-transform-origin: left top;
+	transform-origin: left top;
+}
+.salon__content-box {padding: 25px 30px 20px;}
+
+.salon__content {padding: 0 40px;}
+
+.salon__content img {margin-bottom: 45px;}
+
+.s-salon h2 {
+	position: relative;
+	padding-bottom: 1.17em;
+	font-weight: 700;
+	z-index: 9;
+}
+.s-salon h2:before {
+	content: attr(data-text);
+	position: absolute;
+	top: 50%;
+	left: -15px;
+	width: 100%;
+	transform: translateY(-48%);
+	font-size: 2.9em;
+	font-weight: 700;
+	line-height: .9;
+	color: #fff;
+	opacity: .02;
+}
+.salon__adv-item {
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-around;
+	padding: 25px 15px 25px 25px;
+	border: 1px solid transparent;
+	max-width: 500px;
+	margin: auto;
+	cursor: default;
+}
+.salon__adv-item:hover {
+	border: 1px solid #fff;
+	transition: .3s;
+}
+.salon__adv-item i {
+	position: relative;
+	display: inline-block;
+	width: 87px;
+	min-width: 87px;
+	height: 87px;
+	border: 4px solid #464343;
+	border-radius: 50%;
+	background-color: #242424;
+	box-shadow: inset 0 0 29px 17px rgba(0,0,0,.5);
+}
+.salon__adv-item:nth-child(2) i{transform: rotate(31deg);}
+.salon__adv-item:nth-child(3) i{transform: rotate(-34deg);}
+
+.salon__adv-item i:before {
+	content: '';
+	position: absolute;
+	top: 17px;
+	left: 17px;
+	width: 45px;
+	height: 45px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../img/category-page/spin-def.png);
+	transition: .3s;
+}
+.salon__adv-item:hover i:before {background-image: url(../img/category-page/spin-hov.png);}
+
+.salon__adv-descr {max-width: 296px;}
+
+.salon__adv-descr h3 {padding-bottom: 11px; }
+
+.salon__adv-descr p {padding-bottom: 0; }

@@ -12,11 +12,11 @@
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
   <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/base.min.css"/>
   <link rel="stylesheet" type="text/css" href="js/owl/owl.carousel.min.css"/>
   <link rel="stylesheet" type="text/css" href="js/owl/owl.theme.default.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/> -->
   <link rel="stylesheet" type="text/css" href="css/sly.css"/>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
   <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
@@ -27,7 +27,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="main-page" data-spy="scroll" data-target=".navline">
   <!-- loader -->
   <div class="loader"></div>
   <div class="decolines decolines--fixed">
@@ -36,50 +36,50 @@
     <div class="decoline"></div>
     <div class="decoline"></div>
   </div>
-   <div class="wrapper" id="fullpage">
+  <div class="navline">
+    <ul class="navline__menu nav">
+      <li class="navline__item active" data-menuanchor="slide_1">
+        <a class="js-scroll-page" href="#slide_1">
+           <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
+           <span>Welcome!</span>
+        </a>
+      </li>
+      <li class="navline__item" data-menuanchor="slide_2">
+        <a class="js-scroll-page" href="#slide_2">
+           <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
+           <span>О компании</span>
+        </a>
+      </li>
+      <li class="navline__item" data-menuanchor="slide_3">
+        <a class="js-scroll-page" href="#slide_3">
+           <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
+           <span>Услуги</span>
+        </a>
+      </li>
+      <li class="navline__item" data-menuanchor="slide_4">
+        <a class="js-scroll-page" href="#slide_4">
+           <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
+           <span>Продукция</span>
+        </a>
+      </li>
+      <li class="navline__item" data-menuanchor="slide_5">
+        <a class="js-scroll-page" href="#slide_5">
+           <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
+           <span>Контакты</span>
+        </a>
+      </li>
+    </ul>
+   </div> 
+   <div class="wrapper">
       <!-- nav start-->
       <svg viewBox="0 0 48 48" style="display: none">
          <defs>
             <rect id="rect" x="0" y="0" width="48" height="48" stroke="#fff" stroke-width="1" fill="none"/>
          </defs>
       </svg>
-      <div class="navline">
-        <ul class="navline__menu menu">
-          <li class="navline__item active" data-menuanchor="slide_1">
-            <a class="link" href="#slide_1">
-               <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
-               <span>Welcome!</span>
-            </a>
-          </li>
-          <li class="navline__item" data-menuanchor="slide_2">
-            <a class="link" href="#slide_2">
-               <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
-               <span>О компании</span>
-            </a>
-          </li>
-          <li class="navline__item" data-menuanchor="slide_3">
-            <a class="link" href="#slide_3">
-               <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
-               <span>Услуги</span>
-            </a>
-          </li>
-          <li class="navline__item" data-menuanchor="slide_4">
-            <a class="link" href="#slide_4">
-               <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
-               <span>Продукция</span>
-            </a>
-          </li>
-          <li class="navline__item" data-menuanchor="slide_5">
-            <a class="link" href="#slide_5">
-               <svg viewBox="0 0 48 48"><use xlink:href="#rect"/></svg>
-               <span>Контакты</span>
-            </a>
-          </li>
-        </ul>
-      </div>
       <!-- nav end-->
       <!-- T o p -->
-      <section class="header slide_1">      
+      <section class="header slide_1" id="slide_1">      
          <div id="top" class="top clearfix">
             <div class="container main-menu-container">
               <div class="logo">
@@ -100,10 +100,10 @@
                </div>
                <div id="expand" class="navbar-collapse collapse">
                   <ul id="justify" class="nav navbar-nav">
-                     <li><a class="top__link" href="#slide_2">О компании</a></li>
-                     <li><a class="top__link" href="#slide_3">Услуги</a></li>
-                     <li><a class="top__link" href="#slide_4">Продукция</a></li>
-                     <li><a class="top__link" href="#slide_5">Контакты</a></li>
+                     <li><a class="top__link js-scroll-page" href="#slide_2">О компании</a></li>
+                     <li><a class="top__link js-scroll-page" href="#slide_3">Услуги</a></li>
+                     <li><a class="top__link js-scroll-page" href="#slide_4">Продукция</a></li>
+                     <li><a class="top__link js-scroll-page" href="#slide_5">Контакты</a></li>
                   </ul>
                </div>
             </nav>
@@ -139,9 +139,9 @@
                      <div class="intro-slider__link-box"><a href="#" class="intro-slider__link">Подробнее</a></div>
                    </div>
                    <div class="intro-slider__text-item">
-                     <span>Обслуживание <br>коммерческого транспорта</span>
+                     <span>Переоборудование салонов</span>
                      <em>Dolor sit amet, consectetur adipisicing elit. Repudiandae asperiores quam reprehenderit repellendus inventore, repellat illo reiciendis expedita sit minima iure laborum hic vel esse earum pariatur!</em>
-                     <div class="intro-slider__link-box"><a href="#" class="intro-slider__link">Подробнее</a></div>
+                     <div class="intro-slider__link-box"><a href="re-equipment-salons.html" class="intro-slider__link">Подробнее</a></div>
                    </div>       
                    <div class="intro-slider__text-item">
                      <span>Ремонт <br>коммерческого транспорта</span>
@@ -156,7 +156,7 @@
       </section>
 
       <!-- О  к о м п а н и и -->
-      <section class="s-about slide_2">
+      <section class="s-about slide_2" id="slide_2">
         <div class="container">
            <div class="row">
               <div class="col-md-4 about__brand">
@@ -200,7 +200,7 @@
       </section>
 
       <!-- У с л у г и -->
-      <section class="s-services slide_3">
+      <section class="s-services slide_3" id="slide_3">
          <div class="container">
             <div class="row">
                <h2>Услуги</h2>
@@ -268,7 +268,7 @@
       </section>
 
       <!-- П р о д у к ц и я -->
-      <section class="s-product slide_4">
+      <section class="s-product slide_4" id="slide_4">
          <div class="container">
             <div class="row">
                <div class="title-box">
@@ -325,7 +325,7 @@
       </section>      
 
       <!-- К о н т а к т ы -->
-      <section class="s-contact slide_5">
+      <section class="s-contact slide_5" id="slide_5">
           <div class="address__box">
           <div class="container">
               <h2>Контакты</h2>
@@ -356,11 +356,11 @@
               </form>
               <div class="col-xs-12 footer-navbox">
                 <ul class="footer-nav">
-                  <li><a class="footer-nav__link" href="#slide_2">О компании</a></li>
-                  <li><a class="footer-nav__link" href="#slide_3">Услуги</a></li>
-                  <li><a class="footer-nav__link" href="#slide_4">Продукция</a></li>
+                  <li><a class="footer-nav__link js-scroll-page" href="#slide_2">О компании</a></li>
+                  <li><a class="footer-nav__link js-scroll-page" href="#slide_3">Услуги</a></li>
+                  <li><a class="footer-nav__link js-scroll-page" href="#slide_4">Продукция</a></li>
                   <li><a class="footer-nav__link" href="vacancy.html">Вакансии</a></li>
-                  <li><a class="footer-nav__link" href="#slide_5">Контакты</a></li>
+                  <li><a class="footer-nav__link js-scroll-page" href="#slide_5">Контакты</a></li>
                 </ul>
                 <address class="footer__address">
                   <span>г. Примерный ул. Новая, 8в</span>
@@ -377,8 +377,6 @@
 
   <script src="js/jquery-2.1.3.min.js"></script>
   <script src="js/jquery.easings.min.js"></script>
-  <script src="js/jquery.slimscroll.min.js"></script>
-  <script src="js/jquery.fullPage.min.js"></script>
   <script src="js/viewportchecker.js"></script>
   <script src="js/owl/owl.carousel.min.js"></script>
   <script src="js/smoothscroll.js"></script>
