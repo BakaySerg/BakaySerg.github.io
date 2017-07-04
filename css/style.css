@@ -475,7 +475,7 @@ a.top__link:hover:before{
 	border-radius: 18px;
 	text-align: center;
 	padding-top: 9px;
-	z-index: 7;
+	z-index: 10;
 }
 .is-scroll-down i {
 	display: inline-block;
