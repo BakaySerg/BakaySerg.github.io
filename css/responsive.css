@@ -107,14 +107,15 @@
 	.footer__address{padding: 10px 0 35px;}
 }
 @media(max-width: 1023px){
-	.main-page .container {padding-left: 15px;}
+	.main-page .container {padding-left: 15px;padding-right: 15px;}
 	.intro-slider__container{width: 100%;}
 	.intro-slider{width: 100%;}
 }
 @media (max-width: 991px){
 	section{overflow: hidden; flex-wrap: wrap;}
 	.header{min-height: 900px;}
-	.container {padding-left: 30px;padding-right: 30px; width: 100%;}
+	.container {/*padding-left: 30px;padding-right: 30px;*/ width: 100%;}
+	.s-contact .container {padding-left: 30px;padding-right: 30px;}
 	.intro-slider__container {padding-top: 110px; padding-bottom: 70px;}
 	.intro-slider__img-box,.intro-slider__text-box{float: none;width: 100%;max-width: 700px;margin-left: auto;margin-right: auto;}
 	.intro-slider__img{max-width: 300px;margin: auto;}
@@ -125,7 +126,8 @@
 	.about__brand img {margin: 10px auto 30px; max-width: 120px;}
 	.about__brand:before{content: none;}
 	.header:before,.header:after,.s-about:before,.s-about:after{box-shadow: none;}
-	.about__adv-item i{height: 84px;width: 84px;}
+	.about__adv-item i{height: 84px;width: 84px;min-width: 84px;}
+	.about__adv-item i:before {width: 54px; height: 54px;}
 	.about__adv-descr {max-width: 340px; padding-bottom: 40px;}
 	.about__adv-descr p {padding-right: 0;}
 	.navline{display: none;}
@@ -134,7 +136,6 @@
 			@media(max-height: 580px){
 				.header{min-height: 580px;}
 				.navline{display: none;}
-				.main-page .container {padding-left: 25px;}
 			}
 
 @media (max-width: 969px){
@@ -158,6 +159,7 @@
 	.services__slide h3{padding: 15px;}
 	.gallery-paginator{bottom: 97px;right: 20px;}
 	.form input, .form textarea, .form__file {font-size: 15px;}
+	.form > div:last-child{padding-right: 15px;}
 }
 /*@media (max-width: 800px) and (min-height: 1000px){}*/
 
@@ -170,7 +172,7 @@
 	.form textarea {min-height: 110px;}
 	.gallery-paginator > li{margin: 0 6px;}
 	.s-product .frame{min-height: 480px; padding-bottom: 30px;}
-	.form > div{padding-left: 15px;}
+	.form > div{padding-left: 15px;padding-right: 15px;}
 }
 
 @media (max-width: 719px){
@@ -183,12 +185,13 @@
 
 @media (max-width: 550px){
 	.header{background-size: 110% auto;}
+	.s-about .row {margin: auto;}
 	.intro-slider__container{padding: 110px 15px 20px;}
 	.intro-slider__text-item {padding-left: 80px;}
 	.intro-slider__text-item h1, .intro-slider__text-item span{font-size: 2em;}
 	.intro-slider__text .owl-dot span {width: 32px;}
 	.intro-slider__text .owl-dot.active span {width: 50px;}
-	.about__brand{padding: 20px 30px;}
+	.about__brand{padding: 20px 30px;margin-top: 20px;}
 	.about__adv-item i {margin-right: 20px;}
 	.s-contact {background-size: 180% auto;}
 	.form__file, .form__btn-box {width: 100%;}
@@ -228,11 +231,11 @@
 	.top,.navbar{position: relative;width: 100%;align-self: flex-start;}
 	.navbar-header {padding: 6px 8px 6px;}
 	.navbar-header>span{display: none;}
-	.main-menu-container {padding: 0;}
+	.wrapper .main-menu-container {padding: 0;}
 	.top__contact{display: block; position: relative;width: 100%;right: 0;text-align: center;}
 	.top__contact a{float: none;display: inline-block;width: 136px;padding: 15px 10px 15px;}
 	.logo {width: 60px;}
-	.logo__link {width: 35px; height: 35px; background: url(../img/logo-emblem.svg) center no-repeat; background-size: cover;}
+	.logo__link {width: 35px; height: 35px; background: url(../img/for-sprite/footer-logo.png) center no-repeat; background-size: cover;}
 	.logo__link img{display: none;}
 	header {min-height: 700px;}
 	h2 {font-size: 2.1em;}
@@ -249,7 +252,7 @@
 	.owl-item.active .intro-slider__link:before, .owl-item.active .intro-slider__link:after {width: 30%;}
 	.about__adv {padding: 30px 0;}
 	.about__brand{margin-top: 10px;}
-	.about__adv-item i:before {height: 80px; width: 80px;}
+	.s-product .frame:before,.s-product .frame:after{content: none;}
 	.address__box address{padding-top: 30px;}
 }
 @media (max-width: 359px){
@@ -261,7 +264,7 @@
 	.scrollbar {margin: 5px auto 30px;}
 	.owl-item.active .intro-slider__link:before, .owl-item.active .intro-slider__link:after {width: 0;}
 	.about__adv-item{display: block;}
-	.about__adv-item i {display: block;margin: 0 0 12px;text-align: center;}
+	.about__adv-item i {margin: 0 auto 12px;text-align: center;}
 	.prev, .next {width: 15px;}
 	.s-product .frame:before, .s-product .frame:after {width: 15px;}
 	.s-contact {background-size: 270% auto;}

@@ -45,6 +45,7 @@
 	margin-top: 0;
 	background-color: #242424;
 	padding-bottom: 140px;
+	z-index: 2;
 }
 .s-salon .container {
 	padding-top: 80px;
@@ -151,3 +152,33 @@
 .salon__adv-descr p {padding-bottom: 0; }
 
 .re-equipment-page .s-services .row {margin: auto;}
+
+/*===============================
+ -
+================================*/
+.triagle-title {
+	padding: 182px 0 128px;
+	position: relative;
+	width: 93%;
+	margin: -43px auto 0;
+	border-right: 5px solid #767676;
+	border-left: 5px solid #767676;
+	z-index: 2;
+}
+.triagle-border{
+	position: absolute;
+	left: -5px;
+	width: calc(100% + 10px);
+	z-index: 3;	
+}
+.triagle-border-top {
+	top: -4px;
+}
+.triagle-title img {
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 4;
+}
+.triagle-title h2 {text-align: center;}

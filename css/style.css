@@ -110,7 +110,7 @@ body {
 	-moz-osx-font-smoothing: grayscale
 }
 .wrapper {
-	/*overflow: hidden;*/
+	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
@@ -1128,14 +1128,14 @@ a.top__link:hover:before{
 	border-radius: 2px;
 }
 .address__box:before {
-	right: 49%;
+	right: 48.9%;
 	-ms-transform: rotate(4deg);
 	transform: rotate(4deg);
 	-ms-transform-origin: right top;
 	transform-origin: right top;
 }
 .address__box:after {
-	left: 49%;
+	left: 48.9%;
 	-ms-transform: rotate(-4deg);
 	transform: rotate(-4deg);
 	-ms-transform-origin: left top;
