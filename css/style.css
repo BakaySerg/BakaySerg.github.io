@@ -497,7 +497,7 @@ a.top__link:hover:before{
     0% {transform: translateY(-18px)}
     48% {transform: translateY(0)}
     74% {transform: translateY(0)}
-    to {transform: translateY(15px)}
+    to {transform: translateY(14px)}
 }
 /* S c r o l l  -  a n i m a t i o n s */
 .clip,.intro-slider__text .owl-item h1,.intro-slider__text .owl-item span,.intro-slider__text .owl-item em{
@@ -662,10 +662,8 @@ a.top__link:hover:before{
 .intro-slider__text .owl-dots {
 	display: block;
 	position: absolute;
-	top: 52px;
+	top: 0;
 	left: 20px;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
 	z-index: 4;
 }
 .intro-slider__text .owl-dot {
@@ -865,7 +863,7 @@ a.top__link:hover:before{
 }
 .services__slide--descr {
 	position: relative;
-	padding: 30px 20px;
+	padding: 30px 18px;
 }
 .services__slide--descr img {
 	width: 100%;
@@ -900,10 +898,6 @@ a.top__link:hover:before{
 }
 .services__link {
 	display: block;
-	position: absolute;
-	top: 100%;
-	margin-top: 0;
-	left: 0;
 	border: 1px solid #fff;
 	font-size: 1.14em;
 	font-weight: 300;
@@ -914,6 +908,12 @@ a.top__link:hover:before{
 	background: inherit;
 	transition: .3s;
 	width: 100%;
+}
+.services__slide .services__link{
+	position: absolute;
+	top: 100%;	
+	left: 0;
+	margin-top: 0;
 }
 .services__link:hover {background-color: #ca4637}
 
@@ -1120,24 +1120,24 @@ a.top__link:hover:before{
 .address__box:before,.address__box:after {
 	content: '';
 	position: absolute;
-	top: -44px;
-	width: 52%;
+	top: -34px;
+	width: 50%;
 	background: #464343;
 	height: 100px;
 	z-index: 7;
 	border-radius: 2px;
 }
 .address__box:before {
-	right: 48.9%;
-	-ms-transform: rotate(4deg);
-	transform: rotate(4deg);
+	left: 0;
+	-ms-transform: skewY(4deg);
+	transform: skewY(4deg);
 	-ms-transform-origin: right top;
 	transform-origin: right top;
 }
 .address__box:after {
-	left: 48.9%;
-	-ms-transform: rotate(-4deg);
-	transform: rotate(-4deg);
+	right: 0;
+	-ms-transform: skewY(-4deg);
+	transform: skewY(-4deg);
 	-ms-transform-origin: left top;
 	transform-origin: left top;
 }

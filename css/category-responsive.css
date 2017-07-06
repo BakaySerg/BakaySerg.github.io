@@ -1,3 +1,6 @@
+@media(min-width: 1024px){
+	.header__re-equipment {height: 100vh;}
+}
 @media(min-width: 1200px){}
 
 @media(min-width: 1600px){
@@ -17,4 +20,7 @@
 }
 @media (max-width: 800px){
 	.re-equipment-page.header {min-height: 620px;}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ .flip > div {background: #464343}
 }

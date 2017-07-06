@@ -138,6 +138,11 @@ $(document).ready(function(){
       }
     };
 
+    //parallax
+     // if ($('[data-type="background"]').length) {
+
+     // }
+
    //Services slider
    (function () {
      var $frame = $('#services-sly');
@@ -196,35 +201,18 @@ $(document).ready(function(){
      });
    }());
 
+   //карточки
+   if ($('.types__card').length) {
+   $('.types__card').click(function(){
+      var card = $(this);
+      $(this).find('.flip').toggleClass('flipped');
+      setTimeout(function(){
+          card.siblings().find('.flip').removeClass('flipped');
+      },500);
+   });}
 
-   // var ServicesSlider = $('.services__slider');
-   // ServicesSlider.owlCarousel({
-   //     loop: false,
-   //     smartSpeed:300,
-   //     dots: true,
-   //     nav: true,
-   //     navText: "",
-   //     // margin:0,
-   //     center: true,
-   //     responsiveRefreshRate: 200,
-   //     responsive: {
-   //         0: {
-   //             items: 1,
-   //             dots: false,
-   //             margin:0
-   //         },
-   //         500: {
-   //             items: 2,
-   //             dots: false,
-   //             margin:40
-   //         },
-   //         840: {
-   //             items: 3,
-   //             dots: true,
-   //             margin:40
-   //         }
-   //     }
-   // });
+
+
 
    
      
