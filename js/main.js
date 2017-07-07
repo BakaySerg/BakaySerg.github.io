@@ -139,7 +139,7 @@ $(document).ready(function(){
     };
 
     //parallax
-     if ($('[data-type="background"]').length) {
+     if ($('[data-type="background"]').length && ww > 1200) {
         var $window = $(window);
           $('[data-type="background"]').each(function(){  // по возможности используем ID
               var $bgobj = $(this); // assigning the object
@@ -154,7 +154,7 @@ $(document).ready(function(){
                   $bgobj.css({ backgroundPosition: coords });
               }); 
           });
-     }
+    }
 
    //Services slider
    (function () {

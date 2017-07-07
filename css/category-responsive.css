@@ -9,28 +9,98 @@
 	.s-brand .col-md-3:nth-child(4n+3){animation-delay: .4s}
 	.s-brand .col-md-3:nth-child(4n+4){animation-delay: .6s}
 }
-
 @media(min-width: 1600px){
 	.title-container h1, .title-container em{max-width: 860px;}
 	.s-brand {margin-top: -86px;}
 	.s-types{padding: 160px 0;}
 	.s-types:before, .s-types:after {bottom: 120px;}
+	.salon__adv-item{max-width: 570px;padding: 30px 15px 30px 25px;}
+	.salon__adv-descr {max-width: 370px;}
 }
 @media(max-width: 1280px){
 	.title-container h1,.title-container em{padding: 12px 15px;max-width: 570px;}
 	.s-salon .container{padding-top: 50px;}
-	.triagle-title {border-right: 3px solid #767676; border-left: 3px solid #767676;}
 }
 @media(max-width: 1025px){
 	.header__re-equipment .logo, .header__re-equipment .top__contact a {background: none; box-shadow: none; text-shadow: 0 0 19px #000; }
 	.salon__adv-item{padding: 20px 8px;}
+	.front h3 {font-size: 1.14em;}
+	.s-services,.s-services .container{min-height: auto;}
+	.s-brand {padding: 90px 0 70px;}
+	.triagle-title {padding: 145px 0 20px;}
+	.triagle-left, .triagle-right {top: 55px; height: calc(100% + 10px);}
+	.triagle-left, .triagle-right,.s-types:before, .s-types:after{border-width: 2px;}
+	.s-types{padding: 100px 0 120px;}
 }
 @media(max-width: 1023px){
 	.re-equipment-page .title-container {padding-top: 350px;}
+	.types__card-box{justify-content: flex-start;}
+	.types__card {flex: 1 1 26%;max-width: 32%;}
+}
+@media (max-width: 991px){
+	.re-equipment-page .header {min-height: 620px;background-attachment: scroll;}
+	.s-types {padding: 40px 0 110px;}
+	.s-types .container{padding: 0 30px;}
+	.flip > div{padding: 15px 13px;}
+	.brand__item {margin-bottom: 15px; padding: 48px 0 0; height: 124px;}
+	.triagle-title {padding: 145px 0 40px; background: #464343;}
+	.triagle-title:before,.triagle-title:after{content: none;}
+	.triagle-left, .triagle-right, .s-types:before, .s-types:after {transform: none;}
+	.triagle-left, .triagle-right {top: 20px; height: calc(100% - 40px);}
 }
 @media (max-width: 800px){
-	.re-equipment-page.header {min-height: 620px;}
+	.triagle-title h2{font-size: 1.8em;}
 }
+@media (max-width: 767px){
+	.re-equipment-page .header {min-height: 600px;}
+	.re-equipment-page .title-container {padding: 250px 15px 30px;}
+
+}
+@media (max-width: 719px){
+	.types__card {flex: 1 1 46%;max-width: 50%;}
+}
+@media (max-width: 670px){
+	.title-container h1 {font-size: 2.2em;}
+}
+@media (max-width: 550px){
+	.triagle-title img {top: -60px;}
+	.salon__content{padding: 0;}
+	.salon__content img {margin-bottom: 20px;}
+	.s-salon .container{padding-top: 0;}
+	.s-salon h2:before{content: none;}
+	.types__card {flex: 1 1 94%; max-width: none;}
+}
+@media (max-width: 480px){
+	.title-container h1{line-height: 1.1;}
+	.s-salon h2 {padding-bottom: 0.7em;}
+	.salon__adv-descr {max-width: 240px;}
+	.salon__adv-item {padding: 15px 0;}
+}
+@media (max-width: 470px){
+	.s-brand .col-xs-6 {float: none;width: 100%;}
+	.brand__item {margin-bottom: 20px; padding: 28px 0 0; height: 80px;}
+	.s-brand {padding: 60px 0 40px;}
+
+}
+@media (max-width: 380px){
+	.re-equipment-page .header {background-size: 212% auto;}
+	.re-equipment-page .title-container {padding: 240px 2px 20px;}
+	.triagle-title {padding: 110px 0 10px;}
+	.triagle-title img{top: -80px;}
+	.salon__adv-descr {max-width: 210px;}
+	.s-types .container {padding: 0 15px;}
+	.triagle-left, .triagle-right, .s-types:before, .s-types:after {display: none;content: none;}
+}
+@media (max-width: 360px){
+	.title-container h1 {font-size: 2em;}
+	.re-equipment-page .header {background-size: 230% auto;}
+	.re-equipment-page .title-container {padding: 230px 2px 15px;}
+	.salon__adv-item {display: block;margin: auto;}
+	.salon__adv-item i{display: block;margin: 0 auto 10px;}
+	.salon__adv-descr {max-width: none;}
+	.salon__content-box {padding: 15px 15px 5px;}
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
  .flip > div {background: #464343}
 }
