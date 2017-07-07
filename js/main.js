@@ -19,12 +19,12 @@ $(document).ready(function(){
         offset: 60
       });
     }
-    // $('.about__tab-note').addClass("clip").viewportChecker({
+    // $('.types__card').addClass("clip").viewportChecker({
     //   classToAdd: 'clipplay',
     //   offset: 0
     // });
 
-    $('.about__adv-item,.salon__adv-item,.salon__content-box').addClass("trnsl").viewportChecker({
+    $('.about__adv-item,.salon__adv-item,.salon__content-box,.types__card,.s-brand .col-md-3').addClass("trnsl").viewportChecker({
       classToAdd: 'trnslplay'
     }); 
     
@@ -139,9 +139,22 @@ $(document).ready(function(){
     };
 
     //parallax
-     // if ($('[data-type="background"]').length) {
+     if ($('[data-type="background"]').length) {
+        var $window = $(window);
+          $('[data-type="background"]').each(function(){  // по возможности используем ID
+              var $bgobj = $(this); // assigning the object
+          
+              $(window).scroll(function() {
+                 // var yPos = -($window.scrollTop() / $bgobj.attr('data-speed'));
 
-     // }
+                 // 600 - это середина картинки более гладкая прокрутка (для этого нужно чтобы backgrond-position был 50% 50%)
+                 var yPos = -(($window.scrollTop() + 600) / $bgobj.data('speed')); 
+                  
+                  var coords = '50% '+ yPos + 'px';
+                  $bgobj.css({ backgroundPosition: coords });
+              }); 
+          });
+     }
 
    //Services slider
    (function () {

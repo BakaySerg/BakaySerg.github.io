@@ -1,5 +1,6 @@
 
 .header__re-equipment {
+	will-change: background-position;
 	background: #242424 url(../img/category-page/bg-1.jpg) center 0 no-repeat fixed;
 	background-size: cover;
 }
@@ -229,7 +230,8 @@
   В и д ы  р е м о н т а
 ================================*/
 .s-types {
-	background: url(../img/category-page/types-bg.jpg) center no-repeat fixed;
+	will-change: background-position;
+	background: url(../img/category-page/types-bg.jpg) center bottom no-repeat fixed;
 	background-size: cover;
 	padding: 160px 0 135px;
 	min-height: 90vh;
@@ -237,7 +239,7 @@
 .s-types:before,.s-types:after {
 	content: '';
 	position: absolute;
-	bottom: 70px;
+	bottom: 100px;
 	width: 48%;
 	height: calc(100% - 40px);
 	border: 4px solid #767676;
@@ -271,11 +273,14 @@
 	height: 140px;
 	margin: 5px;
 	-webkit-perspective: 800;
+	-moz-perspective: 800;
 	perspective: 800;
 }
 .flip {
   width: 100%;
   height: 140px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: .5s;
 }
@@ -294,7 +299,6 @@
 	-ms-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-
 	cursor: pointer;
 }
 .flip .front {
@@ -305,9 +309,8 @@
 	align-items: center;
 	justify-content: center;
 }
-
 .flip .back {
-	background: rgba(70,67,67,.98);
+	background: #464343;
 	transform: rotatex(-180deg);
 }
 
@@ -362,7 +365,7 @@
 	padding: 150px 0 83px;
 	background: url(../img/category-page/brand-bg.png) center top no-repeat;
 	background-size: cover;
-	/*margin-top: -30px;*/
+	margin-top: -70px;
 }
 .s-brand h2 {
 	padding-bottom: 50px;
@@ -382,7 +385,7 @@
 }
 
 .s-brand .services__link {
-	margin: 60px auto 0;
+	margin: 30px auto 0;
 	max-width: 345px;
 	visibility: visible;
 	opacity: 1;
