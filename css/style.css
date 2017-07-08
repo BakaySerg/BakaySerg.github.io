@@ -472,6 +472,7 @@ a.top__link:hover:before{
 	width: 26px;
 	height: 38px;
 	border: 1px solid #f5f5f5;
+	box-shadow: 0 0 12px #111, inset 0 0 4px #111;
 	border-radius: 18px;
 	text-align: center;
 	padding-top: 9px;

@@ -148,12 +148,15 @@ $(document).ready(function(){
                  // var yPos = -($window.scrollTop() / $bgobj.attr('data-speed'));
 
                  // 600 - это середина картинки более гладкая прокрутка (для этого нужно чтобы backgrond-position был 50% 50%)
-                 var yPos = -(($window.scrollTop() + 600) / $bgobj.data('speed')); 
+                 var yPos = (($window.scrollTop() + 500) / $bgobj.data('speed')); 
                   
-                  var coords = '50% '+ yPos + 'px';
+                  var coords = '50% '+ yPos + '%';
                   $bgobj.css({ backgroundPosition: coords });
               }); 
           });
+          // (function ($) {
+          //   $('.parallax').parallaxBackground();
+          // })(jQuery);
     }
 
    //Services slider
