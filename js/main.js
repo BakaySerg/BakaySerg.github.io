@@ -112,7 +112,6 @@ $(document).ready(function(){
       if(current > count) {
         current = 0;
       }      
-      //end block
 
       sync2
         .find(".owl-item")
@@ -141,22 +140,16 @@ $(document).ready(function(){
     //parallax
      if ($('[data-type="background"]').length && ww > 1200) {
         var $window = $(window);
-          $('[data-type="background"]').each(function(){  // по возможности используем ID
-              var $bgobj = $(this); // assigning the object
+          $('[data-type="background"]').each(function(){ 
+              var $bgobj = $(this);
           
               $(window).scroll(function() {
-                 // var yPos = -($window.scrollTop() / $bgobj.attr('data-speed'));
-
-                 // 600 - это середина картинки более гладкая прокрутка (для этого нужно чтобы backgrond-position был 50% 50%)
                  var yPos = (($window.scrollTop() + 500) / $bgobj.data('speed')); 
                   
                   var coords = '50% '+ yPos + '%';
                   $bgobj.css({ backgroundPosition: coords });
               }); 
           });
-          // (function ($) {
-          //   $('.parallax').parallaxBackground();
-          // })(jQuery);
     }
 
    //Services slider
@@ -174,7 +167,6 @@ $(document).ready(function(){
        touchDragging: 1,
        releaseSwing: 1,
        startAt: 1,
-       // scrollBar: $wrap.find('.scrollbar'),
        scrollBy: 1,
        speed: 800,
        elasticBounds: 1,
@@ -194,7 +186,6 @@ $(document).ready(function(){
    (function () {
      var $frame = $('#product-sly');
      var $wrap  = $frame.parent();
-     // Call Sly on frame
      $frame.sly({
        horizontal: 1,
        itemNav: 'forceCentered',
@@ -227,9 +218,29 @@ $(document).ready(function(){
       },500);
    });}
 
+   //Mask
+   $(".phone").mask("+7 (999) 999-99-99");
 
-
-
+   // Попап
+   if ($('.js-popup').length){
+    $('.js-popup').magnificPopup({
+        type: 'inline',
+        removalDelay: 300,
+        fixedContentPos: true,
+        fixedBgPos: true,
+        mainClass: 'mfp-rotate-bottom',
+        closeOnBgClick: true,
+        enableEscapeKey:true,
+        callbacks: {
+          beforeOpen: function() {
+            $('.wrapper').addClass('is-popup-open');
+          },
+          close:function() {
+            $('.wrapper').removeClass('is-popup-open');
+          }
+        }   
+    });
+   };
    
      
 });
