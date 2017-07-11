@@ -14,7 +14,7 @@ function init() {
 	var map = new google.maps.Map(mapElement, mapOptions);
 	var marker = new google.maps.Marker({
 	        position: LatLng,
-	        animation: google.maps.Animation.BOUNCE,
+	        // animation: google.maps.Animation.BOUNCE,
 	        icon:'img/for-sprite/footer-logo.png',
 	        map: map,
 	        title:"г. Примерный ул. Новая, 8в" //текст подсказка          
