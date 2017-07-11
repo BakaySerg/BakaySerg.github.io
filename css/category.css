@@ -280,9 +280,9 @@
 	flex: 1 1 23%;
 	height: 140px;
 	margin: 5px;
-	-webkit-perspective: 800;
-	-moz-perspective: 800;
-	perspective: 800;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	perspective: 800px;
 }
 .flip {
   width: 100%;
