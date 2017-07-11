@@ -3,7 +3,7 @@ function init() {
 	var LatLng = new google.maps.LatLng(55.6621273,37.6379238); //сюда вставить свои координаты на гугл карте
 	var t1 = setTimeout(function () {
 	var mapOptions = {
-		zoom: 15,
+		zoom: 16,
 		scrollwheel: false,
 		mapTypeControl: false,
 		center: LatLng, 
@@ -20,5 +20,5 @@ function init() {
 	        title:"г. Примерный ул. Новая, 8в" //текст подсказка          
 	    });
   },
-  4000);
+  2000);
 }
