@@ -129,19 +129,19 @@ section {
 	justify-content: space-between;
 	align-items: center;
 }
-.slimScrollDiv {
+/*.slimScrollDiv {
 	width: 100%;
 	min-height: 660px;
 	min-width: 100vw!important;
-}
-.fp-scrollable {
+}*/
+/*.fp-scrollable {
 	max-width: 100vw;
 	min-height: 660px;
 	position: relative;
 	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
-}
+}*/
 a,a:focus {
 	text-decoration:none;
 	outline:0;
@@ -357,7 +357,7 @@ p {padding-bottom: 15px;}
 	display: block;
 	text-align: center;
 	padding: 31px 20px 31px 8px;
-	background: rgba(36,36,36,.9);
+	/*background: rgba(36,36,36,.9);*/
 	z-index: 10;
 }
 .logo__link{
