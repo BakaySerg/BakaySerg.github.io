@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="914" height="332" viewBox="0 0 914 332">
+  <defs>
+    <style>
+      .cls-2 {
+        fill: #ffffff;
+        stroke: #d04929;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        filter: url(#drop-shadow-1);
+      }
+    </style>
+
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="4" dy="6.928"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="4.583"/>
+      <feFlood flood-color="#000000" flood-opacity="0.06"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+    </filter>
+  </defs>
+  <g id="slide-link-bgsvg" style="fill: #fff; filter: url(#drop-shadow-1);">
+    <path d="M845.312,309.000 C845.312,309.000 446.671,277.586 446.671,277.586 C446.671,277.586 446.671,277.550 446.671,277.550 C446.671,277.550 72.000,261.615 72.000,261.615 C72.000,261.615 24.013,167.015 24.013,167.015 C24.013,167.015 23.000,166.981 23.000,166.981 C23.000,166.981 23.475,165.956 23.475,165.956 C23.475,165.956 23.000,165.019 23.000,165.019 C23.000,165.019 23.923,164.988 23.923,164.988 C23.923,164.988 74.000,56.846 74.000,56.846 C74.000,56.846 446.671,54.420 446.671,54.420 C446.671,54.420 446.671,54.414 446.671,54.414 C446.671,54.414 845.312,23.000 845.312,23.000 C845.312,23.000 891.000,163.986 891.000,163.986 C891.000,163.986 845.312,309.000 845.312,309.000 Z" id="path-1" class="cls-2" style="stroke: inherit; filter: none; fill: inherit;" fill-rule="evenodd"/>
+  </g>
+  <use xlink:href="#path-1" style="stroke: #d04929; fill: none; filter: none;"/>
+</svg>
