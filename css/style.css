@@ -686,7 +686,7 @@ a.top__link:hover:before{opacity: .1;transform: scale(1);}
 }
 .s-product .tab figure {
 	margin-top: 20px;
-	height: 320px;
+	height: 310px;
 	padding: 60px;
 	display: -ms-flexbox;
 	display: flex;
@@ -846,12 +846,9 @@ a.top__link:hover:before{opacity: .1;transform: scale(1);}
 	box-shadow: 0 6px 19px 1px rgba(0,0,0,.06);
 }
 .supply__countries b {
-	opacity: .47;
 	color: #23274d;
 	font-size: 1.57em;
 }
-.supply__countries b:first-child{opacity: 1;}
-
 /*==========================
 	A d d r e s s
 ===========================*/

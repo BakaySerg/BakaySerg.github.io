@@ -55,8 +55,6 @@ $(document).ready(function(){
       return false;
     });
 
-
-
    // intro-slider
    $("#intro-slider").owlCarousel({       
      items: 1,
@@ -82,7 +80,6 @@ $(document).ready(function(){
          }
      }
    });
-
 
      
 });

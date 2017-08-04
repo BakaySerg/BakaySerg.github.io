@@ -45,6 +45,9 @@
 	}
 	a.top__link:hover:after{opacity: 1;}
 }
+@media(min-width: 1024px) and (min-height: 760px){
+	.intro-slider__box {padding: 40px 0 0 103px;}
+}
 @media(min-width: 1600px){
 	.container {max-width: 1440px;}
 	.navbar-nav{padding: 33px 5px 32px;}
@@ -200,7 +203,7 @@
 	.product__img-box {width: 49%; padding: 15px 31px;}
 	.catalog__descr {width: calc(98% - 54px); padding: 0 15px 0 24px;}
 	.product__descr h3 {font-size: 2.8em; padding-bottom: 17px;}
-	.product__descr p {padding-bottom: 15px;}
+	.product__descr p {padding-bottom: 22px;}
 	.catalog__img{width: 54px;height: 54px;}
 	.s-supply {background-size: 96% auto;background-position: center;}
 	.s-contact .row {padding-top: 15px;}
@@ -257,7 +260,7 @@
 	.navbar-toggle {left: 20px;margin: 13px 0 0;}
 	.intro-slider__img{float: none;width: 100%;max-width: 340px;margin: auto;padding: 0;}
 	.intro-slider__text{background: none;height: auto;max-width: 500px; padding: 0 0 30px;margin: auto;}
-	.intro-slider__text p {min-height: auto;margin: auto;padding: 0 5px 10px;}
+	.intro-slider__text p {min-height: auto;margin: auto;padding: 0 5px 20px;}
 	.intro-slider__text b,.intro-slider__text h1, .intro-slider__text strong{text-align: center;}
 	.has-type-link a {background: #d04929; color: #fff;}
 	.product__img-box:before{opacity: .03;}
@@ -286,7 +289,7 @@
 	.logo{width: 112px;padding-right: 0;}
 	.logo__link{width: 99px;}
 	.intro-slider__img{margin: 0 auto -20px;}
-	.intro-slider__text{padding: 0 0 18px;}
+	.intro-slider__text{padding: 0 0 30px;}
 	.intro-slider .owl-dot:after {min-width: 72px; max-width: 72px; margin: 3px auto 0;}
 	.s-catalog {margin-bottom: 24px; padding-bottom: 25px;}
 	.intro-slider .owl-dots{width: 100%;left: 0;}
@@ -296,7 +299,7 @@
 	.s-product .tab a span{display: none;}
 	.contact__link{flex-basis: 97%;padding: 16px 0;}
 	.s-product .tab a span{display: none;}
-	.s-product .tab figure, .s-product .tab.active figure {height: 114px;}
+	.s-product .tab figure, .s-product .tab.active figure {height: 124px;}
 	.has-type-link{padding-right: 0;}
 }
 @media (max-width: 380px){
@@ -309,6 +312,7 @@
 	.footer-nav li{flex: 1 1 47%}
 	.s-contact {padding: 0 0 38px;}
 	.about__tab-box .col-md-2{padding: 0;}
+	.supply__countries b {margin: 5px 0; font-size: 1.2em;}
 }
 @media (max-width: 360px){
 	.logo {left: 56px;}
@@ -321,6 +325,7 @@
 	.intro-slider__text h1, .intro-slider__text strong {font-size: 2.4em;}
 	.product__descr h3 {font-size: 2.4em; padding-bottom: 10px;}
 	.intro-slider__box {padding: 0 12px 57px;}
+	.intro-slider__text {padding: 0 0 18px;}
 	.s-about {padding-bottom: 37px;}
 	.s-about .tab.active a {font-size: 1.1em;}
 	.s-about .col-md-5 {padding: 0 15px;}
