@@ -68,8 +68,8 @@ $(document).ready(function(){
      dots: true,
      nav: false,
      animateOut: 'fadeOut',
-     // autoplay:true, 
-     // autoplayTimeout:4500,
+     autoplay:true, 
+     autoplayTimeout:4500,
      navText: "",
      responsive: {
          0: {
