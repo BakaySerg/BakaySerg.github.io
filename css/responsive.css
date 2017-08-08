@@ -71,6 +71,18 @@
 @media(min-width: 2500px){
 	.header {min-height: auto;}
 }
+@media(max-width: 1366px){
+	.s-product .tab-content>.tab-pane.active {min-height: 370px;}
+	.product__img-box{padding: 0 72px;}
+	.product__descr{height: 370px;}
+	.product__descr p {padding-bottom: 30px;}
+	.s-product .tab-box {max-width: 946px;}
+	.s-product .tab{max-width: 200px;}
+	.s-product .tab.active figure {padding: 28px;}
+	.s-product .tab figure {margin-top: 7px; height: 227px; padding: 28px;}
+	.s-product .tab a {font-size: 1.4em;}
+	.catalog-container {padding: 25px 15px 0 30px;}
+}
 @media(max-width: 1281px){
 	.logo,.top__contact{width: 274px;}
 	.s-product .tab figure,.s-product .tab.active figure {padding: 40px;}
@@ -96,7 +108,7 @@
 	.s-about:before, .s-about:after{bottom: 54px;}
 	.product__descr h3 {font-size: 3.6em;padding-bottom: 25px;}
 	.product__descr p {padding-bottom: 29px;}
-	.s-product .tab figure {margin-top: 11px; height: 270px;}
+	/*.s-product .tab figure {margin-top: 11px; height: 270px;}*/
 	.product__tab-content .tab-pane{margin: 0 auto 12px;}
 	.s-catalog {margin-bottom: 46px; padding-bottom: 46px;}
 	.catalog-container {padding: 30px 20px 0;}
@@ -250,7 +262,7 @@
 	.product__descr{display: block;height: auto;width: 100%;margin: auto;}
 	.product__descr h3{text-align: center;}
 	.s-product .tab a{font-size: 1.2em;line-height: 1.1;}
-	.s-product .tab a span {display: block; margin: 0 auto -22px;;max-width: 102px;min-height: 36px;}
+	.s-product .tab a span {display: block; margin: 0 auto -33px;;max-width: 102px;min-height: 36px;}
 	.s-supply {padding: 42px 0 74px;}
 	.supply__countries{justify-content: flex-start;}
 	.supply__countries b {flex-basis: 31%;}
@@ -310,7 +322,7 @@
 	.s-product .tab a span{display: none;}
 	.contact__link{flex-basis: 97%;padding: 16px 0;}
 	.s-product .tab a span{display: none;}
-	.s-product .tab figure, .s-product .tab.active figure {height: 124px;}
+	.s-product .tab figure, .s-product .tab.active figure {height: 101px;}
 	.has-type-link{padding-right: 0;}
 }
 @media (max-width: 380px){

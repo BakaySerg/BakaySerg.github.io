@@ -149,7 +149,7 @@
  /*----------responsive----------*/
  
  @media (min-width: 992px){
- 	 .has-border {border-right: 3px solid #d04929}
+ 	 .has-border {border-right: 2px solid #d04929}
  }
  @media (min-width: 1600px){
  	.single__title-container {max-width: 1440px;width: calc(100% - 170px);padding: 90px;}

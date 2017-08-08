@@ -626,8 +626,10 @@ a.top__link:hover:before{opacity: .1;transform: scale(1);}
 	background: url(../img/main-page/tab-content.svg) center no-repeat;
 	background-size: 100% auto;
 	max-width: 1050px;
-	margin: 0 auto 26px;
+	margin: 0 auto;
 }
+.product__tab-content .tab-pane.active{margin: 0 auto 23px;}
+
 .s-product .tab-content>.tab-pane.active{min-height: 410px;}
 
 .product__img-box {
@@ -664,7 +666,7 @@ a.top__link:hover:before{opacity: .1;transform: scale(1);}
 .product__descr h3 {
 	color: #2d2b3f;
 	font-family: 'Open Sans Condensed','roboto condensed', sans-serif;
-	font-size: 4em;
+	font-size: 3.9em;
 	font-weight: 700;
 	line-height: .9;
 	padding-bottom: 30px;
