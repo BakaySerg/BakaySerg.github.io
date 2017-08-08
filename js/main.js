@@ -12,21 +12,22 @@ document.body.classList.add('js-loading');
 window.addEventListener("load", showPage, false);
 
 $(document).ready(function(){
-    "use strict";
+  "use strict";
 
     // Ruffles
-    var ww = $(document).width();
+    var ww = $(window).width(),
+        wh = $(window).height();
     //only desktop
     if ( ww > 1270) {
-      $('.about__title-container').addClass("clip").viewportChecker({
+      $('h2,.about__title-container,.s-contact .col-md-4,.s-contact .form,.s-cutted .col-md-8,.s-cutted .col-md-12').addClass("clip").viewportChecker({
         classToAdd: 'clipplay',
-        offset: 0
+        offset: 60
       });
-      $('.s-about .col-md-5,.address__box address,.s-contact .col-md-2,.s-contact .col-md-3,.s-contact .form').addClass("clip2").viewportChecker({
+      $('.s-about .col-md-5,.address__box address,.s-contact .col-md-2,.descr__text,.s-cutted .col-md-5').addClass("clip2").viewportChecker({
         classToAdd: 'clipplay2',
-        offset: 100
+        offset: 110
       }); 
-      $('h2,.s-about .tab,.catalog__item').addClass("trnsl").viewportChecker({
+      $('.s-about .tab,.catalog__item').addClass("trnsl").viewportChecker({
         classToAdd: 'trnslplay',
         offset: 100
       }); 
@@ -80,6 +81,21 @@ $(document).ready(function(){
          }
      }
    });
+
+   //parallax
+    if ($('[data-type="background"]').length && ww > 1200) {
+       var $window = $(window);
+         $('[data-type="background"]').each(function(){ 
+             var $bgobj = $(this);
+         
+             $(window).scroll(function() {
+                var yPos = (($window.scrollTop() + 20) / $bgobj.data('speed')); 
+                 
+                 var coords = '50% '+ yPos + '%';
+                 $bgobj.css({ backgroundPosition: coords });
+             }); 
+         });
+   }
 
      
 });
