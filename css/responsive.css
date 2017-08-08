@@ -228,7 +228,7 @@
 }
 @media (max-width: 800px){
 	p {padding-bottom: 12px;}
-	.header{height: 100vh;min-height: 720px;}
+	.header{height: auto;min-height: 720px;}
 	.main-menu-container {height: 120px;}
 	.s-product .tab figure, .s-product .tab.active figure {padding: 16px;height: 210px;}
 	.intro-slider__img {padding: 29px 18px 0;}
