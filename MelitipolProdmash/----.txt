@@ -1,0 +1,47 @@
+kute.js:
+
+var compliMorph1 = KUTE.fromTo('#rabbit', {path: '#rabbit', fill: "#2196F3"}, { path: '#cat', fill: "#FF5722" }, { morphPrecision: 12, morphIndex: 177, duration: 2000, repeat: 1, yoyo: false, easing: 'easingCubicOut'});
+var compliMorph2 = KUTE.fromTo('#rabbit', {path: '#cat', fill: "#2196F3"}, { path: '#dog', fill: "#FF5722" }, { morphPrecision: 12, morphIndex: 177, duration: 2000, repeat: 1, yoyo: false, easing: 'easingCubicOut'});
+var compliMorph3 = KUTE.fromTo('#rabbit', {path: '#dog', fill: "#2196F3"}, { path: '#fish', fill: "#FF5722" }, { morphPrecision: 12, morphIndex: 177, duration: 2000, repeat: 1, yoyo: false, easing: 'easingCubicOut'});
+var compliMorph4 = KUTE.fromTo('#rabbit', {path: '#fish', fill: "#2196F3"}, { path: '#rabbit', fill: "#FF5722" }, { morphPrecision: 12, morphIndex: 177, duration: 2000, repeat: 1, yoyo: false, easing: 'easingCubicOut'});
+
+// compliMorphBtn.addEventListener('click', function(){
+    !compliMorph1.playing && compliMorph1.start();
+setTimeout(function(){
+!compliMorph2.playing && compliMorph2.start();
+  },2000);
+setTimeout(function(){
+!compliMorph3.playing && compliMorph3.start();
+  },4000);
+setTimeout(function(){
+!compliMorph4.playing && compliMorph4.start();
+  },6000);
+
+
+///////////////////////////// U E N O//////////////////////////////////////////////////////////////
+
+let letterMorph = {
+  tween: null, // current tween, keep a reference in case we need to stop it before id ends
+  maskPath: null, // the path within the mask we are going to morph
+  init: function() {
+    this.maskPath = document.getElementById("original-path");
+    let context = this;
+    document.getElementById('actions').addEventListener("click", function(e) {
+      if (e.target.className.indexOf('js-morph') > -1) {
+        let targetId = e.target.dataset.pathId;
+        context.morphTo(targetId);
+      }
+    });
+  },
+  morphTo: function(targetId) {
+    let targetPath = document.getElementById(targetId).getAttribute('d');
+    this.tween = KUTE.to('#original-path', {
+      path: targetPath,
+    }, {
+      easing: 'easingCubicOut',
+      duration: 500,
+    }).start();
+  },
+}
+letterMorph.init();
+
