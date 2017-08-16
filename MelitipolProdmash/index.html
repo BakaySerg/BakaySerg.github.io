@@ -82,21 +82,21 @@
    <!--  I n t r o  -->
    <section class="s-intro">
       <div class="container intro__box">
-         <div class="col-md-12">
+         <div class="col-md-12 intro__phone-box">
             <a class="tel-ua" href="tel:+380999060702"><i class="i-phone"></i>+38 (099) <b>906-07-02</b></a>
             <a class="tel-ru" href="tel:+79055724004"><i class="i-phone"></i>+7 (905) <b>772-40-04</b></a>
          </div>
-         <div class="col-md-12">
+         <div class="col-md-12 clearfix">
             <!-- I n t r o - s l i d e r -->
             <div class="intro-slider__img-box">
-              <svg class="morph" width="765" height="577" viewBox="0 0 765 577">
+              <svg class="morph" id="morph" width="765" height="577" viewBox="0 0 765 577">
                 <defs>
                   <style>.cls-2 {fill: #ffc321; filter: url(#gradient-overlay-1);}</style>
-                    <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
-                       <feImage x="0.03125" y="0.40625" preserveAspectRatio="none" width="764.25" height="575.875" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNzY0LjI1IiBoZWlnaHQ9IjU3NS44NzUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyMTUuODg0IiB5MT0iNTc1Ljg3NSIgeDI9IjU0OC4zNjYiIHkyPSIwIj4KICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmQzMjEiLz4KICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmIzMjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg=="/>
-                       <feComposite operator="in" in2="SourceGraphic"/>
-                       <feBlend mode="normal" in2="SourceGraphic" result="gradientFill"/>
-                    </filter>
+                  <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
+                    <feImage x="0.03125" y="0.40625" preserveAspectRatio="none" width="764.25" height="575.875" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNzY0LjI1IiBoZWlnaHQ9IjU3NS44NzUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyMTUuODg0IiB5MT0iNTc1Ljg3NSIgeDI9IjU0OC4zNjYiIHkyPSIwIj4KICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmQzMjEiLz4KICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmIzMjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg=="/>
+                    <feComposite operator="in" in2="SourceGraphic"/>
+                    <feBlend mode="normal" in2="SourceGraphic" result="gradientFill"/>
+                  </filter>
                  </defs>
                     <path id="wobble-1" class="cls-2" fill-rule="evenodd" d="M764.071,246.797 C758.121,99.595 658.115,22.955 451.969,4.593 C217.009,-16.335 9.151,28.672 0.572,261.227 C-8.007,493.783 83.221,571.269 193.591,575.593 C323.041,580.665 585.146,518.427 687.612,441.988 C728.013,411.848 767.408,329.362 764.071,246.797 Z"/>
                     <path id="wobble-2" class="cls-2" fill-rule="evenodd" style="visibility: hidden;" d="M759.969,275.875 C753.942,128.713 677.667,71.125 457.969,23.875 C217.516,-27.839 12.010,-11.673 0.572,237.509 C-7.314,409.298 68.238,526.493 175.969,550.875 C304.419,579.947 568.503,548.315 667.969,479.875 C709.494,451.303 763.350,358.438 759.969,275.875 Z"/>
@@ -149,23 +149,23 @@
    <section class="s-about" id="s-about">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-5">
-            <div class="about__slider owl-carousel" id="about__slider">
+          <div class="col-sm-7 col-lg-6 col-md-pull-right">
+            <em>Группа компаний</em>
+            <h2 class="has-double-title" data-double="Мелитополь Продмаш">«Мелитополь Продмаш»</h2>
+            <p> Группа компаний «МелитопольПродмаш» специализируется на производстве полнокомплектных линий, а также отдельного оборудования по розливу безалкогольных напитков, минеральной воды, пива, ликероводочных изделий, коньяка, тихих и игристых вин растительного масла, молока и молочных продуктов, детского питания и других пищевых жидкостей в стеклянные и ПЭТ бутылки, производительностью от 500 до 12 000 бутылок в час.</p>
+            <p>В качестве отдельных единиц оборудования входящих в состав линии предприятие выпускает триблоки (ополакивание, розлив, укупоривание), ополаскиватели, машины фасовочно-укупорочные для раздельного фасования и укуп+орки, этикетировочные машины для бумажной и полипропиленовой этикетки, установки упаковочные, машины для изготовления ПЭТ бутылок, машины бутылкомоечные и банкомоечные, транспортные системы (пневмотранспортеры, ленточные), сатураторные установки.</p>
+            <p>Группа компаний "МелитопольПродмаш" предлагает все виды услуг, включая поставку оборудования, сертификационное и таможенное оформление на территории как Украины, Российской Федерации так и стран СНГ.</p>
+            <p>Также предприятие выполняет пуско-наладочные работы, поставку запчастей, работы по гарантийному и послегарантийному обслуживанию, ремонту, модернизации, вводом в эксплуатацию оборудования по розливу жидкой пищевой продукции.</p>
+          </div>
+          <div class="col-sm-5 col-lg-5">
+            <div class="about__slider owl-carousel" id="about__slider" style="animation-delay: .5s">
               <div><img src="img/main-page/about-slide-1.jpg" alt="Линии разлива" class="img-responsive"></div>
-              <div><img src="img/main-page/about-slide-1.jpg" alt="Линии разлива" class="img-responsive"></div>
+              <div><img src="img/main-page/news-2.jpg" alt="Линии разлива" class="img-responsive"></div>
               <div><img src="img/main-page/about-slide-1.jpg" alt="Линии разлива" class="img-responsive"></div>
               <div><img src="img/main-page/about-slide-1.jpg" alt="Линии разлива" class="img-responsive"></div>
               <div><img src="img/main-page/about-slide-1.jpg" alt="Линии разлива" class="img-responsive"></div>
               <div><img src="img/main-page/about-slide-1.jpg" alt="Линии разлива" class="img-responsive"></div>
             </div>
-          </div>
-          <div class="col-sm-6 col-md-6 col-md-offset-1">
-            <em>Группа компаний</em>
-            <h2 class="has-double-title" data-double="Мелитополь Продмаш">«МелитопольПродмаш»</h2>
-            <p> Группа компаний «МелитопольПродмаш» специализируется на производстве полнокомплектных линий, а также отдельного оборудования по розливу безалкогольных напитков, минеральной воды, пива, ликероводочных изделий, коньяка, тихих и игристых вин растительного масла, молока и молочных продуктов, детского питания и других пищевых жидкостей в стеклянные и ПЭТ бутылки, производительностью от 500 до 12 000 бутылок в час.</p>
-            <p>В качестве отдельных единиц оборудования входящих в состав линии предприятие выпускает триблоки (ополакивание, розлив, укупоривание), ополаскиватели, машины фасовочно-укупорочные для раздельного фасования и укуп+орки, этикетировочные машины для бумажной и полипропиленовой этикетки, установки упаковочные, машины для изготовления ПЭТ бутылок, машины бутылкомоечные и банкомоечные, транспортные системы (пневмотранспортеры, ленточные), сатураторные установки.</p>
-            <p>Группа компаний "МелитопольПродмаш" предлагает все виды услуг, включая поставку оборудования, сертификационное и таможенное оформление на территории как Украины, Российской Федерации так и стран СНГ.</p>
-            <p>Также предприятие выполняет пуско-наладочные работы, поставку запчастей, работы по гарантийному и послегарантийному обслуживанию, ремонту, модернизации, вводом в эксплуатацию оборудования по розливу жидкой пищевой продукции.</p>
           </div>
         </div>
       </div>
@@ -187,10 +187,10 @@
    <section class="s-services">
      <div class="container">
        <div class="row">
-         <div class="col-md-5 col-md-pull-right">
+         <div class="col-sm-5 col-md-pull-right">
            <img src="img/main-page/service.jpg" alt="services" class="img-responsive">
          </div>
-         <div class="col-md-6">
+         <div class="col-sm-7 col-lg-6">
            <h2 class="has-double-title" data-double="Сервис">Сервисное обслуживание</h2>
            <p>Техническая служба «Мелитопольпродмаш» выполняет пуско-наладочные работы, поставку запчастей, работы по гарантийному и послегарантийному обслуживанию, ремонту, модернизации, вводом в эксплуатацию оборудования по розливу жидкой пищевой продукции как собственного производства так и импортного оборудования.</p>
            <p>На предприятии есть группа технических специалистов, готовая по первому Вашему требованию выехать на Ваше предприятие и в максимально короткий срок устранить любую неисправность и провести техническое обслуживание.</p>
@@ -207,47 +207,46 @@
       <div class="container">
          <h2 class="has-double-title" data-double="Новости">Новости компании</h2>
          <div class="row">
-            <div class="col-sm-6 col-md-4">
+            <div class="col-md-4">
                <div class="news__item">
                   <div class="news__img-box">
                      <img src="img/main-page/news-1.jpg" alt="news" class="img-responsive">
                      <span>27.07.2017</span>
                   </div>
                   <div class="news__descr">
-                     <h3>Выставка «FoodWeek 2017»</h3>
-                     <p>В период с 03 по 05 октября "МелитопольПродмаш" примет участие в 17-й ежегодной специализированной выставке «Международная Выставка Продуктов питания и напитков, Пищевой промышленно...</p>
+                     <h3><a href="#">Выставка «FoodWeek 2017»</a></h3>
+                     <p>В период с 03 по 05 октября "МелитопольПродмаш" примет участие в 17-й ежегодной специализированной выставке «Международная Выставка Продуктов питания и напитков, Пищевой промышленности на...</p>
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-               <div class="news__item">
+            <div class="col-md-4">
+               <div class="news__item" style="animation-delay: .4s">
                   <div class="news__img-box">
                      <img src="img/main-page/news-2.jpg" alt="news" class="img-responsive">
                      <span>27.07.2017</span>
                   </div>
                   <div class="news__descr">
-                     <h3>Внедрение международного стандарта пищевой безопасности ISO:22 000</h3>
+                     <h3><a href="#">Внедрение международного стандарта пищевой безопасности ISO:22 000</a></h3>
                      <p>Молочный комбинат «Самаралакто», входящий в состав группы компаний Danone-Юнимилк в России, получил международный сертификат по пищевой безопасности ISO:22 000. Об этом сообщила...</p>
                   </div>
                </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-               <div class="news__item">
+            <div class="col-md-4">
+               <div class="news__item" style="animation-delay: .8s">
                   <div class="news__img-box">
                      <img src="img/main-page/news-3.jpg" alt="news" class="img-responsive">
                      <span>27.07.2017</span>
                   </div>
                   <div class="news__descr">
-                     <h3>RosUpack возвращается в МВЦ «Крокус Экспо»</h3>
-                     <p>RosUpack возвращается в МВЦ «Крокус Экспо» В 2012 году международная выставка упаковочной индустрии RosUpack впервые прошла на ВВЦ, в павильоне № 75. Со следующего, 2013 года, выставка снова возв...</p>
+                     <h3><a href="#">RosUpack возвращается в МВЦ «Крокус Экспо»</a></h3>
+                     <p>RosUpack возвращается в МВЦ «Крокус Экспо» В 2012 году международная выставка упаковочной индустрии RosUpack впервые прошла на ВВЦ, в павильоне № 75. Со следующего, 2013 года, выставка снова возвращается</p>
                   </div>
                </div>
             </div>
          </div>
          <div class="center-block"><a href="#" class="btn">Все новости</a></div>
       </div>
-   </section>
-      
+   </section>      
 
    <!-- П о д в а л -->
    <footer class="s-footer clearfix">
@@ -258,7 +257,6 @@
        <a class="embeatz" href="http://embeatz.com/" target="_blank"><span>сделано в:</span><i></i></a>
      </div>
    </footer>
-
    
 </div><!-- /Wrapper-->
 

@@ -15,21 +15,20 @@ $(document).ready(function(){
   "use strict";
 
     // Ruffles
-    var ww = $(window).width(),
-        wh = $(window).height();
+    var ww = $(window).width();
     //only desktop
     if ( ww > 1270) {
-      $('.about__title-container,.s-contact .col-md-4,.s-contact .form,.s-cutted .col-md-8,.s-cutted .col-md-12').addClass("clip").viewportChecker({
-        classToAdd: 'clipplay',
-        offset: 60
+      $('.has-double-title').viewportChecker({
+        classToAdd: 'play',
+        offset: 10
       });
-      $('.s-about .col-md-5,.address__box address,.s-contact .col-md-2,.descr__text,.s-cutted .col-md-5').addClass("clip2").viewportChecker({
+      $('.abou').addClass("clip2").viewportChecker({
         classToAdd: 'clipplay2',
         offset: 110
       }); 
-      $('.s-about .tab,.catalog__item').addClass("trnsl").viewportChecker({
+      $('.about__slider,.col-md-pull-right,.lines__slider,.news__item').addClass("trnsl").viewportChecker({
         classToAdd: 'trnslplay',
-        offset: 100
+        offset:60
       }); 
     }
     $('.supply__countries,.product__tab-content').addClass("clip").viewportChecker({
@@ -56,26 +55,6 @@ $(document).ready(function(){
       return false;
     });
 
-    // morph
-    // var multiMorph1;
-    // function morphIt() {
-    //   multiMorph1 = KUTE.to('#wobble-1', {
-    //     path: '#wobble-2'
-    //     // path: '#wobble-3',
-    //     // path: '#wobble-4',
-    //     // path: '#wobble-5'
-    //   }, {
-    //     morphPrecision: 10,
-    //     morphIndex: 10,
-    //     // reverseSecondPath: true,
-    //     duration: 200,
-    //     // repeat: 1,
-    //     // yoyo: true,
-    //     easing: 'easingCubicOut'
-    //   }).start();
-    // }
-    // setInterval(morphIt, 8000);
-
 
     //intro-slider
     var sync1 = $("#intro-slider__img"),
@@ -99,11 +78,9 @@ $(document).ready(function(){
         nav: true,
         navText: "",
         stopOnHover:true,
-        // autoplay:true, 
-        // autoplayTimeout:5000,
-        // autoplaySpeed: 600,
-        // animateIn: "fxSoftScaleInNext",
-        // animateOut: "fxSoftScaleOutNext",
+        autoplay:true, 
+        autoplayTimeout:5000,
+        autoplaySpeed: 600,
         onInitialized: function () {
           var i = 1;
           $('#intro-slider__img .owl-dot>span').each(function () {
@@ -114,12 +91,14 @@ $(document).ready(function(){
           $('#intro-slider__img .owl-dots').append('/' +dotQuantity);         
         }//,
         // onChanged:function () {
-        //   var dotQuantity = $('#intro-slider__img .owl-dot>span').length;
-        //   $('#intro-slider__img .owl-dots').append('<div class="owl-dot--quantity">' + '/' +dotQuantity + '</div>');         
-        // },
-        // resize:function () {
-        //   var dotQuantity = $('#intro-slider__img .owl-dot>span').length;
-        //   $('#intro-slider__img .owl-dots').append('<div class="owl-dot--quantity">' + '/' +dotQuantity + '</div>');         
+        //     var compliMorph1;
+        //     var compliMorph2;
+        //     var motph = $('.intro-slider__img-box');
+        //     motph.toggleClass('morphchange');
+        //     if (motph.hasClass('morphchange')) {
+        //       compliMorph1 = KUTE.to('#wobble-1', { path:'#wobble-2'}, { morphPrecision: 10, morphIndex: 10, duration: 3000, repeat: 0, yoyo: false, easing: 'easingCubicOut'}).start();
+        //     }
+        //     else {compliMorph2 = KUTE.to('#wobble-1', { path:'#wobble-4'}, { morphPrecision: 10, morphIndex: 10, duration: 3000, repeat: 0, yoyo: false, easing: 'easingCubicOut'}).start();}
         // }
     }).on('changed.owl.carousel', syncPosition);
 
@@ -146,20 +125,10 @@ $(document).ready(function(){
     }).on('changed.owl.carousel', syncPosition2);
 
     function syncPosition(el) {
-      //if you set loop to false, you have to restore this next line
-      //var current = el.item.index;
-      
-      //if you disable loop you have to comment this block
       var count = el.item.count-1;
-      var current = Math.round(el.item.index - (el.item.count/2) - .5);
-      
-      if(current < 0) {
-        current = count;
-      }
-      if(current > count) {
-        current = 0;
-      }      
-      //end block
+      var current = Math.round(el.item.index - (el.item.count/2) - .5);      
+      if(current < 0) {current = count;}
+      if(current > count) {current = 0;}
 
       sync2
         .find(".owl-item")
@@ -191,7 +160,7 @@ $(document).ready(function(){
        loop: true,
        mouseDrag: false,
        touchDrag: false,
-       margin:40,
+       autoHeight:true,
        dots: true,
        nav: true,
        navText: "",
@@ -206,14 +175,13 @@ $(document).ready(function(){
        }
    });
 
-   //
    // lines__slider
    $('#lines__slider').owlCarousel({
        items: 1,
        loop: true,
        mouseDrag: false,
        touchDrag: false,
-       margin:40,
+       margin:2,
        dots: true,
        nav: true,
        navText: "",
@@ -227,8 +195,5 @@ $(document).ready(function(){
          $('#lines__slider .owl-dots').append('/' +dotQuantity);         
        }
    });
-
-
-
      
 });
