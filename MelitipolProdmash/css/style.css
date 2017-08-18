@@ -95,7 +95,7 @@ body {
 	color: #7a7a88;
 	font-family: "Gotham Pro",sans-serif;;
 	font-size: 15px;
-	line-height: 1.46;	
+	line-height: 1.46;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale
 }
@@ -157,7 +157,6 @@ p {
 
 /*Scroll - animations*/
 .clip {
-   /*overflow: hidden;*/   
 	/*will-change: clip-path;*/
    -webkit-clip-path: polygon(0 0,0 0,0 100%,0 100%);
    clip-path: polygon(0 0,0 0,0 100%,0 100%);
@@ -200,7 +199,6 @@ p {
   to {-webkit-clip-path: polygon(0 -40%,0 180%,100% 180%,100% -40%);
    clip-path: polygon(0 -40%,0 180%,100% 180%,100% -40%);}
 }
-
 .trnsl {
 	opacity: 0;
 	transform: translateY(50px);
@@ -341,24 +339,6 @@ a.top__link:hover{color: #aed8ff;}
 	line-height: 1.8;
 }
 
-.fxSoftScaleOutNext {
-	animation-name: scaleUp;
-	animation-duration: 6s;
-	animation-fill-mode: forwards;
-}
-.fxSoftScaleInNext {
-	animation-name: scaleDownUp;
-	animation-duration: 6s;
-	animation-fill-mode: forwards;
-}
-@keyframes scaleUp {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
-}
-@keyframes scaleDownUp {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 /*===============================
   П е р в ы й  э к р а н
 ================================*/
@@ -490,6 +470,7 @@ svg.morph {
 	content: '';
 }
 .intro-slider__img-box .owl-stage{transition: 0.7s cubic-bezier(0.6, -0.04, 0.06, 1.12)!important;}
+/*.intro-slider__img-box .owl-stage{transition: 0.7s cubic-bezier(0.7,0,.175,1)!important;}*/
 
 /* текст в слайдере */
 .intro-slider__text-box{
@@ -544,7 +525,7 @@ svg.morph {
 	transition: .4s;
 	text-align: center;
 }
-.btn:hover {background-color: #ffb421;}
+.btn:hover {background-color: #ffb421;color: #fff}
 
 /*==========================
 	О компании
@@ -582,7 +563,7 @@ svg.morph {
 }
 .has-double-title.play:before {animation: 2.4s clipplay ease forwards;}
 
-.s-about .has-double-title {word-spacing: -9px;}
+.s-about .has-double-title {word-spacing: -8px;}
 
 .s-about .has-double-title:before{
 	left: auto;
@@ -704,75 +685,6 @@ svg.morph {
 	padding-top: 47px;
 	text-align: center;
 }
-/*========================
- contact - section
-=========================*/
-/*.s-contact {
-	padding: 44px 0 20px;
-	background-color: #000;
-	color: #fff;
-}
-.contact__title span {white-space: nowrap;}
-
-.contact__title h2 {color: #fff}
-
-address{
-	padding: 10px 0;
-	line-height: 2.1;
-}
-.form input,.form textarea {
-	display: block;
-	width: 100%;
-	background: transparent;
-	height: 50px;
-	color: #fff;
-	font-style: italic;
-	letter-spacing: .04em;
-	border: 1px solid #ecebeb;
-	padding-left: 60px;
-	padding-right: 15px;
-	margin-bottom: 17px;
-	transition: .4s ease;
-}
-.form__name input {text-transform: uppercase;}
-
-.form textarea {
-	padding: 15px 15px 15px 60px;
-	resize: vertical;
-	min-height: 78px;
-}
-.form input:focus,.form textarea:focus{
-	border: 1px solid #e25f07;
-	outline-color: transparent;
-}
-::-webkit-input-placeholder {transition: .4s}
-::-moz-placeholder {transition: .4s}
-:-ms-input-placeholder {transition: .4s}
-
-.form__btn {
-	position: relative;
-	min-height: 78px;
-	width: 100%;
-	max-width: 340px;
-	margin: auto;
-	background: transparent;
-	border: 1px solid #ecebeb;
-	text-align: center;
-	color: #fff;
-	font-size: 1.57em;
-	font-weight: 700;
-	letter-spacing: .04em;
-	display: -ms-flexbox;
-	display: flex;
-	align-self:stretch;
-	justify-content: center;
-	align-items: center;
-	transition: .4s;
-	z-index: 1;
-}
-.form__btn:hover {color: #000;}
-
-.form__btn span {display: block;margin: auto;}*/
 
 /*===============================
   П о д в а л
@@ -806,8 +718,11 @@ address{
 }
 .embeatz i {
 	display: inline-block;
-	background: url(../img/sprites.png) -79px -143px no-repeat;
+	background: url(../img/sprites.png) -78px -199px no-repeat;
 	width: 85px;
 	height: 44px;
 	vertical-align: middle;
+	opacity: .7;
+	transition: .4s;
 }
+.embeatz:hover i{opacity: 1;}

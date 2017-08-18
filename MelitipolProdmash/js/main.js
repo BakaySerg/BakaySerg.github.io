@@ -77,7 +77,9 @@ $(document).ready(function(){
         dots: true,
         nav: true,
         navText: "",
-        stopOnHover:true,
+        // rewind: false,
+        // rewindSpeed: 0,
+        navSpeed : 3000,
         autoplay:true, 
         autoplayTimeout:5000,
         autoplaySpeed: 600,
@@ -89,17 +91,7 @@ $(document).ready(function(){
           });
           var dotQuantity = $('#intro-slider__img .owl-dot>span').length;
           $('#intro-slider__img .owl-dots').append('/' +dotQuantity);         
-        }//,
-        // onChanged:function () {
-        //     var compliMorph1;
-        //     var compliMorph2;
-        //     var motph = $('.intro-slider__img-box');
-        //     motph.toggleClass('morphchange');
-        //     if (motph.hasClass('morphchange')) {
-        //       compliMorph1 = KUTE.to('#wobble-1', { path:'#wobble-2'}, { morphPrecision: 10, morphIndex: 10, duration: 3000, repeat: 0, yoyo: false, easing: 'easingCubicOut'}).start();
-        //     }
-        //     else {compliMorph2 = KUTE.to('#wobble-1', { path:'#wobble-4'}, { morphPrecision: 10, morphIndex: 10, duration: 3000, repeat: 0, yoyo: false, easing: 'easingCubicOut'}).start();}
-        // }
+        }
     }).on('changed.owl.carousel', syncPosition);
 
     sync2.owlCarousel({
@@ -109,8 +101,8 @@ $(document).ready(function(){
         margin:60,
         mouseDrag: false,
         touchDrag: false,
-        animateIn: "fxSoftScaleInNext",
-        animateOut: "fxSoftScaleOutNext",
+        // animateIn: "fxSoftScaleInNext",
+        // animateOut: "fxSoftScaleOutNext",
         navText: "",
         responsive: {
             0: {
@@ -182,6 +174,8 @@ $(document).ready(function(){
        mouseDrag: false,
        touchDrag: false,
        margin:2,
+       rewind: false,
+       rewindSpeed: 0,
        dots: true,
        nav: true,
        navText: "",

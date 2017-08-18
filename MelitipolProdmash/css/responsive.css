@@ -130,20 +130,17 @@
 }
 @media (max-width: 767px){
 	.about__slider{padding: 20px 0 20px;max-width: 400px;margin: 0 auto 40px;}
-	/*.s-services .col-md-pull-right{padding: 0 0 30px;float: none;max-width: 400px;margin: auto;}*/
 	.s-services .col-md-pull-right{display: none;}
 	.s-about {padding: 30px 0 30px;}
 }
-
 @media (max-width: 640px){
 	.intro__title {font-size: 2.7em;}
 	.news__item {display: block;max-width: 380px;margin: 0 auto 30px;}
 	.news__img-box{float: none;width: 100%;}
 	.news__descr{float: none;width: 100%;margin: 0;}
 }
-
 @media (max-width: 550px){
-	.intro-slider__img-box{padding: 0;}
+	.intro-slider__img-box{padding: 0 0 3px;}
 	.owl-dots {font-size: 1.1em; padding-top: 11px;}
 	.s-intro{padding: 22px 0;}
 	.intro__phone-box{text-align: left;padding-bottom: 0;margin: 0;}
@@ -153,6 +150,7 @@
 	.footer__box [class^=tel-] {flex: 1 1 96%;margin: 24px 0 0 39px;padding-left: 24px;max-width: 236px;}
 	.tel-ua:before, .tel-ru:before {top: 4px; left: 0;}
 	.btn {font-weight: 700; padding: 14px 38px;}
+	.lines__slider .owl-item {border: 3px solid #fff;border-radius: 3px;}
 }
 @media (max-width: 480px){
 	.logo{width: 100px;}
