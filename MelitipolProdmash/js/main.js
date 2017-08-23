@@ -2,7 +2,7 @@ function showPage() {
   setTimeout(function(){
       document.body.classList.remove('js-loading');
       setTimeout(function(){
-      $(".loader").delay(500).fadeOut();
+      $(".loader").fadeOut(600);
       },800);
   });
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
     // Ruffles
     var ww = $(window).width();
     //only desktop
-    if ( ww > 1270) {
+    if ( ww > 969) {
       $('.has-double-title').viewportChecker({
         classToAdd: 'play',
         offset: 10
@@ -77,6 +77,8 @@ $(document).ready(function(){
         dots: true,
         nav: true,
         navText: "",
+        smartSpeed:300,
+        // navRewind: false,
         // rewind: false,
         // rewindSpeed: 0,
         navSpeed : 3000,

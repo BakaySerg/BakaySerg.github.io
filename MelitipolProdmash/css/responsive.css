@@ -1,6 +1,5 @@
-@media(min-width: 768px){
-	.col-md-pull-right {float: right;}
-}
+@media(min-width: 768px){.col-sm-pull-right {float: right;} }
+
 @media(min-width: 1024px){
 	.navbar-toggle {display: none;} 
 	#expand {display: block;}
@@ -26,7 +25,7 @@
 	}
 	a.top__link {width: 100%; text-align: center; padding: 5px 6px 7px;}
 
-	.submenu ul {
+/*	.submenu ul {
 		display: block;
 		height: auto!important;
 		width: 270px;
@@ -41,7 +40,7 @@
 	}
 	li.submenu:hover ul {opacity: 1; visibility: visible; height: auto;}
 
-	.submenu ul li {display: block;}
+	.submenu ul li {display: block;}*/
 }
 @media(max-width: 1366px){
 	body {font-size: 14px;}
@@ -72,9 +71,12 @@
 @media(max-width: 1025px){
 	.news__descr {margin-left: 5px; padding: 17px 14px 21px 17px;}
 	.news__descr p {line-height: 1.6;max-height: 100px;}
-	.intro__title {font-size: 3.2em;padding-bottom: .6em; margin-bottom: .6em;}
+	.intro__title {font-size: 3.2em;margin-bottom: .7em;}
 	.about__slider {padding-top: 30px;}
 	.s-services .col-md-pull-right{padding-top: 85px;padding-left: 20px;}
+	.item__img-box {padding: 0 15px 40px;}
+	.s-item .has-double-title:before {left: -50px; transform: translateY(-28%);}
+	.s-item {padding-bottom: 39px;}
 }
 @media(max-width: 1023px){
 	.top{top: 0;overflow: visible!important;}
@@ -92,9 +94,9 @@
 	.navbar-nav>li>a {line-height: 1;}
 	.navbar-toggle {display: block;float: none;margin: 0;height: 70px; padding: 4px 0 0 13px;position: absolute; right: 40px;top: -75px; border-radius: 0; z-index: 4;background: none;}
 	.navbar {width: 100%; margin-left: 0;position: absolute;top: 68px;background-color: #fff;left: 0;box-shadow: 0 20px 40px rgba(0,0,0,.08),0 0 40px rgba(0,0,0,.08);}
-	.spoiler{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
-	.submenu ul{visibility: visible;padding: 0 10px;}
-	.submenu__item a {font-size: 13px;}
+	/*.spoiler{display: block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;}*/
+	/*.submenu ul{visibility: visible;padding: 0 10px;}*/
+	/*.submenu__item a {font-size: 13px;}*/
 	.footer__copy {max-width: 198px;}
 }
 @media (max-width: 991px){
@@ -103,6 +105,7 @@
 	.news__img-box{float: left;width: 51%;}
 	.news__descr{float: left;width: 49%;margin: 0;}
 	.news__img-box span {padding: 9px 0; width: 99px;}
+	.item__text-box{padding: 0 15px;}
 }
 @media (max-width: 969px){
 	.intro__phone-box{text-align: center;padding-bottom: 25px;}
@@ -118,6 +121,7 @@
 @media (max-width: 800px){
 	h2 {font-size: 2.1em;}
 	p {padding-bottom: .9em; line-height: 1.4;}
+	.btn {font-weight: 700; padding: 14px 38px;}
 	.intro__title {font-size: 3em;}
 	.owl-prev, .owl-next{width: 50px;height: 50px;}
 	.owl-dots {font-size: 1.4em; right: auto; left: 10px; padding-top: 6px;}
@@ -140,17 +144,20 @@
 	.news__descr{float: none;width: 100%;margin: 0;}
 }
 @media (max-width: 550px){
+	em {font-size: 1.1em;}
 	.intro-slider__img-box{padding: 0 0 3px;}
 	.owl-dots {font-size: 1.1em; padding-top: 11px;}
 	.s-intro{padding: 22px 0;}
 	.intro__phone-box{text-align: left;padding-bottom: 0;margin: 0;}
-	.s-intro [class^=tel-]{margin:0 0 8px;}
+	.intro__phone-box [class^=tel-]{margin:0 0 8px;}
 	.footer__box{justify-content: center;}
 	[class^=tel-]{padding-left: 24px}
 	.footer__box [class^=tel-] {flex: 1 1 96%;margin: 24px 0 0 39px;padding-left: 24px;max-width: 236px;}
 	.tel-ua:before, .tel-ru:before {top: 4px; left: 0;}
-	.btn {font-weight: 700; padding: 14px 38px;}
 	.lines__slider .owl-item {border: 3px solid #fff;border-radius: 3px;}
+	.s-item .intro__phone-box {padding: 35px 2px 22px}
+	.item__img-box {padding: 0 0 30px}
+	.item__text-box{padding: 0}
 }
 @media (max-width: 480px){
 	.logo{width: 100px;}
@@ -160,6 +167,7 @@
 	.logo__link b,.logo__link span{display: none;}
 	svg.morph{animation: none;}
 	.intro__title {font-size: 2.3em;}
+	.s-about p {text-indent: 1.4em;}
 	.news__item {box-shadow: 16px 16px 0 -10px #bdbdc8;}
 	.news__img-box {padding: 8px 0 0 8px;}
 	.intro-slider__img .owl-dots {right: auto; left: 0;}
@@ -179,5 +187,6 @@
 	.owl-prev, .owl-next {width: 44px; height: 44px;}
 }
 @media (max-width: 360px){
+	.has-double-title {font-size: 1.8em; margin-bottom: .7em}
 	.intro__title {font-size: 2.1em; }
 }
