@@ -101,7 +101,7 @@ $(document).ready(function(){
           centerMode:true,
           arrows: false,
           draggable:true,
-          centerPadding:'40px'
+          centerPadding:'50px'
         }
       }]
     });

@@ -218,7 +218,7 @@
 }
 @media (max-width: 969px){
 	.project__proj-title b {font-size: 1.4em;}
-	.project__proj-title i{width: 21px;vertical-align: -2px;}
+	.project__proj-title i{width: 22px;vertical-align: -3px;}
 	.project__proj-title i.i-cloud {width: 25px;vertical-align: -6px;}
 	.is-tel-link i{left: 4px;}
 	.top__contacts .top__enter {display: none;}
@@ -247,12 +247,12 @@
 	.project__proj-overlay a:last-of-type{border-radius: 0 0 5px 0}
 	.project__link-name{display: none;}
 	.project__external {display: inline-block;}
-	.project__proj-overlay a i {display: inline-block; padding: 8px; max-height: 41px; vertical-align: middle; margin-left: 1px; width: 36px;}
+	.project__proj-overlay a i {display: inline-block; padding: 8px;margin-right: -9px; max-height: 41px; vertical-align: middle; margin-left: 1px; width: 36px;}
 }
 @media (max-width: 721px){
 	.logo{background-color: transparent;left: 39px;height: 100%;}
 	.logo__link {padding: 15px 0 0;}
-	.logo__link:before {width: 42px; height: 40px; background: url(../img/logo-small.svg) center no-repeat; background-size: cover;margin-left: -27px;margin-top: -19px;}
+	.logo__link:before {left: 19px; margin-top: -28px; width: 77px; height: 72px; background-position: 45% 35%,center;}
 	.top{position: relative;}
 	.navbar{top: 0;position: relative;}
 	.navbar-toggle {height: 50px; padding: 0 12px; top: 0;}
@@ -293,8 +293,6 @@
 	.counrties__item h3 {margin-bottom: 13px;}
 	.partnership__box .tab-content{min-height: 300px;padding: 25px 40px 30px;}
 	.s-footer{background: none;}
-	.top__contacts{bottom: -82px;}
-	.top__contacts a{display: block;}
 	.is-load-doc{width: 280px;height: auto;padding: 12px 0 12px 50px;margin-top: 9px;}
 	.is-load-doc:before{top: 10px;}
 	.footer__share {padding-top: 8px;}
@@ -306,15 +304,18 @@
 	.logo{left: 0;}
 	.logo__link{height: 100%;padding-top: 0;}
 	.logo__link svg{display: none;}
-	.logo__link:before{margin: 0;top: 4px;left: 10px;}
+	.logo__link:before{margin: 0;top: -3px;left: -1px;width: 66px; height: 60px;} 
 	.partnership__box .tab-menu li a{text-align: center;}
 	.btn-outline{padding: 10px 24px;height: auto;}
 	.form input, .form textarea{padding-left: 28px;}
 }
 @media (max-width: 380px){
+	.top__contacts{bottom: -82px;}
+	.top__contacts a{display: block;}
 	.partnership__box .tab-content{padding: 20px 30px 30px;}
 	.partnership__box .tab-menu li a{padding: 8px 4px;}
 	.s-footer{padding-top: 54px;}
+	.project__proj-title{padding: 7px;line-height: 1;}
 }
 @media (max-width: 359px){
 	.counrties__slider .slide {padding: 0 9px 13px;}
