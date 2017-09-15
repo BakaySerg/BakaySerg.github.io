@@ -199,7 +199,8 @@ i svg path {fill: inherit;}
 	position: relative;
 	display: block;
 	width: 100%;
-	padding: 19px 10px 4px 33px;
+	/*padding: 19px 10px 4px 33px;*/
+	padding: 13px 8px 4px 17px;
 }
 .logo__link:before {
 	content: '';
@@ -210,7 +211,7 @@ i svg path {fill: inherit;}
 	top: 50%;
 	left: 0;
 	margin-left: -62px;
-	margin-top: -66px;
+	margin-top: -64px;
 	background: url(../img/logo-small.svg) 45% 39% no-repeat,url(../img/logo-bg-1.png) center no-repeat;
 	background-size: 57% auto,cover;
 }
@@ -248,9 +249,9 @@ i svg path {fill: inherit;}
 	background-color: #1b4d87; 
 	transition:.25s cubic-bezier(.77,0,.175,1);
 	transform-origin: left top;
-	width: 26px;
+	width: 24px;
 }
-.navbar-toggle .icon-bar +.icon-bar {margin-top: 7px;}
+.navbar-toggle .icon-bar +.icon-bar {margin-top: 6px;}
 
 .icon-bar:nth-child(2){width: 20px;}
 
@@ -506,7 +507,8 @@ a.top__link:hover{color: #44b9ff;}
 	max-width: 100%;
 	color: #fff;
 	text-align: right;
-	background-color: #0e5189;
+	/*background-color: #0e5189;*/
+	background: -webkit-linear-gradient(#223af0, #00d2ff);
 	border-radius: 0px 0px 0px 28px;
 	box-shadow: 4px 6px 26px 2px rgba(12,153,249,.09);
 	padding: 7px 20px 7px 24px;
@@ -552,7 +554,7 @@ a.top__link:hover{color: #44b9ff;}
 .project__proj-overlay a {
 	display: block;
 	position: absolute;
-	width: 50%;
+	width: 100%;
 	top: 100%;
 	font-size: 1.33em;
 	font-weight: 300;
@@ -560,19 +562,15 @@ a.top__link:hover{color: #44b9ff;}
 	text-align: center;
 	padding: 12px;
 	transition: .4s;
-}
-.project__item .project__proj-overlay a:hover{color: #00d2ff}
-
-.project__proj-overlay a:first-of-type{
 	left: 0;
-	background-color: #1b4d87;
+	/*background-color: #1b4d87;*/
+	background: -webkit-linear-gradient(#00d2ff,#223af0);
 	color: #fff;
-} 
-.project__proj-overlay a:last-of-type{
-	right: 0;
-	background-color: #fff;
-	color: #1b4d87;
 }
+.project__item .project__proj-overlay a:hover{color: #223af0}
+
+/*.project__proj-overlay a:first-of-type{}*/
+
 .project__proj-overlay a i,.project__external{display: none;}
 
 .project__proj-overlay a svg{fill: currentColor;}

@@ -1,0 +1,42 @@
+.s-intro-other {
+   padding: 220px 0 112px;
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-size: cover;
+   text-align: center;
+}
+.s-intro-mtz{background-image: url(../img/single-page/mtz/intro.jpg);}
+
+.s-intro-other img {
+	display: inline-block;
+	margin-bottom: 48px;
+}
+@media(min-width: 1024px){
+	.intro-other-list{
+		margin: auto;
+		display: -ms-flexbox;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		max-width: 820px;
+	}
+}
+.intro__list li i {
+	color: #fff;
+	box-shadow: 0 4px 26px rgba(12, 153, 249,.09);
+}
+.intro-other__link {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	border-radius: 8px 8px 0 0;
+	color: #0e5189;
+	font-size: 2em;
+	font-weight: 600;
+	text-align: center;
+	padding: 18px 70px 5px;
+	letter-spacing: .03em;
+}
