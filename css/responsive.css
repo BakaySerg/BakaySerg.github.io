@@ -242,7 +242,7 @@
 	.s-project .title {padding-bottom: 2.3em;}
 	.project__item {margin: 0 auto 120px;border: none;}
 	.project__item:hover .project__proj-title {opacity: 1;}
-	.project__proj-title{width: 100%;top: -39px;border-radius: 5px 5px 0 0;text-align: center;margin-top: -1px;}
+	.project__proj-title{width: 100%;top: -39px;min-height: 40px;border-radius: 5px 5px 0 0;text-align: center;margin-top: -1px;}
 	.project__item:hover .img-responsive {filter: none;}
 	.project__proj-overlay{opacity: 1;background-color: transparent;top: 100%; bottom: auto;left: 0;right: 0;margin-top: 1px;}
 	.project__proj-overlay img{display: none;}
