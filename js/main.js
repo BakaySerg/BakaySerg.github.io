@@ -18,12 +18,16 @@ $(document).ready(function(){
     var ww = $(window).width(),
         wh = $(window).height();
     //only desktop
-    // if ( ww > 1270) { 
-    //   $('.title').addClass("trnsl").viewportChecker({
-    //     classToAdd: 'trnslplay',
-    //     offset: 100
-    //   }); 
-    // };
+    if ( ww > 1023) { 
+      $('.s-project .col-sm-6,.s-advantage .col-xs-6').addClass("trnsl").viewportChecker({
+        classToAdd: 'trnslplay',
+        offset: 50
+      });
+      $('.s-partnership .container').addClass("cliptrapez").viewportChecker({
+        classToAdd: 'cliptrapezplay',
+        offset: 250
+      }); 
+    };
   
     // Nav    
     $('a.top__link').on('click', function(event) {
