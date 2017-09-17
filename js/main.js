@@ -34,6 +34,10 @@ $(document).ready(function(){
       $('.navbar-toggle:visible').trigger('click');
     });
 
+    $('.top__country').on('focusout', function(){
+      $(this).trigger('click');
+    });
+
     // $('.navbar-toggle:visible').click(function(event) {
     //   $('body').toggleClass('menu-opened');
     // });
