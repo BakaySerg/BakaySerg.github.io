@@ -2,14 +2,13 @@ function showPage() {
   setTimeout(function(){
       document.body.classList.remove('js-loading');
       setTimeout(function(){
-      $(".loader").delay(200).fadeOut();
-      },800);
+      $(".loader").fadeOut();
+      },500);
   });
 
 }
 document.body.classList.add('js-loading');
 
-window.addEventListener("load", showPage, false);
 
 $(document).ready(function(){
   // "use strict";
@@ -25,7 +24,7 @@ $(document).ready(function(){
       });
       $('.s-partnership .container').addClass("cliptrapez").viewportChecker({
         classToAdd: 'cliptrapezplay',
-        offset: 250
+        offset: 300
       }); 
     };
   
@@ -37,10 +36,6 @@ $(document).ready(function(){
     $('.top__country').on('focusout', function(){
       $(this).trigger('click');
     });
-
-    // $('.navbar-toggle:visible').click(function(event) {
-    //   $('body').toggleClass('menu-opened');
-    // });
 
     //scroll to place
     $(".js-scroll-down").click(function() {
@@ -85,7 +80,6 @@ $(document).ready(function(){
       arrows: true,
       prevArrow: $('.prev'),
       nextArrow: $('.next'),
-      // autoplay:true,
       slidesToShow: 3,
       slidesToScroll: 1,
       responsive: [{
@@ -125,34 +119,12 @@ $(document).ready(function(){
          closeOnBgClick: true,
          enableEscapeKey:true,
          callbacks: {
-           beforeOpen: function() {
-             $('.wrapper').addClass('is-popup-open');
-           },
-           close:function() {
-             $('.wrapper').removeClass('is-popup-open');
-           }
+           beforeOpen: function() { $('.wrapper').addClass('is-popup-open'); },
+           close:function() { $('.wrapper').removeClass('is-popup-open'); }
          }
       });
     };
 
-    //Wow
-    // if ( $(window).width() > 639 ) {
-    //   var wow = new WOW({
-    //     boxClass:     'wow',      // animated element css class (default is wow)
-    //     animateClass: 'animated', // animation css class (default is animated)
-    //     offset:       50,          // distance to the element when triggering the animation (default is 0)
-    //     mobile:       false,
-    //     live:         true       // act on asynchronously loaded content (default is true)
-    //   });
-      
-    //   wow.init();
-    // }
-
-    // $('.title').addClass("trnsl").waypoint(function() {
-    //   $('.title').addClass('trnslplay');
-    // }, {
-    //   offset: '75%'
-    // });
-
      
 });
+$(window).on('load', showPage);
