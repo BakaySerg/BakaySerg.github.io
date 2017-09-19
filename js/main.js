@@ -24,7 +24,7 @@ $(document).ready(function(){
       });
       $('.s-partnership .container').addClass("cliptrapez").viewportChecker({
         classToAdd: 'cliptrapezplay',
-        offset: 300
+        offset: 320
       }); 
     };
   
