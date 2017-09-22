@@ -25,7 +25,34 @@ $(document).ready(function(){
       $('.s-partnership .container').addClass("cliptrapez").viewportChecker({
         classToAdd: 'cliptrapezplay',
         offset: 320
-      }); 
+      });
+
+
+    };
+
+    //counter statistic
+    if ( $('.stats__list').length) {
+
+       $('.stats__list .col-sm-4').addClass("trnsl").viewportChecker({
+         classToAdd: 'trnslplay',
+         offset: 120,
+         callbackFunction: countStats
+       });
+
+       function countStats(){
+         $('.trnslplay .stats__item .stats__counter').each(function() {
+             var $this = $(this),
+                 countTo = $this.attr('data-count');
+             $({countNum: $this.text() }).animate({
+                 countNum: countTo
+             }, {
+                 duration: 3000,
+                 easing: 'linear',
+                 step: function() {$this.text(Math.floor(this.countNum));},
+                 complete: function() {$this.text(this.countNum);}
+             });
+         });
+       };
     };
   
     // Nav    
@@ -39,7 +66,7 @@ $(document).ready(function(){
 
     //scroll to place
     $(".js-scroll-down").click(function() {
-      $("html, body").animate({scrollTop: $($(this).parent().next('section')).offset().top + "px"}, {duration: 800});
+      $("html, body").animate({scrollTop: $($(this).closest('section').next('section')).offset().top + "px"}, {duration: 800});
       return false;
     });
     $(".js-scroll-up").click(function() {

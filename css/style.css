@@ -1,5 +1,5 @@
 .loader {
-	background-color:#f0f0f0;
+	background-color:#fdfdfd;
 	bottom: 0;
 	height: 100%;
 	left: 0;
@@ -9,75 +9,33 @@
 	width: 100%;
 	z-index: 9999;
 }
-.decolines--fixed {
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-}
-.decoline {
-	position: absolute;
-	width: 25vw;
-	height: 100vh;
-	top: 0;
-	background-color: #fff;
-	opacity: 1;
-	transform-origin: 50% 100% 0px;
-	transform: scaleY(1);
-	animation: 1.1s decoline forwards;
-	will-change: transform;
-}
-@keyframes decoline {
-	from {transform: scaleY(1);}
-	to {transform: scaleY(0);}
-}
-.decoline:nth-child(1){left: 0;animation-delay: .5s}
-.decoline:nth-child(2){left: 25%;animation-delay: .6s}
-.decoline:nth-child(3){left: 50%;animation-delay: .7s}
-.decoline:nth-child(4){left: 75%;animation-delay: .8s}
-
-.js-loading .decoline,.js-loading .trnsl {animation-play-state: paused !important;}
+/*.js-loading .decoline,.js-loading .trnsl {animation-play-state: paused !important;}*/
 
 @font-face {
   font-family:'Hind Siliguri';
-  font-style: normal;
-  font-weight: 300;
   src: local('Hind Siliguri Light'), local('HindSiliguri-Light'), url('../fonts/hind-siliguri-v3-latin-300.woff2') format('woff2'), url('../fonts/hind-siliguri-v3-latin-300.woff') format('woff');
+  font-weight: 300;
 }
 @font-face {
   font-family:'Hind Siliguri';
-  font-style: normal;
-  font-weight: 400;
   src: local('Hind Siliguri Regular'), local('HindSiliguri-Regular'), url('../fonts/hind-siliguri-v3-latin-regular.woff2') format('woff2'), url('../fonts/hind-siliguri-v3-latin-regular.woff') format('woff');
+  font-weight: 400;
 }
 @font-face {
   font-family:'Hind Siliguri';
-  font-style: normal;
-  font-weight: 600;
   src: local('Hind Siliguri SemiBold'), local('HindSiliguri-SemiBold'), url('../fonts/hind-siliguri-v3-latin-600.woff2') format('woff2'), url('../fonts/hind-siliguri-v3-latin-600.woff') format('woff');
+  font-weight: 600;
 }
 @font-face {
   font-family:'Hind Siliguri';
-  font-style: normal;
-  font-weight: 700;
   src: local('Hind Siliguri Bold'), local('HindSiliguri-Bold'), url('../fonts/hind-siliguri-v3-latin-700.woff2') format('woff2'), url('../fonts/hind-siliguri-v3-latin-700.woff') format('woff');
+  font-weight: 700;
 }
 
 ::selection {background-color: #223af0;color: #fff;}
-
-::-webkit-scrollbar {
-   width: 8px;
-   height: 8px;    
-}
-::-webkit-scrollbar-thumb {
-   cursor: pointer;
-   background: #d4d4d4;
-   border-radius: 1px;
-}
-::-webkit-scrollbar-track-piece{background-color: #ecebeb;cursor: pointer;}
+::-webkit-scrollbar {width: 8px; height: 8px;}
+::-webkit-scrollbar-thumb {background-color: #d4d4d4;}
+::-webkit-scrollbar-track-piece{background-color: #ecebeb;}
 ::-webkit-scrollbar-corner{background-color: transparent;border: none;}
 
 a,button {cursor: pointer;}
@@ -160,7 +118,7 @@ i svg path {fill: inherit;}
 	position: relative;
 	margin: auto;
 	background-color: #fff;
-	box-shadow: 5px 6px 26px 2px rgba(0,0,0,.06);
+	box-shadow: 5px 5px 26px 2px rgba(0,0,0,.06);
 }
 .logo{
 	position: absolute;
@@ -188,7 +146,7 @@ i svg path {fill: inherit;}
 	left: 0;
 	margin-left: -62px;
 	margin-top: -64px;
-	background: url(../img/logo-small.svg) 45% 39% no-repeat,url(../img/logo-bg-1.png) center no-repeat;
+	background: url(../img/logo-small.svg) 45.5% 39% no-repeat,url(../img/logo-bg-1.png) center no-repeat;
 	background-size: 57% auto,cover;
 }
 .logo__link svg {width: 100%;max-height: 40px;}
@@ -271,11 +229,11 @@ a.top__link:hover{color: #44b9ff;}
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: .3s;
+	transition: .4s;
 	padding-right: 15px;
 }
 .menu-drop a:hover{
-	background: #e6f5f2;
+	background-image: linear-gradient(to right, #e7f7f3, #d5ede7);
 	color: #0e5189;
 }
 .top__country:hover {color: #0e5189;}
@@ -343,13 +301,15 @@ a.top__link:hover{color: #44b9ff;}
 	intro-section
 ===========================*/
 .s-intro {
-	background-color: #f0f0f0;
-	box-shadow: 0 6px 26px 2px rgba(54,112,151,.09);
 	padding: 300px 0 90px;
 	overflow: hidden;
 	z-index: 1;
 }
-.s-intro:before {
+.s-main-intro {
+	background-color: #f0f0f0;
+	box-shadow: 0 6px 26px 2px rgba(54,112,151,.09);	
+}
+.s-main-intro:before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -401,14 +361,14 @@ a.top__link:hover{color: #44b9ff;}
 	width: 52px;
 	height: 50px;
 	margin: 0 auto 5px;
-	border: 1px solid #fff;
+	border: 1px solid #f5f5f8;
 	border-radius: 20px;
 	background:inherit;
 	transition: .4s;
 	z-index: 1;
 	overflow: hidden;
 }
-.intro__list li:nth-child(n+5) i{
+.intro__list li .sm-mark{
 	font-size: 15px;
 	padding-top: 15px;
 	letter-spacing: .1em;
@@ -442,7 +402,9 @@ a.top__link:hover{color: #44b9ff;}
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.js-scroll-down {
+.intro__pict {text-align: center;}
+
+.intro__scroll-trigger {
 	display: block;
 	position: absolute;
 	bottom: 35px;
@@ -452,15 +414,9 @@ a.top__link:hover{color: #44b9ff;}
 	color: #fff;
 	transition: .4s;
 }
-.js-scroll-down:hover{opacity: .6;}
+.intro__scroll-trigger:hover{opacity: .6;}
 
 /*Scroll - animations*/
-.op {opacity: .2;}
-
-.op.opplay {animation: 1s opplay ease-out forwards;}
-
-@keyframes opplay { to { opacity: 1;} }
-
 .trnsl {
 	will-change: transform;
 	opacity: 0;
@@ -609,6 +565,7 @@ a.top__link:hover{color: #44b9ff;}
 .project__proj-overlay a i,.project__external{display: none;}
 
 .project__proj-overlay a svg{fill: currentColor;}
+
 /*==========================
 	a d v a n t a g e s
 ===========================*/
@@ -1025,7 +982,6 @@ button.form__btn i {
 	margin-left: 15px;
 }
 button.form__btn i svg{max-height: 18px;}
-
 
 .form__btn .i-logo-small {
 	position: absolute;
