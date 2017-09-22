@@ -45,6 +45,7 @@
 	background-image: linear-gradient(-47deg,#fbfcff,#f8f8fc);
 	border: 1px solid #fdfdfd;
 	z-index: -1;
+	pointer-events: none;
 }
 /*===============================
   t a s k s
@@ -327,7 +328,7 @@
 	.is-more-down{margin-top: 35px;}
 	.col-md-offset-05 {width: 46%; margin-left: 1.5%;margin-right: 2.5%;}
 	.category-title b {font-size: 2.1em;}
-	.tasks__text {padding: 52px calc(7% + 15px) 42px;}
+	.tasks__text {padding: 72px calc(7% + 15px) 42px;}
 }
 @media(max-width: 991px){
 	.col-md-offset-05{width: 100%;}
