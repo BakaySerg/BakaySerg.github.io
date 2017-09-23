@@ -18,12 +18,16 @@ $(document).ready(function(){
         wh = $(window).height();
     //only desktop
     if ( ww > 1023) { 
-      $('.s-project .col-sm-6,.s-advantage .col-xs-6').addClass("trnsl").viewportChecker({
-        classToAdd: 'trnslplay',
+      $('.s-project .col-sm-6,.s-advantage .col-xs-6,.gallery__box div').addClass("trnsl").viewportChecker({
+        classToAdd: 'anim-play',
         offset: 50
       });
+      $('.half-container > div').addClass("trnslx").viewportChecker({
+        classToAdd: 'anim-play',
+        offset: 100
+      });
       $('.s-partnership .container').addClass("cliptrapez").viewportChecker({
-        classToAdd: 'cliptrapezplay',
+        classToAdd: 'anim-play',
         offset: 320
       });
 
@@ -34,13 +38,13 @@ $(document).ready(function(){
     if ( $('.stats__list').length) {
 
        $('.stats__list .col-sm-4').addClass("trnsl").viewportChecker({
-         classToAdd: 'trnslplay',
+         classToAdd: 'anim-play',
          offset: 120,
          callbackFunction: countStats
        });
 
        function countStats(){
-         $('.trnslplay .stats__item .stats__counter').each(function() {
+         $('.anim-play .stats__item .stats__counter').each(function() {
              var $this = $(this),
                  countTo = $this.attr('data-count');
              $({countNum: $this.text() }).animate({
