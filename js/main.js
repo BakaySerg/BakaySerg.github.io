@@ -64,9 +64,12 @@ $(document).ready(function(){
       $('.navbar-toggle:visible').trigger('click');
     });
 
-    $('.top__country').on('focusout', function(){
-      $(this).trigger('click');
-    });
+   // if ($('#menu-drop').attr('aria-expanded', 'true')){
+      $('.top__country').on('focusout', function(){
+         // $(this).trigger('click');
+         $('#menu-drop').removeClass('in');
+      });
+   // }
 
     //scroll to place
     $(".js-scroll-down").click(function() {
