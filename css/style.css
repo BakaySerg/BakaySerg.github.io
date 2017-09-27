@@ -473,18 +473,6 @@ a.top__link:hover{color: #44b9ff;}
 }
 .s-project {padding: 60px 0 20px;}
 
-.s-project:after {
-	content: ''; 
-	position: absolute; 
-	top: 0.4%;
-	left: 0.8%;
-	width: 98.4%;
-	height: 93%;
-	opacity: 0.7;
-	z-index: -2;
-	background: url(../img/pattern.svg) center no-repeat;
-	background-size: cover;
-}
 .project__item {
 	position: relative;
 	margin: 0 auto 99px;
