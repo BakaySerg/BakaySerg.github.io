@@ -273,7 +273,7 @@ a.top__link:hover{color: #44b9ff;}
 	font-size: .93em;
 	transition: .3s;
 }
-.top__contacts a:hover{color: #00d2ff;}
+.top__contacts a:hover{color: #00d2ee;}
 
 .is-tel-link i,.is-mail-link i,.is-address i {
 	position: absolute;
@@ -345,10 +345,10 @@ a.top__link:hover{color: #44b9ff;}
 }
 .intro__list li {
 	flex: 1 1 23%;
+	max-width: 25%;
 	text-align: center;
 	margin-bottom: 20px;
 	cursor: default;
-	max-width: 97px;
 }
 .intro__list li i {
 	position: relative;
@@ -858,7 +858,7 @@ a.top__link:hover{color: #44b9ff;}
 	letter-spacing: .03em;
 	transition: .4s;
 }
-.counrties__item a:hover{color: #00d2ff}
+.counrties__item a:hover{color: #00d2ee}
 
 .counrties__item a:last-of-type {margin-bottom: 0;}
 
@@ -881,7 +881,7 @@ a.top__link:hover{color: #44b9ff;}
 	transition: .4s;
 }
 .btn-line:hover {
-	color: #00d2ff;
+	color: #00d2ee;
 	border-top-color: currentColor;
 }
 /*========================
@@ -924,7 +924,7 @@ a.top__link:hover{color: #44b9ff;}
 	min-height: 126px;
 }
 .form input:focus,.form textarea:focus{
-	border-color: #00d2ff;
+	border-color: #00d2ee;
 	outline-color: transparent;
 	box-shadow: none;
 	z-index: 1;

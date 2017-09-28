@@ -285,7 +285,7 @@
 	font-size: .93em;
 	transition: .4s
 }
-.pagin__sm-box a:hover {color: #00d2ff}
+.pagin__sm-box a:hover {color: #00d2ee}
 
 .pagin__sm-main i {
 	display: block;
@@ -298,8 +298,9 @@
 	width: 20px;
 	height: 20px;
 	margin: 0 8px;
-	vertical-align: -3px;
+	vertical-align: 3px;
 }
+.pagin__sm-arrow span {display: inline-block;}
 /*==========================
 	media
 ===========================*/
@@ -323,12 +324,13 @@
 	.s-stats .other-title {padding-left: 40px;}
 	.s-other-intro .intro__pict:before {top: 0; left: -145%; width: 335%; padding-bottom: 313%;}
 }
-@media(max-width: 1025px) , (max-height: 650px){
+@media(max-width: 1025px) , (max-height: 690px){
 	.category-title{margin-bottom: 50px;}
 	.is-more-down{margin-top: 35px;}
 	.col-md-offset-05 {width: 46%; margin-left: 1.5%;margin-right: 2.5%;}
 	.category-title b {font-size: 2.1em;}
 	.tasks__text {padding: 72px calc(7% + 15px) 42px;}
+	.pagin__sm-arrow i{width: 18px;height: 18px;vertical-align: 4px;}
 }
 @media(max-width: 991px){
 	.col-md-offset-05{width: 100%;}
@@ -359,7 +361,7 @@
 	.stats__list li {clear: both;width: 100%;max-width: 600px;float: none;margin: auto;}
 	.stats__item {float: left; margin: 10px 0 40px;}
 	.pagin__name i {width: 24px; height: 24px;}
-	.pagin__sm-box {padding: 6px 16px;}
+	.pagin__sm-box {padding: 9px;}
 	.pagin__sm-main i {width: 32px; height: 32px;}
 }
 @media(max-width: 719px){

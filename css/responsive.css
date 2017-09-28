@@ -12,7 +12,7 @@
 	.navbar-toggle {display: none;} 
 	#expand {display: block;}
 	.navbar-nav{display: -ms-flexbox; display: flex; flex-wrap: nowrap; justify-content: space-between; width: 100%; align-items:stretch; -ms-flex-pack: justify; padding: 19px 5px; position: relative;}
-	.navbar-nav li {position: relative; display: -ms-flexbox; display: flex; align-self:stretch; justify-content: space-around; align-items: center; margin-bottom: -2px; flex-grow: 1; z-index: 1;}
+	.navbar-nav li {position: relative; display: -ms-flexbox; display: flex; align-self:stretch; justify-content: space-around; align-items: center; margin-bottom: -4px; flex-grow: 1; z-index: 1;}
 	.navbar-nav li:not(:last-child):after{content: ''; position: absolute; right: -4px; top: 50%; margin-top: -5px; width: 10px; height: 10px; background: url(../img/menu-1.svg) center no-repeat; background-size: cover}
 	a.top__link {width: 80px; text-align: center; padding: 5px 6px 7px;}
 	.top__link:before {left: 0; margin-top: -41px; width: 80px; height: 80px; background-image: linear-gradient(#00d2ff,#223af0); box-shadow: 0 4px 29px rgba(0,0,1,.1); opacity: 0; }
@@ -88,7 +88,7 @@
 	.slick-prev{left: 0;}
 	.slick-next{right: 0;}
 }
-@media(max-width: 1025px) , (max-height: 650px){
+@media(max-width: 1025px) , (max-height: 690px){
 	body{font-size: 14px;}
 	h3{font-size: 1.16em;}
 	.top__contacts a {font-size: 1em;}
@@ -99,7 +99,7 @@
 	.s-intro h1{font-size: 2.3em;}
 	.s-project {padding: 35px 0 0;}
 	.title{padding-bottom: 1.2em;}
-	.partnership__box {margin: 18px auto 99px;}
+	.partnership__box {margin: 18px auto 132px;}
 	.partnership__box .tab-content {min-height: 330px; padding: 25px 60px 30px;}
 	.is-load-doc {width: 309px; height: 64px; padding: 15px 5px 23px 69px; margin: 23px auto 0; font-size: 1.6em;}
 	.is-load-doc:before {width: 26px; height: 30px;}
@@ -108,7 +108,7 @@
 	.advantage__item {height: 410px; padding: 182px 11px 35px 12px;}
 	.extend .advantage__item {padding-top: 62px;}
 	.advantage__item p {padding-bottom: 10px; font-size: 1.04em;}
-	.s-partnership {background-position: center 84%; background-size: 94% auto;}
+	.s-partnership {background-position: center 73%; background-size: 94% auto;}
 	.btn-outline {height: 50px; font-size: 1.36em;padding: 12px 28px;}
 	.counrties__slider .counrties__item {padding: 20px 19px 31px;}
 	.counrties__ico {width: 98px;}
@@ -282,7 +282,7 @@
 	.s-intro em {font-size: 1em;}
 	.counrties__slider .slide {padding: 0 9px 13px;}
 	.intro__list{justify-content: flex-start;}
-	.intro__list li{flex: 1 1 26%;}
+	.intro__list li{flex: 1 1 26%;max-width: 33.3%;}
 	.partnership__box .tab-content {padding: 20px 20px 25px;}
 	.partnership__box .tab-menu li a{padding: 7px 3px;font-size: 0.92em;}
 	.popup__body .form__btn {width: 54%;}
