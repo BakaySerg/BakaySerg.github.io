@@ -50,6 +50,7 @@
 	.s-intro h1{font-size: 2.6em;padding-bottom: .5em; margin-bottom: .8em;}
 	.intro__pict {margin-top: -20px;}
 	.s-intro em {max-width: 560px; margin-bottom: 46px; font-size: 1.12em;}
+	.intro__list{max-width: 520px;}
 	.intro__list li {margin-bottom: 32px;}
 	.intro__list li span{font-size: 1.1em;}
 	.intro__list li i {padding-top: 17px; width: 60px; height: 58px; border-width: 2px;}
