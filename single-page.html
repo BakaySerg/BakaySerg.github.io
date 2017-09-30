@@ -33,7 +33,7 @@
       <div class="loader_inner"></div>
    </div>
    <!-- audio -->
-   <div id="audio" style="display: none;"><audio src="audio/hover.mp3"></audio></div>
+   <div id="audio" style="display: none;"><audio src="media/hover.mp3"></audio></div>
    <!-- svg-sprite -->
    <svg style="display: none">
        <defs>
@@ -108,7 +108,12 @@
          <div class="container intro-box">
             <div class="row">
                <div class="col-md-6 intro__pict">
-                  <img src="img/single-page/mtz/mockup-desc.png" alt="project mockup">
+                  <!-- <img src="img/single-page/mtz/mockup-desc.png" alt="project mockup"> -->
+                  <video id="video1" autoplay  poster="img/single-page/mtz/mockup-desc.png" preload="none" loop>     
+                     <source src="media/macbook.mp4" type="video/mp4"/> 
+                     <!-- <source src="img/home/belarus.webm" type="video/webm" />  -->
+                     <!-- <source src="img/home/belarus.ogv" type="video/ogg" /> -->
+                  </video>
                </div>
                <div class="col-md-5 col-md-offset-05">
                   <div class="category-title">
@@ -132,7 +137,12 @@
       <section class="s-tasks">
          <div class="half-container">
             <div class="tasks__img" style="animation-delay: .6s">
-               <img src="img/single-page/mtz/mockup-mob.png" alt="mockup">
+               <!-- <img src="img/single-page/mtz/mockup-mob.png" alt="mockup"> -->
+               <video id="video2" autoplay  poster="img/single-page/mtz/mockup-mob.png" preload="none" loop>     
+                  <source src="media/iphone.mp4" type="video/mp4"/> 
+                  <!-- <source src="img/home/belarus.webm" type="video/webm" />  -->
+                  <!-- <source src="img/home/belarus.ogv" type="video/ogg" /> -->
+               </video>
             </div>
             <div class="tasks__text">
                <h2 class="other-title">Project tasks</h2>
