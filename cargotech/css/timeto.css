@@ -1,0 +1,52 @@
+figure, figcaption {display: block;}
+
+.transition {transition: top 400ms linear;}
+
+.timeTo {
+	font-size: 28px;
+	line-height: 108%;
+	font-weight: 700;
+	height: 32px;
+    max-width: 380px;
+    margin: auto;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.timeTo span {
+	font-weight: lighter;
+    position: relative;
+    top: 4px;
+}
+.timeTo.timeTo-white .timeTo-alert {background: #ffffff;}
+
+.timeTo figure {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+.timeTo figcaption {
+	text-align: center;
+	color: #e06016;
+	line-height: 80%;
+	font-weight: normal;
+}
+.timeTo div {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 30px;
+	overflow: hidden;
+}
+.timeTo ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 3px;
+}
+.timeTo ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
