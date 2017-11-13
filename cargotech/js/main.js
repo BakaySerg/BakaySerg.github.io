@@ -1,14 +1,10 @@
-function showPage() {
-  setTimeout(function(){
-      document.body.classList.remove('js-loading');
-      setTimeout(function(){
-      $(".loader").fadeOut();
-      },500);
-  });
-
+$("body").addClass('js-loading');
+function page() {
+  $("body").removeClass('js-loading');
+  $(".loader").delay(2000).fadeOut();
 }
-document.body.classList.add('js-loading');
 
+window.addEventListener("load", page, false);
 
 $(document).ready(function(){
   "use strict";
@@ -38,24 +34,24 @@ $(document).ready(function(){
         displayCaptions: true,
         captionSize: 22,
         fontSize: 36
-    });
-  
-    // Nav    
+    });  
+
+    // Навигация и подскрол по якорю
+    $("#top").scrollupbar();
+    
     $('a.top__link').on('click', function(event) {
       $('.navbar-toggle:visible').trigger('click');
     });
 
-    //scroll to place
-    $(".js-scroll-down").click(function() {
-      $("html, body").animate({scrollTop: $($(this).closest('section').next('section')).offset().top + "px"}, {duration: 800});
+    $(".js-scroll-page").click(function() {
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top + "px"
+      }, {
+         duration: 800,
+         easing: "swing"
+      });
       return false;
     });
-    $(".js-scroll-up").click(function() {
-      $("html, body").animate({scrollTop: 0}, {duration: 800});
-      return false;
-    });
-
-
 
     // Попап
     if ($('.js-popup').length){
@@ -73,7 +69,5 @@ $(document).ready(function(){
          }
       });
     };
-
      
 });
-$(window).on('load', showPage);
