@@ -1,7 +1,7 @@
 $("body").addClass('js-loading');
 function page() {
   $("body").removeClass('js-loading');
-  $(".loader").delay(2000).fadeOut();
+  $(".loader").delay(2200).fadeOut();
 }
 
 window.addEventListener("load", page, false);

@@ -28,6 +28,7 @@
 	height: 100vh;
 	top: 0;
 	background-color: #101019;
+	border-top: 1px solid #333;
 	border-left: 1px solid #333;
 	opacity: 1;
 	transform-origin: 50% 100% 0px;
@@ -537,7 +538,6 @@ figure, figcaption {display: block;}
 	padding: 60px 0;
 	background: url(../img/cover-bg.jpg) center bottom no-repeat;
 	background-size: cover;
-	min-height: 588px;
 	overflow: hidden;
 }
 .cover__img {
@@ -1088,6 +1088,8 @@ figure, figcaption {display: block;}
 	padding-bottom: 2px;
 	line-height: .9;
 	vertical-align: top;
+	border-radius: 4px 6px;
+	text-shadow: 3px 3px 0 var(--accent-color),-1px 3px 0 var(--accent-color),1px 4px 0 var(--accent-color);
 }
 .footer__box .form {padding-top: 30px;}
 
