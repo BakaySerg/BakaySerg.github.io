@@ -1,9 +1,6 @@
-$("body").addClass('js-loading');
 function page() {
-  $("body").removeClass('js-loading');
-  $(".loader").delay(2200).fadeOut();
-}
-
+  document.body.classList.remove('js-loading');
+};
 window.addEventListener("load", page, false);
 
 $(document).ready(function(){
