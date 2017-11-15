@@ -312,6 +312,7 @@
 	.footer__box .form__btn {width: 23%;}
 	.persons__partner > div {vertical-align: middle; float: none; display: inline-block; max-width: 49%; height: auto;}
 	.persons__partner > div img {max-width: 120px;}
+	.persons__name {font-size: 1.1em;}
 	.hight__logo{display: none;}
 	.page-pop-up{padding: 57px 0 40px;}
 	.popup__pict{height: 268px;}
