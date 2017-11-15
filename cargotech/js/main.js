@@ -38,6 +38,12 @@ $(document).ready(function(){
     
     $('a.top__link').on('click', function(event) {
       $('.navbar-toggle:visible').trigger('click');
+    });    
+
+    $('.collap').hide();
+    $('.js-has-collapse').click(function(event) {
+      event.preventDefault();
+      $(this).toggleClass('expand').find('.collap').slideToggle(300);
     });
 
     $(".js-scroll-page").click(function() {
@@ -66,5 +72,30 @@ $(document).ready(function(){
          }
       });
     };
-     
+    $('.js-mfp-close').on('click', function(e) {
+      $.magnificPopup.close();
+    });
+    
+    //отправка формы
+    $(".form").submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data: $(this).serialize(),
+        success: function(){  
+          $.magnificPopup.open({
+            items: {src: '#popup-thank'},mainClass: 'mfp-fade',type: 'inline'},0);
+        },
+        error: function() {                    
+          $.magnificPopup.open({
+            items: {src: '#popup-error'},mainClass: 'mfp-fade',type: 'inline'},0);
+        }
+      }).done(function() {
+        $(".form").trigger("reset");
+      });
+      return false;
+    });
+
+    
 });

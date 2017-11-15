@@ -63,7 +63,7 @@
   font-weight: 700;
 }
 
-::selection {background: #e35f08;color: #fff;}
+::selection {background: #e06016;color: #fff;}
 
 ::-webkit-scrollbar {
    width: 8px;
@@ -104,7 +104,7 @@ body {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.3;
-	letter-spacing: .03em;
+	letter-spacing: .04em;
 	background: transparent;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale
@@ -199,20 +199,21 @@ h5 {font-size: 1.14em;text-align: center;}
 }
 .btn {
 	display: inline-block;
-	border: 1px solid #fff;
-	letter-spacing: .04em;
+	letter-spacing: .05em;
 	padding: .7em 3.3em;
+	text-align: center;
+	background-color: #e06016;
 	transition: .4s;
 }
 .btn:hover {
-	border-color: #e06016;
-	background-color: #e06016;
+	background-color: #ff7323;
 }
 .btn-lg {
 	display: inline-block;
 	font-weight: 700;
 	border: 1px solid #e06016;
 	padding: 1.1em 3.2em;
+	text-align: center;
 	letter-spacing: .05em;	
 	transition: .4s;
 }
@@ -344,7 +345,7 @@ a.top__link:hover{color: var(--accent-color);}
 	intro-section
 ===========================*/
 .s-intro {
-	padding: 150px 0 80px;
+	padding: 150px 0 70px;
 	min-height: 100vh;
 	background: url(../img/intro-bg.png) center no-repeat;
 	background-size: cover;
@@ -484,7 +485,6 @@ figure, figcaption {display: block;}
 .s-company p {
 	position: relative;
 	max-width: 380px;
-	font-weight: 700;
 	margin-bottom: 1em;
 }
 .s-company p svg {
@@ -531,11 +531,10 @@ figure, figcaption {display: block;}
 	font-size: 1.22em;
 	color: var(--accent-color);
 }
-.now__list li span {
+/*.now__list li span {
 	font-size: .89em;
-	font-weight: 400;
 	letter-spacing: .06em;
-}
+}*/
 /*==========================
 	cover
 ===========================*/
@@ -569,15 +568,20 @@ figure, figcaption {display: block;}
 	white-space: nowrap;
 	font-weight: 700;
 	font-size: 1.22em;
-	letter-spacing: .04em;
 	padding-bottom: 6px;
 	padding-right: 20px;
 	border-bottom: 1px solid #c9c9c9;
 	transition: .3s;
+	animation: blick 1.8s infinite;
 }
 .d1m:hover {
 	color: var(--accent-color);
 	border-bottom-color: var(--accent-color);
+}
+@keyframes blick{
+	0%{color: #fff}
+	42%,58% {color: var(--accent-color);}
+	100%{color: #fff}
 }
 .d1m svg {
 	display: inline-block;
@@ -649,13 +653,14 @@ figure, figcaption {display: block;}
 
 .etaps__list-box h4 {
 	margin-bottom: 1em;
+	font-weight: 500;
 	text-shadow: 1px 1px 5px #1f1f1f, -1px -4px 3px #1f1f1f,1px 4px 3px #1f1f1f, -1px -1px 4px #1f1f1f, -1px 1px 3px #1f1f1f, 1px -1px 2px #1f1f1f;
 }
 .etaps__list-box-6 h4,.etaps__list-box-7 h4{margin-bottom: 7px;}
 
 .etaps__list-box ul {
 	padding-left: 30px;
-	font-weight: 400;
+	/*font-weight: 400;*/
 	font-size: 1.167em;	
 }
 .etaps__list-box li {padding-bottom: .2em;}
@@ -698,6 +703,7 @@ figure, figcaption {display: block;}
 .tech__list li {
 	display: block;
 	max-width: 230px;
+	min-width: 215px;
 }
 .tech__list svg {
 	display: inline-block;
@@ -710,7 +716,7 @@ figure, figcaption {display: block;}
 	max-width: 140px;
 	display: inline-block;
 	vertical-align: middle;
-	font-size: .94em;
+	font-size: 1.06em;
 }
 /*===============================
  F A Q
@@ -736,6 +742,8 @@ figure, figcaption {display: block;}
 	border: 1px solid #e06016;
 	z-index: 1;
 }
+.js-has-collapse {cursor: pointer;}
+
 .faq__list li i {
 	float: left;
 	width: 50px;
@@ -780,10 +788,10 @@ figure, figcaption {display: block;}
 	width: 9px;
 	border-right: 2px solid var(--accent-color);
 	border-bottom: 2px solid var(--accent-color);
-	transform: rotate(-135deg);
+	transform: rotate(-45deg);
 	transition: .2s;
 }
-.collapse-trigger.collapsed:after{transform: rotate(-45deg);}
+.expand .collapse-trigger:after{transform: rotate(-135deg);}
 
 /*===============================
   как заработать
@@ -952,7 +960,6 @@ figure, figcaption {display: block;}
 	align-items: center;
 	font-size: 2em;
 	color: var(--accent-color);
-	letter-spacing: .04em;
 	background-color: #101019;
 	border: 1px solid #fff;
 	box-shadow: 6.2px 9.1px 13.6px 2.4px rgba(0, 0, 0, 0.06);
@@ -1103,7 +1110,7 @@ figure, figcaption {display: block;}
 	display: block;
 	width: 68%;
 	height: 60px;
-	letter-spacing: .04em;
+	letter-spacing: .05em;
 	border: none;
 	padding-left: 35px;
 	margin-bottom: 50px;
@@ -1192,10 +1199,10 @@ figure, figcaption {display: block;}
 	color: inherit;
 	font-weight: 300;
 	font-family: verdana,sans-serif;
-	font-size: 34px;
+	font-size: 28px;
 	transition: .4s;
 }
-.mfp-close-btn-in .mfp-close:hover {color: #fff}
+.mfp-close-btn-in .mfp-close:hover {opacity: .7;}
 
 .mfp-close-btn-in .mfp-close:before {
 	content: 'Закрыть';
@@ -1213,7 +1220,7 @@ figure, figcaption {display: block;}
 	justify-content: center;
 	padding: 140px 0 80px;
 }
-.popup__logo {
+.hight__logo {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -1260,4 +1267,83 @@ figure, figcaption {display: block;}
 	display: block;
 	text-align: center;
 	padding: 15px;
+}
+.popup__content-sm {
+	width: 100%;
+	max-width: 450px;
+	padding: 45px 15px;
+	margin: auto;
+}
+.popup__content-bg {
+	background-color: #2b2d38;
+	padding: 18px 23px 35px;
+	margin-top: 20px;
+}
+.eth {
+	display: inline-block;
+	width: 25px;
+	height: 40px;
+	vertical-align: middle;
+	margin-right: 14px;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAoCAMAAAA8EaFZAAABX1BMVEUAAAD//fz/7uL/7uP/38mjMQD/dBzfRgD/3sf/9O15IgCGJwD/bBKOKgCyNgD/oGP/jEH/uo//Zgj/cRf/cxqrNACQKgD/fCbLPwD/jkP/pWv/bxX/dh7/eCH/s4P/t4r/wpz/nl//oGP/pm3/r33/wJj/38r/vJL/4Mz/59f/8OX/7N7//fyAJQD/ag9PFACZLQD/cxpwIAD/eCG6OQDRQQD/gCvZRACrNAD/hjbrSwD/iTrvTwD/kkz0VAD9XgD/llL/YQDxUQD7XAD/qXT/dh7/fCb/dx//eyT/iTr/hTP/vJL/wJn/wZv/mln/yKX/za7/sX7/07j/2cD/zrD/1rz/8+v/6dv/8+v/9/L/ZAV+JAByIAA4CwB1IQCDJQD/YwM7DQA+DgA1CwD+XgB8IwBhGgBWFgBJEQD5WgDyUgDwUADiRwDTQgC6OQCuNQCnMwCULACNKgBrHgBpHABUJIo5AAAAWnRSTlMAAx8PIOTgwCMR/vXx7+GXYUX85ePf1NDOtpKOiIB7dGJhXVlUPjo4NS0cFgX59PLx5uPY19bJx8bEwbq2r66noJ+cj4uFgoKBdnRsaGVlWVVOSkIxKBcSDQybqHJ+AAABrElEQVQ4y3WTZ1fbQBBFx8YYx7hQQkuAECCEAGn03nvvZXc1kjC9t/9/eFrLR5Ytrr7p7sy8s4Xy6GinD+hLlQSLNWEuBYpP1cIs/xFk0kKYqixA/BIwrL4XmyiMVKq0KMQ3YekaXigQ4f8wlsmsymN+80UAdANlBeOtbDeH1jwRqhMgO8cfYkO4RjEcf/XGJ3KGYRR7IdKuOIuzwueF6HD/37/Yl6+sAFdmx48I5Lp+MKW0DePqDYKTOsQ61t88ynMp5amRgbtgpUOEP1u3TxJoYxiZjHF6wfF9oum7Zyk9A1BnXyLEgPSwXQFqMWkz5TOavxUhRKPuRTNnMlkxe6QPZo8oNpo/p/YnUWUjLsbgRJioPXXuduutIIqMl0ZQ1PknMd9DJyu6xp4rodBqknfIoVmI6BYWTkl72GlUz6qRND0N2IUGtGxDooNJbE7NMQG9DVBV6S4MbUpiQ39HKMe2cIi2tPUzUE3+C+Kd9pDvTkctbZwTQOB8OqsgLAmjWslPs66BmKFC6mBQU9NdZLoSTk086AG1OGaZghgTZn0o0BxW/4tRMLu+B/cOrIudavq+uxMAAAAASUVORK5CYII=') center no-repeat;
+}
+input[name=qr]{
+	display: block;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #e00000;
+	margin-bottom: 12px;
+	padding: 0 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	outline-color: transparent;
+}
+.popup__qr-link {
+	padding: 4px 22px;
+	margin-left: 24px;
+	color: var(--accent-color);
+	transition: .3s;
+}
+.popup__qr-link:hover {color: #fff}
+
+.qr-sm {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	vertical-align: -1px;
+	margin-right: 11px;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAMAAADarb8dAAAAsVBMVEUAAADNzc3j4+P8/Pz///+5ubm7u7u7u7u/v7+/v7/AwMDBwcHCwsLKysre3t7a2tq7u7u7u7u8vLzBwcHu7u7///////+5ubm6urrd3d3V1dW8vLy9vb2+vr7Dw8PFxcXKysr///+6urrb29u6urq8vLy9vb3FxcXR0dHQ0NDT09PW1tb////w8PD5+fn19fXp6enb29vt7e3g4ODR0dHKysq6urrX19fT09PMzMzExMTaFNQYAAAALHRSTlMASSgaCvzXzZWPioJ9US7o0cnChyETBfnt6Oi/qp10ZlYX8+jjtLJfQUA+N5wG8h0AAAC3SURBVAjXHcZVdoNQAEXRw8M1eNzqcgkQq8x/YGV1f21eV7PlLAAIZ8vH1Z5K400eloWvn1EhsWpU8HWhFLYiIrmecoaOQt5cAUkn9c/crmymdTHQ1IZ/rX0ETOJAFuws3hNIDFtF8CJdWKhNtcE+AM2+G7DT34V1xMk+rLThycX5/HaNQ6xJAbCWYymkUhkqJ/LzszDaEusN+YzSabAPfUUwTR7nk6mz/pq1pA/ufb6jXAN3H/4AxeAT5FYqOHwAAAAASUVORK5CYII=') center no-repeat;
+}
+.popup__qr-box {padding: 20px 20px 0;}
+
+.popup__qr-box img {
+	float: left;
+	margin-right: 25px;
+}
+.popup__qr-box .popup__qr-link {
+	display: block;
+	padding: 10px 0 0;
+	margin: 0;
+}
+.popup__qr-box div {padding-top: 15px;}
+
+.popup__content-sm h5 {margin-bottom: 35px;}
+
+.popup__content-sm .btn-lg {
+	padding: 1.1em;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.popup__remark {text-align: center;}
+
+.popup__remark img {margin-top: 25px;}
+
+/*благодарочка*/
+
+.popup__thank-container {
+	min-height: 532px;
+	background: url(../img/popup/thank.png) right top no-repeat;
+	padding-top: 100px;
 }
