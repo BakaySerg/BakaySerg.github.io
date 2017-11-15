@@ -10,30 +10,9 @@
 	.navbar {width: calc(100% - 550px); margin-right: calc(9% + 80px); float: right;}
 	.navbar-toggle {display: none;} 
 	#expand {display: block;}
-	.navbar-nav{
-		display: -ms-flexbox;
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-		width: 100%;
-		align-items:stretch;
-		-ms-flex-pack: justify;
-		padding: 25px 5px;
-		position: relative;
-	}
-	.navbar-nav li{
-		display: -ms-flexbox;
-		display: flex;
-		align-self:stretch;
-		justify-content: space-around;
-		align-items: center;
-		margin-bottom: -2px;
-	}
-	a.top__link {
-		width: 100%; 
-		text-align: center; 
-		padding: 5px 6px;
-	}
+	.navbar-nav{padding: 25px 5px; width: 100%; display: -ms-flexbox; display: flex; flex-wrap: nowrap; justify-content: space-between; align-items:stretch; -ms-flex-pack: justify; position: relative; }
+	.navbar-nav li{margin-bottom: -2px; display: -ms-flexbox; display: flex; align-self:stretch; justify-content: space-around; align-items: center; }
+	a.top__link {padding: 5px 6px; width: 100%; text-align: center;}
 }
 @media(min-width: 1600px){
 	.btn{font-size: 1.1em;}
@@ -78,7 +57,7 @@
 	.etaps__list-box-2 {right: 10.2%;}
 	.company__img {padding: 0 45px;}
 	.s-company .col-sm-pull-right {padding-top: 120px; padding-left: 94px;padding-bottom: 40px; background-position: 68% 0;}
-	.tech__box {max-width: 910px; height: 560px; padding: 74px 0;}
+	.tech__box {max-width: 910px; height: 560px; padding: 74px 0;background-position: 46% 50%; background-size:57% auto;}
 	.faq__list{padding-top: 40px;}
 	.faq__list li {padding: 28px calc(2% + 15px);}
 	.faq__list li i {width: 48px; height: 50px;}
@@ -126,7 +105,8 @@
 	.cover__img:after{content: none;}
 	.d1m {right: auto;left: -70px; bottom: 62%;padding-right: 0;}
 	.d1m:before {width: 28px; transform: rotate(65deg);}
-	.tech__box {max-width: 691px; height: 458px; padding: 78px 0;background-size: 54% auto; background-position: 45% 50%;}
+	.tech__box {max-width: 745px; height: 458px; padding: 73px 0;background-size: 50% auto; background-position: 45% 50%;}
+	.tech__list li{margin-bottom: 19%;}
 	.earn__box {padding: 60px 0 20px;}
 	.scene li {position: absolute;top: 4%;}
 	.scene li:first-child img{bottom: 0;right: 0;width: 162%;max-width: none;}
@@ -141,8 +121,7 @@
 	.now__list li:nth-child(3){margin-left: 150px;}
 	.popup__table{float: none;margin: auto;}
 	.popup__pict{float: none;margin: auto;max-width: 600px;height: 370px; text-align: center;}
-	.popup__content img{max-width: 360px;position: static; margin-top: -94px;
-    transform: rotate(-12deg);}
+	.popup__content img{max-width: 360px;position: static; margin-top: -94px;transform: rotate(-12deg);}
 }
 @media (max-width: 969px){
 	.etaps__process {margin: 0 auto;}
@@ -150,7 +129,7 @@
 	.etaps__text-box{position: relative;display: -ms-flexbox; display: flex;flex-wrap: wrap;padding-top: 0;}
 	.etaps__list-box {position: relative;top: auto;left: auto;right: auto;bottom: auto;max-width: 50%;width: 49%;float: left;}
 	.etaps__list-box-6, .etaps__list-box-7{text-align: left;}
-	.etaps__list-box b{display: none;}
+	.etaps__list-box b{position: static;transform: none;}
 	.s-ico{background: #1f1f1f}
 	.s-ico .row > div {float: none;width: 100%;}
 	.ico__text-item{max-width: 632px;margin: 30px auto 0;}
@@ -172,6 +151,9 @@
 }
 @media (max-width: 800px){
 	h4 {font-size: 1.28em;}
+	.tech__box {max-width: 698px; height: 408px; padding: 65px 0; background-size: 47% auto;}
+	.tech__list li {margin-bottom: 17%;}
+	.tech__list span{font-size: 0.94em;}
 	.mfp-close-btn-in .mfp-close:before{content: none;}
 }
 @media (max-width: 767px){
@@ -261,14 +243,16 @@
 	.d1m:before {transform: rotate(116deg);}
 	.company__img {max-height: 378px;}
 	.tech__box{display: block;height: auto;padding: 30px 8px 30px 25px;}
-	.tech__list li{display: block; max-width: 100%;padding-bottom: 18px;width: 100%;}
+	.tech__box .tech__list {float: none;}
+	.tech__list li{display: block; max-width: 100%;padding-bottom: 18px;width: 100%;margin-bottom: 0;}
 	.tech__list span{max-width: 228px;}
 	.faq__value {width: 17%;}
 	.faq__list p {width: 128%;}
 	.faq__list h4,.faq__value b{font-size: 1em;}
 	.collapse-trigger:after{left: 35px;}
 	.earn__item i{left: 7px;}
-	.person__box{width: 100%;float: none;margin:0 auto 30px;max-width: 335px;}
+	.persons__container .row{padding-left: 15px;}
+	.person__box{margin:0 auto 15px;max-width: 335px; padding: 0 5px;min-height: 274px;}
 	.persons__ava {max-width: 130px;}
 	.persons__pro{min-height: auto;}
 	.s-footer{background: #000;}
@@ -302,6 +286,7 @@
 	.ico__char-item:nth-child(2) .ico__percent {top: -5px;}
 	.ico__char-item:nth-child(3) .ico__percent {top: 6px;}
 	.btn-lg{padding: 1em 3.3em;}
+	.footer__box input{padding-left: 17px;}
 	.mfp-close-btn-in .mfp-close {top: 7px; right: 7px;}
 	.popup__qr-link {padding: 4px 19px; margin-left: 16px;}
 	.popup__thank-container {background-size: 84% auto;background-position: 50% 151%;}
@@ -314,13 +299,15 @@
 	.s-intro {padding: 150px 0 20px;}
 	.s-company .col-sm-pull-right {padding: 55px 30px 40px; background-position: 97% 2%;}
 	.s-company p{margin-bottom: 10px;margin-top: 30px; padding-top: 40px;}
-	.s-company p svg {top: -11px; right: 41%;transform: rotate(-18deg);}
+	.s-company p svg {top: -11px; right: 41%;}
+	.s-company p:first-of-type svg {transform: rotate(-18deg);}
 	.s-company .btn-lg {display: block;max-width: 300px;margin: auto;}
 	.company__img{height: 322px;padding: 0 30px;}
 	.tech__list svg {width: 34px; height: 40px;}
 	.s-etaps {background-size: 270% auto;}
 	.s-bonus .bonus__list li{padding-left: 50px;}
 	.persons__partner > div img {max-width: 170px;}
+	.persons__contact .soc a {margin-right: 5px;padding: 6px;}
 	.footer__box input {width: 77%;}
 	.footer__box .form__btn {width: 23%;}
 	.persons__partner > div {vertical-align: middle; float: none; display: inline-block; max-width: 49%; height: auto;}
@@ -364,6 +351,7 @@
 	.earn__item{margin-bottom: 20px;}
 	.earn__item i{left: 0;}
 	.s-bonus .bonus__list li {padding-left: 15px;}
+	.person__box{width: 100%;float: none;min-height: auto;padding: 0 25px;}
 	.persons__partner > div img {max-width: 99px;}
 	.popup__content img{max-width: 274px;}
 	.popup__pict {height: 252px;}

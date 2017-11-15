@@ -28,7 +28,7 @@
 	height: 100vh;
 	top: 0;
 	background-color: #101019;
-	/*border-top: 1px solid #333;*/
+	border-top: 1px solid #333;
 	/*border-left: 1px solid #333;*/
 	opacity: 1;
 	transform-origin: 50% 100% 0px;
@@ -491,9 +491,9 @@ figure, figcaption {display: block;}
 	position: absolute;
 	top: 5px;
 	right: 108%;
-	width: 66px;
-	transform: rotate(-45deg);
+	width: 66px;	
 }
+.s-company p:first-of-type svg {transform: rotate(-42deg);}
 /*===============================
   now 
 ================================*/
@@ -685,25 +685,24 @@ figure, figcaption {display: block;}
 }
 .tech__box {
 	background: url(../img/techno-bg.png) center no-repeat;
-	display: -ms-flexbox; 
+/*	display: -ms-flexbox; 
 	display: flex;
 	justify-content: space-between;
 	align-self: stretch;
-	max-width: 955px;
+*/	max-width: 955px;
 	height: 596px;
 	margin: auto;
 	padding: 90px 0;
 }
-.tech__list {
-	display: -ms-flexbox; 
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: space-between;
-}
+.tech__list:first-child {float: left;}
+
+.tech__list:last-child {float: right;}
+
 .tech__list li {
 	display: block;
 	max-width: 230px;
 	min-width: 215px;
+	margin-bottom: 37%;
 }
 .tech__list svg {
 	display: inline-block;
@@ -713,7 +712,7 @@ figure, figcaption {display: block;}
 	height: 43px;
 }
 .tech__list span {
-	max-width: 140px;
+	max-width: 149px;
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 1.06em;
@@ -1114,18 +1113,14 @@ figure, figcaption {display: block;}
 	border: none;
 	padding-left: 35px;
 	margin-bottom: 50px;
+	border-radius: 0;
 	transition: .4s ease;
 }
 .footer__box input:focus{
 	outline-color: transparent;
 	box-shadow: none;
 }
-::-webkit-input-placeholder {transition: .4s}
-::-moz-placeholder {transition: .4s}
-:-ms-input-placeholder {transition: .4s}
-
 .footer__box .form__btn {
-	display: block;
 	float: left;
 	width: 32%;
 	height: 60px;
@@ -1136,7 +1131,9 @@ figure, figcaption {display: block;}
 	align-items: center;
 	font-weight: 700;
 	font-size: 1.33em;
+	text-align: center;
 	color: #fff;
+	padding: 0 15px;
 	background-color: var(--accent-color);
 	transition: .4s;
 }
@@ -1341,7 +1338,6 @@ input[name=qr]{
 .popup__remark img {margin-top: 25px;}
 
 /*благодарочка*/
-
 .popup__thank-container {
 	min-height: 532px;
 	background: url(../img/popup/thank.png) right top no-repeat;

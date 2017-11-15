@@ -6,17 +6,14 @@ function mail_utf8($to, $from, $subject='(No subject)', $message='', $add_header
     mail($to, '=?UTF-8?B?'.base64_encode($subject).'?=', $message, $headers);
 }
 
-$recepient = 'parts@amur.trade';  //*свой Email*/
-$sitename = "parts...";								//сюда вставить свой сайт
+$recepient = 'bakay.sergey28@gmail.com';  //*свой Email*/
+$sitename = "cargo";								//сюда вставить свой сайт
 $from = 'www.parts....';
 
-$name = trim($_POST["name"]);
-$tel = trim($_POST["tel"]);
-$quantity = trim($_POST["quantity"]);
-$deliv = trim($_POST["deliv"]);
-$subject = trim($_POST["subject"]);
+$mail = trim($_POST["mail"]);
 
-$message = "Я подал(а) заявку, $subject\n Имя: $name\n Телефон: $tel\n Количество: $quantity\n Доставить: $deliv";
+
+$message = "Я подал(а) заявку, $subject\n Моя почта: $mail";
 
 $pagetitle = 'Новая заявка с сайта "'.$sitename.'"';
 
