@@ -1,14 +1,8 @@
 function showPage() {
   setTimeout(function(){
-      document.body.classList.remove('js-loading');
-      setTimeout(function(){
-      $(".loader").fadeOut();
-      },500);
+      setTimeout(function(){$(".loader").fadeOut();}, 200);
   });
-
-}
-document.body.classList.add('js-loading');
-
+};
 
 $(document).ready(function(){
   "use strict";
@@ -35,10 +29,7 @@ $(document).ready(function(){
 
     // parallax-rellax
     if ($('.rellax').length){
-      var rellax = new Rellax('.rellax', {
-        speed: 2,
-        center: false
-      });
+      var rellax = new Rellax('.rellax', {speed: 2, center: false});
     };
   
     // Nav    
@@ -46,8 +37,7 @@ $(document).ready(function(){
       $('.navbar-toggle:visible').trigger('click');
     });
 
-
-    // G A L L E R Y
+    // g a l l e r y
     $('.popup-gallery').each(function() {
       $(this).magnificPopup({
         delegate: 'a',
@@ -62,7 +52,6 @@ $(document).ready(function(){
         gallery: {
           enabled: true,
           navigateByImgClick: true
-          // preload: [0,1] 
         },
         image: {
           tError: '<a href="%url%">Изображение #%curr%</a> не загружается.',
@@ -74,7 +63,6 @@ $(document).ready(function(){
     });
 
     //sliders equipment
-    //intro-slider
     if ($("#equipment-slider-big").length) {
       $("#equipment-slider-big").slick({
         slidesToShow: 1,
@@ -101,6 +89,27 @@ $(document).ready(function(){
       });
     };
 
+    //sliders lines
+    if ($("#lines-slider-big").length) {
+      $("#lines-slider-big").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        fade: true,
+        asNavFor: '#lines-slider-small'
+      });
+      $('#lines-slider-small').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '#lines-slider-big',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true
+      });
+    };
      
 });
 $(window).on('load', showPage);
