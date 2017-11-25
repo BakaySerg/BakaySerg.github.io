@@ -1,6 +1,6 @@
 function showPage() {
   setTimeout(function(){
-      setTimeout(function(){$(".loader").fadeOut();}, 200);
+      setTimeout(function(){$(".loader").fadeOut();}, 100);
   });
 };
 
