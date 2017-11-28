@@ -158,8 +158,8 @@
 	.s-contacts{padding-bottom: 0}
 	.s-contacts .row{padding: 34px 0 20px}
 	.contacts__top{width: 100%}
-	.s-contacts .col-sm-5 {width: 100%;max-width: 460px; float: none;margin: auto}
-	.s-contacts .col-sm-5:last-of-type {padding-left: 50px;padding-top: 35px;max-width: 384px}
+	.s-contacts .col-sm-5 {width: 100%;max-width: 460px; float: none;padding-bottom: 25px; margin: auto}
+	.s-contacts .col-sm-5:first-of-type {padding-left: 50px;max-width: 384px}
 	.contacts__accent,.contacts__accent + span {display: block;text-align: center}
 	[class^=contacts__item__office]:before{left: -41px}
 }
@@ -233,6 +233,7 @@
 	.s-complete{padding-bottom: 0}
 	.contacts__accent {font-size: 1.74em}
 	.contacts__accent + span {font-size: 1.12em;margin-bottom: 22px}
+	.s-contacts .col-sm-5:last-of-type {padding: 0 20px 20px;}
 	.form input, .form textarea {height: 50px; margin-bottom: 16px}
 	.form textarea{min-height: 130px}
 }

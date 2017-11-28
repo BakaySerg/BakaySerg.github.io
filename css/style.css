@@ -875,6 +875,7 @@ a.top__link:hover{color: #dd105d}
 	padding-bottom: 35px;
 }
 [class^=contacts__item__office]{
+	display: inline-block;
 	position: relative;
 	padding-top: 15px;
 	padding-bottom: .9em;
@@ -984,4 +985,11 @@ a.top__link:hover{color: #dd105d}
 	cursor: default;
 	margin: 0;
 	width: 30px;
+}
+.to-start,.to-end {
+	display: inline-block;
+	width: 13px;
+	height: 15px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
