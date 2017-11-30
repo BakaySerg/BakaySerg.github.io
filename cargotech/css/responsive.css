@@ -13,6 +13,10 @@
 	.navbar-nav{padding: 25px 5px; width: 100%; display: -ms-flexbox; display: flex; flex-wrap: nowrap; justify-content: space-between; align-items:stretch; -ms-flex-pack: justify; position: relative; }
 	.navbar-nav li{margin-bottom: -2px; display: -ms-flexbox; display: flex; align-self:stretch; justify-content: space-around; align-items: center; }
 	a.top__link {padding: 5px 6px; width: 100%; text-align: center}
+	.btn-lg{margin-top: 54px}
+}
+@media(min-width: 1200px){
+	.col-md-offset-05 {margin-left: 4.16%}
 }
 @media(min-width: 1600px){
 	.btn{font-size: 1.1em}
@@ -60,8 +64,10 @@
 	.etaps__list-box-3{right: 36%}
 	.etaps__list-box-5{right: 36%}
 	.etaps__list-box-6{right: 8%}
-
 	.etaps__list-box-3 b,.etaps__list-box-5 b {left: 26px}
+	.earn__box {background-position: 52% 44%; background-size: 260px 260px;}
+	.earn__choice {max-width: 290px;}
+	.earn__item {margin: 0 auto 25px}
 }
 @media(max-width: 1025px){
 	h1 {font-size: 2.3em}
@@ -120,7 +126,11 @@
 	.d1m:before {width: 84px; transform: rotate(76deg)}
 	.tech__box {max-width: 745px; height: 458px; padding: 73px 0;background-size: 50% auto; background-position: 45% 50%}
 	.tech__list li{margin-bottom: 19%}
-	.earn__box {padding: 60px 0 20px}
+	.earn__box {padding: 44px 0 25px;background-position: 54% 46%; background-size: 180px 180px;}
+	.earn__item {max-width: 400px; padding-left: calc(8% + 27px);}
+	.earn__choice {margin-top: -30px;}
+	.earn__choice-item div {padding: 32px 18px 32px 40px;}
+	.earn__choice-divider {padding: 32px 0 26px;}
 	.scene li {position: absolute;top: 4%}
 	.scene li:first-child img{bottom: 0;right: 0;width: 162%;max-width: none}
 	.s-company .row > div {float: none;width: 100%;max-width: 640px; margin: auto}
@@ -168,6 +178,10 @@
 	.tech__list li {margin-bottom: 17%}
 	.tech__list span{font-size: 0.94em}
 	.mfp-close-btn-in .mfp-close:before{content: none}
+	.earn__item {max-width: 317px; padding-left: calc(8% + 25px)}
+	.earn__box {background-position: 53% 44%; background-size: 160px 160px;}
+	.earn__choice {margin-top: 0}
+	.faq__value{width: 22%}
 }
 @media (max-width: 767px){
 	body{font-size: 17px}
@@ -176,8 +190,15 @@
 	.d1m svg {width: 22px; height: 22px; vertical-align: -6px}
 	.s-etaps {background-size: 140% auto}
 	.tech__box{background: none;max-width: 550px}
-	.earn__item{max-width: 460px}
+	.s-earn:before{content: none}
+	.s-earn{background-position: -22% top}
+	.earn__item{max-width: 562px}
+	.earn__box{background: none;}
 	.earn__item i{top: -1px}
+	.earn__choice{padding-top: 30px;padding-bottom: 30px;}
+	.earn__choice-item div {position: relative; background-color: rgba(20,20,20,0.9);border: 1px solid #e06016;padding: 40px 18px 32px 38px;margin-top: 20px}
+	.earn__choice-item div i{top: -28px;left: 50%;margin-left: -28px}
+	.earn__choice-divider {padding: 25px 0 16px}
 }
 @media (max-width: 760px) and (max-height: 767px){
 	.s-intro {padding: 120px 0 50px; display: -ms-flexbox; display: flex; align-items: center}
@@ -217,7 +238,6 @@
 	.s-etaps {background-size: 190% auto}
 	.faq__list li {padding: 26px calc(1% + 15px)}
 	.faq__list li i {margin-right: calc(2% + 16px)}
-	.faq__value{width: 22%}
 	.persons__ava{max-width: 140px}
 	.footer__box input{width: 74%;height: 50px;margin-bottom: 38px}
 	.footer__box .form__btn{width: 26%;height: 50px}
@@ -300,6 +320,8 @@
 	.ico__char-item:nth-child(2) .ico__percent {top: -5px}
 	.ico__char-item:nth-child(3) .ico__percent {top: 6px}
 	.btn-lg{padding: 1em 3.3em}
+	.earn__choice {max-width: 330px}
+	.earn__choice-item div {padding: 38px 18px 22px 30px;} 
 	.footer__box input{padding-left: 17px}
 	.mfp-close-btn-in .mfp-close {top: 7px; right: 7px}
 	.popup__qr-link {padding: 4px 19px; margin-left: 16px}
@@ -320,6 +342,7 @@
 	.company__img{height: 322px;padding: 0 30px}
 	.tech__list svg {width: 34px; height: 40px}
 	.s-etaps {background-size: 270% auto}
+	.s-earn {background-position: 9% top}
 	.s-bonus .bonus__list li{padding-left: 50px}
 	.persons__partner > div img {max-width: 170px}
 	.persons__contact .soc a {margin-right: 5px;padding: 6px}
@@ -359,12 +382,15 @@
 	.shadow-light-box.intro__begin {padding: 18px 15px 0px}
 	.company__img {height: 286px; padding: 0 20px}
 	.now__list li i {top: -17px; left: -75px}
+	.s-cover em {padding-left: 1em; font-size: .9em;}
 	.etaps__list-box{padding-left: 9px}
 	.tech__list span {max-width: 196px}
 	.ico__text-item{padding-left: 39px}
 	.faq__list {padding-top: 30px;margin-right: -14px;margin-left: -14px}
 	.faq__list li {padding: 20px 14px}
 	.faq__value {width: 19%}
+	.earn__box{padding: 34px 0 0;}
+	.earn__choice-item div {padding: 34px 14px 19px 28px}
 	.earn__item{margin-bottom: 20px}
 	.earn__item i{left: 0}
 	.s-bonus .bonus__list li {padding-left: 15px}

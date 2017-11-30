@@ -10,19 +10,12 @@ $(document).ready(function(){
     function parallax(){
       var ww = $(document).width();
       var s1 = document.getElementById('scene1'),
-      parallax1 = false;
-        if ( ww > 1000) {
-          parallax1 = new Parallax(s1);
-        }
-        else {
-          parallax1 = false;
-        }    
+      prlx = false;
+        ww > 999 ? prlx = new Parallax(s1) : prlx = false; 
     };
     parallax();
 
-    $(window).on('resize', function() {
-      parallax();
-    });
+    $(window).on('resize', parallax);
 
     //Timer
     $('#countdown').timeTo({
@@ -40,12 +33,6 @@ $(document).ready(function(){
       $('.navbar-toggle:visible').trigger('click');
     });    
 
-    $('.collap').hide();
-    $('.js-has-collapse').click(function(event) {
-      event.preventDefault();
-      $(this).toggleClass('expand').find('.collap').slideToggle(300);
-    });
-
     $(".js-scroll-page").click(function() {
       $("html, body").animate({
          scrollTop: $($(this).attr("href")).offset().top + "px"
@@ -54,6 +41,20 @@ $(document).ready(function(){
          easing: "swing"
       });
       return false;
+    });
+
+    //spoiler
+    $('.collap').hide();
+    $('.js-has-collapse').click(function(event) {
+      event.preventDefault();
+      $(this).toggleClass('expand').find('.collap').slideToggle(300);
+    });
+
+    //choice
+    $('.earn__choice-item').mouseenter(function(){
+      $(this).siblings('.earn__choice-item').addClass('no-active');
+    }).mouseleave(function(){
+      $(this).siblings('.earn__choice-item').removeClass('no-active');
     });
 
     // Попап
