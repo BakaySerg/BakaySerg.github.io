@@ -1,3 +1,2 @@
 # BakaySerg.github.io
-for demonstration my projects
-for  my client
+This host for the dismantling of my projects for clients
