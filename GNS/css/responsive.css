@@ -1,0 +1,229 @@
+@media(min-width: 1599px){
+	body{font-size: 15px;background-color: #f4f4f4}
+	.wrapper,.mfp-container{padding: 0 130px; border-left: 1px solid #f4f4f4;border-right: 1px solid #f4f4f4}
+	.sidebar,.sidebar-inner{width: 130px}
+	.sidebar-inner a,.sidebar-inner div,.top__link{height: 120px}
+	.menu__list-item{margin-bottom: 6%}
+	.menu-toggle.on span:before {transform: rotate(45deg) translate(0.36em, 0.28em)}
+	.menu-toggle.on span:after {transform: rotate(-45deg) translate(0.46em, -0.36em)}
+	.news__item-text {transform: translateY(230px);padding-bottom: 60px}
+	.slider-big .slide h4{max-width: 350px}
+	.footer__webland {right: -80px}
+}
+@media(max-width: 1366px){
+	.menu__left {background-size: 134% auto;background-position: center top}
+}
+@media(max-width: 1281px){
+	h2 {font-size: 2.2em;padding: 1.3em}
+	.slider-big .slide h4{top: 10px;left: 10px;padding: 8px 14px}
+	.slider-big__descr{padding: 18px 26px}
+	.news__item-text{padding: 19px 19px 17px;transform: translateY(174px)}
+	.news__item-soc{padding: 19px}
+	.news__item-text p{height: 57px}
+	.js-video{padding: 92px 0}
+	.about__other .half-container > div {padding: 32px}
+	.about__persone blockquote {padding: 24px 26px 10px}
+	.about__signature {padding: 0 13px 0 18px}
+	.tab {padding: 1.3em 14px 1.3em 9%}
+	.tab-pane p, .tab-pane a{padding: 2.06em 2em 2.06em 13%}
+}
+@media(max-width: 1200px){
+	.wrapper,.mfp-container{padding: 0 98px}
+	.sidebar{width: 98px}
+	.sidebar-inner a, .sidebar-inner div {height: 98px;font-size: 1em;width: 98px}
+	.top__link{height: 97px}
+	.is-link-go:before{margin-right: 12px;height: 15px;width: 15px}
+	.news__container{flex-wrap: wrap;max-width: 660px; margin: auto}
+	.inside-aligned {max-width: 660px;padding: 0 22px 10px;margin: auto}	
+	.news__item{width: 50%;margin-bottom: 25px}
+	.news__item:not(:nth-child(4)){margin-right: 0}
+	.menu__list-item svg{margin-bottom: 9px;margin-top: 9px}
+	.slider-small-box ul li button {padding: 0 15px; width: 50px}
+	.slider-big__descr{display: -ms-flexbox; display: flex;align-items: center; position: relative;max-width: 100%;width: 100%;padding: 18px 50px}
+	.slider-big__descr p{padding-bottom: 0;max-width: 574px}
+	.s-projects .is-link-go{text-align: right;padding-right: 15px;min-width: 220px}
+	.team__item-profile {padding: 24px 26px}
+	.news__item-text{background-color: #fff}
+	.news__item-text {transform: translateY(228px); padding: 18px 19px 54px}
+	.projects__filter-trigger:nth-child(1) span {left: 6.6%}
+	.projects__filter-trigger:nth-child(2) span {left: 21.2%}
+	.projects__filter-trigger:nth-child(3) span {left: 37%}
+	.projects__filter-trigger:nth-child(4) span {right: 27%}
+	.projects__filter-trigger:nth-child(5) span {right: 11.5%}
+}
+@media(max-width: 1099px){
+	h2 {font-size: 2em; padding: 1em}
+	.intro__box {padding: 76px 40px 64px}
+	.tab-menu {padding: 1.5em 0}
+	.tab-pane i {width: 90px; height: 80px; padding: 20px 20px 15px}
+	.tab svg{margin-bottom: 4px;margin-top: 5px}
+	.tab {padding: 0.9em 8px 0.9em 7%}
+	.s-about .is-logo-accent {margin-top: 2.4em; width: 98px}
+	.tab-pane p, .tab-pane a {padding: 1.8em .9em 1.8em 9%}
+	.s-footer{padding: 58px 15px 40px}
+	.footer__logo{width: 114px}
+	.footer__box {width: calc(100% - 140px)}
+	.footer__address svg{margin-right: 5px}
+	.footer__link svg{margin-right: 11px;width: 30px;height: 30px}
+	address {max-width: 202px}
+	.team__item {width: 33.3333%}
+}
+@media(max-width: 1025px){
+	.top{justify-content: space-around}
+	.about__persone blockquote {padding: 22px 14px 10px 17px}
+	.about__signature {padding: 0 11px 0 16px; width: 44%}
+	.about__fio{width: 56%; padding: 9px 4px 0 8px}
+	.about__other .half-container > div {padding: 23px 14px 24px 28px}
+	.about__partners-slider .slide {padding: 12px}
+	.about__partners {padding: 28px 25px 30px}
+	.slider-small .slide h4{font-size: .92em}
+	.menu__left {width: 50%}
+	.menu__left ul {padding: 8% 14% 28%}
+	.menu__right {width: 50%}
+	.menu__list-hidden {padding-left: 76px}
+}
+@media (max-width: 1023px){
+	.wrapper,.mfp-container{padding: 0 0 0 70px}
+	.sidebar{width: 70px;background-color: #f4f4f4}
+	.sidebar-inner {width: 70px; min-height: 320px}
+	.sidebar-inner a, .sidebar-inner div {height: 70px; width: 70px}
+	.top__link{height: 69px}
+	a.logo__link{padding: 6px}
+	.right-sidebar,.right-sidebar .sidebar-inner{height: 70px;overflow: hidden;position: absolute}
+	.right-sidebar .sidebar-inner > a {display: none}
+	.top__link {padding: 6px 2%}
+	.top{padding-right: 75px}	
+}
+@media (max-width: 991px) , (orientation: portrait){
+	.menu__left{background-size: cover;width: 46%}
+	.menu__left a{font-size: 2.6em}
+	.menu__right{width: 54%}
+	.mCustomScrollbar{min-height: 79%}
+}
+@media (max-width: 969px){
+	h2{padding: 1.3em 1.6em 1em}
+	.half-container > div{width: 100%}
+	.s-about .is-logo-accent{display: none}
+	.about__persone{width: 48%}
+	.about__other{width: 52%}
+	.about__other .half-container {display: block}
+	.about__other .half-container > div {width: 100%;padding: 28px 18px 26px 40px}
+	.about__partners {width: 100%; padding: 34px 25px 30px;border-top: 1px solid #f4f4f4}
+	.about__other p{min-height: auto}
+	.projects__filter{padding: 0 15px 20px}
+	.slick-dots{bottom: -27px}
+	.tab-menu {display: -ms-flexbox; display: flex;justify-content: space-around; padding: 0 20px}
+	.tab-pane__title{border-top: 1px solid #f4f4f4}
+	.tab-pane p, .tab-pane a {padding: 1.6em 1em 1.6em 8%}
+	.tab-pane i{width: 130px;border-right: none}
+	.tab{padding: 10px 20px;border-left: 1px solid #fff;border-right: 1px solid #fff;border-top: 2px solid #fff;opacity: .7}
+	.tab.active {border-color: #f4f4f4; box-shadow: inset 0 2px #f00;margin-bottom: -1px;opacity: 1}
+	.tab a {padding: 11px}
+	.tab a span {display: none}
+	.tab svg {display: block; width: 34px; height: 34px}
+	.tab svg.bigger{width: 36px;height: 36px}
+	.inside-aligned {margin: -87px auto 0;justify-content: flex-end}
+	.s-footer {padding: 58px 64px 20px}
+	.footer__box {padding-left: 12%; display: block;max-width: 610px}
+	.footer__box > a,.footer__box >div {display: block;margin-bottom: 20px}
+	.footer__address > .is-link-underline{padding-left: 10px}
+	.text-center {padding: 5px 15px 7px 5%;}
+}
+@media (max-width: 800px){
+	.team__item{width: 50%}
+	.is-link-go{color: var(--accent-color)}
+	.is-link-go:before {margin-right: 8px}
+	.js-video {padding: 70px 0}
+}
+@media (max-width: 767px){
+	h1 {font-size: 2.6em}
+	.intro__box {padding: 58px 19px 46px}
+}
+@media (max-width: 720px){
+	h2 {padding: 1em .8em .9em}
+	.inside-aligned{margin: -17px auto 5px;justify-content: flex-start}
+	.menu__box{display: block}
+	.menu__box > div {width: 100%}
+	.menu__left{height: 298px}
+	.menu__left ul {min-height: 100%;padding: 8% 17% 7%;display: -ms-flexbox; display: flex;flex-flow: column wrap;justify-content: space-between}
+	.menu__left ul li{margin-bottom: 1%}
+	.menu__right h3{padding: 16px}
+	.slider-big .slide h4{position: relative;top: 0;left: 0;width: 100%;max-width: 100%}
+	.mCustomScrollbar {max-height: calc(100% - 439px)!important; min-height: calc(100% - 436px)!important}
+	.slider-big__descr{padding: 18px 25px;display: block}
+	.s-projects .is-link-go {padding-top: 20px}
+}
+@media (max-width: 640px){
+	.top{height: 70px}
+	.top >div,.top > a{display: none}
+	.slider-big .slide{margin: 0 2px}
+	.slider-small{display: none}
+	.s-footer{border-top: none}
+	.projects__filter{display: none}
+	.about__persone{width: 100%;float: none}
+	.about__persone img {max-width: 348px; display: block; margin: auto}
+	.about__persone blockquote {max-width: 378px;margin: auto}
+	.about__signature{padding: 0 11px 0 11%;float: none;display: inline-block;vertical-align: -14px}
+	.about__fio {max-width: 234px;float: none;display: inline-block}
+	.about__other{float: none;width: 100%}
+	.tab{padding: 9px}
+	.news__item-text {transform: translateY(198px); padding: 18px 19px 22px}
+	.news__item-text h4 {margin-top: 17px; margin-bottom: 17px}
+	.js-video{margin-bottom: 1px}
+}
+@media (max-width: 550px){
+	h1 {font-size: 2.4em; line-height: 1.1}
+	.top{display: block}
+	.top i {display: block; width: 85px; height: 64px; padding-left: 15px; color: var(--accent-color)}
+	.news__container {max-width: 312px}
+	.news__item {width: 100%}
+	.menu__list-item svg,.tab svg {width: 30px; height: 29px}
+	.tab a {padding: 7px}
+	.tab-pane i svg {max-height: 37px}
+	.tab-pane i {width: 98px; height: 70px; padding: 16px 16px 10px}
+	.tab-pane__title h4{padding: 1em}
+	.about__signature {padding: 0 9px 0 2%}
+	.about__fio {padding: 6px 11px 0 21px}
+	.js-video {padding: 40px 0}
+	.footer__logo{display: none}
+	.footer__box{float: none;width: 100%;padding-left: 5%}
+	.left-sidebar, .left-sidebar .sidebar-inner {display: none; }
+	.wrapper, .mfp-container{padding: 0}
+	.right-sidebar, .right-sidebar .sidebar-inner {z-index: 9999}
+	.fullscreen-menu-inner .top {z-index: 9991}
+}
+@media (max-width: 440px) ,(max-height: 480px){
+	.menu__left {height: 250px}
+	.about__signature {width: 42%}
+	.about__other p {padding: 14px 0 18px}
+	.s-footer {padding: 28px 13px 15px 17px}
+	.menu__list {padding: 3% 0 18px}
+	.menu__list-item{margin-bottom: 2px}
+	.menu__list-item h4{margin-bottom: 6px}
+	.team__item-profile {padding: 15px 14px}
+	.team__item:not(:nth-child(4)){border: none}
+}
+@media (max-width: 380px){
+	h2 {font-size: 1.8em} 
+	.tab{padding: 0 6px}
+	.tab-pane p, .tab-pane a {padding: 1em .6em 1em 15px}
+	.about__other .half-container > div,.about__partners {padding: 24px 10px 22px 15px}
+	.tab-pane i {width: 90px; height: 66px;padding: 11px 9px 0}
+	.inside-aligned {margin: -9px auto 5px;padding: 0 31px 10px}
+	.menu__left a {font-size: 2.1em}
+	.menu__left {height: 220px}
+	.mCustomScrollbar {max-height: calc(100% - 390px)!important; min-height: calc(100% - 390px)!important}
+	.mCSB_inside>.mCSB_container, .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {margin-right: 9px; padding-bottom: 9px}
+	.inside-aligned {justify-content: center}
+	.slider-big__descr {padding: 18px 8px}
+	.slick-dots li{width: 16px}
+}
+@media (max-width: 359px){
+	h2{text-align: center}
+	.tab-menu{padding: 0 8px}
+	.tab {padding: 0 4px}
+	.team__item{width: 100%}
+	.about__other .half-container > div, .about__partners {padding: 22px 10px 26px 14px}
+	.about__partners-slider .slide{padding: 11px;min-height: 166px}
+	.menu__list-hidden {padding-left: 26px}
+}
