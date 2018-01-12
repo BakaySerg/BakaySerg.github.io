@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="theme-color" content="#1039ac"/>
-  <title>Новости</title>
+  <title>Страница не найдена</title>
   <meta name="description" content="бурение нефтяных скважин"/>
   <meta name="keywords" content="бурение, скважины"/>
 
@@ -167,159 +167,94 @@
          </header>
 
          <!-- T E M P L A T E  - I N N E R -->
+         <style>
+            .s-404 {
+               background: url(img/404/404.jpg) center bottom no-repeat;
+               background-size: cover;
+               min-height: calc(100vh - 106px);
+               display: -ms-flexbox;
+               display: flex;
+               align-items: center;
+               padding: 50px 0 40px;
+            }
+            @media(min-width: 1599px){
+               .s-404 {min-height: calc(100vh - 200px);} 
+            }
+            .s-404 a {
+               display: block;
+               width: 106px;
+               height: 106px;
+               display: -ms-flexbox;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: #fff;
+               border: 1px solid #f4f4f4;
+               font-size: 1.04em;
+               font-weight: 700;
+               text-align: center;
+               text-shadow: 0 0;
+               margin: 0 auto;
+               transition: .3s;            
+            }
+            .s-404 a:hover {
+               color: var(--accent-color);
+               box-shadow: inset 0 0 56px rgba(40,194,250,.05);
+            }
+            .is-box-404 {width: 100%;}
 
-         <!--  -->
-         <section class="s-news">
-            <div class="half-container">
-               <div>
-                  <h2>Новости компании&nbsp;ГНС</h2>                  
+            .is-box-404__text {float: right;}
+
+            .is-box-404 b {
+               display: block;
+               white-space: nowrap;
+               padding: .7em 60px 0 0;
+               line-height: 1;
+               text-transform: uppercase;
+               text-shadow: 0 0 24px var(--accent-color);
+               font-size: 7.14em;
+               color: #fff;
+            }
+            .is-box-404 span {
+               color: #fff;
+               font-weight: 700;
+               font-size: 1.04em;
+               text-transform: uppercase;
+               text-shadow: 0 0;
+               letter-spacing: .12em;
+               padding-left: 3px;
+               text-shadow: 0 0 6px var(--accent-color);
+            }
+            @media(max-width: 1024px){
+               .is-box-404 b {font-size: 6.6em;} 
+            }
+            @media(max-width: 800px) , (orientation: portrait){
+               .s-404 {min-height: calc(100vh - 367px);}
+               .is-box-404__text {float: none;text-align: center;}
+               .is-box-404 b {padding: .7em 0 0 0;} 
+            }
+            @media (max-width: 480px){
+            .is-box-404 b {font-size: 5em; padding: .4em 0 0 0;}
+            .s-404 a {width: 80px; height: 80px;}
+            }
+            @media (max-width: 380px){
+            .is-box-404 b {font-size: 4em}
+         }
+         </style>
+
+         <!-- 404 -->
+         <section class="s-404">
+            <div class="is-box-404 clearfix">
+               <a href="#">Главная</a>
+               <div class="is-box-404__text">
+                  <b>404 error</b>
+                  <span>PAGE NOT FOUND</span>
                </div>
-               <div class="text-center">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam minus, rerum voluptas a modi officia!</p>
-               </div>
-            </div>
-            <div class="news__container">
-               <div class="news__item">
-                  <div class="news__item-img"><img src="img/news/1.jpg" alt="" class="img-responsive"></div>
-                  <div class="news__item-text">
-                     <div class="news__item-date">Добавлено 12 августа 2017</div>
-                     <h4>ООО «ГНС» начал работать с фондом поддержки малого бизнеса</h4>
-                     <p>В целях реализации требований статьи 212 Трудового кодекса Российской Федерации от </p>
-                     <a href="news-single.html" class="btn">ПОДРОБНЕЕ</a>
-                  </div>
-                  <div class="news__item-soc clearfix">
-                     <span>Поделиться</span>
-                     <div>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></a>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-tw"/></svg></a>
-                        <a href="#" class="soc-link"><svg class="i-vk" viewBox="0 0 56 32"><use xlink:href="#i-vk"/></svg></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="news__item">
-                  <div class="news__item-img"><img src="img/news/2.jpg" alt="" class="img-responsive"></div>
-                  <div class="news__item-text">
-                     <div class="news__item-date">Добавлено 12 августа 2017</div>
-                     <h4>ООО «ГНС» начал работать с фондом поддержки малого бизнеса</h4>
-                     <p>В целях реализации требований статьи 212 Трудового кодекса Российской Федерации «ГНС» начал работать с фондом поддержки</p>
-                     <a href="news-single.html" class="btn">ПОДРОБНЕЕ</a>
-                  </div>
-                  <div class="news__item-soc clearfix">
-                     <span>Поделиться</span>
-                     <div>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></a>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-tw"/></svg></a>
-                        <a href="#" class="soc-link"><svg class="i-vk" viewBox="0 0 56 32"><use xlink:href="#i-vk"/></svg></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="news__item">
-                  <div class="news__item-img"><img src="img/news/4.jpg" alt="" class="img-responsive"></div>
-                  <div class="news__item-text">
-                     <div class="news__item-date">Добавлено 12 августа 2017</div>
-                     <h4>Результаты проведения специальной оценки профессиональной</h4>
-                     <p>В целях реализации требований статьи 212 Трудового кодекса Российской Федерации от </p>
-                     <a href="news-single.html" class="btn">ПОДРОБНЕЕ</a>
-                  </div>
-                  <div class="news__item-soc clearfix">
-                     <span>Поделиться</span>
-                     <div>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></a>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-tw"/></svg></a>
-                        <a href="#" class="soc-link"><svg class="i-vk" viewBox="0 0 56 32"><use xlink:href="#i-vk"/></svg></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="news__item">
-                  <div class="news__item-img"><img src="img/news/1.jpg" alt="" class="img-responsive"></div>
-                  <div class="news__item-text">
-                     <div class="news__item-date">Добавлено 12 августа 2017</div>
-                     <h4>Перечень рекомендуемых мероприятий которые проводятся</h4>
-                     <p>В целях реализации требований статьи 212 Трудового кодекса Российской Федерации от </p>
-                     <a href="news-single.html" class="btn">ПОДРОБНЕЕ</a>
-                  </div>
-                  <div class="news__item-soc clearfix">
-                     <span>Поделиться</span>
-                     <div>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></a>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-tw"/></svg></a>
-                        <a href="#" class="soc-link"><svg class="i-vk" viewBox="0 0 56 32"><use xlink:href="#i-vk"/></svg></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="news__item">
-                  <div class="news__item-img"><img src="img/news/4.jpg" alt="" class="img-responsive"></div>
-                  <div class="news__item-text">
-                     <div class="news__item-date">Добавлено 12 августа 2017</div>
-                     <h4>ООО «ГНС» начал работать с фондом поддержки малого бизнеса</h4>
-                     <p>В целях реализации требований статьи 212 Трудового кодекса Российской Федерации от </p>
-                     <a href="news-single.html" class="btn">ПОДРОБНЕЕ</a>
-                  </div>
-                  <div class="news__item-soc clearfix">
-                     <span>Поделиться</span>
-                     <div>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></a>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-tw"/></svg></a>
-                        <a href="#" class="soc-link"><svg class="i-vk" viewBox="0 0 56 32"><use xlink:href="#i-vk"/></svg></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="news__item">
-                  <div class="news__item-img"><img src="img/news/1.jpg" alt="" class="img-responsive"></div>
-                  <div class="news__item-text">
-                     <div class="news__item-date">Добавлено 12 августа 2017</div>
-                     <h4>ООО «ГНС» начал работать с фондом поддержки малого бизнеса</h4>
-                     <p>В целях реализации требований статьи 212 Трудового кодекса Российской Федерации «ГНС» начал работать с фондом поддержки</p>
-                     <a href="news-single.html" class="btn">ПОДРОБНЕЕ</a>
-                  </div>
-                  <div class="news__item-soc clearfix">
-                     <span>Поделиться</span>
-                     <div>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></a>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-tw"/></svg></a>
-                        <a href="#" class="soc-link"><svg class="i-vk" viewBox="0 0 56 32"><use xlink:href="#i-vk"/></svg></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="news__item">
-                  <div class="news__item-img"><img src="img/news/2.jpg" alt="" class="img-responsive"></div>
-                  <div class="news__item-text">
-                     <div class="news__item-date">Добавлено 12 августа 2017</div>
-                     <h4>Результаты проведения специальной оценки профессиональной</h4>
-                     <p>В целях реализации требований статьи 212 Трудового кодекса Российской Федерации от </p>
-                     <a href="news-single.html" class="btn">ПОДРОБНЕЕ</a>
-                  </div>
-                  <div class="news__item-soc clearfix">
-                     <span>Поделиться</span>
-                     <div>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></a>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-tw"/></svg></a>
-                        <a href="#" class="soc-link"><svg class="i-vk" viewBox="0 0 56 32"><use xlink:href="#i-vk"/></svg></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="news__item">
-                  <div class="news__item-img"><img src="img/news/4.jpg" alt="" class="img-responsive"></div>
-                  <div class="news__item-text">
-                     <div class="news__item-date">Добавлено 12 августа 2017</div>
-                     <h4>Перечень рекомендуемых мероприятий которые проводятся</h4>
-                     <p>В целях реализации требований статьи 212 Трудового кодекса Российской Федерации от </p>
-                     <a href="news-single.html" class="btn">ПОДРОБНЕЕ</a>
-                  </div>
-                  <div class="news__item-soc clearfix">
-                     <span>Поделиться</span>
-                     <div>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></a>
-                        <a href="#" class="soc-link"><svg viewBox="0 0 32 32"><use xlink:href="#i-tw"/></svg></a>
-                        <a href="#" class="soc-link"><svg class="i-vk" viewBox="0 0 56 32"><use xlink:href="#i-vk"/></svg></a>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            </div>  
          </section>
 
          <!-- / a n d  T E M P L A T E  - I N N E R -->
-         
+
          <!-- f o o t e r -->
          <footer class="s-footer clearfix">
             <div class="footer__logo">
