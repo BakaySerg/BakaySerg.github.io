@@ -13,7 +13,7 @@ function fixedMenu(){
   $('.fullscreen-menu-inner').css('width', w);
 };
 
-$(window).bind("ready resize", function() {
+$(window).bind("ready load resize", function() {
   fixedMenu();
 });
 
