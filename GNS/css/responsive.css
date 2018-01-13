@@ -24,8 +24,8 @@
 	.about__signature {padding: 0 13px 0 18px}
 	.tab {padding: 1.3em 14px 1.3em 9%}
 	.tab-pane p, .tab-pane a{padding: 2.06em 2em 2.06em 13%}
-	.service__boss-pict {width: 44.5%;}
-	.service__pseudo-tabs a {padding: 30px 1%;}
+	.service__boss-pict {width: 44.5%}
+	.service__pseudo-tabs a {padding: 30px 1%}
 }
 @media(max-width: 1200px){
 	.wrapper,.mfp-container{padding: 0 98px}
@@ -53,7 +53,7 @@
 }
 @media(max-width: 1099px){
 	h2 {font-size: 2em; padding: 1em}
-	p {padding-bottom: 1em;}
+	p {padding-bottom: 1em}
 	.intro__box {padding: 76px 40px 64px}
 	.tab-menu {padding: 1.5em 0}
 	.tab-pane i {width: 90px; height: 80px; padding: 20px 20px 15px}
@@ -68,12 +68,13 @@
 	.footer__link svg{margin-right: 11px;width: 30px;height: 30px}
 	address {max-width: 202px}
 	.team__item {width: 33.3333%}
-	.type-text {padding: 34px 17px 20px calc(2.6% + 15px);}
-	.type-text h4{margin-bottom: 1.6em;}
+	.type-text {padding: 34px 17px 20px calc(2.6% + 15px)}
+	.review__boss-contact, .review__about{padding: 25px 14px 20px calc(2.6% + 15px)}
+	.type-text h4{margin-bottom: 1.6em}
 	.third-container > div {width: 33.33333%; padding: 30px calc(1.4% + 15px)}
-	.service__boss-container{display: block;}
-	.service__boss-container > div {width: 100%;}
-	.service__blockquote {max-width: 700px;margin: 20px 30px;}
+	.service__boss-container{display: block}
+	.service__boss-container > div {width: 100%}
+	.service__blockquote {max-width: 700px;margin: 20px 30px}
 }
 @media(max-width: 1025px){
 	.top{justify-content: space-around}
@@ -88,7 +89,14 @@
 	.menu__left ul {padding: 8% 14% 28%}
 	.menu__right {width: 50%}
 	.menu__list-hidden {padding-left: 76px}
-	.service__pseudo-tabs a {padding: 15px 1%;}
+	.service__pseudo-tabs a {padding: 15px 1%}
+	.review__client h4 > img{max-width: 80px}
+	.review__pict,.review__boss > img {margin-top: 33px}
+	.s-review .half-container {display: block}
+	.s-review .half-container > div {width: 100%;max-width: 470px}
+	.review__pict,.review__about {float: left; width: 39%}
+	.review__other,.review__boss-container {float: left; width: 61%}
+	.review__boss-pict {width: 44%}
 }
 @media (max-width: 1023px){
 	.wrapper,.mfp-container{padding: 0 0 0 70px}
@@ -101,10 +109,10 @@
 	.right-sidebar .sidebar-inner > a {display: none}
 	.top__link {padding: 6px 2%}
 	.top{padding-right: 75px}
-	.service__pseudo-tabs {flex-wrap: wrap;}
-	.service__pseudo-tabs a{min-width: 50%;border-bottom: 1px solid #f4f4f4;}
-	.service__pseudo-tabs a:nth-of-type(even){border-right: 1px solid #f4f4f4;}
-	.service__pseudo-tabs a.active {border: 1px solid var(--accent-color);box-shadow: inset 2px 0 #f00;}
+	.service__pseudo-tabs {flex-wrap: wrap}
+	.service__pseudo-tabs a{min-width: 50%;border-bottom: 1px solid #f4f4f4}
+	.service__pseudo-tabs a:nth-of-type(even){border-right: 1px solid #f4f4f4}
+	.service__pseudo-tabs a.active {border: 1px solid var(--accent-color);box-shadow: inset 2px 0 #f00}
 }
 @media (max-width: 991px) , (orientation: portrait){
 	.menu__left{background-size: cover;width: 46%}
@@ -138,29 +146,30 @@
 	.s-footer {padding: 50px 64px 20px}
 	.footer__box {padding-left: 12%; display: block;max-width: 610px}
 	.footer__box > a,.footer__box >div {display: block;margin-bottom: 20px}
-	.footer__address > .is-link-underline{padding-left: 10px;padding-top: 19px;}
-	.text-center {padding: 5px 15px 7px 5%;}
+	.footer__address > .is-link-underline{padding-left: 10px;padding-top: 19px}
+	.text-center {padding: 5px 15px 7px 5%}
 	.third-container:not(.container-nav) { display: block}
-	.third-container:not(.container-nav) > div {width: 100%;max-width: 700px;margin: auto;padding: 15px 15px 10px;}
-	.container-nav > div {padding: 15px;}
-	.type-text {padding: 25px 16px 20px calc(2.6% + 15px);}
+	.third-container:not(.container-nav) > div {width: 100%;max-width: 700px;margin: auto;padding: 15px 15px 10px}
+	.container-nav > div {padding: 15px}
+	.type-text {padding: 25px 16px 20px calc(2.6% + 15px)}
 }
 @media (max-width: 800px){
 	.team__item{width: 50%}
 	.is-link-go{color: var(--accent-color)}
 	.is-link-go:before {margin-right: 8px}
 	.js-video {padding: 70px 0}
-	.service__blockquote{margin: 17px auto;padding: 20px 20px 20px 40px;}
-	.service__blockquote blockquote:before{left: -29px;}
-	.service__blockquote blockquote:before, .service__blockquote blockquote:after {font-size: 4em;}
-	.wrapper-inner{border: none;}
+	.service__blockquote{margin: 17px auto;padding: 20px 20px 20px 40px}
+	.service__blockquote blockquote:before{left: -29px}
+	.service__blockquote blockquote:before, .service__blockquote blockquote:after {font-size: 4em}
+	.wrapper-inner{border: none}
 }
 @media (max-width: 767px){
 	h1 {font-size: 2.6em}
-	.intro__box {padding: 58px 19px 46px}
-	.container-nav > div a > span {display: none;}
-	.container-nav .is-accent{justify-content: center;text-align: center;}
-	.type-text h4 svg,.service__boss-contact h4 svg {width: 30px; height: 30px;min-width: 30px;}
+	.intro__project h2 {font-size: 2em;padding: 0 0 16px}
+	.intro__box {padding: 58px 17px 46px}
+	.container-nav > div a > span {display: none}
+	.container-nav .is-accent{justify-content: center;text-align: center}
+	.type-text h4 svg,.service__boss-contact h4 svg, h4 > svg {width: 33px; height: 32px;min-width: 30px}
 }
 @media (max-width: 720px){
 	h2 {padding: 1em .8em .9em}
@@ -175,6 +184,11 @@
 	.mCustomScrollbar {max-height: calc(100% - 439px)!important; min-height: calc(100% - 436px)!important}
 	.slider-big__descr{padding: 18px 25px;display: block}
 	.s-projects .is-link-go {padding-top: 20px}
+	.review__pict {width: 32%}
+	.s-review h4 {margin-bottom: 1em}
+	.review__about, .review__boss-container {float: none; width: 100%}
+	.review__pict, .review__boss > img {margin-top: 30px}
+	.review__boss-pict {max-width: 220px}
 }
 @media (max-width: 640px){
 	.top{height: 70px}
@@ -214,11 +228,14 @@
 	.wrapper, .mfp-container{padding: 0}
 	.right-sidebar, .right-sidebar .sidebar-inner {z-index: 9999}
 	.fullscreen-menu-inner .top {z-index: 9991}
+	.review-container{display: block}
+	.review__pict,.review__other {float: none;width: 100%;margin-top: 1px}
 }
 @media (max-width: 480px){
-	.service__boss{display: block;}
-	.service__boss-pict {width: 100%;display: block;margin: auto;max-width: 270px;}
-	.service__emblem svg {width: 100px; height: 100px; margin: -50px 0 0 -50px;}
+	.service__boss{display: block}
+	.service__boss-pict {width: 100%;display: block;margin: auto;max-width: 270px}
+	.service__emblem svg {width: 100px; height: 100px; margin: -50px 0 0 -50px}
+	.review__boss-pict {width: 36%}
 }
 @media (max-width: 440px) ,(max-height: 480px){
 	.menu__left {height: 250px}
@@ -230,6 +247,7 @@
 	.menu__list-item h4{margin-bottom: 6px}
 	.team__item-profile {padding: 15px 14px}
 	.team__item:not(:nth-child(4)){border: none}
+	.intro__project h2 {font-size: 1.8em}
 }
 @media (max-width: 380px){
 	h2 {font-size: 1.8em} 
