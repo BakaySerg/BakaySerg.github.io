@@ -19,9 +19,11 @@
 	.sidebar, .sidebar-inner {width: 150px;}
 	.sidebar-inner a, .sidebar-inner div, .top__link {height: 150px;}
 	a.logo__link{padding: 18px;}
+	.top__link {padding: 9px 51px}
 	.tab-pane i{width: 130px;height: 130px;padding-top: 44px;}
 	.about__persone{width: 29%;}
-	.about__other .half-container > div {padding: 50px 60px 62px;}
+	.about__other{width: 71%;}
+	.about__other .half-container > div {padding: 65px 69px 66px;}
 	.about__partners {padding: 50px;}
 	.slider-big__descr {max-width: 538px;}
 	.about__partners-slider .slide img {max-width: 106px;}
@@ -31,6 +33,13 @@
 	.footer__box {width: calc(90% - 200px);}
 	.menu__list-item {padding-bottom: 12px;}
 	.menu__right h3 {padding: 7.2% 15px;}
+	.tab {padding: 1.5em 20px 1.6em calc(5vw + 5%);}
+	.mfp-iframe-holder .mfp-content {max-width: 1610px;}
+	.service__boss-contact {padding: 56px 3% 30px 9%;}
+	.review__boss-contact, .review__about {padding: 64px 50px 36px 69px;}
+	.service__boss-pict {max-width: 350px;}
+	.review__boss-pict{max-width: 420px;}
+	.service__boss-contact b, .review__boss-contact b {padding-bottom: 30px;}
 
 	.type-text {padding: 75px calc(5.5% + 11px);}
 	.third-container > div {padding: 76px calc(2.8% + 15px) 50px;}
@@ -272,7 +281,6 @@
 	.menu__list-item{padding-bottom: 2px}
 	.menu__list-item h4{margin-bottom: 6px}
 	.team__item-profile {padding: 15px 14px}
-	.team__item:not(:nth-child(4)){border: none}
 	.intro__project h2 {font-size: 1.8em}
 }
 @media (max-width: 380px){
