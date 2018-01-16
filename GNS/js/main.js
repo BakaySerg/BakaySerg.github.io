@@ -20,6 +20,7 @@ $(window).bind("ready load resize", function() {
 $(document).ready(function(){
   "use strict";
 
+    //fullscreen-menu
     $(document).keydown(function(e) {  
       if( e.keyCode === 27  && $('.menu-toggle').hasClass('on')){
           $('.menu-toggle').removeClass('on');
@@ -39,11 +40,7 @@ $(document).ready(function(){
       $(this).toggleClass('opened').children('.menu__list-hidden').slideToggle(200);
     });
   
-    // Nav    
-    $('a.top__link').on('click', function(event) {
-      $('.navbar-toggle:visible').trigger('click');
-    });
-
+    // Scroll Up
     $(".js-scroll-up").click(function() {
       $("html, body").animate({scrollTop: 0}, {duration: 800});
       return false;
@@ -171,17 +168,23 @@ $(document).ready(function(){
     if ($('.menu__list-box').length){
       $('.menu__list-box').mCustomScrollbar({
           axis:"y",
-          // autoHideScrollbar: false,
-          // scrollButtons:false,
           scrollInertia:300,
           contentTouchScroll:25,
           setHeight: '432'
       });
     };
 
+    //service pseudo-tabs
     if ($('.service__pseudo-tabs').length){
       var quantity = $('.service__pseudo-tabs a').length;
       $('.service__pseudo-tabs a').css('width', 100 / quantity + '%');
+      var pseudoActive = $('.service__pseudo-tabs a').hasClass('active');
+      $('.service__pseudo-tabs a').mouseenter(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+      }).mouseleave(function(){
+        $(this).removeClass('active').siblings().removeClass('active');
+        $('a.default-active').addClass('active');
+      });
     };
      
 });
