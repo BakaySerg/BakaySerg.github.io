@@ -202,6 +202,7 @@ svg {max-width: 100%}
 	overflow: hidden;
 }
 .menu__left a {
+	display: inline-block;
 	position: relative;
 	top: 50px;
 	color: #fff;
@@ -211,19 +212,23 @@ svg {max-width: 100%}
 	opacity: .8;
 	white-space: nowrap;
 	transition-duration: 0s;
+	line-height: 1.3;
 }
 .menu__left a:after {
 	content: attr(data-hover);
 	display: block;
 	position: absolute;
-	top: -1px;
+	top: 0;
+	bottom: 0;
 	left: 0;
-	overflow: hidden;
 	width: 0;
+	height: 100%;
+	overflow: hidden;
 	color: var(--accent-color);
 	text-shadow: 0 0 6px rgba(255,255,255,.7);
 	transition: width .3s ease;
 	white-space: nowrap;
+	line-height: inherit;
 }
 .menu__left a:hover::after { width: 100%}
 
@@ -1307,6 +1312,7 @@ address {
 	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
+	margin-bottom: 1.7em;
 }
 .service__boss-contact h4 svg{
 	display: inline-block;
@@ -1319,7 +1325,7 @@ address {
 }
 .service__boss-contact b,.review__boss-contact b {
 	display: block;
-	padding: 9px 0;
+	padding-bottom: 9px;
 }
 .service__boss-contact .top__link,.review__boss-contact .top__link {
 	height: auto;
@@ -1351,7 +1357,7 @@ address {
 .service__blockquote blockquote:after {
 	content: '\201D';
 	bottom: -50px;
-	right: -20px;
+	right: -40px;
 }
 .review__pict,.review__about {
 	float: left;

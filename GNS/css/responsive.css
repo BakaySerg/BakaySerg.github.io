@@ -7,6 +7,9 @@
 	.news__item-text {transform: translateY(233px);padding-bottom: 60px}
 	.slider-big .slide h4{max-width: 350px}
 	.footer__webland {right: -80px}
+	.half-container > .service__boss {width: 57%;}
+	.half-container > .service__blockquote {width: 43%;}
+	.about__persone blockquote {padding: 35px 17px 10px 30px;}
 }
 @media(max-width: 1366px){
 	.menu__left {background-size: 134% auto;background-position: center top}
