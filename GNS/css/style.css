@@ -70,7 +70,8 @@ body {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	max-width: 1600px;
+	/*max-width: 1600px;*/
+	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 106px;
 	background-color: #fff;
@@ -188,7 +189,6 @@ svg {max-width: 100%}
 	max-height: calc(100% - 92px)!important;
 	min-height: 65%;
 }
-
 .mCSB_scrollTools .mCSB_draggerRail{background-color: #f4f4f4}
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: var(--accent-color)}
@@ -198,7 +198,7 @@ svg {max-width: 100%}
 .menu__left ul li {
 	position: relative;
 	display: block;
-	margin-bottom: 50px;
+	margin-bottom: 46px;
 	overflow: hidden;
 }
 .menu__left a {
@@ -259,7 +259,7 @@ svg {max-width: 100%}
 .menu__list-item {	
 	cursor: pointer;
 	user-select: none;
-	margin-bottom: 3%;
+	padding-bottom: 5px;
 	margin-left: 6%;
 	width: 99%;
 }
@@ -302,7 +302,7 @@ svg {max-width: 100%}
 .menu__right h3 {
 	text-align: center;
 	border-bottom: 1px solid #f4f4f4;
-	padding: 7.009% 15px;
+	padding: 6.4% 15px;
 }
 .is-accent {
 	color: var(--accent-color);
@@ -317,14 +317,15 @@ svg {max-width: 100%}
 	width: 106px;
 	height: 100vh;
 	top: 0;
+	background-color: #fff;
 	z-index: 9990;
 }
 .left-sidebar {
-	left: 1px;
+	left: 0;
 	height: 100%;
 }
 .right-sidebar {
-	right: 1px;
+	right: 0;
 	height: 100%;
 }
 .sidebar-inner {
@@ -358,7 +359,7 @@ svg {max-width: 100%}
 	box-shadow: inset 0 0 56px rgba(40,194,250,.05);
 }
 
-a.logo__link{
+a.logo__link {
 	background-color: var(--accent-color);
 	border-bottom-color: var(--accent-color);
 	text-align: center;
@@ -422,7 +423,7 @@ div.menu-toggle {
 	display: block;
 	padding: 9px 36px;
 	border-left: 1px solid #f4f4f4;
-	font-size: .86em;
+	font-size: .94em;
 	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
@@ -441,7 +442,6 @@ div.menu-toggle {
 	color: var(--accent-color);
 	line-height: 1.1;
 	vertical-align: middle;
-	font-weight: 300;
 	transition: .3s;
 }
 .top__link:hover span{color: #000}
@@ -451,7 +451,7 @@ div.menu-toggle {
 ===========================*/
 
 .intro__box {
-	padding: 90px 40px 80px;
+	padding: 91px 40px 80px;
 	background-position: center bottom;
 	background-size: cover;
 }
@@ -644,7 +644,7 @@ div.menu-toggle {
 	width: 66.6666%;
 }
 .about__other .half-container > div {
-	padding: 40px;
+	padding: 37px 40px;
 	border-bottom: 1px solid #f4f4f4;
 }
 h4 > svg {
@@ -735,18 +735,22 @@ h4 > svg {
 	display: -ms-flexbox;
 	display: flex;
 	flex-wrap: wrap;
+	padding-left: 1px;
+	margin-right: -1px;
 }
 .news__item {
 	position: relative;
 	width: 25%;
 	flex-grow: 1;
-	border-top: 1px solid #f4f4f4;
-	border-bottom: 1px solid #f4f4f4;
+	border: 1px solid #f4f4f4;
 	overflow: hidden;
+	margin-left: -2px;
+	margin-bottom: -1px;
+	transition: .3s;
 }
-.news__item:not(:nth-child(4)){
-	margin-right: -1px;
-	border-right: 1px solid #f4f4f4;
+.news__item:hover {
+	border-color: var(--accent-color);
+	z-index: 1;
 }
 .news__item-img {
 	position: absolute;
@@ -895,11 +899,11 @@ h4 > svg {
 	opacity: 0;
 	transition: .3s;
 }
-.projects__filter-trigger:nth-child(1) span{left: 5.5%}
-.projects__filter-trigger:nth-child(2) span{left: 19.6%}
-.projects__filter-trigger:nth-child(3) span{left: 35.1%}
-.projects__filter-trigger:nth-child(4) span{right: 24.2%}
-.projects__filter-trigger:nth-child(5) span{right: 9.8%}
+.projects__filter-trigger:nth-child(1) span{left: 2.5%}
+.projects__filter-trigger:nth-child(2) span{left: 16.6%}
+.projects__filter-trigger:nth-child(3) span{left: 33.1%}
+.projects__filter-trigger:nth-child(4) span{right: 21.2%}
+.projects__filter-trigger:nth-child(5) span{right: 7.8%}
 .projects__filter-trigger:nth-child(6) span{right: 0}
 
 .projects__filter-trigger:hover span{opacity: 1}
@@ -913,11 +917,21 @@ h4 > svg {
 	border-right: 2px solid transparent;
 	border-left: 2px solid transparent;
 }
+.projects__filter-trigger:nth-child(6) span:before{left: 61%;}
+
 .slider-big .slide,.slider-small .slide{position: relative}
 
-.slider-small .slide{cursor: pointer}
+.slider-small .slick-list {padding-right: 2px !important;}
 
-.slider-small .slide.slick-current{cursor: default;z-index: 1}
+.slider-small .slide{
+	cursor: pointer;
+	margin-right: -1px;
+}
+.slider-small .slide.slick-current,.slider-small .slide.slick-current:hover{
+	cursor: default;
+	z-index: 2;
+}
+.slider-small .slide:hover {z-index: 1;}
 
 .slider-big .slide img,.slider-small .slide img {filter: grayscale(55%) contrast(170%) hue-rotate(173deg)}
 
@@ -926,8 +940,8 @@ h4 > svg {
 	position: absolute; 
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	bottom: 0;
+	right: 0;
 	background-color: rgba(2,140,222,.44);
 }
 .slider-small .slide:before {
@@ -938,11 +952,12 @@ h4 > svg {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	box-shadow: inset 0 -0.5px 0 1px var(--accent-color),0 5px 8px rgba(0,119,196,.16);
-	z-index: 2;
+	box-shadow: inset 0 0 0 1px var(--accent-color);
+	z-index: 4;
 	transition: .3s;
+	pointer-events: none;
 }
-.slider-small .slide.slick-current:before {opacity: 1}
+.slider-small .slide.slick-current:before,.slider-small .slide:hover:before {opacity: 1}
 
 .slider-small .slide.slick-current img {filter: none}
 
@@ -966,8 +981,9 @@ h4 > svg {
 	background-color: #fff;
 	padding: 10px 18px 16px;
 	z-index: 1;
+	transition: .3s;
 }
-.slider-small .slide.slick-current h4 {color: var(--accent-color)}
+.slider-small .slide.slick-current h4,.slider-small .slide:hover h4 {color: var(--accent-color)}
 
 .slider-big__descr {
 	background-color: #fff;
@@ -1077,11 +1093,12 @@ h4 > svg {
 	width: 32px;
 	height: 28px;
 	margin-right: 10px;
+	vertical-align: top;
 	fill: var(--accent-color);
 }
 address {
 	display: inline-block;
-	max-width: 218px;
+	max-width: 226px;
 }
 .footer__link span {
 	display: inline-block;
@@ -1098,12 +1115,12 @@ address {
 ================================*/
 .mfp-fade.mfp-bg {background: none}
 
-.mfp-rotate-bottom.mfp-bg.mfp-ready {background-color: rgba(0,0,0,.2);opacity: 1}
+.mfp-rotate-bottom.mfp-bg.mfp-ready {background-color: rgba(0,0,0,.6);opacity: 1}
 
 .mfp-iframe-holder .mfp-content{max-width: 1360px}
 
 .mfp-container {
-	max-width: 1600px;
+	/*max-width: 1600px;*/
 	margin: 0 auto;
 	position: relative;
 	padding: 0 106px;
@@ -1112,8 +1129,8 @@ address {
 .page-pop-up {
 	background-color: #fff;
 	min-height: 100vh;
-	border-right: 1px solid #f4f4f4;
-	border-left: 1px solid #f4f4f4;
+	/*border-right: 1px solid #f4f4f4;*/
+	/*border-left: 1px solid #f4f4f4;*/
 }
 .mfp-close-btn-in .mfp-close {
 /*	color: #fff;

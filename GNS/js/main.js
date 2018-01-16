@@ -18,8 +18,14 @@ $(window).bind("ready load resize", function() {
 });
 
 $(document).ready(function(){
-  "use strict";    
+  "use strict";
 
+    $(document).keydown(function(e) {  
+      if( e.keyCode === 27  && $('.menu-toggle').hasClass('on')){
+          $('.menu-toggle').removeClass('on');
+          $('.fullscreen-menu').removeClass('is-showed');            
+      }  
+    });
     $('.menu-toggle').click(function() {
       $(this).toggleClass('on').parent('.sidebar-inner').toggleClass('fixed');
       if ($(this).hasClass('on')){$('.fullscreen-menu').addClass('is-showed');}
@@ -29,8 +35,8 @@ $(document).ready(function(){
 
     $('.menu__list-hidden').hide();
     $('.menu__list-item').on('click',function() {
-      $(this).toggleClass('opened').children('.menu__list-hidden').slideToggle(200);
       $(this).siblings('.menu__list-item').removeClass('opened').children('.menu__list-hidden').slideUp(200);
+      $(this).toggleClass('opened').children('.menu__list-hidden').slideToggle(200);
     });
   
     // Nav    
@@ -55,9 +61,15 @@ $(document).ready(function(){
         responsive: [{
           breakpoint: 2560,
           settings: {
+            slidesToShow: 5,
+            slidesToScroll: 4
+          }
+        },{
+          breakpoint: 1600,
+          settings: {
             slidesToShow: 4,
             slidesToScroll: 3
-          }        
+          }
         },{
           breakpoint: 640,
           settings: {
@@ -75,7 +87,6 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         infinite: true,
-        // centerMode:true,
         fade: true,
         slidesToShow: 1,
         lazyLoad: 'ondemand',
@@ -102,9 +113,10 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '#slider-big',
+        arrows: false,
         dots: false,
-        prevArrow: $('.prev'),
-        nextArrow: $('.next'),
+        // prevArrow: $('.prev'),
+        // nextArrow: $('.next'),
         centerMode: true,
         centerPadding: '0px',
         focusOnSelect: true
@@ -159,8 +171,8 @@ $(document).ready(function(){
     if ($('.menu__list-box').length){
       $('.menu__list-box').mCustomScrollbar({
           axis:"y",
-          autoHideScrollbar: false,
-          scrollButtons:false,
+          // autoHideScrollbar: false,
+          // scrollButtons:false,
           scrollInertia:300,
           contentTouchScroll:25,
           setHeight: '432'

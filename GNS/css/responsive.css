@@ -1,18 +1,40 @@
 @media(min-width: 1599px){
 	body{font-size: 15px;background-color: #f4f4f4}
-	.wrapper,.mfp-container{padding: 0 130px; border-left: 1px solid #f4f4f4;border-right: 1px solid #f4f4f4}
+	.wrapper,.mfp-container{padding: 0 130px}
 	.sidebar,.sidebar-inner{width: 130px}
-	.sidebar-inner a,.sidebar-inner div,.top__link{height: 120px}
-	.menu__list-item{margin-bottom: 6%}
+	.sidebar-inner a,.sidebar-inner div,.top__link{height: 130px}
+	.menu__list-item{padding-bottom: 35px;}
 	.news__item-text {transform: translateY(233px);padding-bottom: 60px}
 	.slider-big .slide h4{max-width: 350px}
 	.footer__webland {right: -80px}
 	.half-container > .service__boss {width: 57%;}
 	.half-container > .service__blockquote {width: 43%;}
-	.about__persone blockquote {padding: 35px 17px 10px 30px;}
+	.about__persone blockquote {padding: 35px 25px 16px 30px;}
+	.about__persone{width: 30%;}
+	.about__other .half-container > div {padding: 42px 47px 39px;}
 }
-@media(max-width: 1366px){
-	.menu__left {background-size: 134% auto;background-position: center top}
+@media(min-width: 1900px){
+	body{font-size: 16px;}
+	.wrapper, .mfp-container {padding: 0 150px;}
+	.sidebar, .sidebar-inner {width: 150px;}
+	.sidebar-inner a, .sidebar-inner div, .top__link {height: 150px;}
+	a.logo__link{padding: 18px;}
+	.tab-pane i{width: 130px;height: 130px;padding-top: 44px;}
+	.about__persone{width: 29%;}
+	.about__other .half-container > div {padding: 50px 60px 62px;}
+	.about__partners {padding: 50px;}
+	.slider-big__descr {max-width: 538px;}
+	.about__partners-slider .slide img {max-width: 106px;}
+	.news__item-text {transform: translateY(282px); padding-bottom: 102px;}
+	.news__item-text p{height: 80px;max-height: 80px;}
+	.slider-big .slide h4 {max-width: 410px;}
+	.footer__box {width: calc(90% - 200px);}
+	.menu__list-item {padding-bottom: 12px;}
+	.menu__right h3 {padding: 7.2% 15px;}
+
+	.type-text {padding: 75px calc(5.5% + 11px);}
+	.third-container > div {padding: 76px calc(2.8% + 15px) 50px;}
+	.text-center {padding: 24px 23px 15px 45px;}
 }
 @media(max-width: 1281px){
 	h2 {font-size: 2.2em;padding: 1.3em}
@@ -119,7 +141,7 @@
 }
 @media (max-width: 991px) , (orientation: portrait){
 	.menu__left{background-size: cover;width: 46%}
-	.menu__left a{font-size: 2.6em}
+	.menu__left a{font-size: 2.3em}
 	.menu__right{width: 54%}
 	.mCustomScrollbar{min-height: 79%}
 }
@@ -233,6 +255,7 @@
 	.fullscreen-menu-inner .top {z-index: 9991}
 	.review-container{display: block}
 	.review__pict,.review__other {float: none;width: 100%;margin-top: 1px}
+	.menu__left a {font-size: 2em;}
 }
 @media (max-width: 480px){
 	.service__boss{display: block}
@@ -246,7 +269,7 @@
 	.about__other p {padding: 14px 0 18px}
 	.s-footer {padding: 28px 13px 15px 17px}
 	.menu__list {padding: 3% 0 18px}
-	.menu__list-item{margin-bottom: 2px}
+	.menu__list-item{padding-bottom: 2px}
 	.menu__list-item h4{margin-bottom: 6px}
 	.team__item-profile {padding: 15px 14px}
 	.team__item:not(:nth-child(4)){border: none}
@@ -259,10 +282,11 @@
 	.about__other .half-container > div,.about__partners {padding: 24px 10px 22px 15px}
 	.tab-pane i {width: 90px; height: 66px;padding: 11px 9px 0}
 	.inside-aligned {margin: -9px auto 5px;padding: 0 31px 10px}
-	.menu__left a {font-size: 2.1em}
+	.menu__left a {font-size: 1.9em}
 	.menu__left {height: 220px}
 	.mCustomScrollbar {max-height: calc(100% - 390px)!important; min-height: calc(100% - 390px)!important}
 	.mCSB_inside>.mCSB_container, .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {margin-right: 9px; padding-bottom: 9px}
+	.menu__left ul {padding: 6% 14%}
 	.inside-aligned {justify-content: center}
 	.slider-big__descr {padding: 18px 8px}
 	.slick-dots li{width: 16px}
