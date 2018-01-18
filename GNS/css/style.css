@@ -370,6 +370,7 @@ div.menu-toggle {
 	border-bottom-color: var(--accent-color);
 	cursor: pointer;
 	position: relative;
+	z-index: 9999;
 }
 .menu-toggle span {
   display: block;
@@ -400,9 +401,9 @@ div.menu-toggle {
 
 .menu-toggle.on span {background-color: transparent}
 
-.menu-toggle.on span:before {transform: rotate(45deg) translate(6px, 6px)}
+.menu-toggle.on span:before {transform: rotate(45deg) translate(7px, 5px)}
 
-.menu-toggle.on span:after {transform: rotate(-45deg) translate(5px, -6px)}
+.menu-toggle.on span:after {transform: rotate(-45deg) translate(6px, -5px)}
 
 .top {
 	width: 100%;
@@ -461,7 +462,7 @@ div.menu-toggle {
 	flex-wrap: wrap;
 	margin: 0 auto;
 }
-.half-container > div {width: 50%}
+.half-container > div {width: 50%;flex-grow: 1}
 
 .half-container > div:last-child,.third-container > div:not(:first-child) {border-left: 1px solid #f4f4f4}
 
@@ -594,29 +595,29 @@ div.menu-toggle {
 	background: url(../img/main-page/about.jpg) center no-repeat;
 	background-size: cover;
 	width: 100%;
-	padding: 140px 0;
+	padding: 138px 0;
 	text-align: center;
 	cursor: default;
 }
 .js-video button {
 	display: inline-block;
 	border-radius: 50%;
-	color: rgba(255,255,255,.8);
+	color: #fff;
 	background: none;
 	border: none;
 	box-shadow: .5px .8px 2px currentColor;
-	width: 56px;
-	height: 54px;
+	width: 60px;
+	height: 58px;
 	padding: 13px 9px 11px 18px;
 	cursor: pointer;
 	outline: none;
 	transition: color .2s;
 }
-.js-video button:hover {box-shadow: .7px 1px 6px 1px currentColor; color: rgba(255,255,255,1)}
+.js-video button:hover {box-shadow: .7px 1px 6px 1px currentColor}
 
 .js-video button svg {
 	stroke: currentColor;
-	fill: transparent;
+	fill: rgba(255,255,255,.8);
 }
 .js-video button:hover svg {fill: currentColor}
 
@@ -667,6 +668,30 @@ h4 > svg {
 	float: left;
 	width: 66.6666%;
 }
+.about__emblem {
+	padding-top: 10px;
+	margin: 0 auto 20px;
+	text-align: center;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/about/logo.png) center no-repeat;
+	background-size: cover;
+	width: 125px;
+	height: 104px;
+}
+.about__third-container {
+	display: -ms-flexbox;
+	display: flex;
+	border-bottom: 1px solid #f4f4f4;
+}
+.about__third-container > div:first-of-type{
+	border-right: 1px solid #f4f4f4;
+	width: 33.3333%;
+}
+.about__third-container > div:last-of-type {width: 66.6666%}
+
 .about__partners-slider .slide {
 	padding: 15px;
 	outline-color: transparent;
@@ -678,11 +703,13 @@ h4 > svg {
 	align-items: center;
 	min-height: 210px;
 }
+.certif-slider {padding: 40px;}
+
 .about__partners-slider .slide img {
 	width: 100%;
 	max-width: 92px;
 }
-.about__partners-slider .slide >div {
+.about__partners-slider .slide > div {
 	min-height: 60px;
 	display: -ms-flexbox;
 	display: flex;
@@ -927,10 +954,8 @@ h4 > svg {
 
 .slider-small .slick-list {padding-right: 2px !important;}
 
-.slider-small .slide{
-	cursor: pointer;
-	/*margin-right: -1px;*/
-}
+.slider-small .slide{cursor: pointer;}
+
 .slider-small .slide.slick-current,.slider-small .slide.slick-current:hover{
 	cursor: default;
 	z-index: 2;
@@ -957,7 +982,7 @@ h4 > svg {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	box-shadow: inset 0 0 0 1px var(--accent-color);
+	box-shadow: inset 0 0 0 .6px var(--accent-color);
 	z-index: 4;
 	transition: .3s;
 	pointer-events: none;
@@ -1172,9 +1197,8 @@ address {
 	margin-bottom: -1px;
 	flex-grow: 1;
 }
-.team__item-profile {
-	padding: 30px 34px;
-}
+.team__item-profile {padding: 30px 34px}
+
 .team__item-profile b {
 	display: block;
 	padding-bottom: 6px;
@@ -1190,6 +1214,24 @@ address {
 	transition: .3s;
 }
 .team__item-profile a:hover {color: var(--hov-color)}
+
+.team__item-ava{text-align: center;}
+
+/*===============================
+  about - popup
+================================*/
+
+.certif-slider .slide {
+	display: block;
+	width: 25%;
+	padding: 20px;
+	text-align: center;
+	float: left;
+}
+
+.certif-slider a img {
+	display: block;
+}
 
 /*========================
  news-single - page
@@ -1364,6 +1406,7 @@ address {
 	height: auto;
 	font-size: 1em;
 	padding: 20px 0 0;
+	border: none;
 }
 .service__blockquote {
 	display: -ms-flexbox;
@@ -1477,9 +1520,12 @@ address {
 .review__year {
 	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	margin-top: 1.6em;
+	flex-wrap: wrap;
 }
+.review__year b {margin-right: 20px}
+
 .review__year span {
 	font-weight: 700;
 	text-transform: uppercase;

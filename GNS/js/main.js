@@ -119,6 +119,50 @@ $(document).ready(function(){
         focusOnSelect: true
       });
 
+
+      // certificate - gallery      
+      $('.popup-gallery').each(function() {
+        $('.popup-gallery a').magnificPopup({
+          // delegate: 'a',
+          type: 'image',
+          tLoading: 'Загрузка...',
+          mainClass: 'mfp-fade',
+          removalDelay: 300,
+          fixedContentPos: true,
+          fixedBgPos: true,
+          autoFocusLast:true,
+          midClick: true,
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true
+            // preload: [0,1] 
+          },
+          image: {
+            tError: '<a href="%url%">Изображение #%curr%</a> не загружается.',
+            titleSrc: function(item) {
+              return item.el.attr('title');
+            }
+          }
+        });
+      });
+
+      // Попап
+      if ($('.js-popup').length){
+        $('.js-popup').magnificPopup({
+           type: 'inline',
+           removalDelay: 300,
+           fixedContentPos: true,
+           fixedBgPos: true,
+           mainClass: 'mfp-fade',
+           closeOnBgClick: true,
+           enableEscapeKey:true,
+           callbacks: {
+             beforeOpen: function() { $('.menu-toggle').addClass('on').parent('.sidebar-inner').addClass('fixed');},
+             close:function() { $('.menu-toggle').removeClass('on').parent('.sidebar-inner').removeClass('fixed'); }
+           }
+        });
+      };
+
       $('.projects__filter-off').on('click', function(e){
         e.preventDefault(); 
           $('#slider-big').slick('slickUnfilter');
@@ -133,23 +177,43 @@ $(document).ready(function(){
           $('#slider-small').slick('slickFilter','[data-filter=' + href +']');
       });
     };
-
-    // Попап
-    if ($('.js-popup').length){
-      $('.js-popup').magnificPopup({
-         type: 'inline',
-         removalDelay: 300,
-         fixedContentPos: true,
-         fixedBgPos: true,
-         mainClass: 'mfp-fade',
-         closeOnBgClick: true,
-         enableEscapeKey:true,
-         callbacks: {
-           beforeOpen: function() { $('.menu-toggle').addClass('on').parent('.sidebar-inner').addClass('fixed');},
-           close:function() { $('.menu-toggle').removeClass('on').parent('.sidebar-inner').removeClass('fixed'); }
-         }
-      });
-    };
+    
+    //слайдер сертификатов
+      $('.certif-slider').slick({
+      responsive:true,
+      infinite: true,
+      dots: false,
+      arrows: true,
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
+      slidesToShow: 4,
+      // vertical: true,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 800,
+        settings: {
+          draggable:false,
+          slidesToShow: 2
+        }        
+      },{
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerMode:true,
+          arrows: false,
+          draggable:true,
+          centerPadding:'80px'}
+        },{
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerMode:true,
+          arrows: false,
+          draggable:true,
+          centerPadding:'50px'
+        }
+      }]
+    });
 
     // Заменить на свою ссылку после "/watch?v= ..."
     $('.js-video button').magnificPopup({ 

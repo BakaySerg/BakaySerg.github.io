@@ -1,3 +1,6 @@
+@media(min-width: 1366px){
+	.about__half-container>div:first-of-type{width: 34%;}
+}
 @media(min-width: 1440px){
 	.top .top__link {padding: 9px 28px; width: 16.6666666%;justify-content: center;}
 }
@@ -16,6 +19,7 @@
 	.about__persone{width: 30%}
 	.about__other .half-container > div {padding: 42px 47px 39px}
 	.review-container {align-items: center;}
+	.about__half-container>div:first-of-type{width: 38%;}
 }
 @media(min-width: 1900px){
 	body{font-size: 16px}
@@ -56,6 +60,7 @@
 	.third-container > div {padding: 76px calc(2.8% + 15px) 50px}
 	.text-center {padding: 24px 23px 15px 45px}
 	.btn {margin: 25px auto 35px;}
+	.team__item-ava svg{max-width: 98%;}
 }
 @media(max-width: 1440px){
 	.news__item-text h4 {max-height: 52px;}
@@ -98,7 +103,8 @@
 	.projects__filter-trigger:nth-child(2) span {left: 21.2%}
 	.projects__filter-trigger:nth-child(3) span {left: 37%}
 	.projects__filter-trigger:nth-child(4) span {right: 27%}
-	.projects__filter-trigger:nth-child(5) span {right: 11.5%}	
+	.projects__filter-trigger:nth-child(5) span {right: 11.5%}
+	.about__emblem {width: 110px; height: 94px}
 }
 @media(max-width: 1099px){
 	h2 {font-size: 2em; padding: 1em}
@@ -149,6 +155,7 @@
 }
 @media (max-width: 1023px){
 	.wrapper,.mfp-container{padding: 0 0 0 70px}
+	.wrapper-inner{border: none;}
 	.sidebar{width: 70px;background-color: #f4f4f4}
 	.sidebar-inner {width: 70px; min-height: 320px}
 	.sidebar-inner a, .sidebar-inner div {height: 70px; width: 70px}
@@ -261,6 +268,8 @@
 	h1 {font-size: 2.4em; line-height: 1.1}
 	.top{display: block}
 	.top i {display: block; width: 85px; height: 64px; padding-left: 15px; color: var(--accent-color)}
+	div.menu-toggle {background-color: rgba(255, 255, 255, .83);border: none;}
+	.menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {background-color: var(--accent-color);}
 	.news__container {max-width: 312px}
 	.news__item {width: 100%}
 	.menu__list-item svg,.tab svg {width: 30px; height: 29px}
@@ -280,15 +289,21 @@
 	.review-container{display: block}
 	.review__pict,.review__other {float: none;width: 100%;margin-top: 1px}
 	.menu__left a {font-size: 2em}
+	.menu__list-item h4{margin-bottom: 10px;}
 }
 @media (max-width: 480px){
 	.service__boss{display: block}
 	.service__boss-pict {width: 100%;display: block;margin: auto;max-width: 270px}
 	.service__emblem svg {width: 100px; height: 100px; margin: -50px 0 0 -50px}
 	.review__boss-pict {width: 36%}
+	.menu__left ul {min-height: 98%; padding: 5% 16%;}
+	.mCSB_inside>.mCSB_container, .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {margin-right: 5px;}
+	.menu__list{padding: 2px 0 12px;}
 }
 @media (max-width: 440px) ,(max-height: 480px){
-	.menu__left {height: 250px}
+	.menu__left {height: 240px}
+	.mCustomScrollbar {min-height: calc(100% - 325px)!important;}
+	.menu__right h3 {padding: 12px;}
 	.about__signature {width: 42%}
 	.about__other p {padding: 14px 0 18px}
 	.s-footer {padding: 28px 13px 15px 17px}
@@ -305,14 +320,16 @@
 	.about__other .half-container > div,.about__partners {padding: 24px 10px 22px 15px}
 	.tab-pane i {width: 90px; height: 66px;padding: 11px 9px 0}
 	.inside-aligned {margin: -9px auto 5px;padding: 0 31px 10px}
-	.menu__left a {font-size: 1.9em}
+	.menu__left a {font-size: 1.9em;text-shadow: none;}
+	.menu__left a:after{text-shadow: 1px 1px #fff,1px -1px #fff,-1px 1px #fff,-1px -1px #fff;}
 	.menu__left {height: 220px}
 	.mCustomScrollbar {max-height: calc(100% - 390px)!important; min-height: calc(100% - 390px)!important}
-	.mCSB_inside>.mCSB_container, .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {margin-right: 9px; padding-bottom: 9px}
+	.mCSB_inside>.mCSB_container, .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {margin-right: 10px; padding-bottom: 9px}
 	.menu__left ul {padding: 6% 14%}
 	.inside-aligned {justify-content: center}
 	.slider-big__descr {padding: 18px 8px}
 	.slick-dots li{width: 16px}
+	.menu__list-item svg{margin-right: 2%;}
 }
 @media (max-width: 359px){
 	h2{text-align: center}
