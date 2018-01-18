@@ -127,7 +127,7 @@ h4 {
 	text-transform: uppercase;
 	text-shadow: 0 0;
 }
-p {padding-bottom: 1.3em}
+p {padding-bottom: 1.28em}
 
 .container {
 	position: relative;
@@ -670,7 +670,7 @@ h4 > svg {
 }
 .about__emblem {
 	padding-top: 10px;
-	margin: 0 auto 20px;
+	margin: 0 auto 11px;
 	text-align: center;
 	display: -ms-flexbox;
 	display: flex;
@@ -681,14 +681,15 @@ h4 > svg {
 	width: 125px;
 	height: 104px;
 }
+.about__half-container {border-bottom: 1px solid #f4f4f4}
+
 .about__third-container {
 	display: -ms-flexbox;
 	display: flex;
-	border-bottom: 1px solid #f4f4f4;
 }
 .about__third-container > div:first-of-type{
-	border-right: 1px solid #f4f4f4;
 	width: 33.3333%;
+	border-right: 1px solid #f4f4f4;
 }
 .about__third-container > div:last-of-type {width: 66.6666%}
 
@@ -703,7 +704,7 @@ h4 > svg {
 	align-items: center;
 	min-height: 210px;
 }
-.certif-slider {padding: 40px;}
+.certif-slider {padding: 50px 10px}
 
 .about__partners-slider .slide img {
 	width: 100%;
@@ -825,7 +826,7 @@ h4 > svg {
 	max-height: 60px;
 	opacity: 0;
 }
-.news__item:hover .news__item-text p {opacity: 1;}
+.news__item:hover .news__item-text p {opacity: 1}
 
 .btn {
 	display: block;
@@ -948,19 +949,19 @@ h4 > svg {
 	border-right: 2px solid transparent;
 	border-left: 2px solid transparent;
 }
-.projects__filter-trigger:nth-child(6) span:before{left: 61%;}
+.projects__filter-trigger:nth-child(6) span:before{left: 61%}
 
 .slider-big .slide,.slider-small .slide{position: relative}
 
-.slider-small .slick-list {padding-right: 2px !important;}
+.slider-small .slick-list {padding-right: 2px !important}
 
-.slider-small .slide{cursor: pointer;}
+.slider-small .slide{cursor: pointer}
 
 .slider-small .slide.slick-current,.slider-small .slide.slick-current:hover{
 	cursor: default;
 	z-index: 2;
 }
-.slider-small .slide:hover {z-index: 1;}
+.slider-small .slide:hover {z-index: 1}
 
 .slider-big .slide img,.slider-small .slide img {filter: grayscale(55%) contrast(170%) hue-rotate(173deg)}
 
@@ -1026,9 +1027,9 @@ h4 > svg {
 	border: 1px solid #f4f4f4;
 	z-index: 1;
 }
-.slider-small-box {position: relative}
+.slider-small-box,.certif-slider-box {position: relative}
 
-.slider-small-box ul li{
+.slick-slider + ul li{
 	position: absolute;
 	height: 100%;
 }
@@ -1036,15 +1037,15 @@ h4 > svg {
 
 .next {top: 0; right: 0}
 
-.slider-small-box ul li button {
+.slick-slider + ul li button {
 	position: relative;
 	left: auto;
 	right: auto;
 	height: 100%;
-	background-color: rgba(255,255,255,.8);
-	padding: 0 35px;
+	background-color: rgba(255,255,255,.5);
+	padding: 0 15px;
 	color: #000;
-	width: 90px;
+	width: 50px;
 	transition: .3s;
 }
 .slider-small-box ul li button:hover,.slider-small-box ul li button:focus {
@@ -1145,12 +1146,47 @@ address {
 ================================*/
 .mfp-fade.mfp-bg {background: none}
 
+.mfp-arrow-left {left: 150px}
+.mfp-arrow-right {right: 150px}
+
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-bg {opacity: 0.8;background: rgba(0,0,0,.4)}
+
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  transform: scale(1);
+}
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/**/
+
 .mfp-rotate-bottom.mfp-bg.mfp-ready {background-color: rgba(0,0,0,.6);opacity: 1}
 
 .mfp-iframe-holder .mfp-content{max-width: 1360px}
 
 .mfp-container {
-	/*max-width: 1600px;*/
+	max-width: 1920px;
 	margin: 0 auto;
 	position: relative;
 	padding: 0 106px;
@@ -1215,7 +1251,7 @@ address {
 }
 .team__item-profile a:hover {color: var(--hov-color)}
 
-.team__item-ava{text-align: center;}
+.team__item-ava{text-align: center}
 
 /*===============================
   about - popup
@@ -1224,13 +1260,14 @@ address {
 .certif-slider .slide {
 	display: block;
 	width: 25%;
-	padding: 20px;
+	padding: 5px;
 	text-align: center;
 	float: left;
 }
 
 .certif-slider a img {
 	display: block;
+	margin: auto;
 }
 
 /*========================
