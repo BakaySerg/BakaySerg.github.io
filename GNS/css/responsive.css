@@ -190,6 +190,7 @@
 	.about__third-container > div:first-of-type,.about__third-container > div:last-of-type {width: 100%;display: block}
 	.certif-slider {padding: 0 9px 9px}
 	.about__emblem {width: 99px; height: 82px;margin-bottom: 6px}
+	.about__persone blockquote {padding: 23px 16px 16px 21px}
 }
 @media (max-width: 969px){
 	h2{padding: 1.3em 1.6em 1em}
@@ -278,7 +279,7 @@
 	.about__fio {max-width: 234px;float: none;display: inline-block}
 	.about__other{float: none;width: 100%}
 	.tab{padding: 9px}
-	.news__item-text {transform: translateY(198px); padding: 18px 19px 22px}
+	.news__item-text {transform: translateY(198px); padding: 18px 19px 0}
 	.news__item-text h4 {margin-top: 17px; margin-bottom: 17px}
 	.js-video{margin-bottom: 1px}
 }
@@ -326,12 +327,13 @@
 	.menu__right h3 {padding: 12px}
 	.about__signature {width: 42%}
 	.about__other p {padding: 14px 0 18px}
-	.s-footer {padding: 28px 13px 15px 17px}
+	.s-footer {padding: 28px 13px 15px 20px}
 	.menu__list {padding: 3% 0 18px}
 	.menu__list-item{padding-bottom: 2px}
 	.menu__list-item h4{margin-bottom: 6px}
 	.team__item-profile {padding: 15px 14px}
 	.intro__project h2 {font-size: 1.8em}
+	.about__persone blockquote {padding: 23px 13px 13px 21px}
 }
 @media (max-width: 380px){
 	h2 {font-size: 1.8em} 
@@ -342,7 +344,6 @@
 	.inside-aligned {margin: -9px auto 5px;padding: 0 31px 10px}
 	.menu__left a {font-size: 1.9em;text-shadow: none}
 	.menu__left a:after{text-shadow: 1px 1px #fff,1px -1px #fff,-1px 1px #fff,-1px -1px #fff}
-	.menu__left {height: 220px}
 	.mCustomScrollbar {max-height: calc(100% - 360px)!important; min-height: calc(100% - 390px)!important}
 	.mCSB_inside>.mCSB_container, .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {margin-right: 10px; padding-bottom: 9px}
 	.menu__left ul {padding: 6% 14%}
@@ -351,14 +352,18 @@
 	.slick-dots li{width: 16px}
 	.menu__list-item svg{margin-right: 2%}
 	.s-service .third-container:not(.container-nav) > div {padding: 15px 15px 0}
+	.about__persone img {max-width: 373px}
+	.about__partners-slider .slide{padding: 16px}
+	.s-footer {padding: 8px 15px 15px 17px}
 }
 @media (max-width: 359px){
 	h2{text-align: center}
+	.menu__left {height: 220px}
 	.tab-menu{padding: 0 8px}
 	.tab {padding: 0 4px}
 	.team__item{width: 100%}
 	.about__other .half-container > div, .about__partners {padding: 22px 10px 26px 14px}
-	.about__partners-slider .slide{padding: 11px;min-height: 166px}
+	.about__partners-slider .slide{padding: 14px;min-height: 166px}
 	.menu__list-hidden {padding-left: 26px}
 	.certif-slider .slide{padding: 2px}
 }
