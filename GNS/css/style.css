@@ -302,7 +302,7 @@ svg {max-width: 100%}
 .menu__right h3 {
 	text-align: center;
 	border-bottom: 1px solid #f4f4f4;
-	padding: 6.4% 15px;
+	padding: 5.8% 15px;
 }
 .is-accent {
 	color: var(--accent-color);
@@ -592,7 +592,7 @@ div.menu-toggle {
 
 .js-video {
 	display: block;
-	background: url(../img/main-page/about.jpg) center no-repeat;
+	background: url(../img/main-page/about.jpg) center 76% no-repeat;
 	background-size: cover;
 	width: 100%;
 	padding: 138px 0;
@@ -738,12 +738,10 @@ h4 > svg {
 	opacity: 1;
 	transition: .2s;
 }
-.slick-dots li button:hover {
-   box-shadow: 0 0 0 5px #fff,0 0 0 5.6px var(--accent-color);	
-}
-.slick-dots li.slick-active button {
-   background: var(--accent-color);
-}
+.slick-dots li button:hover {box-shadow: 0 0 0 5px #fff,0 0 0 5.6px var(--accent-color)}
+
+.slick-dots li.slick-active button {background: var(--accent-color)}
+
 .slick-dots li button:before{content: none}
 
 /*===============================
@@ -888,6 +886,7 @@ h4 > svg {
 	justify-content: space-around;
 	align-items: center;
 	padding: 20px;
+	z-index: 1;
 }
 .projects__filter-off {
 	font-weight: 700;
@@ -906,6 +905,7 @@ h4 > svg {
 	height: 48px;
 	color: #000;
 	transition: .3s;
+	position: relative;
 }
 .projects__filter-trigger:hover {color: var(--accent-color)}
 
@@ -920,23 +920,25 @@ h4 > svg {
 .projects__filter-trigger svg {fill: currentColor}
 
 .projects__filter-trigger span {
-	display: block;
 	position: absolute;
-	bottom: 0;
+	width: 188px;
+	height: 48px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	top: 92%;
+	right: 50%;
+	transform: translateX(50%);
 	background-color: var(--accent-color);
 	color: #fff;
-	max-width: 188px;
-	min-height: 42px;
 	padding: 4px 9px;
 	opacity: 0;
 	transition: .3s;
 }
-.projects__filter-trigger:nth-child(1) span{left: 2.5%}
-.projects__filter-trigger:nth-child(2) span{left: 16.6%}
-.projects__filter-trigger:nth-child(3) span{left: 33.1%}
-.projects__filter-trigger:nth-child(4) span{right: 21.2%}
-.projects__filter-trigger:nth-child(5) span{right: 7.8%}
-.projects__filter-trigger:nth-child(6) span{right: 0}
+.projects__filter-trigger:nth-child(6) span{transform: translateX(38%);}
 
 .projects__filter-trigger:hover span{opacity: 1}
 
@@ -1198,24 +1200,8 @@ address {
 	border-right: 1px solid #f4f4f4;
 	border-left: 1px solid #f4f4f4;
 }
-.mfp-close-btn-in .mfp-close {
-/*	color: #fff;
-	right: auto;
-	left: 90%;
-	background-color: var(--accent-color);
-	height: 106px;
-	width: 106px;
-	display: -ms-flexbox;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 40px;
-	font-family: tahoma;
-	padding-bottom: 6px;
-	opacity: 1;
-	z-index: 9999;*/
-	display: none;
-}
+.mfp-close-btn-in .mfp-close {display: none}
+
 .team__container {
 	display: -ms-flexbox;
 	display: flex;
@@ -1223,7 +1209,6 @@ address {
 	padding-bottom: 40px;
 	padding-left: 1px;
 	margin-top: -1px;
-	/*margin-right: -1px;*/
 }
 .team__item {
 	width: 25%;
@@ -1231,7 +1216,6 @@ address {
 	background-color: #fff;
 	margin-right: -1px;
 	margin-bottom: -1px;
-	flex-grow: 1;
 }
 .team__item-profile {padding: 30px 34px}
 
@@ -1264,11 +1248,11 @@ address {
 	text-align: center;
 	float: left;
 }
-
 .certif-slider a img {
 	display: block;
 	margin: auto;
 }
+.certif-slider .slick-track {margin: auto;}
 
 /*========================
  news-single - page
@@ -1367,7 +1351,7 @@ address {
 }
 .service__pseudo-tabs a {
 	flex-grow: 1;
-	padding: 60px 2%;
+	padding: 53px 2%;
 	font-weight: 700;
 	text-shadow: 0 0;
 	text-align: center;

@@ -40,10 +40,21 @@ $(document).ready(function() {
     });
 
     // Scroll Up
-    $(".js-scroll-up").click(function() {
-        $("html, body").animate({ scrollTop: 0 }, { duration: 800 });
-        return false;
-    });
+    $(function() {
+       $('.js-scroll-up').hide();
+       $(window).on('scroll', function() {
+           if(parseInt($(window).scrollTop(), 10) > 500){
+               $('.js-scroll-up').fadeIn();
+           }
+           else {
+               $('.js-scroll-up').fadeOut();
+           }
+         });
+       $(".js-scroll-up").click(function() {
+           $("html, body").animate({ scrollTop: 0 }, { duration: 800 });
+           return false;
+       });
+     });
 
     //slider partners
     $('.about__partners-slider').slick({
@@ -111,8 +122,6 @@ $(document).ready(function() {
             asNavFor: '#slider-big',
             arrows: false,
             dots: false,
-            // prevArrow: $('.prev'),
-            // nextArrow: $('.next'),
             centerMode: true,
             centerPadding: '0px',
             focusOnSelect: true
@@ -144,7 +153,6 @@ $(document).ready(function() {
           prevArrow: $('.prev'),
           nextArrow: $('.next'),
           slidesToShow: 5,
-          // vertical: true,
           slidesToScroll: 1,
           responsive: [{
               breakpoint: 1440,
@@ -156,7 +164,6 @@ $(document).ready(function() {
               breakpoint: 767,
               settings: {
                   slidesToShow: 3,
-                  // arrows: false,
                   draggable: true,
                   centerPadding: '40px'
               }
@@ -164,30 +171,28 @@ $(document).ready(function() {
               breakpoint: 420,
               settings: {
                   slidesToShow: 2,
-                  // centerMode: true,
-                  // arrows: false,
                   draggable: true,
                   centerPadding: '20px'
               }
           }]
       });
 
-        // Попап
-        if ($('.js-popup').length) {
-            $('.js-popup').magnificPopup({
-                type: 'inline',
-                removalDelay: 300,
-                fixedContentPos: true,
-                fixedBgPos: true,
-                mainClass: 'mfp-fade',
-                closeOnBgClick: true,
-                enableEscapeKey: true,
-                callbacks: {
-                    beforeOpen: function() { $('.menu-toggle').addClass('on').parent('.sidebar-inner').addClass('fixed'); },
-                    close: function() { $('.menu-toggle').removeClass('on').parent('.sidebar-inner').removeClass('fixed'); }
-                }
-            });
-        };
+     // Попап
+     if ($('.js-popup').length) {
+         $('.js-popup').magnificPopup({
+             type: 'inline',
+             removalDelay: 300,
+             fixedContentPos: true,
+             fixedBgPos: true,
+             mainClass: 'mfp-fade',
+             closeOnBgClick: true,
+             enableEscapeKey: true,
+             callbacks: {
+                 beforeOpen: function() { $('.menu-toggle').addClass('on').parent('.sidebar-inner').addClass('fixed'); },
+                 close: function() { $('.menu-toggle').removeClass('on').parent('.sidebar-inner').removeClass('fixed'); }
+             }
+         });
+     };
 
       // certificate - gallery      
       if ($(".popup-gallery").length) {
