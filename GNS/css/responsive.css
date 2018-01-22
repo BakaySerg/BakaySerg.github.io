@@ -42,7 +42,7 @@
 	.about__partners-slider .slide img {max-width: 106px}
 	.news__item-text {transform: translateY(282px)}
 	.news__item-text p{height: 80px;max-height: 80px}
-	.projects__filter-trigger span{width: 200px;top: 124%;}
+	.projects__filter-trigger span{width: 192px;top: 126%;height: 46px;}
 	.slider-big .slide h4 {max-width: 410px}
 	.footer__box {width: calc(90% - 200px)}
 	.menu__list-item {padding-bottom: 12px}

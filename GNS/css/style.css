@@ -915,20 +915,25 @@ h4 > svg {
 
 .projects__filter-trigger span {
 	position: absolute;
-	width: 188px;
-	height: 48px;
+	width: 154px;
+	height: 41px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	display: block;
-	display: -webkit-box;
+	/*display: block;*/
+	/*display: -webkit-box;*/
+	font-size: .89em;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
-	top: 92%;
+	top: 105%;
 	right: 50%;
 	transform: translateX(50%);
 	background-color: var(--accent-color);
 	color: #fff;
-	padding: 4px 9px;
+	padding: 3px 6px;
 	opacity: 0;
 	transition: .3s;
 }
