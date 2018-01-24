@@ -115,9 +115,9 @@ h1 + em {
 h2 {
 	font-size: 2.285em;
 	text-transform: uppercase;
-	padding: 1.5em 2.4em;
+	padding: 1.5em 1.7em;
 }
-h3{font-size: 2.14em;}
+h3 {font-size: 2.14em}
 
 h4 {
 	font-size: 1.04em;
@@ -774,6 +774,13 @@ h4 > svg {
 	border-color: var(--accent-color);
 	z-index: 1;
 }
+.s-news-single .news__item-date {
+	font-size: .92em;
+	padding-left: 2px;
+	margin-top: -.5em;
+	margin-bottom: 2.2em;
+	font-weight: 300;
+}
 .news__item-img {
 	position: absolute;
 	top: 0;
@@ -919,9 +926,8 @@ h4 > svg {
 	height: 41px;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	/*display: block;*/
-	/*display: -webkit-box;*/
 	font-size: .89em;
+	/*display: -webkit-box;*/
 	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
@@ -937,7 +943,7 @@ h4 > svg {
 	opacity: 0;
 	transition: .3s;
 }
-.projects__filter-trigger:nth-child(6) span{transform: translateX(38%);}
+.projects__filter-trigger:nth-child(6) span{transform: translateX(38%)}
 
 .projects__filter-trigger:hover span{opacity: 1}
 
@@ -1169,7 +1175,7 @@ address {
   opacity: 1;
   transform: scale(1);
 }
-.mfp-zoom-in.mfp-ready.mfp-bg {opacity: 0.8;}
+.mfp-zoom-in.mfp-ready.mfp-bg {opacity: 0.8}
 
 .mfp-zoom-in.mfp-removing .mfp-with-anim {
   transform: scale(0.8);
@@ -1246,7 +1252,7 @@ address {
 	display: block;
 	margin: auto;
 }
-.certif-slider .slick-track {margin: auto;}
+.certif-slider .slick-track {margin: auto}
 
 /*========================
  news-single - page
@@ -1260,7 +1266,7 @@ address {
 	justify-content: center;
 	padding: 40px 36px;
 }
-.type-text{padding: 45px calc(5.5% + 11px)}
+.type-text{padding: 40px calc(5.5% + 11px) 30px}
 
 .type-text h4 {
 	color: var(--accent-color);
@@ -1448,10 +1454,23 @@ address {
 	bottom: -50px;
 	right: -40px;
 }
+.review-container .half-container{
+	width: 66.666%;
+	align-items: stretch;
+	align-self: stretch
+}
+.review-container .half-container > div {
+	align-self: stretch;
+	display: -ms-flexbox;
+	display: flex;
+	align-self: center;
+	flex-flow: column wrap;
+	height: 100%;
+   justify-content: center;
+}
 .review__pict,.review__about {
 	float: left;
 	width: 33.3333%;
-	border-right: 1px solid #f4f4f4;
 }
 .review__other,.review__boss-container {
 	float: left;

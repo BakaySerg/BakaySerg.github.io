@@ -55,6 +55,16 @@ $(document).ready(function() {
            return false;
        });
      });
+    
+     $(".js-scroll-page").click(function() {
+       $("html, body").animate({
+          scrollTop: $($(this).attr("href")).offset().top + "px"
+       }, {
+          duration: 800,
+          easing: "swing"
+       });
+       return false;
+     });
 
     //slider partners
     $('.about__partners-slider').slick({
@@ -110,7 +120,7 @@ $(document).ready(function() {
                     fade: false,
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '11px',
+                    centerPadding: '9px',
                     draggable: true
                 }
             }],
