@@ -850,6 +850,8 @@ h4 > svg {
 	padding: 15px 5px;
 	background-color: #fff;
 }
+.s-news-single .news__item-soc {padding: 15px 25px 9px 0}
+
 .news__item-soc span {
 	float: left;
 	font-weight: 300;
@@ -1361,7 +1363,7 @@ address {
 	justify-content: center;
 	font-size: 1.04em;
 	border: 1px solid #f4f4f4;
-	border-bottom: none;
+	/*border-bottom: none;*/
 }
 .service__pseudo-tabs a.active {
 	border-color: var(--accent-color);

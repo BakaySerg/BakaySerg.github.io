@@ -247,6 +247,16 @@ $(document).ready(function() {
           },
       });
 
+      // popup-gmap"
+      $('.popup-gmaps').magnificPopup({
+          type: 'iframe',
+          mainClass: 'mfp-rotate-bottom',
+          callbacks: {
+              beforeOpen: function() { $('.menu-toggle').addClass('on'); },
+              close: function() { $('.menu-toggle').removeClass('on'); }
+          },
+      });
+
       //scrollbar for fullscreen menu
       if ($('.menu__list-box').length) {
           $('.menu__list-box').mCustomScrollbar({
