@@ -28,14 +28,29 @@
 
  <body class="js-loading">
    <!-- прелоудер -->
-   <div class="loader">
+   <div class="loader" id="loader">
       <div class="decolines decolines--fixed">
          <div class="decoline"></div>
          <div class="decoline"></div>
          <div class="decoline"></div>
          <div class="decoline"></div>
       </div>
+      <div class="loader__counter">
+         <div class="loader__processing"></div>
+         <hr>
+      </div>
    </div>
+   <script>
+      var counter = 0;
+      var c = 0;
+      var i = setInterval(function(){
+         document.querySelector('.loader__processing').innerHTML = c + "%";
+         document.querySelector('.loader__counter hr').style.width = c + "%";
+         counter+=4;
+         c+=4;
+         if(counter >= 101) {clearInterval(i);}
+      }, 70);
+   </script>
    <!-- svg sprite -->
    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
@@ -856,7 +871,8 @@
 <script src="js/jquery.time-to.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/scroll-up-bar.min.js"></script>
-<script src="js/parallax.min.js"></script>
+<!-- <script src="js/parallax.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/main.js"></script>
 <script defer src="js/bootstrap.min.js"></script>

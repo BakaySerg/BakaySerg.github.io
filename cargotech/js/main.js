@@ -1,7 +1,26 @@
 function page() {
-  document.body.classList.remove('js-loading');
+  setTimeout(function(){
+      setTimeout(function(){
+          document.querySelector('.loader__counter').style.opacity = '0';
+          setTimeout(
+            function(){
+              document.getElementById('loader').style.display = 'none';
+          }, 2000);
+      }, 10);
+      document.body.classList.remove('js-loading'); 
+    },1900);
 };
-window.addEventListener("load", page, false);
+
+setTimeout(function(){
+    $('.slide_1_ins > span').addClass('animation');
+    setTimeout(function(){
+        $('.scroll_down').addClass('animation');
+        setTimeout(function(){
+            $('.top').addClass('animation');
+            $('.slide_2').addClass('animation');
+        },400);
+    },400);
+},400);
 
 $(document).ready(function(){
   "use strict";
@@ -19,7 +38,7 @@ $(document).ready(function(){
 
     //Timer
     $('#countdown').timeTo({
-        timeTo: new Date(new Date('Fri Nov 20 2017 10:00:00 GMT+0200 (Финляндия (зима))')),
+        timeTo: new Date(new Date('Fri Nov 20 2018 10:00:00 GMT+0200 (Финляндия (зима))')),
         displayDays: 2,
         displayCaptions: true,
         captionSize: 22,
@@ -97,6 +116,6 @@ $(document).ready(function(){
       });
       return false;
     });
-
     
 });
+window.addEventListener("load", page, false);
