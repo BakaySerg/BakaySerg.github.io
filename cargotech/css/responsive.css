@@ -19,6 +19,8 @@
 	.col-md-offset-05 {margin-left: 4.16%}
 }
 @media(min-width: 1600px){
+	.loader__counter {margin-right: calc(25% + 40px)}
+	.loader__processing:before {top: -166px; right: 100px}
 	.btn{font-size: 1.1em}
 	.container{max-width: 1270px}
 	h1 {font-size: 2.8em;letter-spacing: .04em}
@@ -45,6 +47,8 @@
 	.navbar {width: calc(100% - 466px); margin-right: calc(7% + 84px)}
 }
 @media(max-width: 1070px){
+	.loader__processing {font-size: 3em}
+	.loader__counter {margin-right: calc(23% + 40px)}
 	.logo{left: 14px}
 	.logo__link{width: 248px}
 	.navbar {width: calc(100% - 395px);margin-right: calc(7% + 45px)}
@@ -65,8 +69,8 @@
 	.etaps__list-box-5{right: 36%}
 	.etaps__list-box-6{right: 8%}
 	.etaps__list-box-3 b,.etaps__list-box-5 b {left: 26px}
-	.earn__box {background-position: 52% 44%; background-size: 260px 260px;}
-	.earn__choice {max-width: 290px;}
+	.earn__box {background-position: 52% 44%; background-size: 260px 260px}
+	.earn__choice {max-width: 290px}
 	.earn__item {margin: 0 auto 25px}
 }
 @media(max-width: 1025px){
@@ -93,7 +97,7 @@
 @media(max-width: 1023px){
 	.top{overflow: visible!important;background-color: rgba(16,16,25,.98);height: 66px}
 	.logo{top: 18px}
-	.top__jump,.top__lang{top: 23px;right: 75px;}
+	.top__jump,.top__lang{top: 23px;right: 75px}
 	.navbar-collapse{padding: 15px 20px 10px;transition: padding 0s, height .6s ease}
 	#justify  li{padding: 5px 0;margin: auto;opacity: 0; transform: translateX(-70px)}
 	.collapse.in #justify li{animation: .2s moveTohome ease forwards}
@@ -126,11 +130,11 @@
 	.d1m:before {width: 84px; transform: rotate(76deg)}
 	.tech__box {max-width: 745px; height: 458px; padding: 73px 0;background-size: 50% auto; background-position: 45% 50%}
 	.tech__list li{margin-bottom: 19%}
-	.earn__box {padding: 44px 0 25px;background-position: 54% 46%; background-size: 180px 180px;}
-	.earn__item {max-width: 400px; padding-left: calc(8% + 27px);}
-	.earn__choice {margin-top: -30px;}
-	.earn__choice-item div {padding: 32px 18px 32px 40px;}
-	.earn__choice-divider {padding: 32px 0 26px;}
+	.earn__box {padding: 44px 0 25px;background-position: 54% 46%; background-size: 180px 180px}
+	.earn__item {max-width: 400px; padding-left: calc(8% + 27px)}
+	.earn__choice {margin-top: -30px}
+	.earn__choice-item div {padding: 32px 18px 32px 40px}
+	.earn__choice-divider {padding: 32px 0 26px}
 	.scene li {position: absolute;top: 4%}
 	.scene li:first-child img{bottom: 0;right: 0;width: 162%;max-width: none}
 	.s-company .row > div {float: none;width: 100%;max-width: 640px; margin: auto}
@@ -179,7 +183,7 @@
 	.tech__list span{font-size: 0.94em}
 	.mfp-close-btn-in .mfp-close:before{content: none}
 	.earn__item {max-width: 317px; padding-left: calc(8% + 25px)}
-	.earn__box {background-position: 53% 44%; background-size: 160px 160px;}
+	.earn__box {background-position: 53% 44%; background-size: 160px 160px}
 	.earn__choice {margin-top: 0}
 	.faq__value{width: 22%}
 }
@@ -193,15 +197,16 @@
 	.s-earn:before{content: none}
 	.s-earn{background-position: -22% top}
 	.earn__item{max-width: 562px}
-	.earn__box{background: none;}
+	.earn__box{background: none}
 	.earn__item i{top: -1px}
-	.earn__choice{padding-top: 30px;padding-bottom: 30px;}
+	.earn__choice{padding-top: 30px;padding-bottom: 30px}
 	.earn__choice-item div {position: relative; background-color: rgba(20,20,20,0.9);border: 1px solid #e06016;padding: 40px 18px 32px 38px;margin-top: 20px}
 	.earn__choice-item div i{top: -28px;left: 50%;margin-left: -28px}
 	.earn__choice-divider {padding: 25px 0 16px}
 }
 @media (max-width: 760px) and (max-height: 767px){
 	.s-intro {padding: 120px 0 50px; display: -ms-flexbox; display: flex; align-items: center}
+	.loader__counter{top: 50px}
 }
 @media (max-width: 720px){
 	h4 ,.faq__value b{font-size: 1.2em}
@@ -226,6 +231,10 @@
 	.persons__partner > div img {max-width: 200px}
 }
 @media (max-width: 670px){
+	.loader__counter{margin-right: 0}
+	.loader__processing{left: 0;width: 100%;position: relative;margin:0 auto 48px;padding-left: 33px;color:rgba(255,255,255,.76)}
+	.loader__progressing{border-bottom-width: 2px}
+	.loader__progressing i {bottom: 9px; right: 3px; width: 60px}
 	.s-intro {padding: 170px 0 30px}
 	.intro__container{padding: 0}
 	.intro__container .shadow-hard-box, .shadow-light-box{padding: 20px 30px}
@@ -321,7 +330,7 @@
 	.ico__char-item:nth-child(3) .ico__percent {top: 6px}
 	.btn-lg{padding: 1em 3.3em}
 	.earn__choice {max-width: 330px}
-	.earn__choice-item div {padding: 38px 18px 22px 30px;} 
+	.earn__choice-item div {padding: 38px 18px 22px 30px} 
 	.footer__box input{padding-left: 17px}
 	.mfp-close-btn-in .mfp-close {top: 7px; right: 7px}
 	.popup__qr-link {padding: 4px 19px; margin-left: 16px}
@@ -352,6 +361,7 @@
 	.persons__partner > div img {max-width: 120px}
 	.persons__name {font-size: 1.1em}
 	.hight__logo{display: none}
+	.loader .hight__logo{display: -ms-flexbox; display: flex}
 	.page-pop-up{padding: 57px 0 40px}
 	.popup__pict{height: 268px}
 	.popup__content img {margin-top: -118px}
@@ -367,6 +377,7 @@
 	.popup__qr-box .popup__qr-link{text-align: center;padding: 15px 0 0}
 }
 @media (max-width: 359px){
+	.loader__processing:before{width: 282px;background-size: 100% auto}
 	h1 {font-size: 1.5em}
 	h2 {font-size: 1.3em; padding: 0.7em 0}
 	h2:after, h3:after{max-width: 180px}
@@ -382,14 +393,14 @@
 	.shadow-light-box.intro__begin {padding: 18px 15px 0px}
 	.company__img {height: 286px; padding: 0 20px}
 	.now__list li i {top: -17px; left: -75px}
-	.s-cover em {padding-left: 1em; font-size: .9em;}
+	.s-cover em {padding-left: 1em; font-size: .9em}
 	.etaps__list-box{padding-left: 9px}
 	.tech__list span {max-width: 196px}
 	.ico__text-item{padding-left: 39px}
 	.faq__list {padding-top: 30px;margin-right: -14px;margin-left: -14px}
 	.faq__list li {padding: 20px 14px}
 	.faq__value {width: 19%}
-	.earn__box{padding: 34px 0 0;}
+	.earn__box{padding: 34px 0 0}
 	.earn__choice-item div {padding: 34px 14px 19px 28px}
 	.earn__item{margin-bottom: 20px}
 	.earn__item i{left: 0}
@@ -403,4 +414,9 @@
 	.popup__qr-box{text-align: center}
 	.popup__qr-box img{float: none}
 	.popup__qr-box div {padding-top: 15px; text-align: left}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.etaps__process{width: 1200px;height: 1470px}
+	.s-company p svg{height: 30px}
+	.loader__progressing i svg {height: 78px}
 }
