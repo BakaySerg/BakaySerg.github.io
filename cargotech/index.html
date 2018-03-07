@@ -45,6 +45,8 @@
    <script>
       $.easing.easeInOutSine= function(e, f, a, h, g) {return -h / 2 * (Math.cos(Math.PI * f / g) - 1) + a};
 
+      var readyDocument;
+
       function loading() {
         $('.loader__progressing').animate({width:"100%"
         },{
@@ -63,26 +65,27 @@
                 step: function() {$this.text(Math.floor(this.countNum));},
                 complete: function() {
                   $this.text(this.countNum);
-                  // var loadingReady = 1;
+                  page();
                 }
             });
         });
       };
-      loading();
+      // loading();
 
       function page() {
          // if (loadingReady){
            setTimeout(function(){
-               $('.loader__counter').fadeOut();
+               $('.loader__counter').fadeOut(400);
                setTimeout(
                  function(){
                    $('#loader').fadeOut();
                }, 400);
-           }, 800);
+           }, 400);
         // }
       };
 
-      window.addEventListener("load", page, false);
+      window.addEventListener("load", loading, false);
+      // document.addEventListener("DOMContentLoaded", page);
    </script>
    <!-- svg sprite -->
    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
