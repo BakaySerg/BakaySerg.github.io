@@ -103,7 +103,7 @@
       };
       loading();
 
-      $(window).on('load', function () {
+      function page() {
          // if (loadingReady){
            setTimeout(function(){
                $('.loader__counter').fadeOut();
@@ -113,9 +113,9 @@
                }, 400);
            }, 800);
         // }
-      });
+      };
 
-      // window.addEventListener("load", page, false);
+      window.addEventListener("load", page, false);
    </script>
 
    <div class="wrapper">
