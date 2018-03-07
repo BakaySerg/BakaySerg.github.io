@@ -18,13 +18,13 @@ function page() {
           step: function() {$this.text(Math.floor(this.countNum));},
           complete: function() {
             $this.text(this.countNum);
-            // setTimeout(function(){
-            //     $('.loader__counter').fadeOut();
-            //     setTimeout(
-            //       function(){
-            //         $('#loader').fadeOut();
-            //     }, 400);
-            // }, 800);
+            setTimeout(function(){
+                $('.loader__counter').fadeOut();
+                setTimeout(
+                  function(){
+                    $('#loader').fadeOut();
+                }, 400);
+            }, 800);
           }
       });
   });
