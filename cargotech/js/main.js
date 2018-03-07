@@ -1,35 +1,3 @@
-$.easing.easeInOutSine= function(e, f, a, h, g) {return -h / 2 * (Math.cos(Math.PI * f / g) - 1) + a};
-
-function page() {
-  $('.loader__progressing').animate({width:"100%"
-  },{
-      duration: 2800,
-      easing: 'easeInOutSine'
-  });
-
-  $('#loader__percents').each(function() {
-      var $this = $(this),
-          countTo = 100;
-      $({countNum: $this.text()}).animate({
-          countNum: countTo
-      },{
-          duration: 2800,
-          easing: 'easeInOutSine',
-          step: function() {$this.text(Math.floor(this.countNum));},
-          complete: function() {
-            $this.text(this.countNum);
-            setTimeout(function(){
-                $('.loader__counter').fadeOut();
-                setTimeout(
-                  function(){
-                    $('#loader').fadeOut();
-                }, 400);
-            }, 800);
-          }
-      });
-  });
-};
-
 $(document).ready(function(){
   "use strict";
 
@@ -126,4 +94,3 @@ $(document).ready(function(){
     });
     
 });
-window.addEventListener("load", page, false);
