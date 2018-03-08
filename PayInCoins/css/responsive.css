@@ -1,3 +1,6 @@
+@media(min-width: 1366px){
+	h1 > span > span{background-size: 400px 100%}
+}
 @media(min-width: 2550px){
 	.s-intro .type-box{margin-bottom: 40px}
 	.s-intro .type-box:nth-of-type(1) {margin-left: 56px}

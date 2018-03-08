@@ -25,7 +25,7 @@ $(document).ready(function(){
       classToAdd: 'anim-play',
       offset: 50
     });
-    $('h2,h1,.form,tariffs__list li').viewportChecker({
+    $('h2,h1,.form,.tariffs__list li').viewportChecker({
       classToAdd: 'anim-play',
       offset: 220
     });
