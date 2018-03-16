@@ -65,17 +65,16 @@ $(document).ready(function(){
     //Дата и время
     flatpickr("#date",{
       dateFormat: "d-M-Y", //"Y-m-d"
+      // inline: true,
       "disable": [
-              function(date) {
-                  // return true to disable
-                  return (date.getDay() === 5 || date.getDay() === 6);
-
-              }
-          ],
-          "locale": {
-              "firstDayOfWeek": 1 // start week on Monday
+          function(date) {
+            var i
+              return (date.getDay() === 6 || date.getDay() === 0);
+              // return (date.getMonth() % 6 < 0);
+              // return !(date.getDate() % 8);
           }
-
+      ],
+      "locale": {"firstDayOfWeek": 1 }
     });
     flatpickr("#time",{
       enableTime: true,
