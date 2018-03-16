@@ -14,6 +14,15 @@ window.addEventListener("load", showPage, false);
 $(document).ready(function(){
   "use strict";
 
+  if (window.matchMedia('(min-width: 800px)').matches) {
+    skrollr.init({
+    smoothScrolling: true,
+    // smoothScrollingDuration: 100,
+    easing: "linear",
+    forceHeight: !1
+    });
+  };
+
   // $('h1 span,h2 span').hover(function() {
   //    $(this).addClass('anim-play');
   // });
@@ -45,15 +54,16 @@ $(document).ready(function(){
         $.magnificPopup.open({items: {src: '#pop-up'},type: 'inline',mainClass: 'mfp-fade'},0);
         setTimeout(function(){$.magnificPopup.close()},3000);
 
-        // $.magnificPopup.open({
-        //   items: {
-        //     src: '<div class="white-popup">Dynamically created popup</div>',
-        //     type: 'inline'
-        //   }
-        // });
       },
       error: function() {
         $.magnificPopup.open({items: {src: '#error'},type: 'inline',mainClass: 'mfp-fade',},0);
+        // $.magnificPopup.open({
+        //   items: {
+        //     src: '<div id="error" class="small-pop-up mfp-hide"><em class="intro__remark">Sorry!</em><p>Connection error. <br>Please go back and try again...</p></div>',
+        //     type: 'inline',
+        //     mainClass: 'mfp-fade'
+        //   }
+        // });
         setTimeout(function(){$.magnificPopup.close()},3000);
       }
     }).done(function() {

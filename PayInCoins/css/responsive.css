@@ -82,7 +82,7 @@
 	.top:after {top: 820px; width: 700px;height: 269px;right: -80px}
 	h1 {word-spacing: 5px}
 	h1 > br:first-of-type{display: none}
-	h2 {font-size: 5em; padding-bottom: 0.64em}
+	h2 {font-size: 5em; padding-bottom: 0.64em;padding-right: 0}
 	.intro__main:after {top: 91px; right: -6px}
 	.s-intro .col-sm-6 {float: none;width: 100%;max-width: 620px;margin: auto;padding: 15px}
 	.s-intro .col-sm-6:last-of-type{padding-top: 60px}

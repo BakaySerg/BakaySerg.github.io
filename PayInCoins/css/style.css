@@ -522,7 +522,7 @@ h2.anim-play span:nth-of-type(2):after {animation: 1.1s reveal-scale-l cubic-bez
 	text-align: center;
 	margin: auto;
 	opacity: 0;
-	transform: scaleX(.9);
+	transform: scale(.9);
 }
 .form.anim-play {animation: 1.2s move-to-home .5s forwards}
 
