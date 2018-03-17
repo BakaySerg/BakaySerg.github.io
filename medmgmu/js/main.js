@@ -55,16 +55,12 @@ $(document).ready(function(){
        fixedBgPos: true,
        mainClass: 'mfp-fade',
        closeOnBgClick: true,
-       enableEscapeKey:true,
-       callbacks: {
-         // beforeOpen: function() { $('.wrapper').addClass('is-popup-open'); },
-         // close:function() { $('.wrapper').removeClass('is-popup-open'); }
-       }
+       enableEscapeKey:true
     });
 
     //Дата и время
     flatpickr("#date",{
-      dateFormat: "d-M-Y", //"Y-m-d"
+      dateFormat: "d-M-Y",
       // inline: true,
       "disable": [
           function(date) {
@@ -81,10 +77,29 @@ $(document).ready(function(){
       noCalendar: true,
       dateFormat: "H:i",
       // time_24hr: true,
-      defaultDate: "09:00",
-      minDate: "09:00",
-      maxDate: "18:00"
+      defaultDate: "07:00",
+      minDate: "07:00",
+      maxDate: "20:00"
     });
+
+    //mask
+    $("[type=tel]").mask("Телефон: +7 (999) 999-9999");
+
+    //faq
+    if ($('.faq__hidden').length) {
+      $('.faq__hidden').hide();
+      $('.faq__visible').click(function() {
+        $(this).toggleClass('opened').next('.faq__hidden').slideToggle(300);
+      });
+    };   
+    if ($('.analyzes__list').length) {
+      $(".analyzes__list").accordion({
+        accordion: true,
+        speed: 200,
+        closedSign: '',
+        openedSign: ''
+      });
+    };
 
      
 });
