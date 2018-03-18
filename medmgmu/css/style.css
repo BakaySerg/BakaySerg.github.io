@@ -343,20 +343,24 @@ a.top__link:hover,.active >.top__link{
 }
 .accent__sm-btn:after {background-position: -103px -125px}
 .dark__sm-btn:after {background-position: -135px -126px}
-/*==========================
-	services-section
-===========================*/
-.services__item {
+
+/*=============================
+	services|actions - section
+=============================*/
+.services__item,.actions__item {
 	position: relative;
 	display: block;
-	padding-top: 30px;
-	margin-bottom: 30px;
+	margin: 0 auto 30px;
 	text-align: center;
 	color: #4d4d4d;
 	border: 1px solid #ccc;
 	transition: .3s;
 }
-.services__item:hover {box-shadow: 0 2px 9px 1px rgba(0,0,0,.2)}
+.actions__item.is-accent-bg{
+	background-color: var(--accent-color);
+	color: #fff;
+}
+.services__item:hover,.actions__item:hover {box-shadow: 0 2px 9px 1px rgba(0,0,0,.2)}
 
 .services__discount {
 	position: absolute;
@@ -368,8 +372,21 @@ a.top__link:hover,.active >.top__link{
 	border-bottom: 1px solid #ccc;
 	padding: 4px;
 }
-.services__pict {min-height: 249px}
-
+.actions__offer {
+	min-height: 74px;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 3px 9px;
+	color: #4d4d4d;
+	font-weight: 700;
+}
+.services__pict {
+	margin-top: 30px;
+	min-height: 249px
+}
 .services__pict img {
 	display: block;
 	width: 100%;
@@ -378,20 +395,27 @@ a.top__link:hover,.active >.top__link{
 	min-height: 75px;
 	padding: 0 5px
 }
+.actions__descr {
+	min-height: 66px;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .services__descr h3 {
 	padding-top: 10px;
 	padding-bottom: .1em;
 	font-size: 16px;
 	transition: .3s;
 }
-.services__descr p {
+.services__descr p,.actions__descr p {
 	font-size: 12px;
 	transition: .3s;
 	padding-bottom: .5em;
 }
 .services__item:hover h3,.services__item:hover p {color: #ce202e}
 
-.services__price {
+.services__price,.actions__price {
 	border-top: 1px solid #ccc;
 	margin: 0 7px;
 	padding: 7px 0 8px;
@@ -400,6 +424,8 @@ a.top__link:hover,.active >.top__link{
 	font-size: 16px;
 	font-weight: 700;
 }
+.actions__price{color: var(--accent-color);}
+.is-accent-bg .actions__price,.is-accent-bg .actions__offer{color: #fff;border-top-color: #fff;}
 /*===============================
  s-footer
 ================================*/
@@ -632,9 +658,17 @@ label a:hover {text-decoration: none}
 .form__btn:hover {background-color: #ce202e}
 
 /*--------------------------------*/
+.s-type h3 {
+	font-size: 1.56em;
+	padding-bottom: .7em;
+}
 .s-type p {
 	line-height: 1.66;
 	padding-bottom: 1.1em;
+}
+.s-type strong {
+	display: block;
+	padding-bottom: 1.07em;
 }
 .other-services__item {
 	position: relative;
@@ -800,3 +834,31 @@ div.analyzes__content {
 	margin-bottom: -3px;
 	line-height: 1;	
 }
+.actions__list {
+	list-style-type: disc;
+	list-style-position: inside;
+	font-style: italic;
+	font-size: 15px;
+	padding-top: 11px;
+	padding-bottom: 9px;
+}
+.actions__list li {margin-bottom: 9px;}
+
+/**/
+.bread-crumbs {
+	width: 100%;
+	max-width: 1200px;
+	margin: 45px auto 20px;
+	padding: 0 15px;
+	font-size: 14px;
+}
+.bread-crumbs a {
+	background-color: var(--accent-color);
+	color: #fff;
+	display: inline-block;
+	padding: 1px 7px;
+	border-radius: 2px;
+	margin-right: 12px;
+	transition: .3s;
+}
+.bread-crumbs a:hover{opacity: .8;}
