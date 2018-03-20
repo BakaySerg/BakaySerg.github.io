@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta name="theme-color" content="#666"/>
-	<title>Акции</title>
+	<title>Бесплатные программы 2</title>
 	<meta name="description" content="site descr"/>
 	<meta name="keywords" content="site,keywords"/>
 	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon"/>
@@ -55,9 +55,9 @@
 									<li><a href="about_doctors" class="top__link">Наши врачи</a></li>
 								</ul>
 							</li>
-							<li class="active"><a class="top__link" href="actions.html">Акции</a></li>
+							<li><a class="top__link" href="actions.html">Акции</a></li>
 							<li><a class="top__link" href="clinical.html">Клинические исследования</a></li>
-							<li><a class="top__link" href="programs.html">Бесплатные программы для пациентов</a></li>
+							<li class="active"><a class="top__link" href="programs.html">Бесплатные программы для пациентов</a></li>
 							<li><a class="top__link" href="contacts.html">Контакты</a></li>
 						</ul>
 					</div>
@@ -100,94 +100,156 @@
 		<!-- L a y o u t  i n n e r -->
 		<div class="layout-inner">
 
-			<!--  actions  -->
-			<section class="s-actions">
+			<!-- bread-crumbs -->
+			<div class="bread-crumbs">
+				<a href="actions.html">Бесплатные программы для пациентов</a><span>Название программы 1</span>
+			</div>
+
+			<!--  type  -->
+			<section class="s-type">
 				<div class="container">
-					<h1>Акции медицинского центра</h1>
+					<h1>Название программы</h1>
+					<div class="row">
+						<div class="col-sm-4">
+							<img src="img/programs/01.svg" alt="programs">
+						</div>
+						<div class="col-sm-8">
+							<h3 class="is-accent">Что такое «Бесплатные программы для пациентов»? Как&nbsp;принять участие в программе?</h3>
+							<p>Первым шагом на пути к получению бесплатных исследований должно стать обращение к нужному специалисту в поликлинике с полисом ОМС. Только врач может принять решение о необходимости проведения тех или иных анализов исходя из состояния пациента. По результатам приема, больному выдается направление на различные медицинские услуги, в том числе и анализы.</p>
+							<p>Согласно закону по выданному врачом направлению, анализы должны будут сделать бесплатно в этом же медицинском учреждении. В случаях, когда у медицинской организации отсутствуют возможности для проведения необходимых исследований, пациенту должны выдать направление на сдачу анализов в другую поликлинику.</p>
+							<p>Первым шагом на пути к получению бесплатных исследований должно стать обращение к нужному специалисту в поликлинике с полисом ОМС. Только врач может принять решение о необходимости проведения тех или иных анализов исходя из состояния пациента. По результатам приема, больному выдается направление на различные медицинские услуги, в том числе и анализы. возможности для проведения необходимых исследований, пациенту должны выдать направление на сдачу анализов в другую поликлинику.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--  phase  -->
+			<section class="s-phase">
+				<div class="container">
+					<h2>Фазы исследований</h2>
+					<div class="phase__item">
+						<div class="phase__num">Фаза I</div>
+						<h3>Наблюдение</h3>
+						<p>Чего не хватает... этот слой с текстом слит... <br>Только врач может принять решение о необходимости проведения тех или иных анализов исходя из состояния пациента. По&nbsp;результатам приема <br>1 раз 4 недели в I триместре, <br>1 раз 2 недели в II триместре,<br>1 раз неделю в III триместре.</p>
+					</div>
+					<div class="phase__item">
+						<div class="phase__num">Фаза II</div>
+						<h3>3 стороны наблюдения беременности</h3>
+						<p>Чего не хватает... этот слой с текстом слит... <br>Только врач может принять решение о необходимости проведения тех или иных анализов исходя из состояния пациента. По&nbsp;результатам приема <br>1 раз 4 недели в I триместре, <br>1 раз 2 недели в II триместре,<br>1 раз неделю в III триместре.</p>
+					</div>
+				</div>
+			</section>
+
+			<!--  volunteer  -->
+			<section class="s-volunteer">
+				<div class="container">
+					<h2>Стать добровольцем</h2>
+					<p>Заполните данную форму чтобы попасть в базу данных здоровых добровольцев для исследований ранних фаз и биоэквивалентности. <br>При планировании исследования в Вашем городе мы свяжемся с Вами и предложим принять участие в исследовании.</p>
+					<form action="#" class="form row">
+						<div class="col-sm-6">
+							<input type="text" name="volunteer-fullname" class="form__input" placeholder="Фамилия Имя Отчество *" required>
+							<input type="text" name="volunteer-birth" class="form__input" placeholder="Дата рождения *" required>
+							<select class="form__select" name="volunteer-gender">     
+								<option value="0" disabled selected style="display:none;">Ваш пол</option>
+								<option value="male">Мужской</option>
+								<option value="female">Женский</option>
+							</select>
+							<input type="text" name="volunteer-city" class="form__input" placeholder="Город проживания *">
+							<input type="tel" name="volunteer-tel" placeholder="Телефон *" required>
+							<input type="email" name="volunteer-email" placeholder="E-mail">
+							<select class="form__select" name="volunteer-analysis">     
+								<option value="0" disabled selected style="display:none;">Выбрать интересуемое исследование</option>
+								<option value="male">интересуемое исследование 1</option>
+								<option value="female">интересуемое исследование 2</option>
+							</select>
+						</div>
+						<div class="col-sm-6">
+							<div class="form__remark">* Обязательные поля</div>
+							<p>Нажимая "Отправить заявку", я выражаю согласие и разрешаю  ООО «ЛАБМГМУ» обрабатывать свои персональные данные, которые я внес в данную форму, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу на территории Российской Федерации), обезличивание, блокирование,  уничтожение персональных данных, в целях внесения данной информации в банк добровольцев.</p>
+							<label for="agree" class="clearfix">
+								<input type="checkbox" name="agree" required>
+								<span><a href="#">Согласие на обработку персональных&nbsp;данных</a></span>
+							</label>
+							<button class="btn" type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<!--  programs  -->
+			<section class="s-programs">
+				<div class="container">
+					<h2>Актуальные программы</h2>
 					<div class="row">
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<a href="#" class="actions__item">
-								<span class="actions__offer">Проверь <br>свой желудок</span>
-								<div class="actions__pict"><img src="img/actions/1.png" alt="act"></div>
-								<div class="actions__descr">
-									<p>Анализ крови на Helicobacter pylori (бактерия, вызывающая хронические заболевания и рак желудка)</p>
+							<a href="#" class="programs__item is-accent-bg">
+								<div class="programs__img"><img src="img/programs/01.svg" alt="*" class="img-responsive"></div>
+								<div class="programs__desc">
+									<h3>Название программы 1</h3>
+									<p>(примечание)</p>
 								</div>
-								<div class="actions__price">стоимость: 300 руб.</div>
-							</a>
-						</div>
+							</a></div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<a href="#" class="actions__item">
-								<span class="actions__offer">Приём врача-кардиолога в «ЛАБМГМУ» БЕСПЛАТНО!</span>
-								<div class="actions__pict"><img src="img/actions/2.svg" alt="act"></div>
-								<div class="actions__descr">
-									<p>«Проверь, здорово <br>ли твое сердце»</p>
+							<a href="programs_2.html" class="programs__item">
+								<div class="programs__img"><img src="img/programs/02.svg" alt="*" class="img-responsive"></div>
+								<div class="programs__desc">
+									<h3>Переход к программам 2</h3>
+									<p>(примечание)</p>
 								</div>
-								<div class="actions__price">Бесплатно!</div>
-							</a>
-						</div>
+							</a></div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<a href="#" class="actions__item">
-								<span class="actions__offer">Бесплатно сдать анализ крови на ВИЧ*</span>
-								<div class="actions__pict"><img src="img/actions/3.svg" alt="act"></div>
-								<div class="actions__descr">
-									<p>Каждый понедельник, Медицинский центр ЛАБМГМУ предлагает бесплатно сдать анализ крови на ВИЧ </p>
+							<a href="#" class="programs__item is-dark-bg">
+								<div class="programs__img"><img src="img/programs/03.svg" alt="*" class="img-responsive"></div>
+								<div class="programs__desc">
+									<h3>Название программы 3</h3>
+									<p>(примечание)</p>
 								</div>
-								<div class="actions__price">Бесплатно!</div>
-							</a>
-						</div>
+							</a></div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<a href="#" class="actions__item is-accent-bg">
-								<span class="actions__offer">Предложение для льготников</span>
-								<div class="actions__pict"><img src="img/actions/4.svg" alt="act"></div>
-								<div class="actions__descr">
-									<p>Скидка до 20% на все услуги для льготных категорий граждан в ЛАБМГМУ</p>
+							<a href="#" class="programs__item">
+								<div class="programs__img"><img src="img/programs/04.svg" alt="*" class="img-responsive"></div>
+								<div class="programs__desc">
+									<h3>Название программы 4</h3>
+									<p>(примечание)</p>
 								</div>
-								<div class="actions__price">Скидки от 10 до 20%</div>
-							</a>
-						</div>
+							</a></div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<a href="#" class="actions__item">
-								<span class="actions__offer">Ведения <br>беременности</span>
-								<div class="actions__pict"><img src="img/actions/5.svg" alt="act"></div>
-								<div class="actions__descr">
-									<p>Ожидание ребенка для каждой женщины – период важный и волнительный.</p>
+							<a href="#" class="programs__item">
+								<div class="programs__img"><img src="img/programs/05.svg" alt="*" class="img-responsive"></div>
+								<div class="programs__desc">
+									<h3>Название программы 5</h3>
+									<p>(примечание)</p>
 								</div>
-								<div class="actions__price">Скидки</div>
-							</a>
-						</div>
+							</a></div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<a href="#" class="actions__item">
-								<span class="actions__offer">Детский <br>массаж</span>
-								<div class="actions__pict"><img src="img/actions/6.svg" alt="act"></div>
-								<div class="actions__descr">
-									<p>«Массаж — залог гармоничного развития ребенка».</p>
+							<a href="#" class="programs__item is-accent-bg">
+								<div class="programs__img"><img src="img/programs/06.svg" alt="*" class="img-responsive"></div>
+								<div class="programs__desc">
+									<h3>Название программы 6</h3>
+									<p>(примечание)</p>
 								</div>
-								<div class="actions__price">Скидки</div>
-							</a>
-						</div>
+							</a></div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<a href="ureaplasma.html" class="actions__item">
-								<span class="actions__offer">Наличие <br>уреаплазмы?</span>
-								<div class="actions__pict"><img src="img/actions/7.png" alt="act"></div>
-								<div class="actions__descr">
-									<p>Медицинский центр «ЛАБМГМУ» предлагает сдать анализ на наличие «Уреаплазмы!».</p>
+							<a href="#" class="programs__item">
+								<div class="programs__img"><img src="img/programs/07.svg" alt="*" class="img-responsive"></div>
+								<div class="programs__desc">
+									<h3>Название программы 7</h3>
+									<p>(примечание)</p>
 								</div>
-								<div class="actions__price">Всего за 1 рубль!</div>
-							</a>
-						</div>
+							</a></div>
 						<div class="col-xs-6 col-sm-4 col-md-3">
-							<a href="#" class="actions__item">
-								<span class="actions__offer">Проверь <br>cвое зрение!</span>
-								<div class="actions__pict"><img src="img/actions/8.png" alt="act"></div>
-								<div class="actions__descr">
-									<p>Проверь cвое зрение! Комплексная проверка зрения</p>
+							<a href="#" class="programs__item is-dark-bg">
+								<div class="programs__img"><img src="img/programs/08.svg" alt="*" class="img-responsive"></div>
+								<div class="programs__desc">
+									<h3>Название программы 8</h3>
+									<p>(примечание)</p>
 								</div>
-								<div class="actions__price">всего за 500 руб.</div>
 							</a>
 						</div>
 					</div>
 				</div>
 			</section>
+
 
 
 		</div><!-- /l a y o u t  i n n e r -->
