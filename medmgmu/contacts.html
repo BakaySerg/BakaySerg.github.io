@@ -52,7 +52,7 @@
 								<a href="#about__list" class="spoiler" data-toggle="collapse"></a>
 								<ul class="collapse" id="about__list">
 									<li><a href="about_doc.html" class="top__link">Документы медицинского центра</a></li>
-									<li><a href="about_doctors" class="top__link">Наши врачи</a></li>
+									<li><a href="about_doctors.html" class="top__link">Наши врачи</a></li>
 								</ul>
 							</li>
 							<li><a class="top__link" href="actions.html">Акции</a></li>
@@ -188,7 +188,22 @@
 				<option value="Волоколамская">м.Волоколамская</option>
 			</select>
 			<!-- Время -->
-			<input type="text" name="time" class="popup__input" id="time" placeholder="Выберите время">
+			<!-- <input type="text" name="time" class="popup__input" id="time" placeholder="Выберите время"> -->
+			<select id="form1_time" name="form1_time" class="form__select">
+				<option value="0" disabled selected style="display:none;">Выберите время приема.</option>
+				<option value="8:00">8:00</option>
+				<option value="9:00">9:00</option>
+				<option value="10:00">10:00</option>
+				<option value="11:00">11:00</option>
+				<option value="12:00">12:00</option>
+				<option value="13:00">13:00</option>
+				<option value="14:00">14:00</option>
+				<option value="15:00">15:00</option>
+				<option value="16:00">16:00</option>
+				<option value="17:00">17:00</option>
+				<option value="18:00">18:00</option>
+				<option value="19:00">19:00</option>
+			</select>
 			<input type="text" name="fio" placeholder="Ф.И.О.">
 			<span>* обязательно одно из полей</span>
 			<input type="tel" name="tel" placeholder="Телефон: +7 (">
@@ -226,16 +241,17 @@
 	<script src="js/multiple-accordion.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+	<!-- <script src="https://maps.google.com/maps/api/js?sensor=true"></script> -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATCHV8sdVBXNg0sw2XhPOEX2jMUGx05ag"></script>
 	<script>
 		//Гугл карта
 		jQuery(function($) {
-		    var LatLng = new google.maps.LatLng(55.818566, 37.3646283),
-		        LatCenter = new google.maps.LatLng(55.818566, 37.3601),
+		    var LatMarker = new google.maps.LatLng(55.818566, 37.3646283),
+		        LatCenter = new google.maps.LatLng(55.818566, 37.3611),
 		        googlemap = new google.maps.Map(document.getElementById('map'),
 		        {
 		            center: LatCenter,
-		            zoom: 17,
+		            zoom: 16,
 		            scrollwheel: false,
 		            mapTypeControl: false,
 		            mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -250,11 +266,12 @@
 				 content: contentString
 			 });			 
 		    var marker = new google.maps.Marker({
-	            position: LatLng,
+	            position: LatMarker,
 	            map: googlemap,
 	            title:"Ильинский бульвар, д.3."           
 	        });
 		    infowindow.open(map, marker);
+		    marker.addListener('click', function() {infowindow.open(map, marker);});
 		  });
 	</script>
 </body>

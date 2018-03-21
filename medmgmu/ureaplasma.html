@@ -52,7 +52,7 @@
 								<a href="#about__list" class="spoiler" data-toggle="collapse"></a>
 								<ul class="collapse" id="about__list">
 									<li><a href="about_doc.html" class="top__link">Документы медицинского центра</a></li>
-									<li><a href="about_doctors" class="top__link">Наши врачи</a></li>
+									<li><a href="about_doctors.html" class="top__link">Наши врачи</a></li>
 								</ul>
 							</li>
 							<li class="active"><a class="top__link" href="actions.html">Акции</a></li>
@@ -298,7 +298,22 @@
 				<option value="Волоколамская">м.Волоколамская</option>
 			</select>
 			<!-- Время -->
-			<input type="time" name="time" class="popup__input" id="time" placeholder="Выберите время">
+			<!-- <input type="time" name="time" class="popup__input" id="time" placeholder="Выберите время"> -->
+			<select id="form1_time" name="form1_time" class="form__select">
+				<option value="0" disabled selected style="display:none;">Выберите время приема.</option>
+				<option value="8:00">8:00</option>
+				<option value="9:00">9:00</option>
+				<option value="10:00">10:00</option>
+				<option value="11:00">11:00</option>
+				<option value="12:00">12:00</option>
+				<option value="13:00">13:00</option>
+				<option value="14:00">14:00</option>
+				<option value="15:00">15:00</option>
+				<option value="16:00">16:00</option>
+				<option value="17:00">17:00</option>
+				<option value="18:00">18:00</option>
+				<option value="19:00">19:00</option>
+			</select>
 			<input type="text" name="fio" placeholder="Ф.И.О.">
 			<span>* обязательно одно из полей</span>
 			<input type="tel" name="tel" placeholder="Телефон: +7 (">

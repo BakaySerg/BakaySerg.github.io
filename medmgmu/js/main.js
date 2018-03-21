@@ -42,6 +42,37 @@ $(document).ready(function(){
       }]
     });
 
+    //slider
+    $('.certificate-slider').slick({
+      responsive:true,
+      // infinite: false,
+      dots: false,
+      arrows: true,
+      prevArrow: '<i class="slick-arrow slick-prev"><svg width="40" height="40"><path d="M23.5 11.5 L15.5 19.5 L23.5 27.5" stroke-linejoin="round" stroke-linecap="round" style="fill:none; stroke:#ce202e; stroke-width:3px"></path></svg></i>',
+      nextArrow: '<i class="slick-arrow slick-next"><svg width="40" height="40"><path d="M16.5 11.5 L24.5 19.5 L16.5 27.5" stroke-linejoin="round" stroke-linecap="round" style="fill:none; stroke:#ce202e; stroke-width:3px"></path></svg></i>',
+      slidesToShow: 6,
+      slidesToScroll: 2,
+      responsive: [{
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3
+        }        
+      },{
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          draggable:true}
+        },{
+        breakpoint: 361,
+        settings: {
+          slidesToShow: 1,
+          centerMode:true,
+          draggable:true,
+          centerPadding:'30px'
+        }
+      }]
+    });
+
     // Галерея
     if ($('.photo-gallery').length){
       $('.photo-gallery').each(function() {
@@ -63,7 +94,7 @@ $(document).ready(function(){
             image: {
               tError: '<a href="%url%">Изображение #%curr%</a> не загружается.',
               titleSrc: function(item) {
-                return item.el.find('span').text();
+                return item.el.find('span:not(.certificate__descr)').text();
               }
             },
             callbacks: {
@@ -102,15 +133,15 @@ $(document).ready(function(){
       ],
       "locale": {"firstDayOfWeek": 1 }
     });
-    flatpickr("#time",{
-      enableTime: true,
-      noCalendar: true,
-      dateFormat: "H:i",
-      // time_24hr: true,
-      defaultDate: "07:00",
-      minDate: "07:00",
-      maxDate: "20:00"
-    });
+    // flatpickr("#time",{
+    //   enableTime: true,
+    //   noCalendar: true,
+    //   dateFormat: "H:i",
+    //   // time_24hr: true,
+    //   defaultDate: "07:00",
+    //   minDate: "07:00",
+    //   maxDate: "20:00"
+    // });
 
     //mask
     $("[type=tel]").mask("Телефон: +7 (999) 999-9999");
@@ -130,6 +161,5 @@ $(document).ready(function(){
         openedSign: ''
       });
     };
-
      
 });
