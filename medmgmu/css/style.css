@@ -610,9 +610,9 @@ textarea{min-height: 74px}
 	background-color: #ce202e;
 	border-color: #ce202e;
 }
-.flatpickr-current-month {padding: 4px 0 0 0;}
+.flatpickr-current-month {padding: 4px 0 0 0}
 
-.flatpickr-weekdays{height: 35px;padding-top: 4px;}
+.flatpickr-weekdays{height: 35px;padding-top: 4px}
 
 .flatpickr-day{line-height: 38px}
 
@@ -1092,9 +1092,9 @@ b.pricing__value {
 
 .mfp-arrow-left:after {margin-left: 6px}
 
-.mfp-arrow-left:before,.mfp-arrow-left:after{margin-top: 43px;}
+.mfp-arrow-left:before,.mfp-arrow-left:after{margin-top: 43px}
 
-.mfp-arrow:after, .mfp-arrow:before {left: -2px;}
+.mfp-arrow:after, .mfp-arrow:before {left: -2px}
 
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
 	top: 8px;
@@ -1177,10 +1177,10 @@ b.pricing__value {
 	opacity: 0;
 	transition: .3s;
 }
-.certificate__img:hover:before {opacity: 1;}
-.certificate__img:hover:after {opacity: 1;transform: scale(.6);}
+.certificate__img:hover:before {opacity: 1}
+.certificate__img:hover:after {opacity: 1;transform: scale(.6)}
 
-.certificate-slider .slide img {margin: auto;}
+.certificate-slider .slide img {margin: auto}
 
 .certificate__descr {
 	position: relative;
@@ -1214,7 +1214,7 @@ h3 + em ,.contact-face__box b{
 	padding-left: .2em;
 	text-shadow: 0 1px 12px #fff;
 }
-.control__box {columns: 2 auto;}
+.control__box {columns: 2 auto}
 
 .control__list {
 	list-style-position: outside;
@@ -1238,11 +1238,11 @@ h3 + em ,.contact-face__box b{
 .doctors__item {
 	max-width: 370px;
 	margin: auto;
-	background-color: #e0e0e0;}
+	background-color: #e0e0e0}
 
-.s-doctors {margin-bottom: 30px;}
+.s-doctors {margin-bottom: 30px}
 
-.s-doctors .col-sm-4 {margin-bottom: 30px;}
+.s-doctors .col-sm-4 {margin-bottom: 30px}
 
 .doctors__descr {
 	padding: 12px 14px 8px;
