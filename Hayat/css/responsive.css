@@ -7,7 +7,8 @@
 	#expand {display: block}
 	.navbar-nav{padding: 29px 5px; width: 100%; display: -ms-flexbox; display: flex; flex-wrap: nowrap; justify-content: space-around; align-items:stretch; -ms-flex-pack: justify; position: relative; }
 	.navbar-nav li{margin-bottom: -2px; display: -ms-flexbox; display: flex; align-self:stretch; justify-content: space-around; align-items: center; }
-	a.top__link {width: 100%; text-align: center}	
+	a.top__link {width: 100%; text-align: center}
+	.s-testimon{padding-bottom: 40px;}	
 }
 @media(min-width: 1279px){
 	.brand__item{max-width: 20%}
@@ -16,7 +17,7 @@
 	.wrapper {border: 1px solid #e9e2dc}
 	.intro-slider .slide {min-height: 104vh}
 	.intro-navigation{top: 33%}
-	.top__phone a{font-size: 1.04em}
+	.top__phone a{font-size: 1.1em}
 	.top__phone span{font-size: 13px}
 	.navbar-nav {padding: 26px 5px}
 	a.top__link,.top__request span {font-size: 1.1em}
@@ -26,6 +27,12 @@
 	.s-intro {margin-bottom: -214px}
 	.top__request i{margin-right: 10px}
 	.equipment__item h5 {font-size: 18px}
+}
+@media(max-width: 1440px){
+	.top__contact{width: 440px;}
+	.top__request{max-width: 220px;}
+	.top__request span{font-size: 1em;}
+	.top__request .is-accent{height: 40px;}
 }
 @media(max-width: 1366px){
 	.wrapper{margin-bottom: 25px}
@@ -39,10 +46,10 @@
 	.form input, .form textarea{margin-bottom: 20px}
 	.form textarea{min-height: 160px}
 	.navbar-nav {padding: 24px 3px}
-	.top__contact{width: 388px}
+	.top__contact{width: 400px}
 	.top__phone {margin-right: 3%}
 	.top__request{max-width: 200px;font-size: .88em}
-	.top__request i {width: 18px;height: 25px}
+	.top__request i {width: 18px;min-width: 18px;height: 30px}
 	.top__request span{max-width: 112px}
 	.btn-lg{padding: 17px 22px}
 	.btn-alert {padding: 17px 30px}
@@ -59,6 +66,9 @@
 	.pop-up__remark h2{font-size: 2em}
 	.pop-up__remark br:nth-of-type(even){display: none}
 	.pop-up__small-partners{padding: 10px 0}
+	.s-footer{font-size: .92em;}
+	.top__request .is-accent {height: 35px; margin-left: 8px;}
+	.about__statistic b{font-size: 3em}
 }
 @media(max-width: 1281px){
 	.pop-up__content h2 {font-size: 2.3em}
@@ -115,7 +125,7 @@
 	.navbar {min-width: 38%}
 	.navbar-nav {padding: 21px 3px}
 	.btn-lg {padding: 15px 18px}
-	.top__contact {width: 350px}
+	.top__contact {width: 370px}
 	.top__phone a{font-size: .94em}
 	.top__phone span{font-size: 11px}
 	.slide__text .h1 {font-size: 4em;margin-bottom: .6em}
@@ -174,7 +184,7 @@
 	.recom-brand-slider .slide {padding: 26px;height: 112px}
 	.s-testimon .col-md-4{max-width: 100%;flex: 1 0 100%}
 	.s-testimon .video-box {max-width: 470px;margin: auto}
-	.testimon__name{margin-bottom: 36px}
+	.testimon__name{margin: 0 auto 30px;display: block;text-align: center;}
 	.footer__subscribe-box{padding: 25px 15px 0}
 	.s-footer {padding-top: 22px}
 	.footer__box .container{border: none}
@@ -187,6 +197,9 @@
 	.small-pop-up{max-width: 600px}
 	.pop-up__form-box {padding: 63px 60px 15px}
 	.pop-up__small-partners{margin: 0 -20px}
+	.s-testimon .col-md-4 img{display: block;margin: auto}
+	.s-testimon .temp {max-width: 500px;margin: auto;min-height: auto}
+	.recom-video-slider .slide {min-height: 430px; padding: 40px 25px 40px 45px;}
 }
 @media (max-width: 800px){
 	section {padding-top: 10px}
@@ -221,6 +234,7 @@
 	.footer__up{height: 102px}
 	.wrapper{margin-bottom: 0}
 	.footer__webland{top: auto;bottom: 16px}
+	.services__item {padding: 26px calc(2% + 15px);}
 }
 @media (max-width: 767px){
 	.s-about .col-md-8,.s-about .col-md-4 {max-width: 100%; flex: 0 0 100%}
@@ -287,6 +301,8 @@
 	.form textarea {min-height: 130px}
 	.form div svg{top: 16px;left: 20px}
 	.pop-up__small-partners div {padding: 24px 10px}
+	.recom-video-slider .slide {min-height: 400px; padding: 30px 15px 35px 30px}
+	.recom-video-slider .slide .temp p {font-size: 1.2em;}
 }
 @media (max-width: 480px){
 	.s-intro, .intro-slider .slide{height: 100vh;min-height: auto;max-height: 736px}
@@ -322,6 +338,7 @@
 	.footer__card i{margin: 0 12px}
 	.pop-up__form-box {padding: 62px 30px 15px}
 	.footer__bottom{padding: 18px 0}
+	.pop-up__content br:nth-of-type(even){display: none}
 }
 @media (max-width: 380px){
 	.slide__text .h1 {font-size: 2em}
@@ -329,7 +346,7 @@
 	.slogan__slider .slick-prev {left: 34%}
 	.slogan__slider .slick-next {right: 34%}
 	.s-equipment .col-md-2{flex: 0 0 50%;max-width: 50%;padding: 0 10px}
-	.pop-up__content {padding: 35px 14px 15px 15px}
+	.pop-up__content {padding: 57px 14px 15px 15px}
 	.mfp-close-btn-in .mfp-close{right: 2px;top: 4px}
 	.pop-up__content h2 {font-size: 1.7em}
 	.pop-up__content .btn-box {padding: 25px 0}
@@ -338,13 +355,16 @@
 	.footer__contact a{margin-bottom: 19px}
 	.footer__address address{padding-left: 0}
 	.pop-up__content ol > li {padding-bottom: 14px; padding-left: 40px}
+	.recom-video-slider .slide {min-height: 330px} 
+	.recom-video-slider .slide .temp h4{font-size: 1.6em}
+	.recom-video-slider .slide .temp p {font-size: 1.2em}
 }
 @media (max-width: 359px){
 	h2 {font-size: 1.8em}
 	.title{padding: 20px 0}
 	.slide__text .h1 {font-size: 1.6em;margin-bottom: 1.2em}
 	.intro-navigation {bottom: 14%}
-	.btn-lg{width: 100%;max-width: 290px;padding: 15px 13px}
+	.btn-lg{width: 100%;max-width: 290px;padding: 15px 13px;font-size: .92em}
 	.slogan__slider .slick-dots i {width: 40px; height: 40px}
 	.slogan__slider {padding: 70px 0 26px}
 	.equipment__subscribe {padding: 22px 15px 26px}
@@ -355,7 +375,7 @@
 	.footer__address address{padding-left: 0}
 	.s-callback {height: 330px}
 	.pop-up__content h2 {font-size: 1.4em}
-	.pop-up__content {padding: 35px 14px 15px 15px}
+	.pop-up__content {padding: 51px 14px 15px 15px}
 	.big-pop-up{padding: 50px 15px 15px}
 	video:hover + .video-play-icon,.video-play-icon{border: none;box-shadow: none}
 	.s-recom .col-3 {padding: 0;text-align: left}
@@ -368,4 +388,5 @@
 	.footer__copy{min-width: 100%}
 	.pop-up__small-partners{margin: 0}
 	.pop-up__small-partners div {padding: 22px 12px}
+	.recom-video-slider .slide {min-height: 300px; padding: 20px 13px 20px 20px}
 }

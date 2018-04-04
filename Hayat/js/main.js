@@ -1,23 +1,11 @@
 function showPage() {
   setTimeout(function(){
-      document.body.classList.remove('js-loading');
-      setTimeout(function(){$(".loader").fadeOut(); },500);
+      // document.body.classList.remove('js-loading');
+      setTimeout(function(){$(".loader").fadeOut(); },3200);
       setTimeout(function(){$("#top__request").text('37'); },20000);
   });
 
-}
-function openPopupCallback() {
-  $.magnificPopup.close();
-  // $.magnificPopup.open({
-  //     items: { src: '#popup'},
-  //     type: 'inline',
-  //     mainClass: 'mfp-fade',
-  //     closeOnBgClick: true,
-  //     closeMarkup: '<button title="%title%" type="button" class="mfp-close">закрыть <span>&#215;</span></button>',
-  //     enableEscapeKey:true
-  // }, 0);
 };
-
 document.body.classList.add('js-loading');
 
 
@@ -202,21 +190,7 @@ $(document).ready(function(){
          tError: 'Контент не загрузился :(',
          tLoading: 'ЗАГРУЗКА...',
          cursor: 'mfp-ajax-cur',
-         enableEscapeKey:true
-        //  callbacks: { 
-        //   open: function(){
-        //     var w = function openPopupCallback() {
-        //       $.magnificPopup.open({
-        //           items: { src: '#popup'},
-        //           type: 'inline',
-        //           mainClass: 'mfp-fade',
-        //           closeOnBgClick: true,
-        //           closeMarkup: '<button title="%title%" type="button" class="mfp-close">закрыть <span>&#215;</span></button>',
-        //           enableEscapeKey:true
-        //       }, 0);
-        //     };
-        //   } 
-        // }
+         enableEscapeKey:true 
       });
     };
 

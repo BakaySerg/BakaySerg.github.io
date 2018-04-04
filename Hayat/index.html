@@ -29,7 +29,11 @@
 <body>
 	<!-- preloader -->
 	<div class="loader">
-		<div class="loader_inner"></div>
+		<div class="logo pop-up__logo">
+			<img src="img/logo-light.png" alt="Сад-hayat,сервисный центр">
+			<span>Cервисный центр</span>
+		</div>
+		<div class="loader__counter"></div>
 	</div>
 	<!-- svg-sprite -->
 	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
@@ -145,7 +149,7 @@
 					<div class="col-sm-7 col-md-8">
 						<div class="title">
 							<h2>О НАС</h2>
-							<em>В основе нашей команды лежит любовь к делу, которым мы занимаемся. <br>Каждый день, помогая другим, мы совершенствуемся сами!!!</em>
+							<em>В основе нашей команды лежит любовь к делу, которым&nbsp;мы&nbsp;занимаемся. <br>Каждый день, помогая другим, мы совершенствуемся сами!!!</em>
 						</div>
 						<img src="img/team.jpg" alt="photo">
 					</div>
@@ -223,7 +227,7 @@
 					<div class="col-sm-4 col-md-2">
 						<div class="equipment__item">
 							<i><svg viewBox="0 0 32 32"><use xlink:href="#i-1"/></svg></i>
-							<h5>Бензоинструмент</h5>
+							<h5>Бензо&shy;инструмент</h5>
 							<b>6</b>
 						</div>
 					</div>
@@ -237,7 +241,7 @@
 					<div class="col-sm-4 col-md-2">
 						<div class="equipment__item">
 							<i><svg viewBox="0 0 32 32"><use xlink:href="#i-3"/></svg></i>
-							<h5>Электроинструмент</h5>
+							<h5>Электро&shy;инструмент</h5>
 							<b>4</b>
 						</div>
 					</div>
@@ -289,7 +293,7 @@
 							<h3>Ремонт электроинструмента</h3>
 							<p>Вы сможете заказать отдельные услуги, такие как перемотка электродвигателя, ремонт статора и якоря.</p>
 							<div class="btn-box">
-								<a href="repairs_electro.html" class="btn-sm btn-light js-popup-ajax">Подробнее</a>
+								<a href="#popup-elecro" class="btn-sm btn-light js-popup">Подробнее</a>
 								<a href="pdf/price_repairs_electro.pdf" target="_blank" class="btn-sm btn-dark">Прайс <svg viewBox="0 0 32 32"><use xlink:href="#i-rub"/></svg></a>
 							</div>
 						</div>
@@ -300,7 +304,7 @@
 							<h3>Ремонт бензоинструмента</h3>
 							<p>Бензиновая садово-парковая техника является нашим основным направлением не только в продажах, но и в ремонте, а также в обслуживании.</p>
 							<div class="btn-box">
-								<a href="repairs_gasoline_power_tools.html" class="btn-sm btn-light js-popup-ajax">Подробнее</a>
+								<a href="#popup-gasoline" class="btn-sm btn-light js-popup">Подробнее</a>
 								<a href="pdf/price_repairs_gasoline_power_tools.pdf" target="_blank" class="btn-sm btn-dark">Прайс <svg viewBox="0 0 32 32"><use xlink:href="#i-rub"/></svg></a>
 							</div>
 						</div>
@@ -311,7 +315,7 @@
 							<h3>Ремонт силовой техники</h3>
 							<p>На даче и в офисе, на природе или при строительстве, неотъемлемой частью являются силовые агрегаты, такие как электростанция, сварочное оборудование</p>
 							<div class="btn-box">
-								<a href="repairs_power.html" class="btn-sm btn-light js-popup-ajax">Подробнее</a>
+								<a href="#popup-power" class="btn-sm btn-light js-popup">Подробнее</a>
 								<a href="pdf/price_repairs_power.pdf" target="_blank" class="btn-sm btn-dark">Прайс <svg viewBox="0 0 32 32"><use xlink:href="#i-rub"/></svg></a>
 							</div>
 						</div>
@@ -322,7 +326,7 @@
 							<h3>Ремонт строительной техники</h3>
 							<p>Мы беремся за ремонт оборудования любой сложности, будь то ремонт бетономешалки или виброплиты, бензореза или шпонорезчика.</p>
 							<div class="btn-box">
-								<a href="repairs_building.html" class="btn-sm btn-light js-popup-ajax">Подробнее</a>
+								<a href="#popup-building" class="btn-sm btn-light js-popup">Подробнее</a>
 								<a href="pdf/price_repairs_building.pdf" target="_blank" class="btn-sm btn-dark">Прайс <svg viewBox="0 0 32 32"><use xlink:href="#i-rub"/></svg></a>
 							</div>
 						</div>
@@ -338,7 +342,7 @@
 							<h3>Срочный ремонт оборудования</h3>
 							<p>С момента попадания инструмента или техники в наш сервисный центр, его готовность будет обеспечена в течении 24-часов.</p>
 							<div class="btn-box">
-								<a href="urgent_repair.html" class="btn-sm btn-light js-popup-ajax">Подробнее</a>
+								<a href="#popup-urgent" class="btn-sm btn-light js-popup">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -348,7 +352,7 @@
 							<h3>Забор и доставка товара</h3>
 							<p>Теперь Вам не надо будет думать, как и на чем, когда и куда отвезти на ремонт вашу технику. Мы готовы взять на себя весь спектр трудозатрат, связанных с восстановлением вашего инструмента.</p>
 							<div class="btn-box">
-								<a href="pick-up_and_delivery.html" class="btn-sm btn-light js-popup-ajax">Подробнее</a>
+								<a href="#popup-delivery" class="btn-sm btn-light js-popup">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -358,7 +362,7 @@
 							<h3>Продажа запчастей</h3>
 							<p>Сегодня в нашей ассортименте более 30&nbsp;000 позиции запасных частей. Мы их не только устанавливаем на ремонтируемые агрегаты</p>
 							<div class="btn-box">
-								<a href="sale_parts.html" class="btn-sm btn-light js-popup-ajax">Подробнее</a>
+								<a href="#popup-sales" class="btn-sm btn-light js-popup">Подробнее</a>
 							</div>
 						</div>
 					</div>
@@ -399,7 +403,7 @@
 					<div class="col-sm-3 brand__item"><img src="img/brands/14.png" alt="brand"></div>
 					<div class="col-sm-3 brand__item"><img src="img/brands/15.png" alt="brand"></div>
 				</div>
-				<div class="is-aligner"><a href="#" class="btn-lg js-popup">ПОДДЕРЖКА ВАШЕГО БРЕНДА</a></div>
+				<div class="is-aligner"><a href="#popup-brand" class="btn-lg js-popup">ПОДДЕРЖКА ВАШЕГО БРЕНДА</a></div>
 			</div>			
 		</section>
 
@@ -419,7 +423,7 @@
 							<i class="video-play-icon"></i>
 						</div> -->
 						<img src="img/testimon/testimon-1.jpg" alt="временная картинка вместо видео">
-						<div class="temp">Здесь временно текст отзыва вместо видео крайне довольного первого из этого списка клиента. Который очень всем рекумендует даннный сервис!</div>
+						<div class="temp">Являюсь представителем организации, занимающийся благоустройством города. В начале года, столкнулся с необходимостью ремонта бензокос STIHL, обратился в авторизованный Сервисный центр г.Ногинск, ул. Ильича 15/3. Работой остался доволен, скорость и качество выполнения работ-на высоте!!! теперь только к вам, ребята!</div>
 						<!-- ! -->
 						<a href="#" target="blank" rel="nofollow" class="testimon__name">
 							<i><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></i>
@@ -434,7 +438,7 @@
 							<i class="video-play-icon"></i>
 						</div> -->
 						<img src="img/testimon/testimon-2.jpg" alt="временная картинка вместо видео">
-						<div class="temp">Временно отзыв вместо видео довольного клиента. Который очень всем рекумендует даннный сервис!</div>
+						<div class="temp">Вышла из строя старушка-бензопила, возможности приобрести новую, не было, а работа ждать не может. Сдал на ремонт в сервисный центр САД-HAYAT, отремонтировали недорого, а на время ремонта предоставили в аренду другую бензопилу,очень благодарен коллективу мастеров.</div>
 						<!-- ! -->
 						<a href="#" target="blank" rel="nofollow" class="testimon__name">
 							<i><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></i>
@@ -449,7 +453,7 @@
 							<i class="video-play-icon"></i>
 						</div> -->
 						<img src="img/testimon/testimon-3.jpg" alt="временная картинка вместо видео">
-						<div class="temp">Здесь временно текст отзыва вместо видео крайне довольного клиента. Который очень рекумендует!</div>
+						<div class="temp">Хотел бы сказать огромное СПАСИБО Сервисному центру САД-HAYAT, искал ротор на болгарку Макита, везде называли слишком долгие сроки ожидания (2-3 недели), в сц АД-HAYAT нужный мне ротор был в наличии и по нормальной цене. Успел сделать работу в желаемый срок)</div>
 						<!-- ! -->
 						<a href="#" target="blank" rel="nofollow" class="testimon__name">
 							<i><svg viewBox="0 0 32 32"><use xlink:href="#i-fb"/></svg></i>
@@ -482,7 +486,9 @@
 						</video>
 						<i class="video-play-icon"></i>
 					</div> -->
-					<img src="video/poster5.jpg" alt="temp" class="img-responsive">
+					<div class="temp">
+						<p>Хотим порекомендовать Вам нашего партнера-авторизованный сервисный центр САД-HAYAT. Квалифицированные специалисты, прошедшие обучение, в том числе на базе наших обучающих центров, проведут диагностику и ремонт Вашего агрегата, привезут необходимые запчасти в кратчайшие сроки.</p>
+					</div>
 				</div>
 				<div class="slide">
 					<!-- <div class="video-box">
@@ -491,7 +497,9 @@
 						</video>
 						<i class="video-play-icon"></i>
 					</div> -->
-					<img src="video/poster5.jpg" alt="temp" class="img-responsive">
+					<div class="temp">
+						<p>Компания САД-HAYAT, является нашим партнером на протяжении вот уже 5 лет. В 2017 году открылся авторизованный Сервисный центр,занимающийся ремонтом садовой техники STIHL и VIKING. С тех пор, коллектив сервисного центра, постоянно наращивает свои знания и навыки!</p>
+					</div>
 				</div>
 				<div class="slide">
 					<!-- <div class="video-box">
@@ -500,7 +508,9 @@
 						</video>
 						<i class="video-play-icon"></i>
 					</div> -->
-					<img src="video/poster5.jpg" alt="temp" class="img-responsive">
+					<div class="temp">
+						<p>Сервисный центр САД-HAYAT в 2017 году получил авторизацию на выполнение гарантийного ремонта всего инструмента MAKITA. С данной организацией работаем не первый год, доверяем им ремонт нашего инструмента и техники.С командой специалистов САД-HAYAT, Ваш инструмент будет служить долгие долгие годы...</p>
+					</div>
 				</div>
 				<div class="slide">
 					<!-- <div class="video-box">
@@ -509,7 +519,9 @@
 						</video>
 						<i class="video-play-icon"></i>
 					</div> -->
-					<img src="video/poster5.jpg" alt="temp" class="img-responsive">
+					<div class="temp">
+						<p>САД-HAYAT, является нашим партнером на протяжении вот уже 4 лет. С тех пор, как мы стали сотрудничать, коллектив сервисного центра, постоянно наращивает свои знания и навыки!</p>
+					</div>
 				</div>
 			</div>
 			<div class="recom-brand-slider" id="recom-brand-slider">
@@ -607,6 +619,7 @@
 		<div class="pop-up__remark">
 			<div class="pop-up__remark-inner">
 				<h2>ОБРАТНАЯ СВЯЗЬ</h2>
+				<br>
 				<div>НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С&nbsp;ВАМИ <br>В БЛИЖАЙШЕЕ ВРЕМЯ</div>
 			</div>
 		</div>
@@ -652,6 +665,7 @@
 		<div class="pop-up__remark">
 			<div class="pop-up__remark-inner">
 				<h2>Заявка на&nbsp;ремонт</h2>
+				<br>
 				<div>НАШ МЕНЕДЖЕР СВЯЖЕТСЯ С&nbsp;ВАМИ <br>В БЛИЖАЙШЕЕ ВРЕМЯ</div>
 			</div>
 		</div>
@@ -704,6 +718,50 @@
 				<br>
 				<br>
 				<h3><span>32 </span> ПАРТНЕРА</h3>
+				<div>Если Вы оказались на нашем сайте и прочитали все что выше, значит, мы можем быть полезны друг другу, не так ли? :)</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- p o p u p - p a r t n e r s -->
+	<div id="popup-brand" class="small-pop-up mfp-hide">
+		<div class="pop-up__form-box">
+			<form action="#" class="form">
+				<input type="hidden" id="subject" name="subject" value="Стать Партнёром">		
+				<div class="logo pop-up__logo pop-up__logo-dark">
+					<img src="img/logo-dark.png" alt="Сад-hayat,сервисный центр">
+					<span>Cервисный центр</span>
+				</div>
+				<div>
+					<input type="text" name="name" placeholder="Введите ваше Имя" minlength="2">
+					<svg viewBox="0 0 32 32"><use xlink:href="#i-user"/></svg>
+				</div>
+				<div>
+					<input type="email" name="email" placeholder="Введите ваш email" required>
+					<svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg>
+				</div>
+				<div>
+					<input type="tel" name="tel" placeholder="Введите ваш телефон" required>
+					<svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg>
+				</div>
+				<div>
+					<textarea name="comment" cols="30" rows="10" placeholder="Описание поломки"></textarea>
+					<svg viewBox="0 0 32 32"><use xlink:href="#i-chat"/></svg>
+				</div>
+				<button class="form__btn-lg" type="submit">Оставить заявку</button>
+			</form>
+			<div class="pop-up__contact">
+				<b>Консультация наших специалистов</b>
+				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
+				<a href="mailto:info@remont-sadhayat.ru"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg></i>info@remont-sadhayat.ru</a>
+			</div>
+		</div>
+		<div class="pop-up__remark">
+			<div class="pop-up__remark-inner">
+				<h2>МЫ ПОДДЕРЖИМ ВАС!</h2>
+				<br>
+				<br>
+				<br>
 				<div>Если Вы оказались на нашем сайте и прочитали все что выше, значит, мы можем быть полезны друг другу, не так ли? :)</div>
 			</div>
 		</div>
@@ -771,6 +829,211 @@
 			<br>
 			<br>
 			<br>
+			<div class="pop-up__contact">
+				<b>Консультация наших специалистов</b>
+				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
+				<a href="mailto:info@remont-sadhayat.ru"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg></i>info@remont-sadhayat.ru</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup-power -->
+	<div id="popup-power" class="page-pop-up mfp-hide">
+		<div class="pop-up__bg-box">
+			<div class="pop-up__bg-fixed" style="background-image: url(img/ajax/rem-equipment.jpg);">
+				<div class="logo pop-up__logo">
+					<img src="img/logo-light.png" alt="Сад-hayat,сервисный центр">
+					<span>Cервисный центр</span>
+				</div>
+			</div>
+		</div>
+		<div class="pop-up__content">
+			<h2>РЕМОНТ <br>СИЛОВОЙ ТЕХНИКИ</h2>
+			<p>На даче и в офисе, на природе или при строительстве, неотъемлемой частью являются силовые агрегаты, такие как электростанция, сварочное оборудование, компрессора  и иная техника. Данная категория товаров, зачастую используется в промышленных целях. </p>
+			<p>Именно поэтому, чаще других групп товаров к нам попадают изделия группы «силовая техника». Являясь зачастую крупногабаритными и тяжелыми, данные товары создают сложности для своих владельцев, при необходимости транспортировать их на ремонт или обслуживание.Мы стараемся донести до наших клиентов, что грамотный подход при эксплуатации данной техники, многократно снизит риски связанные с проблемами при поломке техники. Но все же, «если что-то работает, то оно ломается» и на этот случай, наша компания «САД-HAYAT» готова снять все «головные боли» наших клиентов связанные с ремонтом силовой техники от его забора до доставки обратно.</p>
+			<p>Вам остается только довериться нам! <br> Если Вам на данный момент необходим ремонт бензогенератора, ремонт сварочного аппарата, (инвертора, трансформатора, полуавтомата) ремонт другой сварки, а также ремонт компрессоров, то смело обращайтесь к нам. </p>
+			<div class="btn-box">
+				<a href="pdf/price_repairs_power.pdf" target="_blank" class="btn-lg btn-dark">Прайс <svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-rub"></use></svg></a>
+				<a href="#popup" class="btn-lg btn-alert js-popup">ЗАЯВКА НА СРОЧНЫЙ РЕМОНТ</a>
+			</div>
+			<div class="pop-up__contact">
+				<b>Консультация наших специалистов</b>
+				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
+				<a href="mailto:info@remont-sadhayat.ru"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg></i>info@remont-sadhayat.ru</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup-gasoline -->
+	<div id="popup-gasoline" class="page-pop-up mfp-hide">
+		<div class="pop-up__bg-box">
+			<div class="pop-up__bg-fixed" style="background-image: url(img/ajax/rem-equipment.jpg);">
+				<div class="logo pop-up__logo">
+					<img src="img/logo-light.png" alt="Сад-hayat,сервисный центр">
+					<span>Cервисный центр</span>
+				</div>
+			</div>
+		</div>
+		<div class="pop-up__content">
+			<h2>РЕМОНТ <br>БЕНЗО<wbr>ИНСТРУМЕНТА</h2>
+				<p>Бензиновая садово-парковая техника является нашим основным направлением не только в продажах, но и в ремонте, а также в обслуживании. Как показывает статистика, грамотная эксплуатация техники, в связке со своевременным обслуживанием, почти наверняка гарантирует долговечность агрегата.</p>
+				<p>Необходимо помнить, что бензотехника требует определенных регламентированных процедур, соблюдение которых, позволит продлить срок службы вашего изделия. Специалисты нашего сервисного центра, не только смогут отремонтировать вашу технику или провести регламентное обслуживание, но и смогут подсказать Вам, как следить за своим железным другом.</p>
+				<p>Поэтому, если Вам необходим ремонт бензопил, газонокосилок, ремонт мотоблоков или снегоуборщиков, триммеров или ремонт бензоинструмента любых других товарных групп и все это быстро и недорого, тогда Вам точно к нам!</p>
+			<div class="btn-box">
+				<a href="pdf/price_repairs_gasoline_power_tools.pdf" target="_blank" class="btn-lg btn-dark">Прайс <svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-rub"></use></svg></a>
+				<a href="#popup" class="btn-lg btn-alert js-popup">ЗАЯВКА НА СРОЧНЫЙ РЕМОНТ</a>
+			</div>
+			<div class="pop-up__contact">
+				<b>Консультация наших специалистов</b>
+				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
+				<a href="mailto:info@remont-sadhayat.ru"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg></i>info@remont-sadhayat.ru</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup-elecro -->
+	<div id="popup-elecro" class="page-pop-up mfp-hide">
+		<div class="pop-up__bg-box">
+			<div class="pop-up__bg-fixed" style="background-image: url(img/ajax/rem-equipment.jpg);">
+				<div class="logo pop-up__logo">
+					<img src="img/logo-light.png" alt="Сад-hayat,сервисный центр">
+					<span>Cервисный центр</span>
+				</div>
+			</div>
+		</div>
+		<div class="pop-up__content">
+			<h2>РЕМОНТ <br>ЭЛЕКТРО<wbr>ИНСТРУМЕНТА</h2>
+			<p>Последние десятилетия, мы наблюдаем интенсивную автоматизацию всех процессов. Конечно, строительство как локомотив экономики не мог остаться в стороне. Сегодня мы ежедневно наблюдаем за совершенствованием существующих моделей электроинструмента а также новшествами рынка, позволяющими ускорить и облегчить все процессы в ходе ремонта и строительства. При этом конечно, увеличивается и потребность в обслуживании продаваемой техники. Именно поэтому, наша компания «САД-HAYAT» не только продает электроинструмент, но и в полной мере его обслуживает и ремонтирует. </p>
+			<p>Необходимо помнить, что электроинструмент также как и  бензотехника требует определенных регламентированных процедур, соблюдение которых позволит продлить срок службы вашей техники. В случае, если Вы доверитесь нам, наши специалисты не только отремонтируют вашу технику но и помогут Вам продлить жизнь вашего инструмента за счет его правильной эксплуатации и своевременного обслуживания. Поэтому, если Вам необходим ремонт перфоратора или шуруповерта, болгарки или дрели, а также ремонт иного электроинструмента, дешево и надежно, наш сервисный центр в Москве, к Вашим услугам!</p>
+			<p>У нас Вы сможете не только закрыть потребность в ремонте инструмента, но и заказать отдельные услуги, такие как перемотка электродвигателя, ремонт статора и якоря. Оставьте нам заявку, и Вы получите надежного партнера на долгие годы.</p>
+			<div class="btn-box">
+				<a href="pdf/price_repairs_electro.pdf" target="_blank" class="btn-lg btn-dark">Прайс <svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-rub"></use></svg></a>
+				<a href="#popup" class="btn-lg btn-alert js-popup">ЗАЯВКА НА СРОЧНЫЙ РЕМОНТ</a>
+			</div>
+			<div class="pop-up__contact">
+				<b>Консультация наших специалистов</b>
+				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
+				<a href="mailto:info@remont-sadhayat.ru"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg></i>info@remont-sadhayat.ru</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup-delivery -->
+	<div id="popup-delivery" class="page-pop-up mfp-hide">
+		<div class="pop-up__bg-box">
+			<div class="pop-up__bg-fixed" style="background-image: url(img/ajax/rem-equipment.jpg);">
+				<div class="logo pop-up__logo">
+					<img src="img/logo-light.png" alt="Сад-hayat,сервисный центр">
+					<span>Cервисный центр</span>
+				</div>
+			</div>
+		</div>
+		<div class="pop-up__content">
+			<h2>ЗАБОР И ДОСТАВКА ТОВАРА </h2>
+			<p>Теперь Вам не надо будет думать, как и на чем, когда и куда отвезти на ремонт вашу технику. Мы готовы взять на себя весь спектр трудозатрат, связанных с восстановлением вашего инструмента.  Наша услуга действует на территории Москвы и Московской области.</p>
+			<h4>ПОРЯДОК ДЕЙСТВИЙ:</h4>
+			<ul>
+				<li>Обращаясь по телефону  к нашему оператору или оставляя заявку на сайте, вы сообщаете о желании воспользоваться услугой «забор и доставка;</li>
+				<li>После оформления, в оговоренный срок, к Вам приедет наш водитель для забора товара;</li>
+				<li>Передавать в ремонт технику необходимо в чистом, неразобранном виде.</li>
+				<li>Специалисты нашего СЦ будут держать вас в курсе процессов происходящих с вашим инструментом, и согласовывать с Вами все этапы ремонта.</li>
+				<li>После готовности, с Вами свяжутся  и согласуют дату и сроки доставки товара с ремонта.</li>
+			</ul>
+			<h4>СТОИМОСТЬ.</h4>
+			<p>Большинство сервисных центров, оказывают данную услугу «бесплатно» закладывая стоимость перевозки в цену ремонта или в стоимость запчастей.</p>
+			<p>Мы считаем такой подход недопустимым и разъясняем нашим клиентом, что любая услуга должна быть оказана своевременно и качественно, а также быть оплачена - честно и за дело.</p>
+			<p>Поэтому мы установили минимальную стоимость забора и доставки техники по Москве:</p>
+			<ul>
+				<li>при стоимости ремонта (включая стоимость зп) – до 5000,  забор и доставка  - 700р.</li>
+				<li>при стоимости ремонта (включая стоимость зп) – от 5000р до 15000р,  забор и доставка  - 500р.</li>
+				<li>при стоимости ремонта (включая стоимость зп) – свыше 15000,  забор и доставка  - бесплатно!</li>
+			</ul>
+			<div class="pop-up__contact">
+				<b>Консультация наших специалистов</b>
+				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
+				<a href="mailto:info@remont-sadhayat.ru"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg></i>info@remont-sadhayat.ru</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup-urgent-repair -->
+	<div id="popup-urgent" class="page-pop-up mfp-hide">
+		<div class="pop-up__bg-box">
+			<div class="pop-up__bg-fixed" style="background-image: url(img/ajax/rem-equipment.jpg);">
+				<div class="logo pop-up__logo">
+					<img src="img/logo-light.png" alt="Сад-hayat,сервисный центр">
+					<span>Cервисный центр</span>
+				</div>
+			</div>
+		</div>
+		<div class="pop-up__content">
+			<h2>СРОЧНЫЙ РЕМОНТ</h2>
+			<p>Работая над удовлетворением потребностей наших клиентов, мы предлагаем воспользоваться услугой «СРОЧНЫЙ РЕМОНТ». Данная услуга актуальна для жителей Москвы и Московской области.  Воспользоваться ею, можно оставив на сайте заявку в разделе «срочный ремонт», либо набрав по номеру <span class="is-accent">+7&nbsp;(495)&nbsp;481-40-68.</span></p>
+			<p>После подтверждения вашей заявки, наши специалисты предложат Вам доставить технику в наш сервисный центр по ближайшему к Вам адресу, либо воспользоваться услугой «забора и доставки товара».</p>
+			<p>С момента попадания инструмента или техники в наш сервисный центр, его готовность будет обеспечена в течении 24-часов.</p>
+			<p>По мере готовности, наши специалисты свяжутся  с Вами и согласуют сроки доставки (либо сообщат о готовности и возможности получение отремонтированного изделия в нашем Сервисном центре)</p>
+			<div class="btn-box">
+				<a href="#popup" class="btn-lg btn-alert js-popup">ЗАЯВКА НА СРОЧНЫЙ РЕМОНТ</a>
+			</div>
+			<div class="pop-up__contact">
+				<b>Консультация наших специалистов</b>
+				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
+				<a href="mailto:info@remont-sadhayat.ru"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg></i>info@remont-sadhayat.ru</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup-sales -->
+	<div id="popup-sales" class="page-pop-up mfp-hide">
+		<div class="pop-up__bg-box">
+			<div class="pop-up__bg-fixed" style="background-image: url(img/ajax/rem-equipment.jpg);">
+				<div class="logo pop-up__logo">
+					<img src="img/logo-light.png" alt="Сад-hayat,сервисный центр">
+					<span>Cервисный центр</span>
+				</div>
+			</div>
+		</div>
+		<div class="pop-up__content">
+			<h2>ПРОДАЖА ЗАПЧАСТЕЙ</h2>
+			<br>
+			<br>
+			<p>За годы работы, нам удалось собрать большое количество запасных частей, не только на существующие ныне модели инструмента и техники, но и на те, которые выведены из ассортимента поставщиками. </p>
+			<p>Сегодня в нашей ассортименте более 30 000 позиции запасных частей.</p>
+			<p>Мы их не только устанавливаем на ремонтируемые агрегаты, но продаем нашим клиентам.</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="btn-box">
+				<a href="#popup" class="btn-lg btn-alert js-popup">ЗАЯВКА НА СРОЧНЫЙ РЕМОНТ</a>
+			</div>
+			<div class="pop-up__contact">
+				<b>Консультация наших специалистов</b>
+				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
+				<a href="mailto:info@remont-sadhayat.ru"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-mail"/></svg></i>info@remont-sadhayat.ru</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- popup-building -->
+	<div id="popup-building" class="page-pop-up mfp-hide">
+		<div class="pop-up__bg-box">
+			<div class="pop-up__bg-fixed" style="background-image: url(img/ajax/rem-equipment.jpg);">
+				<div class="logo pop-up__logo">
+					<img src="img/logo-light.png" alt="Сад-hayat,сервисный центр">
+					<span>Cервисный центр</span>
+				</div>
+			</div>
+		</div>
+		<div class="pop-up__content">
+			<h2>РЕМОНТ <br>СТРОИТЕЛЬНОГО ОБОРУДОВАНИЯ</h2>
+			<p>Сегодня  уже фактически невозможно представить не одно строительство без бетономешалок и трамбовок,  ветротехники и бензорезов. Используя данную технику в режиме 24/7 люди забывают о том, что даже профессиональная техника требует щадящего режима эксплуатации и периодического обслуживания. 80% ремонтируемой техники в данной группе товаров, выходят из строя иза неправильной эксплуатации «на износ».</p>
+			<p>Ремонтируя профессиональную и промышленную технику, мы научились выявлять не только фактические поломки, но и прогнозируемые. Такой поход позволяет нашим клиентам быть уверенными, что техника прошедшая ремонт в нашем сервисном центре, абсолютно готова к ударному труду.</p>
+			<p>Мы беремся за ремонт оборудования любой сложности, будь то ремонт бетономешалки или виброплиты, бензореза или шпонорезчика. Наш сервис в Москве или в области, произведет ремонт вашей техники дешево и быстро, естественно с нашей гарантией.</p>
+			<div class="btn-box">
+				<a href="pdf/price_repairs_building.pdf" target="_blank" class="btn-lg btn-dark">Прайс <svg viewBox="0 0 32 32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-rub"></use></svg></a>
+				<a href="#popup" class="btn-lg btn-alert js-popup">ЗАЯВКА НА СРОЧНЫЙ РЕМОНТ</a>
+			</div>
 			<div class="pop-up__contact">
 				<b>Консультация наших специалистов</b>
 				<a href="tel:+74954814068"><i><svg viewBox="0 0 32 32"><use xlink:href="#i-phone"/></svg></i>+7 (495) 481 40 68</a>
