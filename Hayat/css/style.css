@@ -92,7 +92,7 @@
 .loader__counter:after {
 	position: relative;
 	width: 100%;
-	content: "0%\A 10%\A 22%\A 36%\A 48%\A 53%\A 64%\A 71%\A 83%\A 100%\A";
+	content: "0%\A 10%\A 22%\A 36%\A 48%\A 53%\A 64%\A 71%\A 83%\A 99%\A";
 	white-space: pre;
 	animation: counter 3.2s steps(9) forwards;
 }
