@@ -1,36 +1,28 @@
 function showPage() {
   setTimeout(function(){
       document.body.classList.remove('js-loading');
-      setTimeout(function(){
-      $(".loader").fadeOut();
-      },500);
+      setTimeout(function(){$(".loader").fadeOut(); },500);
+      setTimeout(function(){$("#top__request").text('37'); },20000);
   });
 
 }
+function openPopupCallback() {
+  $.magnificPopup.close();
+  // $.magnificPopup.open({
+  //     items: { src: '#popup'},
+  //     type: 'inline',
+  //     mainClass: 'mfp-fade',
+  //     closeOnBgClick: true,
+  //     closeMarkup: '<button title="%title%" type="button" class="mfp-close">закрыть <span>&#215;</span></button>',
+  //     enableEscapeKey:true
+  // }, 0);
+};
+
 document.body.classList.add('js-loading');
 
 
 $(document).ready(function(){
   "use strict";
-
-    // Ruffles
-    // var ww = $(window).width(),
-    //     wh = $(window).height();
-    // if ( ww > 1023) { 
-    //   $('.s-project ').addClass("trnsl").viewportChecker({
-    //     classToAdd: 'anim-play',
-    //     offset: 50
-    //   });
-    //   $('.half').addClass("trnslx").viewportChecker({
-    //     classToAdd: 'anim-play',
-    //     offset: 100
-    //   });
-    //   $('.s-p').addClass("cliptrapez").viewportChecker({
-    //     classToAdd: 'anim-play',
-    //     offset: 320
-    //   });
-    // };
-
   
     // Nav    
     $(window).scroll(function() {
@@ -59,7 +51,7 @@ $(document).ready(function(){
       return false;
     });
 
-    //intro-slider
+    // intro-slider
     if ($("#intro-slider").length) {
       $("#intro-slider").slick({
         dots: false,
@@ -69,17 +61,19 @@ $(document).ready(function(){
         slidesToShow: 1,
         pauseOnHover:false,
         pauseOnFocus:false,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5000,
+        speed:200,
         fade: true
       });
     };
 
     // parallax-rellax
-    if (window.matchMedia('(min-width: 800px)').matches) {
+    if (window.matchMedia('(min-width: 1024px)').matches) {
       var rellax = new Rellax();
     };
 
+    // video events
     $('.video-box').each(function(index, el) {
       $(this).click(function(e) {
         var vid = $(this);
@@ -90,7 +84,13 @@ $(document).ready(function(){
       function playVideo(e) { $('video', this).get(index).play();}
       function pauseVideo(e) {$('video', this).get(index).pause();}      
     });
-   
+    $('.video').hover(function toggleControls() {
+        if (this.hasAttribute("controls")) {
+            this.removeAttribute("controls")
+        } else {
+            this.setAttribute("controls", "controls")
+        }
+    });   
 
     //.slogan__slider
     $(".slogan__slider").slick({
@@ -111,7 +111,7 @@ $(document).ready(function(){
         fade:true
     });
 
-    //Brand - video -slider
+    // Brand - video -slider
     $("#recom-video-slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -177,10 +177,22 @@ $(document).ready(function(){
       });
     };
 
+    // var w = function openPopupCallback() {
+    //   $.magnificPopup.open({
+    //       items: { src: '#popup'},
+    //       type: 'inline',
+    //       mainClass: 'mfp-fade',
+    //       closeOnBgClick: true,
+    //       closeMarkup: '<button title="%title%" type="button" class="mfp-close">закрыть <span>&#215;</span></button>',
+    //       enableEscapeKey:true
+    //   }, 0);
+    // };
+
     // Попап
     if ($('.js-popup-ajax').length){
       $('.js-popup-ajax').magnificPopup({
          type: 'ajax',
+         settings: {cache:true},
          removalDelay: 300,
          fixedContentPos: true,
          fixedBgPos: true,
@@ -189,9 +201,42 @@ $(document).ready(function(){
          closeMarkup: '<button title="%title%" type="button" class="mfp-close">закрыть <span>&#215;</span></button>',
          tError: 'Контент не загрузился :(',
          tLoading: 'ЗАГРУЗКА...',
+         cursor: 'mfp-ajax-cur',
          enableEscapeKey:true
+        //  callbacks: { 
+        //   open: function(){
+        //     var w = function openPopupCallback() {
+        //       $.magnificPopup.open({
+        //           items: { src: '#popup'},
+        //           type: 'inline',
+        //           mainClass: 'mfp-fade',
+        //           closeOnBgClick: true,
+        //           closeMarkup: '<button title="%title%" type="button" class="mfp-close">закрыть <span>&#215;</span></button>',
+        //           enableEscapeKey:true
+        //       }, 0);
+        //     };
+        //   } 
+        // }
       });
     };
+
+    $(".form").submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data: $(this).serialize(),
+        success: function(){  
+          $.magnificPopup.open({items: {src: '#popup-thank'},type: 'inline',mainClass: 'mfp-fade'},0);
+        },
+        error: function() {
+          $.magnificPopup.open({items: {src: '#popup-error'},type: 'inline',mainClass: 'mfp-fade',},0);
+        }
+      }).done(function() {
+        $(".form").trigger("reset");
+      });
+      return false;
+    });
 
      
 });
