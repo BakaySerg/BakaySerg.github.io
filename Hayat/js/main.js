@@ -1,7 +1,7 @@
 function showPage() {
   setTimeout(function(){
       // document.body.classList.remove('js-loading');
-      setTimeout(function(){$(".loader").fadeOut(); },3200);
+      setTimeout(function(){$(".loader").fadeOut(); },3100);
       setTimeout(function(){$("#top__request").text('37'); },20000);
   });
 
@@ -10,7 +10,7 @@ document.body.classList.add('js-loading');
 
 
 $(document).ready(function(){
-  "use strict";
+  // "use strict";
   
     // Nav    
     $(window).scroll(function() {

@@ -71,7 +71,7 @@
 .loader__counter:after {
 	position: relative;
 	width: 100%;
-	content: "0%\A 10%\A 22%\A 36%\A 48%\A 53%\A 64%\A 71%\A 83%\A 99%\A";
+	content: "0%\A 19%\A 34%\A 39%\A 48%\A 53%\A 64%\A 71%\A 83%\A 99%\A";
 	white-space: pre;
 	animation: counter 3.2s steps(9) forwards;
 }
@@ -87,17 +87,18 @@
 	height: 10px;
 	background-color: rgba(254,254,254,.6);
 	width: 0%;
-	animation: load 3.2s ease forwards;
+	animation: load 3s ease forwards;
 }
 @keyframes load {
 	0% {width: 0%;}
-	14% {width: 14%;}
+	14% {width: 10%;}
 	28% {width: 22%;}
 	32% {width: 36%;}
-	54% {width: 48%;}
-	64% {width: 53%;}
+	48% {width: 48%;}
+	62% {width: 53%;}
 	71% {width: 64%;}
-	86% {width: 98%;}
+	86% {width: 71%;}
+	91% {width: 98%;}
 	100% {width: 100%;}
 }
 ::-webkit-scrollbar{width: 8px; height: 8px}
@@ -455,7 +456,7 @@ a.top__link:hover:before{
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	background-color: transparent;
+	background-color: rgba(1,1,1,.1);
 	border: 1px solid #fff;
 	transition: .3s;
 	outline: 0;
