@@ -55,27 +55,6 @@
 	z-index: 9999;
 	pointer-events: none;
 }
-.loader:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 10px;
-	background-color: rgba(254,254,254,.6);
-	width: 0%;
-	animation: load 3.2s ease forwards;
-}
-@keyframes load {
-	0% {width: 0%;}
-	14% {width: 14%;}
-	28% {width: 22%;}
-	32% {width: 36%;}
-	54% {width: 48%;}
-	64% {width: 53%;}
-	71% {width: 64%;}
-	86% {width: 71%;}
-	100% {width: 100%;}
-}
 .loader__counter {
 	position: absolute;
 	bottom: 60px;
@@ -99,6 +78,27 @@
 @keyframes counter { 
 	0% { top: 0; } 
 	100% { top: -9em; opacity: .6;} 
+}
+.loader:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 10px;
+	background-color: rgba(254,254,254,.6);
+	width: 0%;
+	animation: load 3.2s ease forwards;
+}
+@keyframes load {
+	0% {width: 0%;}
+	14% {width: 14%;}
+	28% {width: 22%;}
+	32% {width: 36%;}
+	54% {width: 48%;}
+	64% {width: 53%;}
+	71% {width: 64%;}
+	86% {width: 98%;}
+	100% {width: 100%;}
 }
 ::-webkit-scrollbar{width: 8px; height: 8px}
 ::-webkit-scrollbar-thumb {background: #bbb; cursor: pointer; border-radius: 1px}
@@ -425,6 +425,7 @@ a.top__link:hover:before{
 	color: #fab046;
 	font-size: 5.11em;
 	font-weight: 700;
+	font-family: var(--font-family);
 	line-height: 1.18;
 	text-transform: uppercase;
 	margin-bottom: .4em;
