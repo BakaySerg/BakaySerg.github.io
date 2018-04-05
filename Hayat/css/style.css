@@ -71,7 +71,7 @@
 .loader__counter:after {
 	position: relative;
 	width: 100%;
-	content: "0%\A 19%\A 34%\A 39%\A 48%\A 53%\A 64%\A 71%\A 83%\A 99%\A";
+	content: "0%\A 19%\A 34%\A 39%\A 48%\A 53%\A 64%\A 71%\A 90%\A 99%\A";
 	white-space: pre;
 	animation: counter 3.2s steps(9) forwards;
 }
@@ -731,7 +731,9 @@ video:hover + .video-play-icon {
 	max-width: 1022px;
 	padding: 20px;
 	margin: 0 auto -50px;
-	background: url(../img/subscribe-1-bg.png) center no-repeat;
+	background: url(../video/poster5.jpg) center no-repeat;
+	border-radius: 9px;
+	overflow: hidden;
 }
 .equipment__subscribe-offer {
 	color: #fff;
@@ -941,7 +943,7 @@ video:hover + .video-play-icon {
 .recom__quantity {font-size: 3.33em}
 
 .recom-video-slider {
-	background: url(../video/poster5.jpg) center no-repeat;
+	background: url(../img/bg-image-feedback.jpg) center no-repeat;
 	background-size: cover;
 	/*margin-bottom: -5px*/
 }
@@ -963,6 +965,7 @@ video:hover + .video-play-icon {
 .recom-video-slider .slide .temp p {
 	font-size: 1.4em;
 	color: #fff;
+	text-shadow: 0 0 29px rgba(0,0,0,.9);
 }
 .recom-brand-slider {padding: 0 130px}
 
