@@ -16,6 +16,7 @@
 @media(min-width: 1366px){
 	.s-advant {padding-bottom: 40px;}
 	.s-etaps .col-md-7 {padding: 0 30px;}
+	.s-etaps .form-box {max-width: 740px;}
 }
 @media(max-width: 1930px){
 	.header .row {height: 104px}
