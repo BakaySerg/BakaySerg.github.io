@@ -690,6 +690,8 @@ svg {max-width: 100%}
 .s-etaps .form-box p {
 	text-align: left;
 	padding-bottom: 0;
+	font-size: .96em;
+   line-height: 1.4;
 	margin-right: -20px;
 }
 .s-etaps .form-box__remark {font-size: 1.875em}
