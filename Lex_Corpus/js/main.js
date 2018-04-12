@@ -55,7 +55,7 @@ $(document).ready(function(){
     if (window.matchMedia('(min-width: 1023px)').matches) {
       skrollr.init({
       smoothScrolling: true,
-      // smoothScrollingDuration: 100,
+      smoothScrollingDuration: 100,
       forceHeight: !1
       });
     };
@@ -65,8 +65,10 @@ $(document).ready(function(){
       $("#intro-slider").slick({
         dots: true,
         arrows: false,
-        infinite: false,
+        infinite: true,
         speed: 700,
+        autoplay: true,
+        autoplaySpeed: 2100,
         focusOnSelect: true,
         slidesToShow: 1,
         fade: true
@@ -80,6 +82,8 @@ $(document).ready(function(){
         arrows: false,
         infinite: true,
         speed: 500,
+        autoplay: true,
+        autoplaySpeed: 2000,
         focusOnSelect: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -131,75 +135,67 @@ $(document).ready(function(){
 
     //mousewheel-slide
     $(function() {
-      // var wheelBoxTop = wheelBox.offset().top;
-      // var winTop = $(window).scrollTop();
       var wheelBox = $("#s-etaps");
       var curSlide = 1;
 
       if (window.matchMedia("(min-width: 1023px)").matches) {
 
-          $(window).scroll(function() {
-            var winTop = $(window).scrollTop();
-            var wheelBoxTop = wheelBox.offset().top;
-            // var nextSection = wheelBox.next().offset().top;
-              if(winTop > wheelBoxTop){
-                // setTimeout(function(){wheelBox.removeClass("disablewheel")},3100);
-                wheelBox.removeClass("disablewheel");
-             } 
-             // else {wheelBox.addClass("disablewheel");}
-           });
+        $("#s-clients,.s-any").addClass('before-anim').viewportChecker({
+          classToAdd: 'anim-play',
+          offset:250
+        });
+        wheelBox.viewportChecker({
+          classToAdd: 'ready',
+          classToAddForFullView: 'full-visible',
+          repeat: true,
+        });
 
-          $('#etaps-img-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-              curSlide = currentSlide + 1;
-              if((curSlide === 1) || (curSlide === 7)){
+        $(window).scroll(function() {
+          var winTop = $(window).scrollTop();
+          var wheelBoxTop = wheelBox.offset().top;
+            // if((winTop > wheelBoxTop - 9) && (winTop < wheelBoxTop + 15)){
+            if(wheelBox.hasClass('full-visible')){
+              wheelBox.removeClass("disablewheel");
+           } 
+         });
+
+        $('#etaps-img-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            curSlide = currentSlide + 1;
+            if((curSlide === 1) || (curSlide === 7)){
+              wheelBox.addClass('disablewheel');
+            } else {
+              wheelBox.removeClass('disablewheel');
+            }
+        });          
+
+        wheelBox.on('wheel', (function(e) {
+          var winTop = $(window).scrollTop();
+          var wheelBoxTop = wheelBox.offset().top;
+
+          if(wheelBox.hasClass('full-visible')) {
+            if (e.originalEvent.deltaY > 0) {
+              $('#etaps-img-slider').slick('slickNext');
+              if (curSlide === 7){
                 wheelBox.addClass('disablewheel');
+                return true;
               } else {
                 wheelBox.removeClass('disablewheel');
+                // e.preventDefault();
+                return false;
               }
-          });
-          
-
-          wheelBox.on('wheel', (function(e) {
-
-            var winTop = $(window).scrollTop();
-            var wheelBoxTop = wheelBox.offset().top;
-            //1
-            // if (winTop = wheelBoxTop) {
-            //   wheelBox.removeClass('disablewheel');
-            //   // console.log(winTop);
-            //   e.preventDefault();
-            // }
-            //2
-            // if((curSlide === 1 && (e.originalEvent.deltaY < 0) && (winTop = wheelBoxTop)) || ((curSlide === 7) && ( e.originalEvent.deltaY > 0) && (winTop = wheelBoxTop)) ){
-            //   wheelBox.addClass('disablewheel');
-            // } else {
-            //   wheelBox.removeClass('disablewheel');
-            // }
-            //3
-            if (winTop = wheelBoxTop) {
-              if (e.originalEvent.deltaY > 0) {
-                $('#etaps-img-slider').slick('slickNext');
-                if ((curSlide === 7) && (winTop = wheelBoxTop)){
-                  wheelBox.addClass('disablewheel');
-                  return true;
-                } else {
-                  wheelBox.removeClass('disablewheel');
-                  // e.preventDefault();
-                  return false;
-                }
-              } else if (e.originalEvent.deltaY < 0){
-                $('#etaps-img-slider').slick('slickPrev');
-                if ((curSlide === 1) && (winTop = wheelBoxTop)){
-                  wheelBox.addClass('disablewheel');
-                  return true;
-                } else {
-                  wheelBox.removeClass('disablewheel');
-                  // e.preventDefault();
-                  return false;
-                }
+            } else if (e.originalEvent.deltaY < 0){
+              $('#etaps-img-slider').slick('slickPrev');
+              if (curSlide === 1){
+                wheelBox.addClass('disablewheel');
+                return true;
+              } else {
+                wheelBox.removeClass('disablewheel');
+                // e.preventDefault();
+                return false;
               }
             }
-          }));
+          }
+        }));
       };
     });
 
@@ -235,16 +231,16 @@ $(document).ready(function(){
 
     //Гугл карта
     jQuery(function($) {
-        var LatMarker = new google.maps.LatLng(55.8425577,37.4858135),
-            LatCenter = new google.maps.LatLng(55.8425577, 37.4871),
-            googlemap = new google.maps.Map(document.getElementById('map'),
-            {
-                center: LatCenter,
-                zoom: 16,
-                scrollwheel: false,
-                mapTypeControl: false,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
+      var LatMarker = new google.maps.LatLng(55.8425577,37.4858135),
+          LatCenter = new google.maps.LatLng(55.8425577, 37.4871),
+          googlemap = new google.maps.Map(document.getElementById('map'),
+          {
+            center: LatCenter,
+            zoom: 16,
+            scrollwheel: false,
+            mapTypeControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
         );
         var contentString = 
             '<div id="content">'+
