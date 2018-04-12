@@ -1,3 +1,52 @@
+.loader {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	pointer-events: none;
+}
+.decolines--fixed {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+.decoline {
+	position: absolute;
+	width: 20vw;
+	height: 100vh;
+	top: 0;
+	background-color: #f6f6f5;
+	border-top: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	opacity: 1;
+	transform-origin: 50% 100% 0px;
+	transform: scaleY(1);
+	animation: 1.2s decoline forwards;
+	will-change: transform;
+}
+@keyframes decoline {
+	from {transform: scaleY(1)}
+	to {transform: scaleY(0)}
+}
+.decoline:nth-child(1){left: 0%;animation-delay: .36s}
+.decoline:nth-child(2){left: 20%;animation-delay: .18s}
+.decoline:nth-child(3){left: 40%;animation-delay: 0s}
+.decoline:nth-child(4){left: 60%;animation-delay: .18s}
+.decoline:nth-child(5){left: 80%;animation-delay: .36s}
+
+.js-loading .decoline,.js-loading .intro {animation-play-state: paused !important}
 /*@font-face {
 	font-family: 'Noto Sans';
 	src: url('../fonts/notosans-regular-webfont.woff2') format('woff2'), url('../fonts/notosans-regular-webfont.woff') format('woff');
@@ -155,6 +204,7 @@ svg {max-width: 100%;}
 	height: 100%;
 	right: 0;
 	bottom: 0;
+	pointer-events: none;
 	z-index: -1;
 }
 .header__logo-before:before,.header__logo-after:before {
@@ -275,7 +325,7 @@ svg {max-width: 100%;}
 	z-index: 4;
 }
 .navbar-toggle .icon-bar {
-	background-color: #ffd421; 
+	background-color: #dbac51; 
 	transition:.25s cubic-bezier(.77,0,.175,1);
 	transform-origin: left top;
 	width: 25px;
@@ -342,7 +392,7 @@ svg {max-width: 100%;}
 	min-height: 90vh;
 	padding-bottom: 140px;
 }
-.intro__title {z-index: 1;}
+.intro__title {z-index: 3;}
 
 .s-intro strong {
 	display: block;
@@ -727,6 +777,8 @@ svg {max-width: 100%;}
 	font-family: var(--font-family);
 	font-weight: 400;
 	font-size: 2.25em;
+	display: block;
+	line-height: 1.2;
 }
 .form-box__remark {
 	font-family: var(--font-family);
@@ -820,7 +872,7 @@ svg {max-width: 100%;}
 .contact__text h2 {
 	display: block;
 	line-height: 1;
-	padding-bottom: .1em;
+	padding-bottom: .2em;
 	min-width: auto;
 }
 .contact__address {
@@ -833,8 +885,10 @@ svg {max-width: 100%;}
 	background-color: #e9e9e5;
 	margin: 16px 0 22px;	
 }
-.s-contact .header__contact {text-align: center;}
-
+.s-contact .header__contact {
+	text-align: center;
+	max-width: 100%;
+}
 .s-contact .form-box {
 	box-shadow: none;
 	max-width: 100%;
@@ -863,7 +917,7 @@ svg {max-width: 100%;}
 	width: 44px;
 	height: 44px;
 	padding: 13px;
-	opacity: .6;
+	opacity: .9;
 	pointer-events: auto;
 	cursor: pointer;
 	transition: .3s;
@@ -880,6 +934,7 @@ svg {max-width: 100%;}
 }
 .s-footer .row > div {
 	width: 33.3333%;
+	padding: 0 15px;
 }
 .footer__logo {
 	padding-top: 7px;

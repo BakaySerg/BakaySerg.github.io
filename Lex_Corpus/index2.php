@@ -1,3 +1,6 @@
+<?php 
+	include 'variables.php';
+?>
 <!DOCTYPE html>
 <html lang="ru" class="no-js">
 <head>
@@ -6,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta name="theme-color" content="#3b041e"/>
 	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
-	<title>Решения по классификации ФТС</title>
+	<title><?=$TITLE ['SELF'] ?></title>
 	<meta name="description" content="site descr"/>
 	<meta name="keywords" content="site,keywords"/>
 	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon"/>
@@ -67,11 +70,11 @@
 						</div>
 						<div id="expand" class="collapse navbar-collapse">
 							<ul id="justify" class="nav navbar-nav">
-								<li><a class="js-scroll-up" href="#">К началу</a></li>
-								<li><a class="js-scroll" href="#s-advant">Наши преимущества</a></li>
-								<li><a class="js-scroll" href="#s-etaps">Этапы работы</a></li>
-								<li><a class="js-scroll" href="#s-clients">Клиенты</a></li>
-								<li><a class="js-scroll" href="#s-contact">Контакты</a></li>
+								<li><a class="js-scroll-up" href="#"><?=$TOP ['LINK_1'] ?></a></li>
+								<li><a class="js-scroll" href="#s-advant"><?=$TOP ['LINK_2'] ?></a></li>
+								<li><a class="js-scroll" href="#s-etaps"><?=$TOP ['LINK_3'] ?></a></li>
+								<li><a class="js-scroll" href="#s-clients"><?=$TOP ['LINK_4'] ?></a></li>
+								<li><a class="js-scroll" href="#s-contact"><?=$TOP ['LINK_5'] ?></a></li>
 							</ul>
 						</div>
 					</nav>
@@ -80,9 +83,9 @@
 			<div class="top__contacts">
 				<div class="container">
 					<div class="row justify-content-between align-items-center">
-						<address class="col-4 offset-lg-2 header__address">г. Москва, Кронштадтский&nbsp;б&#8209;р,&nbsp;7А</address>
+						<address class="col-4 offset-lg-2 header__address"><?=$GENERAL ['ADDRESS'] ?></address>
 						<div class="col-3"><a href="tel:74993508720" class="top-tel">7 (499) 350-87-20</a></div>
-						<div class="col-3"><a href="#popup-callback" class="contact-callback js-popup-callback">Обратный звонок</a></div>
+						<div class="col-3"><a href="#popup-callback" class="contact-callback js-popup-callback"><?=$GENERAL ['CALLBACK_TEXT'] ?></a></div>
 					</div>
 				</div>
 			</div>
@@ -96,10 +99,10 @@
 						<i class="header__logo-after" data-0="transform: translateY(0%)" data-400="transform: translateY(-210%)"></i>
 						<img src="img/logo-lg.png" alt="logo" data-0="transform: translateY(0%)" data-400="transform: translateY(-170%)">
 					</div>
-					<address class="col-3 header__address">г. Москва, <br>Кронштадтский б-р, 7А</address>
+					<address class="col-3 header__address"><?=$GENERAL ['ADDRESS'] ?></address>
 					<div class="col-3 header__contact">
 						<a href="tel:74993508720" class="contact-tel"><svg viewBox="0 0 22 32"><use xlink:href="#i-tel"/></svg> 7 (499) 350-87-20</a>
-						<a href="#popup-callback" class="contact-callback js-popup-callback">Обратный звонок</a>
+						<a href="#popup-callback" class="contact-callback js-popup-callback"><?=$GENERAL ['CALLBACK_TEXT'] ?></a>
 					</div>
 				</div>
 			</div>
@@ -111,9 +114,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 offset--1 intro__title" data-0="transform: translateY(0%)" data-700="transform: translateY(-5%)">
-							<h1>Решения <br>по классификации ФТС</h1>
-							<strong><svg viewBox="0 0 32 32"><use xlink:href="#i-gal"/></svg> подготовка</strong>
-							<strong><svg viewBox="0 0 32 32"><use xlink:href="#i-gal"/></svg> содействие</strong>
+							<h1><?=$INTRO ['H1'] ?></h1>
+							<strong><svg viewBox="0 0 32 32"><use xlink:href="#i-gal"/></svg><?=$INTRO ['TEXT_1'] ?></strong>
+							<strong><svg viewBox="0 0 32 32"><use xlink:href="#i-gal"/></svg><?=$INTRO ['TEXT_2'] ?></strong>
 						</div>
 						<div class="col-lg-8 offset--1 intro-slider-box">
 							<div id="intro-slider" class="intro-slider">
@@ -129,12 +132,12 @@
 						</div>
 						<div class="col-lg-7 mt--230">
 							<div class="form-box">
-								<strong class="form-box__title">Нужна консультация?</strong>
-								<div class="form-box__remark">позвоним в течении 15&nbsp;минут</div>
+								<strong class="form-box__title"><?=$FORM ['Consult'] ?></strong>
+								<div class="form-box__remark"><?=$FORM ['Remark_1'] ?></div>
 								<form action="#" class="form">
-									<input type="hidden" name="subject" value="хочу получить консультацию">
-									<input type="tel" name="tel" placeholder="Ваш телефон" required>
-									<button class="form__btn" type="submit">Получить консультацию</button>
+									<input type="hidden" name="subject" value="<?=$FORM ['Subject_2'] ?>">
+									<input type="tel" name="tel" placeholder="<?=$GENERAL ['Phone_placeholder'] ?>" required>
+									<button class="form__btn" type="submit"><?=$FORM ['Btn_1'] ?></button>
 								</form>
 							</div>
 						</div>
@@ -159,7 +162,7 @@
 									<polyline fill="none" stroke="#e0d8b9" stroke-width="6px" points="4,40 4,4 246,4 246,216 4,216 4,180"/>
 									<polyline class="polyline2" fill="none" stroke="#fdd221" stroke-width="6px" points="4,40 4,4 246,4 246,216 4,216 4,180"/>
 								</svg>
-								<h3>Подготовка документов</h3>
+								<h3><?=$S_2 ['TEXT_1'] ?></h3>
 							</div>
 						</div>
 						<div class="col-md-3">
@@ -168,7 +171,7 @@
 									<polyline fill="none" stroke="#e0d8b9" stroke-width="6px" points="4,40 4,4 246,4 246,216 4,216 4,180"/>
 									<polyline class="polyline2" fill="none" stroke="#fdd221" stroke-width="6px" points="4,40 4,4 246,4 246,216 4,216 4,180"/>
 								</svg>
-								<h3>Подача заявления</h3>
+								<h3><?=$S_2 ['TEXT_2'] ?></h3>
 							</div>
 						</div>
 						<div class="col-md-3">
@@ -177,7 +180,7 @@
 									<polyline fill="none" stroke="#e0d8b9" stroke-width="6px" points="4,40 4,4 246,4 246,216 4,216 4,180"/>
 									<polyline class="polyline2" fill="none" stroke="#fdd221" stroke-width="6px" points="4,40 4,4 246,4 246,216 4,216 4,180"/>
 								</svg>
-								<h3>Сопровождение рассмотрения</h3>
+								<h3><?=$S_2 ['TEXT_3'] ?></h3>
 							</div>
 						</div>
 						<div class="col-md-3">
@@ -186,7 +189,7 @@
 									<polyline fill="none" stroke="#e0d8b9" stroke-width="6px" points="4,40 4,4 246,4 246,216 4,216 4,180"/>
 									<polyline class="polyline2" fill="none" stroke="#fdd221" stroke-width="6px" points="4,40 4,4 246,4 246,216 4,216 4,180"/>
 								</svg>
-								<h3>Получение решения</h3>
+								<h3><?=$S_2 ['TEXT_4'] ?></h3>
 							</div>
 						</div>
 					</div>
@@ -197,7 +200,7 @@
 			<section class="s-advant" id="s-advant">
 				<div class="container">
 					<div class="h2-box">
-						<h2>Преимущества работы с <br class="br">компанией «Лекс&nbsp;Корпус»</h2>
+						<h2><?=$S_3 ['H2'] ?></h2>
 					</div>
 					<div class="row">
 						<div class="col-md-6 advant__pict" >
@@ -206,20 +209,20 @@
 						<div class="col-md-5 offset-md-1 advant__text">
 							<div class="advant__text-item">
 								<i style="background-image: url(img/clock.svg)"></i>
-								<h4>Кратчайшие сроки</h4>
-								<p>Срок получения по законодательству до&nbsp;90&nbsp;дней. <br>С нашим пакетом документов до&nbsp;40&nbsp;дней.</p>
+								<h4><?=$S_3 ['H4_1'] ?></h4>
+								<p><?=$S_3 ['TEXT_1'] ?></p>
 							</div>
 							<div class="advant__text-item">
 								<i style="background-image: url(img/list.svg)"></i>
-								<h4>Конкурентные цены</h4>
-								<p>Индивидуальный подход к&nbsp;каждому&nbsp;клиенту</p>
+								<h4><?=$S_3 ['H4_2'] ?></h4>
+								<p><?=$S_3 ['TEXT_2'] ?></p>
 							</div>
 							<div class="advant__text-item">
 								<i style="background-image: url(img/diagram.svg)"></i>
-								<h4>Комплексный подход</h4>
-								<p>Наши специалисты прорабатывают схему импорта от&nbsp;ВЭД&#8209;контракта до&nbsp;поставки.</p>
+								<h4><?=$S_3 ['H4_3'] ?></h4>
+								<p><?=$S_3 ['TEXT_3'] ?></p>
 							</div>
-							<a href="pdf/presentation.pdf" download="presentation.pdf" class="btn-gold">Скачать презентацию</a>
+							<a href="pdf/presentation.pdf" download="presentation.pdf" class="btn-gold"><?=$S_3 ['Btn_1'] ?></a>
 						</div>
 					</div>
 				</div>
@@ -229,7 +232,7 @@
 			<section class="s-etaps disablewheel" id="s-etaps">
 				<div class="container">
 					<div class="h2-box">
-						<h2>Этапы работы</h2>
+						<h2><?=$S_4 ['h2'] ?></h2>
 					</div>
 					<div class="row">
 						<div class="col-md-7 offset-5">
@@ -247,49 +250,49 @@
 							<div class="etaps-steps-slider" id="etaps-steps-slider">
 								<div class="slide">
 									<div class="form-box">
-										<div class="form-box__remark">Вы оставляете заявку на сайте или&nbsp;по&nbsp;телефону</div>
+										<div class="form-box__remark"><?=$FORM ['Remark_2'] ?></div>
 										<form action="#" class="form">
-											<input type="hidden" name="subject" value="Заполнил(а) форму">	
-											<input type="tel" name="tel" placeholder="Ваш телефон" required>
-											<button class="form__btn" type="submit">Оставить заявку</button>
+											<input type="hidden" name="subject" value="<?=$FORM ['Subject_1'] ?>">	
+											<input type="tel" name="tel" placeholder="<?=$GENERAL ['Phone_placeholder'] ?>" required>
+											<button class="form__btn" type="submit"><?=$FORM ['Btn_2'] ?></button>
 										</form>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="form-box">
-										<h4>Предварительная консультация и&nbsp;сбор первичной информации</h4>
-										<p>Вы передает в электронном виде имеющееся на текущий момент описание планируемого ко ввозу оборудования, проекта в целом, планируемую технологию и сроки поставок. Чем скорее Вам нужен готовый результат, тем полнее должна быть предоставленная на данном этапе информация. </p>
+										<h4><?=$S_4 ['TITLE_1'] ?></h4>
+										<p><?=$S_4 ['Text_1'] ?></p>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="form-box">
-										<h4>Анализ информации и необходимости получения классрешения</h4>
-										<p>Наши специалисты определяют необходимость и возможность получения решения по классификации на ввозимое оборудование, предварительный код ТН ВЭД, ставку таможенной пошлины и возможность льгот по НДС. В случае выявления несоответствия ввозимого оборудования условиям получения классрешения или его нецелесообразности, мы предлагаемлибо необходимые меры по приведению проекта в соответствие, либо альтернативные варианты удешевления импорта. На основе проведенного анализа мы готовим для Вас персональное коммерческое предложение. </p>
+										<h4><?=$S_4 ['TITLE_2'] ?></h4>
+										<p><?=$S_4 ['Text_2'] ?></p>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="form-box">
-										<h4>Уточняем детали взаимодействия</h4>
-										<p>После согласования всех условий, мы подписываем договор на оказание услуг.На основании частичной предоплаты мы начинаем работу. Наши специалисты получают от Вашего проектного отдела согласованный в договоре комплект документов по ввозимому оборудованию и приступают к его подробному изучению, начинают проверку и компоновку пакета документов для подачи в ФТС/РТУ.</p>
+										<h4><?=$S_4 ['TITLE_3'] ?></h4>
+										<p><?=$S_4 ['Text_3'] ?></p>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="form-box">
-										<h4>Выполняем работы по договору</h4>
-										<p>Наши сотрудники в тесном взаимодействии с Вашими техническими специалистами прорабатывают все узлы и составные части оборудования, получают и утверждают описания технических процессов и взаимодействия отдельных частей, чертежи, для формирования комплекта документов в соответствии с методическими рекомендациями ФТС и исходя из собственного опыта взаимодействия с ФТС/РТУ. По итогам работы мы направляем Вам для подписания проект заявления и пакет документов для подачи в уполномоченный орган. Подписанный и заверенный Вами пакет документов с заявлением мы подаем в ФТС/РТУ. </p>
+										<h4><?=$S_4 ['TITLE_4'] ?></h4>
+										<p><?=$S_4 ['Text_4'] ?></p>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="form-box">
-										<h4>Получаем результат</h4>
-										<p>В процессе рассмотрения уполномоченным таможенным органом заявления стандартной ситуацией является дополнительный запрос информации. В случае получения такого рода запроса, мы совместно с Вашими специалистами готовим и предоставляем уточненную информацию. Вероятность получения такого запроса оговаривается в каждом случае отдельно. Мы контролируем сроки принятия итогового решения по Вашему заявлению. Итогом рассмотрения заявления является решение по классификации, которое официально направляется по почте заявителю. С этого момента можно осуществлять ввоз оборудования. </p>
+										<h4><?=$S_4 ['TITLE_5'] ?></h4>
+										<p><?=$S_4 ['Text_5'] ?></p>
 									</div>
 								</div>
 								<div class="slide">
 									<div class="form-box">
-										<h4>Окончательная оплата</h4>
-										<p>После направления в Ваш адрес уполномоченным органом решения по классификации, мы с Вами производим окончательный расчет за оказанные услуги на основании выставленного счета и акта.</p><br>
-										<p>Для дальнейшего повышения качества наших услуг для нас важен Ваш отзыв по итогам нашей работы!</p>
+										<h4><?=$S_4 ['TITLE_6'] ?></h4>
+										<p><?=$S_4 ['Text_6'] ?></p><br>
+										<p><?=$S_4 ['Text_7'] ?></p>
 									</div>
 								</div>
 							</div>
@@ -303,7 +306,7 @@
 			<section class="s-clients" id="s-clients">
 				<div class="container">
 					<div class="h2-box">
-						<h2>Наши клиенты</h2>
+						<h2><?=$S_5 ['TITLE_1'] ?></h2>
 					</div>
 					<div class="clients__box">
 						<div class="clients__item"><img src="img/clients/1.png" alt="c"></div>
@@ -335,7 +338,7 @@
 			<section class="s-any">
 				<div class="container">
 					<div class="h2-box">
-						<h2>Применимо в любых отраслях</h2>
+						<h2><?=$S_6 ['TITLE_1'] ?></h2>
 					</div>
 				</div>
 				<div class="container">
@@ -359,21 +362,21 @@
 				<div class="contact__box">
 					<div class="contact__text">
 						<div class="contact__address">
-							<h2>Контакты</h2>
-							<b>Москва</b>
-							<address>Кронштадтский б-р, 7А</address>
+							<h2><?=$S_7 ['TITLE_1'] ?></h2>
+							<b><?=$S_7 ['Text_1'] ?></b>
+							<address><?=$GENERAL ['ADDRESS'] ?></address>
 							<div class="header__contact">
 								<a href="tel:74993508720" class="contact-tel"><svg viewBox="0 0 22 32"><use xlink:href="#i-tel"/></svg> 7 (499) 350-87-20</a>
-								<a href="#popup-callback" class="contact-callback js-popup-callback">Обратный звонок</a>
+								<a href="#popup-callback" class="contact-callback js-popup-callback"><?=$GENERAL ['CALLBACK_TEXT'] ?></a>
 							</div>
 						</div>
 						<div class="form-box">
-							<strong class="form-box__title">Оставить заявку</strong>
-							<div class="form-box__remark">на консультацию</div>
+							<strong class="form-box__title"><?=$FORM ['Request'] ?></strong>
+							<div class="form-box__remark"><?=$FORM ['Remark_3'] ?></div>
 							<form action="#" class="form">
-								<input type="hidden" name="subject" value="хочу получить консультацию">
-								<input type="tel" name="tel" placeholder="Ваш телефон" required>
-								<button class="form__btn" type="submit">Получить консультацию</button>
+								<input type="hidden" name="subject" value="<?=$FORM ['Subject_2'] ?>">
+								<input type="tel" name="tel" placeholder="<?=$GENERAL ['Phone_placeholder'] ?>" required>
+								<button class="form__btn" type="submit"><?=$FORM ['Btn_1'] ?></button>
 							</form>
 						</div>
 					</div>
@@ -390,7 +393,7 @@
 						<img src="img/logo-sm.png" alt="logo">
 					</div>
 					<div class="footer__copy">
-						© 2010-2018 Lex Corpus LLC <br>Политика обработки и хранения данных
+						<?=$F_8 ['Text_1'] ?>
 					</div>
 				</div>
 			</div>
@@ -401,12 +404,12 @@
 	<!-- Обратный звонок -->
 	<div id="popup-callback" class="small-pop-up mfp-hide">
 		<div class="form-box">
-			<strong class="form-box__title">Обратный звонок</strong>
-			<div class="form-box__remark">перезвоним в течении 15&nbsp;минут</div>
+			<strong class="form-box__title"><?=$FORM ['Callback'] ?></strong>
+			<div class="form-box__remark"><?=$FORM ['Remark_1'] ?></div>
 			<form action="#" class="form">
-				<input type="hidden" name="subject" value="Жду обратного звонка">
-				<input type="tel" name="tel" placeholder="Ваш телефон" required>
-				<button class="form__btn" type="submit">Жду звонка</button>
+				<input type="hidden" name="subject" value="<?=$FORM ['Subject_3'] ?>">
+				<input type="tel" name="tel" placeholder="<?=$GENERAL ['Phone_placeholder'] ?>" required>
+				<button class="form__btn" type="submit"><?=$FORM ['Btn_3'] ?></button>
 			</form>
 		</div>
 	</div>
@@ -414,15 +417,15 @@
 	<!-- Success -->
 	<div id="popup-thank" class="small-pop-up mfp-hide">
 		<div class="form-box">
-		   <strong class="form-box__title">Благодарим <br>за вашу заявку!</strong><br>
-		   <p class="is-argum-text">Мы свяжемся с вами в ближайшее время!</p><br>
+		   <strong class="form-box__title"><?=$P_1 ['TITLE_1'] ?></strong><br>
+		   <p class="is-argum-text"><?=$P_1 ['Text_1'] ?></p><br>
 		</div>
 	</div>
 	<!-- Error -->
 	<div id="popup-error" class="small-pop-up mfp-hide">
 		<div class="form-box">
-		   <strong class="form-box__title">Произошла ошибка!</strong><br>
-		   <p class="is-argum-text">Нет связи с сервером,<br>попробуйте пожалуйста позже...</p><br>
+		   <strong class="form-box__title"><?=$P_2 ['TITLE_1'] ?></strong><br>
+		   <p class="is-argum-text"><?=$P_2 ['Text_1'] ?></p><br>
 		</div>
 	</div>
 

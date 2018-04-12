@@ -2,12 +2,10 @@ function showPage() {
   setTimeout(function(){
       document.body.classList.remove('js-loading');
       setTimeout(function(){
-      $(".loader").fadeOut();
-      },500);
+      $(".loader").fadeOut();},2000);
   });
-
 }
-document.body.classList.add('js-loading');
+// document.body.classList.add('js-loading');
 
 
 $(document).ready(function(){
@@ -31,6 +29,7 @@ $(document).ready(function(){
        });
     }
     sticky();
+    // $(".top__contacts").on('wheel', (function(e) {e.preventDefault();}));
 
     // Nav    
     $('a.top__link').on('click', function(event) {
@@ -53,7 +52,7 @@ $(document).ready(function(){
     });
 
     //parallax-rellax
-    if (window.matchMedia('(min-width: 800px)').matches) {
+    if (window.matchMedia('(min-width: 1023px)').matches) {
       skrollr.init({
       smoothScrolling: true,
       // smoothScrollingDuration: 100,
@@ -83,7 +82,15 @@ $(document).ready(function(){
         speed: 500,
         focusOnSelect: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [{            
+        breakpoint: 670,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '40px'
+        }
+        }]
       });
     };
 
@@ -109,17 +116,27 @@ $(document).ready(function(){
         arrows: false,
         dots: false,
         draggable:false,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [{
+            breakpoint: 720,
+            settings: {
+                vertical: false,
+                verticalSwiping: false,
+                adaptiveHeight:true,
+                draggable:true,
+                fade: true
+            }
+        }]
     });
 
     //mousewheel-slide
-    $(function() {      
+    $(function() {
       // var wheelBoxTop = wheelBox.offset().top;
       // var winTop = $(window).scrollTop();
       var wheelBox = $("#s-etaps");
       var curSlide = 1;
 
-      if (window.matchMedia("(min-width: 1025px)").matches) {
+      if (window.matchMedia("(min-width: 1023px)").matches) {
 
           $(window).scroll(function() {
             var winTop = $(window).scrollTop();
@@ -205,10 +222,10 @@ $(document).ready(function(){
         url: 'mail.php',
         data: $(this).serialize(),
         success: function(){  
-          $.magnificPopup.open({items: {src: '#popup-thank'},type: 'inline',mainClass: 'mfp-fade',closeMarkup: '<button title="%title%" type="button" class="mfp-close">закрыть <span>&#215;</span></button>'},0);
+          $.magnificPopup.open({items: {src: '#popup-thank'},type: 'inline',mainClass: 'mfp-fade',},0);
         },
         error: function() {
-          $.magnificPopup.open({items: {src: '#popup-error'},type: 'inline',mainClass: 'mfp-fade',closeMarkup: '<button title="%title%" type="button" class="mfp-close">закрыть <span>&#215;</span></button>'},0);
+          $.magnificPopup.open({items: {src: '#popup-error'},type: 'inline',mainClass: 'mfp-fade',},0);
         }
       }).done(function() {
         $(".form").trigger("reset");
@@ -217,33 +234,34 @@ $(document).ready(function(){
     });
 
     //Гугл карта
-    // jQuery(function($) {
-    //     var LatMarker = new google.maps.LatLng(55.8425577,37.4858135),
-    //         LatCenter = new google.maps.LatLng(55.8425577, 37.4871),
-    //         googlemap = new google.maps.Map(document.getElementById('map'),
-    //         {
-    //             center: LatCenter,
-    //             zoom: 16,
-    //             scrollwheel: false,
-    //             mapTypeControl: false,
-    //             mapTypeId: google.maps.MapTypeId.ROADMAP
-    //         }
-    //     );
-    //     var contentString = 
-    //         '<div id="content">'+
-    //         '<b id="siteNotice">Кронштадтский б-р, 7А.</b>'+
-    //         '</div>';
-    //     var infowindow = new google.maps.InfoWindow({
-    //      content: contentString
-    //    });       
-    //     var marker = new google.maps.Marker({
-    //           position: LatMarker,
-    //           map: googlemap,
-    //           title:"Кронштадтский б-р, 7А."           
-    //       });
-    //     infowindow.open(map, marker);
-    //     marker.addListener('click', function() {infowindow.open(map, marker);});
-    //   });
+    jQuery(function($) {
+        var LatMarker = new google.maps.LatLng(55.8425577,37.4858135),
+            LatCenter = new google.maps.LatLng(55.8425577, 37.4871),
+            googlemap = new google.maps.Map(document.getElementById('map'),
+            {
+                center: LatCenter,
+                zoom: 16,
+                scrollwheel: false,
+                mapTypeControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+        );
+        var contentString = 
+            '<div id="content">'+
+            '<b id="siteNotice">Кронштадтский б-р, 7А.</b>'+
+            '</div>';
+        var infowindow = new google.maps.InfoWindow({
+         content: contentString
+       });       
+        var marker = new google.maps.Marker({
+              position: LatMarker,
+              map: googlemap,
+              title:"Кронштадтский б-р, 7А."           
+          });
+        infowindow.open(map, marker);
+        marker.addListener('click', function() {infowindow.open(map, marker);});
+      });
+    
     //скрывать адрес
     $('.contact__resize').click(function(){
         $(this).parent().children('.contact__box').toggle('300');
