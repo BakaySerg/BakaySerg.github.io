@@ -362,7 +362,7 @@ svg {max-width: 100%}
 	intro-section
 ===========================*/
 .s-intro {
-	min-height: 90vh;
+	min-height: 80vh;
 	padding-bottom: 140px;
 }
 .intro__title {z-index: 3}
@@ -585,9 +585,11 @@ svg {max-width: 100%}
 	e t a p s
 ===========================*/
 .s-etaps {
-	padding-top: 80px;
-	padding-bottom: 60px;
-	min-height: 90vh;
+	padding-top: 50px;
+	padding-bottom: 0;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	min-height: 80vh;
 	display: -ms-flexbox;
 	display: flex;
 	align-items: center;
@@ -652,6 +654,8 @@ svg {max-width: 100%}
 	pointer-events: none;
 }
 .disablewheel {pointer-events: none!important}
+
+.overflow-hidden{overflow: hidden;}
 
 .etaps-steps-slider .slide {
 	min-height: 540px;
@@ -718,9 +722,9 @@ svg {max-width: 100%}
 	opacity: 0;
 	transform: scale(.8);
 }
-.anim-play.before-anim .clients__item {animation: zoom 1s cubic-bezier(.77,0,.175,1) forwards;}
+.anim-play.before-anim .clients__item {animation: zoom 1s cubic-bezier(.77,0,.175,1) forwards}
 
-@keyframes zoom {to{opacity: 1;transform: scale(1);}}
+@keyframes zoom {to{opacity: 1;transform: scale(1)}}
 
 .anim-play.before-anim .clients__item:nth-of-type(1){animation-delay: .08s}
 .anim-play.before-anim .clients__item:nth-of-type(2){animation-delay: .16s}

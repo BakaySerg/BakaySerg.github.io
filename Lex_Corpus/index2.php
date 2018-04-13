@@ -127,11 +127,10 @@
 								<div class="slide"><img src="img/intro-slider/5.jpg" alt="s"></div>
 								<div class="slide"><img src="img/intro-slider/6.jpg" alt="s"></div>
 								<div class="slide"><img src="img/intro-slider/7.jpg" alt="s"></div>
-								<div class="slide"><img src="img/intro-slider/8.jpg" alt="s"></div>
 							</div>
 						</div>
 						<div class="col-lg-7 mt--230">
-							<div class="form-box" data-0="transform: translateY(2%)" data-700="transform: translateY(-34%)">
+							<div class="form-box" data-0="transform: translateY(4%)" data-700="transform: translateY(-28%)">
 								<strong class="form-box__title"><?=$FORM ['Consult'] ?></strong>
 								<div class="form-box__remark"><?=$FORM ['Remark_1'] ?></div>
 								<form action="#" class="form">
@@ -204,7 +203,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6 advant__pict" >
-							<img src="img/advant.jpg" alt="hands" data-anchor-target="#s-advant" data-bottom-top="transform: translateY(40%)" data-top-bottom="transform: translateY(-50%)">
+							<img src="img/advant.jpg" alt="hands" data-0="transform: translateY(45%)" data-top-bottom="transform: translateY(-130%)">
 						</div>
 						<div class="col-md-5 offset-md-1 advant__text">
 							<div class="advant__text-item">

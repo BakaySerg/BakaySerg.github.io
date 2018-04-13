@@ -145,18 +145,23 @@ $(document).ready(function(){
           offset:250
         });
         wheelBox.viewportChecker({
-          classToAdd: 'ready',
+          classToAdd: '',
           classToAddForFullView: 'full-visible',
+          classToRemove: 'disablewheel',
+          // callbackFunction: function(elem, action){
+          //   if (wheelBox.hasClass('full-visible')){
+          //   $("body").addClass('overflow-hidden');
+          // }
+          // },
           repeat: true,
         });
 
         $(window).scroll(function() {
           var winTop = $(window).scrollTop();
           var wheelBoxTop = wheelBox.offset().top;
-            // if((winTop > wheelBoxTop - 9) && (winTop < wheelBoxTop + 15)){
-            if(wheelBox.hasClass('full-visible')){
-              wheelBox.removeClass("disablewheel");
-           } 
+            if((wheelBoxTop > winTop - 25) && (wheelBoxTop < winTop + 10)){
+              wheelBox.addClass("full-visible");
+            }
          });
 
         $('#etaps-img-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
@@ -173,12 +178,15 @@ $(document).ready(function(){
           var wheelBoxTop = wheelBox.offset().top;
 
           if(wheelBox.hasClass('full-visible')) {
+            wheelBox.removeClass("disablewheel");
+            // $("body").addClass('overflow-hidden');
             if (e.originalEvent.deltaY > 0) {
               $('#etaps-img-slider').slick('slickNext');
               if (curSlide === 7){
                 wheelBox.addClass('disablewheel');
+                // $("body").removeClass('overflow-hidden');
                 return true;
-              } else {
+              } else if (curSlide !== 7){
                 wheelBox.removeClass('disablewheel');
                 // e.preventDefault();
                 return false;
@@ -187,14 +195,15 @@ $(document).ready(function(){
               $('#etaps-img-slider').slick('slickPrev');
               if (curSlide === 1){
                 wheelBox.addClass('disablewheel');
+                // $("body").removeClass('overflow-hidden');
                 return true;
-              } else {
+              } else if (curSlide !== 1){
                 wheelBox.removeClass('disablewheel');
                 // e.preventDefault();
                 return false;
               }
             }
-          }
+          } else {wheelBox.removeClass("disablewheel");}
         }));
       };
     });
