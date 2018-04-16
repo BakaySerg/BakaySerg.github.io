@@ -39,7 +39,7 @@ $(document).ready(function(){
     //scroll to target
     $(".js-scroll").click(function(e) {
       $("html, body").animate({
-         scrollTop: $($(this).attr("href")).offset().top - 50
+         scrollTop: $($(this).attr("href")).offset().top - 80
       }, {
          duration: 800,
          easing: "swing"
@@ -133,6 +133,16 @@ $(document).ready(function(){
         }]
     });
 
+    $('.scroll-trigger,.btn-gold').on('wheel', (function(e) {
+      if (e.originalEvent.deltaY > 0) {
+        $("html, body").animate({
+           scrollTop: $('#s-etaps').offset().top - 60
+        }, {
+           duration: 400,
+           easing: "swing"
+        });
+      }
+    }));
     //mousewheel-slide
     $(function() {
       var wheelBox = $("#s-etaps");

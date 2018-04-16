@@ -567,6 +567,7 @@ svg {max-width: 100%}
 .advant__text-item h4{max-width: 288px}
 
 .btn-gold {
+	position: relative;
 	display: inline-block;
 	color: #9c9888;
 	font-weight: 700;
@@ -575,6 +576,7 @@ svg {max-width: 100%}
 	padding: 15px 42px;
 	background-color: transparent;
 	border: 2px solid #c3beaa;
+	z-index: 2;
 }
 .btn-gold:hover {
 	background-color: #e0d8b9;
