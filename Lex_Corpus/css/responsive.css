@@ -55,15 +55,6 @@
 	.etaps-steps-slider-box {margin-top: -540px}
 	.etaps-img-slider .slick-dots{max-height: 214px}
 }
-@media(max-height: 700px) and (max-width: 1366px){
-	.s-intro {padding-top: 36px;padding-bottom: 80px}
-	.intro__decor i:nth-of-type(4) {right: 46%; bottom: 11%}
-	.s-etaps .col-md-7 {padding: 0 60px 0 90px}
-	.etaps-steps-slider .slide {min-height: 400px}
-	.etaps-steps-slider-box {margin-top: -426px}
-	.s-any {padding: 59px 0 90px}
-	.s-etaps {max-height: 91.5vh;}
-}
 @media(max-width: 1366px){
 	.top__contacts {padding: 6px 0}
 	.top__navbar{min-height: 43px}
@@ -105,7 +96,17 @@
 	.contact__text h2 {font-size: 2.2em}
 	.contact__text .form-box strong{font-size: 2em}
 	.s-footer {padding: 14px 0}
-	.s-etaps {margin-top: 99px; margin-bottom: 40px;padding-top: 57px;}
+	.s-etaps {margin-top: 59px; margin-bottom: 40px;padding-top: 82px;}
+}
+@media(max-height: 720px) and (max-width: 1366px){
+	.s-intro {padding-top: 36px;padding-bottom: 80px}
+	.intro__decor i:nth-of-type(4) {right: 46%; bottom: 11%}
+	.s-etaps .col-md-7 {padding: 0 50px 0 100px}
+	.etaps-steps-slider .slide {min-height: 400px}
+	.etaps-steps-slider-box {margin-top: -426px}
+	.s-any {padding: 59px 0 90px}
+	.s-etaps {max-height: 91.5vh;}
+	.etaps-img-slider .slick-dots{left: -72px;}
 }
 @media(max-width: 1281px){
 	h2{font-size: 2.4em; min-width: auto;text-align: center}

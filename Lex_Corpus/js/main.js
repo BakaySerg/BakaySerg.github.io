@@ -52,7 +52,7 @@ $(document).ready(function(){
     });
 
     //parallax-rellax
-    if (window.matchMedia('(min-width: 1023px)').matches) {
+    if (window.matchMedia('(min-width: 1025px)').matches) {
       skrollr.init({
       smoothScrolling: true,
       smoothScrollingDuration: 100,
