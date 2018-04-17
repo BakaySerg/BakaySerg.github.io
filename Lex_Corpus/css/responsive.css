@@ -31,10 +31,21 @@
 	.s-intro{padding-top: 50px}
 	.mt--230 {margin-top: -260px}
 }
-@media(max-width: 1440px){
-	h1 {font-size: 3.4em}
-	h2{font-size: 3em;padding-bottom: 1.1em}
+@media(max-width: 1600px){
+	h1 {font-size: 3.1em;}
+	.mt--230 {margin-top: -322px;}
 	.s-intro strong{font-size: 2em}
+	#intro-slider .slick-slide{padding-right: 253px}
+}
+@media(max-width: 1600px) and (max-height: 842px){
+	h1 {font-size: 3em;}
+	.mt--230 {margin-top: -333px;}
+	#intro-slider .slick-slide{padding-right: 253px;padding-left: 52px;}
+	#intro-slider .slick-slide{padding-right: 253px}
+}
+@media(max-width: 1440px){
+	/*h1 {font-size: 3.4em}*/
+	h2{font-size: 3em;padding-bottom: 1.1em}
 	.form input,.form__btn{height: 54px}
 	.form-box {padding: 26px 40px 33px}
 	.mt--230 {margin-top: -195px}
@@ -48,7 +59,6 @@
 	.intro__decor i:nth-of-type(4){width: 90px;height: 90px;right: 43%;bottom: 36%}
 	.intro__decor i:nth-of-type(5) {width: 70px; height: 70px; bottom: 29%; right: 23%}
 	.intro-slider-box{max-width: 720px}
-	#intro-slider .slick-slide{padding-right: 253px}
 	.s-etaps .col-md-7.offset-5 {max-width: 620px}
 	.s-etaps .form-box h4{font-size: 1.6em}
 	.s-etaps .form-box p,.etaps-img-slider .slick-dots li {font-size: .92em}
