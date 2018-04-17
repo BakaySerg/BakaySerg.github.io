@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'fritzquadratacyrillic';
+    src: url('fonts/fritzquadratacyrillic.eot');
+    src: url('fonts/fritzquadratacyrillic.eot') format('embedded-opentype'),
+         url('fonts/fritzquadratacyrillic.woff2') format('woff2'),
+         url('fonts/fritzquadratacyrillic.woff') format('woff'),
+         url('fonts/fritzquadratacyrillic.ttf') format('truetype'),
+         url('fonts/fritzquadratacyrillic.svg#fritzquadratacyrillic') format('svg');
+}
+@font-face {
+    font-family: 'DelphianC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('DelphianC'), local('DelphianC-Regular'),
+        url(http://allfont.ru/cache/fonts/delphianc_d2db49d8f64bf6fd75ad0ef25939f6b7.woff) format('woff'),
+        url(http://allfont.ru/cache/fonts/delphianc_d2db49d8f64bf6fd75ad0ef25939f6b7.ttf) format('truetype');
+}
