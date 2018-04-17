@@ -49,43 +49,7 @@ $(document).ready(function(){
     });
 
 
-    //slider
-    // $('.slick-slider').slick({
-    //   responsive:true,
-    //   infinite: true,
-    //   dots: false,
-    //   speed:500,
-    //   arrows: true,
-    //   prevArrow: $('.prev'),
-    //   nextArrow: $('.next'),
-    //   slidesToShow: 3,
-    //   slidesToScroll: 1,
-    //   responsive: [{
-    //     breakpoint: 800,
-    //     settings: {
-    //       draggable:false,
-    //       slidesToShow: 2
-    //     }        
-    //   },{
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       centerMode:true,
-    //       arrows: false,
-    //       draggable:true,
-    //       centerPadding:'80px'}
-    //     },{
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       centerMode:true,
-    //       arrows: false,
-    //       draggable:true,
-    //       centerPadding:'50px'
-    //     }
-    //   }]
-    // });
-
+    //intro-slider
     $("#intro-content-slider").slick({
         slidesToShow: 1,
         dots: true,
@@ -151,7 +115,6 @@ $(document).ready(function(){
         prevArrow: '<i class="slick-arrow slick-prev"><svg viewBox="0 0 32 32"><use xlink:href="#i-left"/></svg></i>',
         nextArrow: '<i class="slick-arrow slick-next"><svg viewBox="0 0 32 32"><use xlink:href="#i-right"/></svg></i>',
         infinite: true,
-        // fade: true,
         speed: 600,
         slidesToShow: 1,
       });
@@ -164,11 +127,39 @@ $(document).ready(function(){
          removalDelay: 300,
          fixedContentPos: true,
          fixedBgPos: true,
-         mainClass: 'mfp-fade',
+         mainClass: 'mfp-rotate-bottom',
          closeOnBgClick: true,
          enableEscapeKey:true
       });
     };
+
+    //input
+    $('.form input,.form textarea').focusin(function(event) {
+      $(this).addClass('focused');
+    }).focusout(function(event) {
+      if($(this).val() == ''){$(this).removeClass('focused')}
+    });
+    //mask
+    $("[type=tel]").mask("+7 (999) 999-9999");
+
+    //form
+    $(".form").submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data: $(this).serialize(),
+        success: function(){  
+          $.magnificPopup.open({items: {src: '#popup-thank'},type: 'inline',mainClass: 'mfp-fade',},0);
+        },
+        error: function() {
+          $.magnificPopup.open({items: {src: '#popup-error'},type: 'inline',mainClass: 'mfp-fade',},0);
+        }
+      }).done(function() {
+        $(".form").trigger("reset");
+      });
+      return false;
+    });
 
     // VIDEO Заменить на свою ссылку после "/watch?v= ..."
     $('.js-popup-video').magnificPopup({

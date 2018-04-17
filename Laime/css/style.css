@@ -618,7 +618,6 @@ p {padding-bottom: 1.071em;}
 	transform: scale(1);
 	transition: .3s ease .6s
 }
-
 @keyframes cliptrapez {
   to { 
    -webkit-clip-path: polygon(0 0,140% 0,100% 100%,0 100%);
@@ -702,7 +701,7 @@ p {padding-bottom: 1.071em;}
 /*========================
  contact - section
 =========================*/
-.form {padding: 20px 10%;}
+.form {padding: 20px calc(9% + 15px);}
 
 .form > span {
 	display: block;
@@ -715,44 +714,63 @@ p {padding-bottom: 1.071em;}
 	text-align: center;
 	margin-bottom: 30px;
 }
+.popup__header h3 {
+    font-size: 1.6em;
+    letter-spacing: 0
+ }
 .form input,.form textarea {
 	display: block;
 	width: 100%;
 	height: 60px;
-	letter-spacing: .03em;
+	letter-spacing: .01em;
 	border: none;
 	border-bottom: 3px solid #796957;
 	background-color: transparent;
 	padding-left: 40px;
 	padding-right: 15px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	outline-color: transparent;
 	transition: .4s ease;
 }
-.form input +label,.form textarea + label {
+.form textarea {
+	padding: 15px 15px 15px 60px;
+	resize: vertical;
+	min-height: 84px;
+}
+.form input:focus,.form textarea:focus{
+	background-color: rgba(254,254,254,.1);
+	outline-color: transparent;
+	box-shadow: none;
+}
+.form input + label,.form textarea + label {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-	color: #000;
 	font-size: 30px;
-	text-align: center;
 }
-.form textarea {
-	padding: 15px 15px 15px 60px;
-	resize: vertical;
-	min-height: 78px;
+.form label span {
+	position: absolute;
+	display: inline-block;
+	color: #111;
+	user-select: none;
+	left: 50%;
+	top: 0;
+	will-change:transform;
+	transform: translateX(-50%);
+	transition: .4s ease;
+	/*z-index: 2;*/
 }
-.form input:focus,.form textarea:focus{
-	outline-color: transparent;
-	box-shadow: none;
+.form input:focus + label span,.form textarea:focus + label span,input.focused + label span,textarea.focused + label span{
+	color: var(--accent-color);
+	transform: translate(-50%,-26px) scale(.8);
 }
 .form__btn {
 	position: relative;
 	min-height: 60px;
 	width: 100%;
-	max-width: 235px;
+	max-width: 280px;
 	margin: auto;
 	background: transparent;
 	border: none;
@@ -761,7 +779,7 @@ p {padding-bottom: 1.071em;}
 	color: #807c7a;
 	font-size: 30px;
 	font-weight: 700;
-	letter-spacing: .04em;
+	letter-spacing: .1em;
 	display: -ms-flexbox;
 	display: flex;
 	align-self:stretch;
@@ -786,8 +804,8 @@ p {padding-bottom: 1.071em;}
 	line-height: 50px;
 	right: 20px;
 	top: 10px;
-	font-size: 36px;
-	font-family: arial;
+	font-size: 42px;
+	font-family: var(--font-family2);
 	transition: .3s;
 }
 .mfp-close-btn-in .mfp-close:hover {color: var(--accent-color)}
@@ -799,4 +817,9 @@ p {padding-bottom: 1.071em;}
 	background-color: #fcfcfc;
 	margin: auto;
 	padding: 0 0 50px;
+}
+.is-dark-text {
+	padding: 40px;
+	color: #333;
+	text-align: center;
 }
