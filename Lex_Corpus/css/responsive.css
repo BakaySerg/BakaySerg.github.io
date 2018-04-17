@@ -243,6 +243,10 @@
 	.footer__logo{display: none}
 	.s-footer .row > div{width: 100%}
 	.s-footer .row > div:not(.footer__copy){margin-bottom: 20px}
+	.etaps-img-slider .slick-prev,.etaps-img-slider .slick-next {z-index: 3;top: auto;bottom: -20px; width: 40px;height: 40px;}
+	.etaps-img-slider .slick-prev {left: 0;}
+	.etaps-img-slider .slick-next {right: 15px;}
+	.etaps-img-slider .slick-next:before,.etaps-img-slider .slick-prev:before {font-size: 38px; line-height: 20px; max-height: 40px; height: 40px; width: 48px;text-align: center; display: inline-block; color: #000;text-shadow: 0 1px 18px #fff,0 0 8px #fff,0 1px 18px #fff,0 1px 18px #fff,0 1px 18px #fff,1px 0 8px #fff,0 1px 18px #fff}
 }
 @media (max-width: 670px){
 	.any-slider .slide img{margin: auto}
@@ -332,7 +336,7 @@
 	.etaps-steps-slider .slide{margin: 20px 0 0;min-height: 200px}
 	.etaps-img-slider .slick-dots .slick-active:after {width: 23px}
 	.br{display: none}
-	.btn-gold{width: 100%}
+	.btn-gold{width: 100%;max-width: 300px;display: block;margin: auto;}
 	.s-etaps .col-md-7.offset-5 {max-width: 350px;padding-right: 0;margin-left: 20px;}
 	.etaps-img-slider .slick-dots {max-height: 90%; top: auto; bottom: 10px; min-height: 180px}
 	.advant__text{width: 100%;margin-left: 0;max-width: 100%; background-color: #f6f6f5}

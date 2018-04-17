@@ -91,6 +91,7 @@ $(document).ready(function(){
         breakpoint: 670,
         settings: {
           slidesToShow: 1,
+          dots: false,
           centerMode: true,
           centerPadding: '40px'
         }
@@ -108,6 +109,15 @@ $(document).ready(function(){
         slidesToShow: 1,
         focusOnSelect: true,
         fade: true,
+        responsive: [{
+            breakpoint: 720,
+            settings: {
+                draggable:true,
+                initialSlide:1,
+                arrows: true,
+                fade: false
+            }
+        }],
         asNavFor: '#etaps-steps-slider'
     });
     $('#etaps-steps-slider').slick({
@@ -128,6 +138,7 @@ $(document).ready(function(){
                 verticalSwiping: false,
                 adaptiveHeight:true,
                 draggable:true,
+                initialSlide:1,
                 fade: true
             }
         }]
