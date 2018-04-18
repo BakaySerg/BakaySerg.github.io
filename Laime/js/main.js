@@ -60,7 +60,7 @@ $(document).ready(function(){
         fade: true,
         responsive: true,
         responsive: [{
-            breakpoint: 2560,
+            breakpoint: 2566,
             settings: {
                 draggable: true,
             }
@@ -97,9 +97,29 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '160px',
         responsive: [{
+            breakpoint: 2566,
+            settings: {
+                slidesToShow: 5,
+                centerMode: true,
+                centerPadding: '10px'
+            }
+        }, {
+            breakpoint: 1922,
+            settings: {
+                slidesToShow: 3,
+                centerPadding: '160px'
+            }
+        }, {
             breakpoint: 1281,
             settings: {
+                slidesToShow: 3,
                 centerPadding: '90px'
+            }
+        }, {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 3,
+                centerPadding: '50px'
             }
         }, {
             breakpoint: 900,
@@ -134,6 +154,53 @@ $(document).ready(function(){
       });
     };
 
+    // item-slider
+    if ($("#item-slider").length) {
+      $("#item-slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          infinite: true,
+          fade: true,
+          speed: 600,
+          slidesToShow: 1,
+          lazyLoad: 'ondemand',
+          responsive: true,
+          responsive: [{
+              breakpoint: 2560,
+              fade: true,
+              settings: {
+                  draggable: false,
+              }
+          }, {
+              breakpoint: 640,
+              settings: {
+                  fade: false,
+                  draggable: true
+              }
+          }],
+          asNavFor: '#item-slider-thumb'
+      });
+      $('#item-slider-thumb').slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          asNavFor: '#item-slider',
+          dots: false,
+          arrows: false,
+          speed: 600,
+          centerMode: true,
+          centerPadding: '0px',
+          focusOnSelect: true,
+          responsive: [{
+              breakpoint: 420,
+              settings: {
+                centerMode: false,
+                slidesToShow: 2
+              }
+          }]
+      });
+    }
     // Попап
     if ($('.js-popup').length){
       $('.js-popup').magnificPopup({

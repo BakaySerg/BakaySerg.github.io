@@ -3,7 +3,7 @@
 	.navbar-toggle {display: none;} 
 	#expand {display: block;}
 	.navbar-nav{padding: 29px 5px; width: 100%; display: -ms-flexbox; display: flex; flex-wrap: nowrap; justify-content: space-between; align-items:stretch; -ms-flex-pack: justify; position: relative; }
-	.navbar-nav >li{margin-bottom: -2px; display: -ms-flexbox; display: flex; align-self:stretch; justify-content: space-around; align-items: center;}
+	.navbar-nav >li{border-radius: 2px;margin-bottom: -2px; display: -ms-flexbox; display: flex; align-self:stretch; justify-content: space-around; align-items: center;}
 	.navbar-nav >li:hover ,.navbar-nav li ul{background-color: rgba(1,1,1,.3);}
 	.navbar-nav a {padding: 5px 6px; width: 100%; text-align: center;}
 	.navbar-nav .collapse li a{padding: 4px 0;margin-bottom: 2px;font-size: .96em;color: #f3f3f3;}
@@ -12,6 +12,9 @@
 	li.submenu:hover ul{visibility: visible; opacity: 1;transition: opacity .3s,visibility 0s;}
 	li .spoiler{display: none;}
 	.s-awards .row {justify-content: space-around;}
+	.category-row {max-height: 150vh;max-width: calc(100% + 30px); padding: 40px 0; justify-content: space-between;flex-flow: column wrap;align-content: space-between;justify-content: flex-start;}
+	.item-slider-wrap {order: 3;align-self: flex-start;padding-top: 30px;}
+	.md-left {padding-right: 3%;}
 }
 @media(min-width: 1900px){
 	.logo{left: 6%;}
@@ -23,6 +26,9 @@
 }
 @media(min-width: 1919px) and (min-height: 1070px){
 	.slide__content-bg {background-position: center -272px;}
+}
+@media(min-width: 2550px){
+	.slide__content-bg {background-position: center -424px;}
 }
 @media(max-width: 1600px){
 	.navbar {width: calc(100% - 580px);}
@@ -51,6 +57,7 @@
 @media(max-width: 1379px){
 	body{font-size: 22px;}
 	h2 {font-size: 2em;}
+	.container{max-width: 1300px;}
 	.s-intro{max-height: 105vh;}
 	.slide__bg .slide__bg-zoom {background-size: auto 105vh;}
 	.slide__content-bg {background-size: auto 105vh; background-position: center -186px;}
@@ -82,6 +89,10 @@
 	.form > span{margin-bottom: 30px;}
 	.footer__callback-trigger i {margin-left: 30px; width: 76px; height: 74px;}
 	.s-category {padding-top: 200px;}
+	.title-item{font-size: 2.6em;}
+	.item-slider .slide {padding: 0 35px 10px 75px;}
+	.category-row {max-height: 184vh;}
+	.s-four-zero-four {padding: 250px 0 90px;}
 }
 @media(max-width: 1281px){
 	.logo {max-width: 330px;}
@@ -93,14 +104,42 @@
 	.product-slider .slick-prev {margin-left: -203px;}
 	.product-slider .slick-next {margin-right: -203px;}
 	.small-pop-up{max-width: 600px;}
+	.s-four-zero-four .container {max-width: 1140px;}
+	.four-zero-four__title {font-size: 66px;}
 }
 @media(max-width: 1199px){
 	.navbar {width: calc(100% - 360px);}
 	.top .container-xl {padding: 24px 15px;}
-	.top__lang{margin-left: 17px;}
+	.top__lang{margin-left: 14px;}
 	.logo {left: 1%;max-width: 280px;}
 	.container-xl{width: 100%;}
-	.category__descr h5 {font-size: 1.1em;}
+	.s-intro {max-height: 690px}
+	.s-intro .container-xl {margin-bottom: -150px;}
+	.slide__bg .slide__bg-zoom ,.slide__content-bg{background-size: auto 690px;}
+	.slide__content-bg {background-position: center -174px;}
+	.slide__content-text {min-height: 400px;}
+	.slide__content-border {height: 420px;}
+	.intro-content-slider .slick-dots {bottom: 134px;}
+	.s-brand {padding-top: 44px;}
+	.s-brand .is-brand {max-width: 240px;}
+	h2 {font-size: 1.8em;}
+	h3 {font-size: 34px;}
+	.title__pict{width: 230px;opacity: .7;}
+	.title{font-size: 2.2em;}
+	.product__item-descr h4 {font-size: 1.3em;}
+	.is-type-text {padding: 9px 0 30px;}
+	.brand__video {max-width: 920px; padding-top: 40px;}
+	.s-category {padding-top: 180px;}
+	.category__descr h5 {font-size: 1em;}
+	.product-slider .slide {padding: 0 32px 20px;}
+	.product-slider .slick-prev {margin-left: -182px;}
+	.product-slider .slick-next {margin-right: -182px;}
+	.item__nav a {display: -ms-flexbox; display: flex;align-items: center;justify-content: center; max-width: 46%;}
+	.item__nav a span {max-width: 180px;display: inline-block;}
+	.title-item {font-size: 2.2em;}
+	.title-item__bread-crumbs {font-size: 0.86em;letter-spacing: .04em;}
+	.title-item__bread-crumbs a:after{margin-left: 15px;}
+	.top__lang a i {width: 26px; height: 18px;}
 }
 @media(max-width: 1025px){
 }
