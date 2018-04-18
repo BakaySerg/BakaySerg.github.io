@@ -43,7 +43,7 @@ $(document).ready(function(){
       $("html, body").animate({scrollTop: $($(this).closest('section').next('section')).offset().top + "px"}, {duration: 800});
       return false;
     });
-    $(".js-scroll-up").click(function() {
+    $(".footer__up").click(function() {
       $("html, body").animate({scrollTop: 0}, {duration: 800});
       return false;
     });
@@ -96,13 +96,27 @@ $(document).ready(function(){
         slidesToScroll: 1,
         centerMode: true,
         centerPadding: '160px',
-        responsive: [{            
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 1,
-          slidesToShow: 1,
-          centerPadding: '40px'
-        }
+        responsive: [{
+            breakpoint: 1281,
+            settings: {
+                centerPadding: '90px'
+            }
+        }, {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 1,
+                slidesToShow: 1,
+                arrows: false,
+                centerPadding: '40px'
+            }
+        }, {
+            breakpoint: 420,
+            settings: {
+                slidesToShow: 1,
+                slidesToShow: 1,
+                arrows: false,
+                centerPadding: '20px'
+            }
         }]
       });
     };
@@ -137,7 +151,7 @@ $(document).ready(function(){
     $('.form input,.form textarea').focusin(function(event) {
       $(this).addClass('focused');
     }).focusout(function(event) {
-      if($(this).val() == ''){$(this).removeClass('focused')}
+      if($(this).val() == '' || $(this).val() == '+7 (___) ___-____'){$(this).removeClass('focused')}
     });
     //mask
     $("[type=tel]").mask("+7 (999) 999-9999");
@@ -150,10 +164,24 @@ $(document).ready(function(){
         url: 'mail.php',
         data: $(this).serialize(),
         success: function(){  
-          $.magnificPopup.open({items: {src: '#popup-thank'},type: 'inline',mainClass: 'mfp-fade',},0);
+          $.magnificPopup.open({
+            items: {
+              src: '<div id="popup-thank" class="small-pop-up"><div class="popup__header"><h3>Благодарим <br>за вашу заявку!</h3></div><p class="is-dark-text">Мы свяжемся с вами в ближайшее время!</p><br></div>',
+              type: 'inline',
+              mainClass: 'mfp-rotate-bottom'
+            }
+          });
+          setTimeout(function(){$.magnificPopup.close()},3300);
         },
         error: function() {
-          $.magnificPopup.open({items: {src: '#popup-error'},type: 'inline',mainClass: 'mfp-fade',},0);
+          $.magnificPopup.open({
+            items: {
+              src: '<div id="popup-error" class="small-pop-up"><div class="popup__header"><h3>Произошла ошибка!</h3></div><p class="is-dark-text">Нет связи с сервером,<br>попробуйте пожалуйста позже...</p><br></div> ',
+              type: 'inline',
+              mainClass: 'mfp-rotate-bottom'
+            }
+          });
+          setTimeout(function(){$.magnificPopup.close()},3300);
         }
       }).done(function() {
         $(".form").trigger("reset");
