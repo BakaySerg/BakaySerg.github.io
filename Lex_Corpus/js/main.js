@@ -29,7 +29,6 @@ $(document).ready(function(){
        });
     }
     sticky();
-    // $(".top__contacts").on('wheel', (function(e) {e.preventDefault();}));
 
     // Nav    
     $('a.top__link').on('click', function(event) {
@@ -169,12 +168,7 @@ $(document).ready(function(){
           classToAdd: '',
           classToAddForFullView: 'full-visible',
           classToRemove: 'disablewheel',
-          // callbackFunction: function(elem, action){
-          //   if (wheelBox.hasClass('full-visible')){
-          //   $("body").addClass('overflow-hidden');
-          // }
-          // },
-          repeat: true,
+          repeat: true
         });
 
         $(window).scroll(function() {
@@ -187,7 +181,7 @@ $(document).ready(function(){
 
         $('#etaps-img-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
             curSlide = currentSlide + 1;
-            if((curSlide === 1) || (curSlide === 7)){
+            if((curSlide === 1) || (curSlide === 8)){
               wheelBox.addClass('disablewheel');
             } else {
               wheelBox.removeClass('disablewheel');
@@ -200,14 +194,12 @@ $(document).ready(function(){
 
           if(wheelBox.hasClass('full-visible')) {
             wheelBox.removeClass("disablewheel");
-            // $("body").addClass('overflow-hidden');
             if (e.originalEvent.deltaY > 0) {
               $('#etaps-img-slider').slick('slickNext');
-              if (curSlide === 7){
+              if (curSlide === 8){
                 wheelBox.addClass('disablewheel');
-                // $("body").removeClass('overflow-hidden');
                 return true;
-              } else if (curSlide !== 7){
+              } else if (curSlide !== 8){
                 wheelBox.removeClass('disablewheel');
                 // e.preventDefault();
                 return false;
@@ -216,7 +208,6 @@ $(document).ready(function(){
               $('#etaps-img-slider').slick('slickPrev');
               if (curSlide === 1){
                 wheelBox.addClass('disablewheel');
-                // $("body").removeClass('overflow-hidden');
                 return true;
               } else if (curSlide !== 1){
                 wheelBox.removeClass('disablewheel');

@@ -249,6 +249,7 @@
 								<div class="slide"><img src="img/etaps/5.jpg" alt="e"></div>
 								<div class="slide"><img src="img/etaps/6.jpg" alt="e"></div>
 								<div class="slide"><img src="img/etaps/7.jpg" alt="e"></div>
+								<div class="slide"><img src="img/etaps/1.jpg" alt="e"></div>
 							</div>
 						</div>
 						<div class="col-md-8 etaps-steps-slider-box">
@@ -257,7 +258,7 @@
 									<div class="form-box">
 										<div class="form-box__remark"><?=$FORM ['Remark_2'] ?></div>
 										<form action="#" class="form">
-											<input type="hidden" name="subject" value="<?=$FORM ['Subject_1'] ?>">	
+											<input type="hidden" name="subject" value="<?=$FORM ['Subject_1'] ?>">
 											<input type="tel" name="tel" placeholder="<?=$GENERAL ['Phone_placeholder'] ?>" required>
 											<button class="form__btn" type="submit"><?=$FORM ['Btn_2'] ?></button>
 										</form>
@@ -298,6 +299,16 @@
 										<h4><?=$S_4 ['TITLE_6'] ?></h4>
 										<p><?=$S_4 ['Text_6'] ?></p><br>
 										<p><?=$S_4 ['Text_7'] ?></p>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="form-box">
+										<div class="form-box__remark"><?=$FORM ['Remark_4'] ?></div>
+										<form action="#" class="form">
+											<input type="hidden" name="subject" value="<?=$FORM ['Subject_1'] ?>">
+											<input type="tel" name="tel" placeholder="<?=$GENERAL ['Phone_placeholder'] ?>" required>
+											<button class="form__btn" type="submit"><?=$FORM ['Btn_2'] ?></button>
+										</form>
 									</div>
 								</div>
 							</div>
