@@ -68,6 +68,8 @@ $(document).ready(function(){
         infinite: true,
         speed:800,
         fade: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
         responsive: true,
         responsive: [{
             breakpoint: 2566,
