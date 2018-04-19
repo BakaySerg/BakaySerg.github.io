@@ -69,7 +69,7 @@ $(document).ready(function(){
         speed:800,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 4800,
         pauseOnHover:false,
         responsive: true,
         responsive: [{
