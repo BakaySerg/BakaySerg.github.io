@@ -262,7 +262,7 @@ $(document).ready(function(){
             src: 'https://www.youtube.com/watch?v=0rq42Xe9Mv4'
         },
         type: 'iframe',
-        mainClass: 'mfp-rotate-bottom'
+        mainClass: 'mfp-fade'
     });
 
      
