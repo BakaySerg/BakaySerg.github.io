@@ -149,8 +149,6 @@
 	.title-item__bread-crumbs a:after{margin-left: 15px;}
 	.top__lang a i {width: 26px; height: 18px;}
 }
-@media(max-width: 1025px){
-}
 @media(max-width: 1023px){
 	a.hidden-1023 {display: none;}
 	.top{top: 0;background: url(../img/texture.jpg) center top no-repeat;overflow: visible!important;border-bottom: 1px solid rgba(189,189,189,.8);}

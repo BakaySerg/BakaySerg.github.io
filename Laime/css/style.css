@@ -459,7 +459,7 @@ p {padding-bottom: 1.071em;}
    -webkit-clip-path: polygon(0 0,1% 0,0 100%,0 100%);
    clip-path: polygon(0 0,1% 0,0 100%,0 100%);
 }
-.cliptrapez.anim-play {animation: 2s cliptrapez ease .04s forwards;}
+.cliptrapez.anim-play {animation: 2s cliptrapez ease forwards;}
 
 @keyframes cliptrapez {
   to { opacity: 1;
@@ -484,7 +484,7 @@ p {padding-bottom: 1.071em;}
 .enter-x.anim-play,.enter--x.anim-play,.enter-y.anim-play {
 	opacity: 1;
 	transform: translate(0);
-	transition-delay: .8s;
+	transition-delay: .1s;
 }
 /*===============================
   s-brand
@@ -677,7 +677,6 @@ p {padding-bottom: 1.071em;}
 	opacity: .4;
 	-webkit-clip-path: polygon(0 0,1% 0,0 100%,0 100%);
 	clip-path: polygon(0 0,1% 0,0 100%,0 100%);
-	/*opacity: 0;*/
 }
 .awards-slider .slide.slick-active i{animation: 3s cliptrapez ease .2s forwards;}
 

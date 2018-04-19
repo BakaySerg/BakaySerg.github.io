@@ -19,7 +19,7 @@ $(document).ready(function(){
     if ( ww > 1025) { 
       $('.s-product,.s-awards').addClass("enter-y").viewportChecker({
         classToAdd: 'anim-play',
-        offset: 100
+        offset: 60
       });
       $('.s-brand .is-brand').addClass("cliptrapez").viewportChecker({
         classToAdd: 'anim-play',
@@ -27,11 +27,11 @@ $(document).ready(function(){
       });
       $('.s-brand .text-center').addClass("enter--x").viewportChecker({
         classToAdd: 'anim-play',
-        offset: 220
+        offset: 200
       });
       $('.s-brand .is-type-text,.brand__video').addClass("enter-x").viewportChecker({
         classToAdd: 'anim-play',
-        offset: 220
+        offset: 200
       });
       $('.category__container').addClass("before-anim").viewportChecker({
         classToAdd: 'anim-play'
@@ -50,10 +50,6 @@ $(document).ready(function(){
     });
 
     //scroll to place
-    $(".js-scroll-down").click(function() {
-      $("html, body").animate({scrollTop: $($(this).closest('section').next('section')).offset().top + "px"}, {duration: 800});
-      return false;
-    });
     $(".footer__up").click(function() {
       $("html, body").animate({scrollTop: 0}, {duration: 800});
       return false;
@@ -69,7 +65,7 @@ $(document).ready(function(){
         speed:800,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 4800,
+        autoplaySpeed: 5200,
         pauseOnHover:false,
         responsive: true,
         responsive: [{
@@ -283,7 +279,6 @@ $(document).ready(function(){
         type: 'iframe',
         mainClass: 'mfp-fade'
     });
-
      
 });
 $(window).on('load', showPage);
