@@ -14,24 +14,35 @@ $(document).ready(function(){
   "use strict";
 
     // Ruffles
-    var ww = $(window).width(),
-        wh = $(window).height();
+    var ww = $(window).width();
     //only desktop
-    if ( ww > 1023) { 
-      $('.s-project .col-sm-6,.s-advantage .col-xs-6,.gallery__box div').addClass("trnsl").viewportChecker({
-        classToAdd: 'anim-play',
-        offset: 50
-      });
-      $('.half-container > div').addClass("trnslx").viewportChecker({
+    if ( ww > 1025) { 
+      $('.s-product,.s-awards').addClass("enter-y").viewportChecker({
         classToAdd: 'anim-play',
         offset: 100
       });
-      $('.s-partnership .container').addClass("cliptrapez").viewportChecker({
+      $('.s-brand .is-brand').addClass("cliptrapez").viewportChecker({
         classToAdd: 'anim-play',
-        offset: 320
+        offset: 200
+      });
+      $('.s-brand .text-center').addClass("enter--x").viewportChecker({
+        classToAdd: 'anim-play',
+        offset: 220
+      });
+      $('.s-brand .is-type-text,.brand__video').addClass("enter-x").viewportChecker({
+        classToAdd: 'anim-play',
+        offset: 220
+      });
+      $('.category__container').addClass("before-anim").viewportChecker({
+        classToAdd: 'anim-play'
       });
     };
-
+    // $('.intro-content-slider').mousemove(function(e) {
+    //   var card = document.querySelector('.intro-content-slider');
+    //     var xAxis = (window.innerWidth / 2 - e.pageX) / 996;
+    //     var yAxis = (window.innerHeight / 2 - e.pageY) / 496;
+    //     card.style.transform = 'rotateY(' + -xAxis + 'deg) rotateX(' + yAxis + 'deg)';
+    // });
   
     // Nav    
     $('a.top__link').on('click', function(event) {
@@ -47,7 +58,6 @@ $(document).ready(function(){
       $("html, body").animate({scrollTop: 0}, {duration: 800});
       return false;
     });
-
 
     //intro-slider
     $("#intro-content-slider").slick({
@@ -122,7 +132,13 @@ $(document).ready(function(){
                 centerPadding: '50px'
             }
         }, {
-            breakpoint: 900,
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 3,
+                centerPadding: '0px'
+            }
+        }, {
+            breakpoint: 700,
             settings: {
                 slidesToShow: 1,
                 slidesToShow: 1,
