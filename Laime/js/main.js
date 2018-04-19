@@ -70,6 +70,7 @@ $(document).ready(function(){
         fade: true,
         autoplay: true,
         autoplaySpeed: 4000,
+        pauseOnHover:false,
         responsive: true,
         responsive: [{
             breakpoint: 2566,
