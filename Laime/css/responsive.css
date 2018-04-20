@@ -20,6 +20,11 @@
 	.logo{left: 6%}
 	.navbar{width: calc(100% - 687px)}
 	.footer__contacts {padding-left: 50px}
+	.slide__content-text {
+		position: relative;
+		width: 53.3%;
+		/*padding: 69px 40px 30px;*/
+		padding: 159px 40px 150px;}
 }
 @media(min-width: 1919px) and (max-height: 960px){
 	.slide__content-bg {background-position: center -205px}
@@ -72,7 +77,7 @@
 @media(max-width: 1379px){
 	h2 {font-size: 2em}
 	.slide__content-pict {padding: 130px 25px 0}
-	.slide__content-text{padding: 63px 40px}
+	.slide__content-text{padding: 120px 40px}
 	.submenu ul{padding: 4px 0}
 	.navbar-nav ul li a{font-size: .92em}
 	.logo {left: 3%;max-width: 360px}

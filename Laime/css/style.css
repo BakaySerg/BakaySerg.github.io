@@ -292,13 +292,12 @@ p {padding-bottom: 1.071em}
 .s-intro .container-xl {
 	z-index: 2;
 	margin-bottom: -300px;
-	-webkit-perspective: 1200px;
-	perspective: 1200px;
+	/*-webkit-perspective: 1200px;*/
+	/*perspective: 1200px;*/
 }
 .intro-content-slider {
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	transition: .2s;
+	/*-webkit-transform-style: preserve-3d;*/
+	/*transform-style: preserve-3d;*/
 }
 .intro-bg-slider {
 	position: absolute;
@@ -321,6 +320,7 @@ p {padding-bottom: 1.071em}
 	width: 100%;
 	height: 100%;
 	background-position: center;
+	background-size: auto 104%;
 	background-size: auto 94vh;
 	background-repeat: no-repeat;
 	will-change:transform;
@@ -346,11 +346,12 @@ p {padding-bottom: 1.071em}
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	/*background-size: auto 104%;*/
 	background-size: auto 94vh;
 	background-repeat: no-repeat;
 	background-position: center -227px;
 	will-change:transform;
-	transform: scale(1.14);
+	transform: scale(1.12);
 	transition: transform 5s 2s;
 }
 .slick-active .slide__content-bg{
@@ -379,16 +380,23 @@ p {padding-bottom: 1.071em}
 	padding: 190px 20px 0;
 	float: left;
 }
+.slide__content-pict img {width: 100%;}
+
 .slide__content-text {
 	position: relative;
 	width: 53.3%;
-	padding: 69px 40px 30px;
+	/*padding: 69px 40px 30px;*/
+	padding: 129px 40px 99px;
 	min-height: 580px;
 	float: right;
 	display: -ms-flexbox;
 	display: flex;
-	flex-flow: column wrap;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 	justify-content: center;
+	-ms-flex-pack: start;
 }
 .h1 {
 	font-size: 44px;
@@ -526,6 +534,7 @@ p {padding-bottom: 1.071em}
 	display: -ms-flexbox;
 	display: flex;
 	justify-content: center;
+	-ms-flex-pack:start;
 	align-items: center;
 	outline-color: transparent;
 }
@@ -555,7 +564,9 @@ p {padding-bottom: 1.071em}
 }
 .product__item {
 	position: relative;
-	display: inline-block;
+	display: block;
+	max-width: 380px;
+	margin: auto;
 	color: #fff;
 	background-color: #030303;
 	border: 5px solid #bdbdbd;
