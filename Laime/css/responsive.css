@@ -152,7 +152,7 @@
 }
 @media(max-width: 1023px){
 	a.hidden-1023 {display: none}
-	.top{top: 0;background: url(../img/texture.jpg) center top no-repeat;overflow: visible!important;border-bottom: 1px solid rgba(189,189,189,.8);box-shadow: 0 0 16px rgba(1,2,2,.41)}
+	.top{top: 0;/*background: url(../img/texture.jpg) center top no-repeat;*/background-color: rgba(0,0,0,.6); overflow: visible!important;border-bottom: 1px solid rgba(189,189,189,.8);box-shadow: 0 0 16px rgba(1,2,2,.41)}
 	.top .container-xl {padding: 32px 15px 16px}
 	.navbar-collapse{padding: 7px 0 0;transition: padding 0s, height 0.6s cubic-bezier(.22,.61,.36,1);box-shadow: none;border: none;height: auto}
 	@keyframes moveTohome { to { opacity: 1;transform: translateZ(0)}}
@@ -192,14 +192,15 @@
 	.s-footer .col-md-4 {flex: 0 0 100%; max-width:650px; text-align: center}
 	.footer__callback-trigger{text-align: center;justify-content: center}
 	.footer__soc {padding: 15px 0}
-	.footer__contacts a{margin-bottom: 30px;min-width: 300px;display: inline-block}
-	.footer__contacts-copy {margin-bottom: 30px}
+	.footer__contacts a{margin-bottom: 30px;min-width: 300px;display: inline-block;text-align: left;}
 	.footer__up{width: 40px;height: 40px}
 	.s-awards .row {justify-content: space-between}
 	.s-four-zero-four{min-height: auto}
 	.s-four-zero-four .row {display: block}
 	.s-four-zero-four .row div {width: 100%;max-width: 420px;margin: auto}
 	.s-four-zero-four .row .col-md-5 {max-width: 340px}
+	.footer__contacts-copy {text-align: left;padding-top: 20px;}
+	.footer__up {right: 53px;margin-right: 0;bottom: -4px;}
 }
 @media (max-width: 800px){
 	.product-slider .slick-prev {margin-left: -151px}
@@ -258,6 +259,9 @@
 	.item__nav a i {width: 24px; height: 25px; padding: 3px}
 	.s-four-zero-four {padding: 130px 0 70px}
 	.four-zero-four__title {font-size: 54px; padding-bottom: .2em}
+	/*.s-footer .footer__contacts {text-align: left;}*/
+	.s-footer {padding: 40px 0 30px;}
+	.footer__up {right: 33px;}
 }
 @media (max-width: 480px){
 	.title-item__country i {width: 28px; height: 18px;margin-right: 20px}
@@ -280,7 +284,7 @@
 	.title-item__bread-crumbs {padding-top: 14px; padding-bottom: 21px}
 	.title-item__country{padding-bottom: 24px}
 	.item__formats ul {font-size: .92em}
-	.footer__callback-trigger i {margin-left: 20px; width: 66px; height: 64px}
+	.footer__callback-trigger i {margin-left: 20px; width: 46px; height: 44px}
 	.popup__header h3 {font-size: 1.4em}
 	.mfp-close-btn-in .mfp-close{right: 1px;top: 13px}
 	.top{border-bottom: none}
