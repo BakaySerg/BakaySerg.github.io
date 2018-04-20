@@ -114,6 +114,7 @@
 	.small-pop-up{max-width: 600px}
 	.s-four-zero-four .container {max-width: 1140px}
 	.four-zero-four__title {font-size: 66px}
+	.category-row {max-height: 170vh}
 }
 @media(max-width: 1199px){
 	.navbar {width: calc(100% - 360px)}
