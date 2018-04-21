@@ -52,11 +52,20 @@ $(document).ready(function(){
     $('a.top__link').on('click', function(event) {
       $('.navbar-toggle:visible').trigger('click');
     });
-
     //scroll to place
     $(".footer__up").click(function() {
       $("html, body").animate({scrollTop: 0}, {duration: 800});
       return false;
+    });
+    //scroll to target
+    $(".js-scroll-target").click(function(e) {
+      $("html, body").animate({
+         scrollTop: $($(this).attr("href")).offset().top - 5
+      }, {
+         duration: 800,
+         easing: "swing"
+      });
+      e.preventDefault();
     });
 
     //intro-slider
