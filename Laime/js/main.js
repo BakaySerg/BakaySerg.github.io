@@ -44,6 +44,10 @@ $(document).ready(function(){
     //     card.style.transform = 'rotateY(' + -xAxis + 'deg) rotateX(' + yAxis + 'deg)';
     // });
   
+    //top
+    $('.navbar-toggle').click(function() {
+      $('#top').toggleClass('open');
+    });
     // Nav    
     $('a.top__link').on('click', function(event) {
       $('.navbar-toggle:visible').trigger('click');
@@ -64,7 +68,7 @@ $(document).ready(function(){
         infinite: true,
         speed:800,
         fade: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5200,
         pauseOnHover:false,
         responsive: true,

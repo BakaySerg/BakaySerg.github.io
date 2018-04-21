@@ -152,6 +152,8 @@ p {padding-bottom: 1.071em}
 	text-align: center;
 	z-index: 4;
 }
+.logo a {display: block;}
+
 .logo img {width: 100%}
 
 .top__lang {
