@@ -10,7 +10,7 @@ function showPage() {
 // document.body.classList.add('js-loading');
 
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
   // "use strict";
 
     // Ruffles
