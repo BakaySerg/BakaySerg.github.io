@@ -213,8 +213,10 @@ p {padding-bottom: 1.071em}
 	border: 0;
 	border-radius: 0;
 }
-.navbar-nav {z-index: 999}
-
+.navbar-nav {
+	text-transform: uppercase;
+	z-index: 999
+}
 .navbar-collapse{padding: 0}
 
 .navbar-nav li {
@@ -309,7 +311,6 @@ p {padding-bottom: 1.071em}
 	width: 100%;
 	width: 100vw;
 	height: 100%;
-	/*background-color: #f0dbca;*/
 }
 .slide__bg .slide__bg-zoom {
 	position: absolute;
@@ -384,7 +385,6 @@ p {padding-bottom: 1.071em}
 .slide__content-text {
 	position: relative;
 	width: 53.3%;
-	/*padding: 69px 40px 30px;*/
 	padding: 129px 40px 99px;
 	min-height: 580px;
 	float: right;
@@ -523,7 +523,6 @@ p {padding-bottom: 1.071em}
 	width: 68px;
 	height: 68px;
 	margin: -34px 0 0 -34px;
-	/*padding: 23px 23px 24px 25px;*/
 	background-color: #97897f;
 	text-align: center;
 	border: none;
@@ -554,9 +553,8 @@ p {padding-bottom: 1.071em}
 	background-size: cover;
 	min-height: 70vh;
 }
-.s-product {
-	padding: 84px 0 90px;
-}
+.s-product {padding: 84px 0 90px}
+
 .product-slider .slide {
 	padding: 0 44px 30px;
 	text-align: center;

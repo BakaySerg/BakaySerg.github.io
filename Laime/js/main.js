@@ -37,12 +37,6 @@ $(document).ready(function(){
         classToAdd: 'anim-play'
       });
     };
-    // $('.intro-content-slider').mousemove(function(e) {
-    //   var card = document.querySelector('.intro-content-slider');
-    //     var xAxis = (window.innerWidth / 2 - e.pageX) / 996;
-    //     var yAxis = (window.innerHeight / 2 - e.pageY) / 496;
-    //     card.style.transform = 'rotateY(' + -xAxis + 'deg) rotateX(' + yAxis + 'deg)';
-    // });
   
     //top
     $('.navbar-toggle').click(function() {
@@ -101,8 +95,7 @@ $(document).ready(function(){
         speed:800,
         arrows: false,
         fade: true,
-        draggable: false
-        // init:function(){$('.slide__bg').css('width', ww + 40);}
+        draggable: false        
     });
 
     //product-slider
@@ -280,13 +273,13 @@ $(document).ready(function(){
     });
 
     // VIDEO Заменить на свою ссылку после "/watch?v= ..."
-    $('.js-popup-video').magnificPopup({
-        items: {
-            src: 'https://www.youtube.com/watch?v=0rq42Xe9Mv4'
-        },
-        type: 'iframe',
-        mainClass: 'mfp-fade'
-    });
+    // $('.js-popup-video').magnificPopup({
+    //     items: {
+    //         src: 'https://www.youtube.com/watch?v=0rq42Xe9Mv4'
+    //     },
+    //     type: 'iframe',
+    //     mainClass: 'mfp-fade'
+    // });
      
 });
 $(window).on('load', showPage);
