@@ -102,6 +102,7 @@ $(document).ready(function(){
         arrows: false,
         fade: true,
         draggable: false
+        // init:function(){$('.slide__bg').css('width', ww + 40);}
     });
 
     //product-slider
@@ -116,6 +117,7 @@ $(document).ready(function(){
         focusOnSelect: true,
         slidesToShow: 3,
         slidesToScroll: 1,
+        swipeToSlide: !0,
         centerMode: true,
         centerPadding: '160px',
         responsive: [{

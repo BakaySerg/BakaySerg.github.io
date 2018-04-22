@@ -306,15 +306,17 @@ p {padding-bottom: 1.071em}
 .intro-bg-slider .slick-list,.intro-bg-slider  .slick-slider, .slick-track {height: 100%}
 
 .slide__bg {
+	width: 100%;
 	width: 100vw;
 	height: 100%;
-	background-color: #f0dbca;
+	/*background-color: #f0dbca;*/
 }
 .slide__bg .slide__bg-zoom {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	width: 100%;
+	width: 100vw;
 	height: 100%;
 	background-position: center;
 	background-size: auto 104%;
