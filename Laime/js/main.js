@@ -2,7 +2,7 @@ function showPage() {
   setTimeout(function(){
       document.body.classList.remove('js-loading');
       setTimeout(function(){
-      $(".loader").fadeOut();
+      jQuery(".loader").fadeOut();
       },100);
   });
 
@@ -10,7 +10,7 @@ function showPage() {
 // document.body.classList.add('js-loading');
 
 
-jQuery(document).ready(function(){
+jQuery(document).ready(function($){
   // "use strict";
 
     // Ruffles
@@ -282,4 +282,4 @@ jQuery(document).ready(function(){
     // });
      
 });
-$(window).on('load', showPage);
+jQuery(window).on('load', showPage);
