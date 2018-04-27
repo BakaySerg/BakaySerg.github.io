@@ -152,7 +152,7 @@ p {padding-bottom: 1.071em}
 	text-align: center;
 	z-index: 4;
 }
-.logo a {display: block;}
+.logo a {display: block}
 
 .logo img {width: 100%}
 
@@ -186,6 +186,7 @@ p {padding-bottom: 1.071em}
 	display: block;
 	padding: 6px 7px;
 	height: 44px;
+	width: 44px;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .3s;
@@ -312,6 +313,16 @@ p {padding-bottom: 1.071em}
 	width: 100vw;
 	height: 100%;
 }
+.slide__bg:before {
+	content: '';
+	position: relative;
+	pointer-events: none;
+	display: block;
+	width: 100vh;
+	height: 99vh;
+	z-index: -1;
+	background-color: transparent;
+}
 .slide__bg .slide__bg-zoom {
 	position: absolute;
 	top: 50%;
@@ -380,7 +391,7 @@ p {padding-bottom: 1.071em}
 	padding: 190px 20px 0;
 	float: left;
 }
-.slide__content-pict img {width: 100%;}
+.slide__content-pict img {width: 100%}
 
 .slide__content-text {
 	position: relative;
@@ -704,9 +715,11 @@ p {padding-bottom: 1.071em}
 	footer
 ===========================*/
 .s-footer{
+	position: relative;
 	padding: 54px 0;
 	background: url(../img/texture.jpg) center bottom no-repeat; 
 	background-size: 100% auto;
+	z-index: 700;
 }
 .footer__callback-trigger {
 	color: #fff;
@@ -745,7 +758,7 @@ p {padding-bottom: 1.071em}
 .footer__contacts a {
 	display: inline-block;
 	color: #fff;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	white-space: nowrap;
 }
 .footer__contacts a i {
@@ -940,7 +953,7 @@ p {padding-bottom: 1.071em}
 	transform: translate(-50%,-56%);
 	opacity: .8;
 }
-.title__pict img {max-height: 190px;}
+.title__pict img {max-height: 190px}
 
 .title {
 	position: relative;
@@ -958,7 +971,7 @@ p {padding-bottom: 1.071em}
 	max-width: 540px;
 	margin-bottom: 88px;
 }
-.before-anim .category__item {
+/*.before-anim .category__item {
 	opacity: 0;
 	transform: scale(.8);
 }
@@ -980,13 +993,14 @@ p {padding-bottom: 1.071em}
 .anim-play.before-anim .col-md-4:nth-of-type(12) .category__item{animation-delay: 1.3s}
 .anim-play.before-anim .col-md-4:nth-of-type(13) .category__item{animation-delay: 1.4s}
 .anim-play.before-anim .col-md-4:nth-of-type(14) .category__item{animation-delay: 1.5s}
-.anim-play.before-anim .col-md-4:nth-of-type(15) .category__item{animation-delay: 1.6s}
+.anim-play.before-anim .col-md-4:nth-of-type(15) .category__item{animation-delay: 1.6s}*/
 
 .category__pict {
 	margin-right: -5px;
 	padding-right: 15px;
 	width: 58%;
-	transform: matrix(1,0,0,1,0,0);
+	/*transform: matrix(1,0,0,1,0,0);*/
+	transform: translateZ(0);
 	transition: .4s;
 }
 .category__item:hover .category__pict {transform: matrix(1.17,-0.02,0.1,1.17,-2,0)}
@@ -1059,7 +1073,7 @@ p {padding-bottom: 1.071em}
 	padding-bottom: 35px;
 }
 .title-item__country i{
-	width: 30px;
+	width: 29px;
 	height: 20px;
 	display: inline-block;
 	vertical-align: -1px;
@@ -1151,6 +1165,8 @@ p {padding-bottom: 1.071em}
 
 .item-slider .slide img,.item-slider-thumb .slide img {margin: auto}
 
+.item-slider-thumb .slick-track {margin: auto}
+
 .item-slider-thumb .slide {
 	opacity: .36;
 	text-align: center;
@@ -1193,3 +1209,53 @@ p {padding-bottom: 1.071em}
 	font-family: 'futura-new';
 }
 .four-zero-four a:hover{opacity: .6}
+
+/*up*/
+.js-scroll-up {
+	position: fixed;
+	bottom: 26px;
+	right: 30px;
+	width: 62px;
+	height: 62px;
+	background-color: rgba(254,254,254,.9);
+	text-align: center;
+	border: none;
+	color: #97897f;
+	border-radius: 50%;
+	transition: .3s;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	-ms-flex-pack:start;
+	align-items: center;
+	outline-color: transparent;
+	transition: .4s;
+}
+.in-viewport .js-scroll-up {opacity: 0;pointer-events: none;}
+
+.js-scroll-up:hover {background-color: #f0dbca;color: #71665d;}
+
+.js-scroll-up svg {
+	display: inline-block;
+	transform: rotate(-90deg);
+	width: 20px;
+	height: 21px;
+	fill: currentColor;
+	margin: auto;
+}
+
+/*
+Theme Name: Laime
+Version: 1.0
+*/
+.footer__soc a[href^="https://www.instagram.com/"] i {background-image: url(img/svg/ins.svg)}
+.footer__soc a[href^="https://www.facebook.com/"] i {background-image: url(img/svg/fb.svg)}
+.navbar-nav {text-transform: uppercase}
+
+.category-row .content p { max-width: 1200px}
+.content { color: #565452; }
+.content img.alignleft {padding-right: 24px}
+.content img.alignright {padding-left: 24px}
+.alignleft {float: left}
+.alignright {float: right}
+.aligncenter {text-align: center}

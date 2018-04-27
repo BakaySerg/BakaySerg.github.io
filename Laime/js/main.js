@@ -13,6 +13,18 @@ function showPage() {
 jQuery(document).ready(function($){
   // "use strict";
 
+    (function($, window, undefined) {
+      if(/iP/.test(navigator.platform) && /Safari/i.test(navigator.userAgent)){
+        var mobileSafari = "Safari";
+      }     
+      function safariDetection() {
+        if (typeof mobileSafari === 'string'){ $('body').addClass("is-safari") };
+      };
+      safariDetection();
+     
+    }(jQuery, this));    
+
+
     // Ruffles
     var ww = $(window).width();
     //only desktop
@@ -36,6 +48,13 @@ jQuery(document).ready(function($){
       $('.category__container').addClass("before-anim").viewportChecker({
         classToAdd: 'anim-play'
       });
+      $('.category__container').addClass("before-anim").viewportChecker({
+        classToAdd: 'anim-play'
+      });
+      $('#s-footer').viewportChecker({
+        classToAdd: 'in-viewport',
+        repeat: true
+      });
     };
   
     //top
@@ -48,9 +67,27 @@ jQuery(document).ready(function($){
     });
     //scroll to place
     $(".footer__up").click(function() {
-      $("html, body").animate({scrollTop: 0}, {duration: 800});
+      $("html, body").stop().animate({scrollTop: 0}, {duration: 800});
       return false;
     });
+
+    //* up  anchor*/
+    $(function() {
+      $('.js-scroll-up').hide();
+      $(window).on('scroll', function() {
+        if((parseInt($(window).scrollTop(), 10) > 200)) {
+         $('.js-scroll-up').fadeIn(400);
+       }
+       else {
+         $('.js-scroll-up').fadeOut(400);
+       }
+     });
+      $('.js-scroll-up').click(function(){
+        $("html, body").stop().animate({scrollTop: 0}, {duration: 800});
+        return false;
+      });
+    });
+
     //scroll to target
     $(".js-scroll-target").click(function(e) {
       $("html, body").animate({
@@ -83,6 +120,12 @@ jQuery(document).ready(function($){
         }, {
             breakpoint: 640,
             settings: {
+                draggable: true
+            }
+        }, {
+            breakpoint: 380,
+            settings: {
+                autoplay:false,
                 draggable: true
             }
         }],
@@ -174,6 +217,15 @@ jQuery(document).ready(function($){
         infinite: true,
         speed: 600,
         slidesToShow: 1,
+        responsive: true,
+        responsive: [{
+            breakpoint: 380,
+            settings: {
+                infinite: false,
+                speed: 500,
+                draggable: true
+            }
+        }]
       });
     };
 
@@ -241,15 +293,16 @@ jQuery(document).ready(function($){
 
     //form
     $(".form").submit(function(event) {
+      var _data = $(this).serialize() + '&action=' + 'make_sending';
       event.preventDefault();
       $.ajax({
         type: 'POST',
-        url: 'mail.php',
-        data: $(this).serialize(),
+        url: MaAjax.ajaxurl,
+        data: _data,
         success: function(){  
           $.magnificPopup.open({
             items: {
-              src: '<div id="popup-thank" class="small-pop-up"><div class="popup__header"><h3>Благодарим <br>за вашу заявку!</h3></div><p class="is-dark-text">Мы свяжемся с вами в ближайшее время!</p><br></div>',
+              src: MaAjax.form_success,
               type: 'inline',
               mainClass: 'mfp-rotate-bottom'
             }
@@ -259,7 +312,7 @@ jQuery(document).ready(function($){
         error: function() {
           $.magnificPopup.open({
             items: {
-              src: '<div id="popup-error" class="small-pop-up"><div class="popup__header"><h3>Произошла ошибка!</h3></div><p class="is-dark-text">Нет связи с сервером,<br>попробуйте пожалуйста позже...</p><br></div> ',
+              src: MaAjax.form_error,
               type: 'inline',
               mainClass: 'mfp-rotate-bottom'
             }

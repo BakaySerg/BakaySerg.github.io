@@ -8,7 +8,7 @@
 	.navbar-nav a {padding: 5px 6px; width: 100%; text-align: center}
 	.navbar-nav .collapse li a{padding: 4px 0;margin-bottom: 2px;font-size: .96em;color: #f3f3f3}
 	.navbar-nav .collapse li a:hover{color: #f0dbca}
-	.submenu ul {display: block; position: absolute; top: 100%; left: 0; min-width: 100%; padding-top: 7px; padding-bottom: 12px; overflow: hidden; visibility: hidden; opacity: 0; z-index: 10; transition: opacity .3s,visibility 0s .3s; }
+	.submenu ul {height: auto!important;display: block; position: absolute; top: 100%; left: 0; min-width: 100%; padding-top: 7px; padding-bottom: 12px; overflow: hidden; visibility: hidden; opacity: 0; z-index: 10; transition: opacity .3s,visibility 0s .3s; }
 	.submenu ul.dual {display: flex; flex-wrap: wrap; flex-direction: column; max-height: 260px;align-content: flex-start;min-width: 220%; background-color: inherit;  position: absolute; top: 100%; left: 0; padding-top: 7px; padding-bottom: 12px; overflow: hidden; visibility: hidden; opacity: 0; z-index: 10; transition: opacity .3s,visibility 0s .3s; }
 	.navbar-nav .dual li {flex: 1 1 50%;-ms-flex: 1 1 50%; max-width: 50%;width: 50%;}
 	li.submenu:hover ul{visibility: visible; opacity: 1;transition: opacity .3s,visibility 0s}
@@ -158,6 +158,7 @@
 	.title-item__bread-crumbs {font-size: 0.86em;letter-spacing: .04em}
 	.title-item__bread-crumbs a:after{margin-left: 15px}
 	.top__lang a i {width: 26px; height: 18px}
+	.js-scroll-up {bottom: 11px; right: 11px; width: 56px; height: 56px;}
 }
 @media(max-width: 1023px){
 	a.hidden-1023 {display: none}
@@ -195,7 +196,7 @@
 	.category-row{display: block;max-height: none}
 	.category-row .col-md-6{width: 100%;max-width: 600px;margin: auto}
 	.item-slider-wrap {padding-bottom: 25px}
-	.item-slider .slide{padding: 0 70px 10px 95px}
+	.item-slider .slide{padding: 0 70px 6px 95px}
 	.item__nav{padding: 17px 0 30px}
 }
 @media (max-width: 991px){
@@ -210,7 +211,7 @@
 	.s-footer .col-md-4 {flex: 0 0 100%; max-width:650px; text-align: center}
 	.footer__callback-trigger{text-align: center;justify-content: center}
 	.footer__soc {padding: 15px 0}
-	.footer__contacts a{margin-bottom: 30px;min-width: 300px;display: inline-block;text-align: left}
+	.footer__contacts a{margin-bottom: 26px;min-width: 300px;display: inline-block;text-align: left}
 	.footer__up{width: 40px;height: 40px}
 	.s-awards .row {justify-content: space-between}
 	.s-four-zero-four{min-height: auto}
@@ -235,6 +236,7 @@
 	.s-awards .row {justify-content: center; }
 	.awards__item{ flex: 0 0 33%; max-width: 33%;margin-bottom: 31px}
 	.category__container .col-md-6 {flex: 0 0 50%; max-width: 50%}
+	.js-scroll-up{display: none;visibility: hidden;}
 }
 @media (max-width: 720px){
 	body {font-size: 20px}
@@ -268,13 +270,13 @@
 	.awards-slider .slide i {left: 10%;top: 10%; height: 80%; width: 80%;opacity: .3}
 	.s-awards {padding: 20px 0 }
 	.is-type-text{padding: 9px 0 0}
-	.item-slider-thumb .slide div {height: 108px;width: 96px;display: -ms-flexbox; display: flex;justify-content: center;align-items: center}
+	.item-slider-thumb .slide div {height: 108px;width: 96px}
 	.item-slider-thumb .slide {opacity: .4; transform: scale(.7)}
 	.item-slider-thumb .slide {opacity: .4; transform: scale(.7)}
 	.item__nav a {max-width: 48.3%; font-size: 0.9em}
 	.item__nav a:first-of-type i {margin-right: 9px;margin-left: -3px}
 	.item__nav a:last-of-type i {margin-left: 9px;margin-right: -3px}
-	.item__nav a i {width: 24px; height: 25px; padding: 3px}
+	.item__nav a i {width: 24px; min-width: 24px;height: 25px; padding: 3px}
 	.s-four-zero-four {padding: 130px 0 70px}
 	.four-zero-four__title {font-size: 54px; padding-bottom: .2em}
 	.s-footer {padding: 40px 0 30px}
@@ -294,6 +296,7 @@
 	.awards__slider-box{padding: 0 8px}
 	.awards-slider .slide {padding: 0 15px 9px}
 	.slick-arrow {width: 36px; height: 40px}
+	.item-slider .slide {padding: 0 20px}
 }
 @media (max-width: 425px){
 	.s-category {padding-top: 92px}
@@ -322,6 +325,11 @@
 	.form > span {margin-bottom: 0}
 	.small-pop-up {padding-bottom: 10px}
 	.product-slider .slide {padding: 0 20px 18px}
+	.slick-arrow.slick-disabled{opacity: .3;}
+	#awards-slider .slick-track{display: -ms-flexbox; display: flex;transition: transform 500ms linear!important}
+	#awards-slider .slide p,#awards-slider .slide.slick-active p {transform: none!important;font-size: 18px!important;padding: 0;}
+	#awards-slider .slide i,#awards-slider .slide.slick-active i {animation: none!important;-webkit-clip-path: none; clip-path: none;}
+	/*.is-safari .awards-slider .slide p,.is-safari .awards-slider .slide.slick-active p {transform: none; font-size: 14px;}*/
 }
 @media (max-width: 360px){
 	h2 {font-size: 1.4em}
@@ -335,15 +343,16 @@
 	.slide__content-pict {height: 210px}
 	.product-slider .slide {padding: 0 18px 18px}
 	.awards__item {flex: 0 0 50%; max-width: 50%; margin-bottom: 21px}
-	.item-slider-thumb .slide div {height: 103px; width: 86px}
+	.item-slider-thumb .slide div{padding: 0 8px}
 	.title-item__country{font-size: .9em}
-	.title-item__bread-crumbs {padding-top: 5px; padding-bottom: 10px}
-	.item-slider .slide {padding: 0 66px 3px 68px}
+	.title-item__bread-crumbs {padding-top: 5px; padding-bottom: 10px}	
 	.s-category {padding-top: 78px}
 	.title-item__pict {margin: 0 auto 13px}
 	.title-item__bread-crumbs {font-size: 0.68em}
 	.category-row p {font-size: .92em}
-	.awards-slider .slide p {transform: scale(1);font-size: .82em;}
+}
+@media (max-width: 359px){
+	#awards-slider .slide p,#awards-slider .slide.slick-active p {font-size: 16px!important;}
 }
 /* хак для IE 11 -flex*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
