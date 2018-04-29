@@ -51,10 +51,10 @@ jQuery(document).ready(function($){
       $('.category__container').addClass("before-anim").viewportChecker({
         classToAdd: 'anim-play'
       });
-      $('#s-footer').viewportChecker({
-        classToAdd: 'in-viewport',
-        repeat: true
-      });
+      // $('#s-footer').viewportChecker({
+      //   classToAdd: 'in-viewport',
+      //   repeat: true
+      // });
     };
   
     //top
@@ -65,11 +65,11 @@ jQuery(document).ready(function($){
     $('a.top__link').on('click', function(event) {
       $('.navbar-toggle:visible').trigger('click');
     });
-    //scroll to place
-    $(".footer__up").click(function() {
-      $("html, body").stop().animate({scrollTop: 0}, {duration: 800});
-      return false;
-    });
+    //scroll to up
+    // $(".footer__up").click(function() {
+    //   $("html, body").stop().animate({scrollTop: 0}, {duration: 800});
+    //   return false;
+    // });
 
     //* up  anchor*/
     $(function() {
@@ -108,7 +108,7 @@ jQuery(document).ready(function($){
         infinite: true,
         speed:800,
         fade: true,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5200,
         pauseOnHover:false,
         responsive: true,
@@ -192,7 +192,7 @@ jQuery(document).ready(function($){
             settings: {
                 slidesToShow: 1,
                 slidesToShow: 1,
-                arrows: false,
+                // arrows: false,
                 centerPadding: '70px'
             }
         }, {
@@ -200,7 +200,7 @@ jQuery(document).ready(function($){
             settings: {
                 slidesToShow: 1,
                 slidesToShow: 1,
-                arrows: false,
+                // arrows: false,
                 centerPadding: '30px'
             }
         }]
@@ -210,6 +210,28 @@ jQuery(document).ready(function($){
     //awards__slider
     if ($("#awards-slider").length) {
       $("#awards-slider").slick({
+        dots: false,
+        arrows: true,
+        prevArrow: '<i class="slick-arrow slick-prev"><svg viewBox="0 0 32 32"><use xlink:href="#i-left"/></svg></i>',
+        nextArrow: '<i class="slick-arrow slick-next"><svg viewBox="0 0 32 32"><use xlink:href="#i-right"/></svg></i>',
+        infinite: true,
+        speed: 600,
+        slidesToShow: 1,
+        responsive: true,
+        responsive: [{
+            breakpoint: 380,
+            settings: {
+                infinite: false,
+                speed: 500,
+                draggable: true
+            }
+        }]
+      });
+    };
+
+    //inspiration-slider
+    if ($("#inspiration-slider").length) {
+      $("#inspiration-slider").slick({
         dots: false,
         arrows: true,
         prevArrow: '<i class="slick-arrow slick-prev"><svg viewBox="0 0 32 32"><use xlink:href="#i-left"/></svg></i>',

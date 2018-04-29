@@ -388,11 +388,14 @@ p {padding-bottom: 1.071em}
 .slide__content-pict {
 	position: relative;
 	width: 46%;
-	padding: 190px 20px 0;
+	padding: 175px 20px 10px;
 	float: left;
 }
-.slide__content-pict img {width: 100%}
-
+.slide__content-pict img {
+	/*width: 100%;*/
+	width: auto;
+	max-height: 31vw;
+}
 .slide__content-text {
 	position: relative;
 	width: 53.3%;
@@ -771,6 +774,7 @@ p {padding-bottom: 1.071em}
 .footer__contacts a span {
 	display: inline-block;
 	position: relative;
+	text-transform: lowercase;
 }
 .footer__contacts a span:before {
 	content: ''; 
@@ -932,7 +936,7 @@ p {padding-bottom: 1.071em}
 ===========================*/
 .s-category {
 	padding-top: 239px;
-	min-height: 90vh;	
+	min-height: 80vh;	
 	background: #ded5d0 url(../img/Category/bg1.jpg) center top no-repeat;
 	background-size: 100% auto;
 }
@@ -947,19 +951,20 @@ p {padding-bottom: 1.071em}
 }
 .title__pict {
 	position: absolute;
-	width: 254px;
-	top: 50%;
+	width: 95px;
+	top: 12%;
 	left: 50%;
 	transform: translate(-50%,-56%);
-	opacity: .8;
+	opacity: .7;
 }
 .title__pict img {max-height: 190px}
 
 .title {
 	position: relative;
 	font-family: 'DelphianC';
-	text-shadow: .4px 3px 3.8px rgba(1, 2, 2, .65);
+	text-shadow: .6px 3.4px 4px rgba(1,2,2,.65);
 	font-size: 2.4em;
+	letter-spacing: .1em;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -967,7 +972,7 @@ p {padding-bottom: 1.071em}
 	display:-ms-flexbox; 
 	display: flex;
 	justify-content: center;
-	align-items: flex-end;
+	/*align-items: flex-end;*/
 	max-width: 540px;
 	margin-bottom: 88px;
 }
@@ -1005,10 +1010,13 @@ p {padding-bottom: 1.071em}
 }
 .category__item:hover .category__pict {transform: matrix(1.17,-0.02,0.1,1.17,-2,0)}
 
-.category__descr {width: 42%}
+.category__descr {
+	width: 42%;
+	padding-top: 9%;
+}
 
 .category__descr .is-brand {
-	margin: 0 0 8px;
+	margin: 0 0 15px;
 	max-width: 150px;
 	padding-left: 2px;
 	transition: .4s;
@@ -1017,8 +1025,9 @@ p {padding-bottom: 1.071em}
 .category__item:hover .is-brand {opacity: .9}
 
 .category__descr h5 {
+	position: relative;
 	color: #4f4337;
-	font-size: 1.2em;
+	font-size: 1.16em;
 	font-weight: 400;
 	padding-bottom: .4em;
 	line-height: 1;
@@ -1031,11 +1040,12 @@ p {padding-bottom: 1.071em}
 	margin: 0 auto 20px;
 	max-width: 74px;
 }
+.col-md-12 .title-item__box {padding-bottom: 20px;}
 .title-item {
 	font-family: 'DelphianC';
-	text-shadow: -1px 1px #fff, 0px 1px #fff, 0.4px 4px 4px rgba(1,2,2,.65);
+	text-shadow: -1px 1px #fff, 0px 1px #fff, .6px 3px 4.5px rgba(1,2,2,.65);
 	color: #fff;
-	font-size: 2.9em;
+	font-size: 1.9em;
 	letter-spacing: .02em;
 	word-spacing: -.3em;
 	font-weight: 400;
@@ -1090,7 +1100,7 @@ p {padding-bottom: 1.071em}
 
 .category-row p {
 	color: #565452;
-	text-align: center;
+	text-align: left;
 	max-width: 566px;
 	margin: auto;
 }
@@ -1120,6 +1130,9 @@ p {padding-bottom: 1.071em}
 .item__spoiler i svg {fill: currentColor}
 
 .item__formats ul {
+	max-width: 566px;
+	margin: auto;
+	text-align: left;
 	list-style: none;
 	color: #565452;
 	transition: height .4s;
@@ -1243,13 +1256,34 @@ p {padding-bottom: 1.071em}
 	fill: currentColor;
 	margin: auto;
 }
+/*===============================
+  s-inspiration
+================================*/
+.s-inspiration {padding: 300px 0 10px;}
+
+.inspiration-slider .slide{padding: 0 40px;}
+
+.inspiration-slider .slide img {
+	transform: scale(.92);
+	transition: .3s;
+	will-change: transform;
+}
+.inspiration-slider .slide.slick-active img{
+	transform: scale(1);
+	transition: .36s ease .42s
+}
 
 /*
 Theme Name: Laime
 Version: 1.0
 */
-.footer__soc a[href^="https://www.instagram.com/"] i {background-image: url(img/svg/ins.svg)}
-.footer__soc a[href^="https://www.facebook.com/"] i {background-image: url(img/svg/fb.svg)}
+.footer__soc a[href^="https://www.instagram.com/"] i {background-image: url(../img/svg/ins.svg)}
+.footer__soc a[href^="https://www.facebook.com/"] i {background-image: url(../img/svg/fb.svg)}
+a[href$=".pdf"] i {
+	background-image: url(../img/svg/pdf.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+}
 .navbar-nav {text-transform: uppercase}
 
 .category-row .content p { max-width: 1200px}
