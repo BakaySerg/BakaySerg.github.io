@@ -10,7 +10,7 @@
 	.navbar-nav .collapse li a:hover{color: #f0dbca}
 	.submenu ul {height: auto!important;display: block; position: absolute; top: 100%; left: 0; min-width: 100%; padding-top: 7px; padding-bottom: 12px; overflow: hidden; visibility: hidden; opacity: 0; z-index: 10; transition: opacity .3s,visibility 0s .3s; }
 	.submenu ul.dual {display: flex; flex-wrap: wrap; flex-direction: column; max-height: 260px;align-content: flex-start;min-width: 220%; background-color: inherit;  position: absolute; top: 100%; left: 0; padding-top: 7px; padding-bottom: 12px; overflow: hidden; visibility: hidden; opacity: 0; z-index: 10; transition: opacity .3s,visibility 0s .3s; }
-	.navbar-nav .dual li {flex: 1 1 50%;-ms-flex: 1 1 50%; max-width: 50%;width: 50%;}
+	.navbar-nav .dual li {flex: 1 1 50%;-ms-flex: 1 1 50%; max-width: 50%;width: 50%}
 	li.submenu:hover ul{visibility: visible; opacity: 1;transition: opacity .3s,visibility 0s}
 	li .spoiler{display: none}
 	.s-awards .row {justify-content: space-around}
@@ -52,7 +52,7 @@
 }
 @media(max-width: 1441px){
 	body{font-size: 22px}
-	.submenu ul.dual {max-height: 248px;}
+	.submenu ul.dual {max-height: 248px}
 	.h1 {font-size: 34px}
 	h3 {font-size: 34px}
 	.logo {left: 6%; max-width: 370px}
@@ -115,7 +115,7 @@
 	.s-four-zero-four {padding: 250px 0 90px}
 	.intro-content-slider .slick-dots {bottom: 255px}
 	.inspiration-slider .slide {padding: 0 30px}
-	.s-inspiration{padding: 0 15px;}
+	.s-inspiration{padding: 0 15px}
 }
 @media(max-width: 1281px){
 	.logo {max-width: 330px}
@@ -165,7 +165,7 @@
 	.title-item__bread-crumbs {font-size: 0.86em;letter-spacing: .04em}
 	.title-item__bread-crumbs a:after{margin-left: 15px}
 	.top__lang a i {width: 26px; height: 18px}
-	.js-scroll-up {bottom: 11px; right: 11px; width: 56px; height: 56px;}
+	.js-scroll-up {bottom: 11px; right: 11px; width: 56px; height: 56px}
 	.slide__content-pict img {max-height: 40vw}
 }
 @media(max-width: 1023px){
@@ -206,7 +206,7 @@
 	.item-slider-wrap {padding-bottom: 25px}
 	.item-slider .slide{padding: 0 70px 6px 95px}
 	.item__nav{padding: 17px 0 30px}
-	.slide__content-pict img {max-height: 60vw; width: 100%;}
+	.slide__content-pict img {max-height: 60vw; width: 100%}
 }
 @media (max-width: 991px){
 	.s-brand .text-center {max-width: 420px; padding: 0 15px;margin: auto}
@@ -215,7 +215,7 @@
 	.title__pict {width: 200px; opacity: 0.4}
 	.slide__content-text {padding: 99px 40px}
 	.s-category {min-height: 68vh}
-	.s-inspiration {padding: 220px 15px 20px;}
+	.s-inspiration {padding: 220px 15px 20px}
 }
 @media (max-width: 969px){
 	.s-footer .row {justify-content: center}
@@ -247,7 +247,7 @@
 	.s-awards .row {justify-content: center; }
 	.awards__item{ flex: 0 0 33%; max-width: 33%;margin-bottom: 31px}
 	.category__container .col-md-6 {flex: 0 0 50%; max-width: 50%}
-	.js-scroll-up{display: none;visibility: hidden;}
+	.js-scroll-up{display: none;visibility: hidden}
 }
 @media (max-width: 720px){
 	body {font-size: 20px}
@@ -339,12 +339,12 @@
 	.form > span {margin-bottom: 0}
 	.small-pop-up {padding-bottom: 10px}
 	.product-slider .slide {padding: 0 20px 18px}
-	.slick-arrow.slick-disabled{opacity: .3;}
+	.slick-arrow.slick-disabled{opacity: .3}
 	#awards-slider .slick-track{display: -ms-flexbox; display: flex;transition: transform 500ms linear!important}
 	#awards-slider .slide p,#awards-slider .slide.slick-active p {transform: none!important;font-size: 18px!important;padding: 0}
 	#awards-slider .slide i,#awards-slider .slide.slick-active i {animation: none!important;-webkit-clip-path: none; clip-path: none}
-	.inspiration-slider .slide{padding: 0;}
-	/*.is-safari .awards-slider .slide p,.is-safari .awards-slider .slide.slick-active p {transform: none; font-size: 14px;}*/
+	.inspiration-slider .slide{padding: 0}
+	/*.is-safari .awards-slider .slide p,.is-safari .awards-slider .slide.slick-active p {transform: none; font-size: 14px}*/
 }
 @media (max-width: 360px){
 	h2 {font-size: 1.4em}
@@ -367,10 +367,10 @@
 	.category-row p {font-size: .92em}
 }
 @media (max-width: 359px){
-	#awards-slider .slide p,#awards-slider .slide.slick-active p {font-size: 16px!important;}
+	#awards-slider .slide p,#awards-slider .slide.slick-active p {font-size: 16px!important}
 }
 /* хак для IE 11 -flex*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	.submenu ul.dual {display: block;}
-	.navbar-nav .dual li {flex: none;-ms-flex: none; float: left; max-width: 50%;width: 50%;}
+	.submenu ul.dual {display: block}
+	.navbar-nav .dual li {flex: none;-ms-flex: none; float: left; max-width: 50%;width: 50%}
 }
