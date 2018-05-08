@@ -298,6 +298,7 @@
 	.s-footer {padding: 40px 0 30px}
 	.footer__up {right: 33px}
 	.category__container {padding: 16px 15px 30px}
+	.brand__video{padding: 0 5px;margin: 3px 0;width: 100%;}
 }
 @media (max-width: 480px){
 	.title-item__country i {width: 28px; height: 18px;margin-right: 20px}
@@ -308,7 +309,6 @@
 	.slide__content-pict {height: 280px}
 	.intro-content-slider .slick-dots {bottom: 38px}
 	.is-type-text {padding: 5px 0 0; text-align: center}
-	.brand__video {width: 100%; margin-top: 35px}
 	.s-product {padding: 60px 0 30px}
 	.awards__slider-box{padding: 0 8px}
 	.awards-slider .slide {padding: 0 15px 9px}
