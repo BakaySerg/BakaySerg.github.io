@@ -13,16 +13,16 @@ function showPage() {
 jQuery(document).ready(function($){
   // "use strict";
 
-    (function($, window, undefined) {
-      if(/iP/.test(navigator.platform) && /Safari/i.test(navigator.userAgent)){
-        var mobileSafari = "Safari";
-      }     
-      function safariDetection() {
-        if (typeof mobileSafari === 'string'){ $('body').addClass("is-safari") };
-      };
-      safariDetection();
+    // (function($, window, undefined) {
+    //   if(/iP/.test(navigator.platform) && /Safari/i.test(navigator.userAgent)){
+    //     var mobileSafari = "Safari";
+    //   }     
+    //   function safariDetection() {
+    //     if (typeof mobileSafari === 'string'){ $('body').addClass("is-safari") };
+    //   };
+    //   safariDetection();
      
-    }(jQuery, this));    
+    // }(jQuery, this));    
 
 
     // Ruffles
@@ -108,7 +108,7 @@ jQuery(document).ready(function($){
         infinite: true,
         speed:800,
         fade: true,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5200,
         pauseOnHover:false,
         responsive: true,
@@ -230,14 +230,15 @@ jQuery(document).ready(function($){
     };
 
     //inspiration-slider
-    if ($("#inspiration-slider").length) {
-      $("#inspiration-slider").slick({
+    if ($(".inspiration-slider").length) {
+      $(".inspiration-slider").slick({
         dots: false,
         arrows: true,
         prevArrow: '<i class="slick-arrow slick-prev"><svg viewBox="0 0 32 32"><use xlink:href="#i-left"/></svg></i>',
         nextArrow: '<i class="slick-arrow slick-next"><svg viewBox="0 0 32 32"><use xlink:href="#i-right"/></svg></i>',
         infinite: true,
         speed: 600,
+        lazyLoad:'ondemand',
         slidesToShow: 1,
         responsive: true,
         responsive: [{
