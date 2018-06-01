@@ -6,7 +6,7 @@
 	.navbar-nav li{margin-bottom: -2px; margin-right: 6px; display: -ms-flexbox; display: flex; align-self:stretch; justify-content: space-around; align-items: center; }
 	a.top__link {padding: 7px; width: 100%; text-align: center}
 	.header__services--list{display: block!important;height: auto!important; transform: scaleY(0.9);transform-origin: center top; opacity: 0;visibility: hidden; transition: .1s}
-	.header__services .col-4:hover .header__services--list{transform: scaleY(1);opacity: 1;visibility: visible; transition: .2s}
+	.header__services .col-4:hover .header__services--list{transform: scaleY(1);opacity: 1;visibility: visible; transition: .2s .15s}
 }
 @media(min-width: 1366px){
 	.slick-prev {left: -66px}
