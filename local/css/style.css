@@ -370,7 +370,7 @@ a.top__link:hover{color: #0080ca}
 .intro-slider__content div{
 	-webkit-clip-path: polygon(0 0,0.6% 0,0 100%,0 100%);
 	clip-path: polygon(0 0,0.6% 0,0 100%,0 100%);
-	transition: clip-path .5s ease-in-out .1s;
+	transition: clip-path .7s ease-in-out .1s;
 }
 .slide.slick-active .intro-slider__content div{
 	z-index: 1;

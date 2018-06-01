@@ -38,6 +38,8 @@ $(document).ready(function(){
     $('.intro-slider').slick({
       responsive:true,
       infinite: true,
+      autoplay: true,
+      autoplaySpeed: 4100,
       dots: true,
       speed:660,
       fade: true,
