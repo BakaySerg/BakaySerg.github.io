@@ -112,7 +112,6 @@ b,strong {font-weight: 500}
 	background-color: #fff;
 	color: #0080ca;
 }
-
 .is-accent{color: #0bf}
 /*=====================
 	Header
@@ -121,6 +120,10 @@ b,strong {font-weight: 500}
 	position: relative;
 	box-shadow: inset 0 -1px rgba(0,0,0,.1);
 }
+.top .container{padding: 0 10px;}
+
+.top .btn {border-radius: 0}
+
 .logo{
 	position: absolute;
 	left: 0;
@@ -384,6 +387,11 @@ a.top__link:hover{color: #0080ca}
 	background-color: #546975;
 	padding: 35px 0;
 }
+.s-services .btn-outlined {
+	position: absolute;
+	right: 2px;
+	top: 10px;
+}
 .s-services .container{padding: 0}
 
 [data-text] {position: relative}
@@ -506,7 +514,9 @@ a.top__link:hover{color: #0080ca}
 	padding: 21px 26px 19px;
 	background-color: #fff;
 	border: 1px solid #d4dade;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.06);
+	box-shadow: 0 5px 10px rgba(0,0,0,.06);
+	user-select: none;
+	cursor: default;
 	transition: .4s;
 }
 .why__item:hover {
