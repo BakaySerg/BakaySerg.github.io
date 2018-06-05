@@ -196,7 +196,7 @@ a.top__link {
 }
 a.top__link:hover{color: #0080ca}
 
-.header__contacts .row > div {
+.header__contacts .row > div,.header__contacts .row > a {
 	display: -ms-flexbox;
 	display: flex;
 	flex-wrap: wrap;
@@ -205,6 +205,7 @@ a.top__link:hover{color: #0080ca}
 	padding-bottom: 24px;
 	font-size: 13px;
 	line-height: 1.32;
+	color: inherit;
 }
 .header__contacts .row .header__tel {
 	flex-direction: column;
@@ -212,7 +213,7 @@ a.top__link:hover{color: #0080ca}
 	justify-content: center;
 	max-width: 300px;
 }
-.header__contacts .row > div b {
+.header__contacts .row .header__tel b {
 	display: block;
 	min-width: 194px;
 	color: #333;
@@ -776,8 +777,9 @@ input[type=checkbox] {
 	line-height: 1.32;
 	margin-top: 18px;
 }
-.footer__contacts b {
+.footer__contacts b,.footer__tel {
 	display: block;
+	color: inherit;
 	font-size: 18px;
 	font-weight: 400;
 	margin-bottom: .8em;
@@ -815,7 +817,10 @@ input[type=checkbox] {
 	color: #bbb;
 	font-size: 13px;
 }
-.footer__bottom a {color: inherit}
+.footer__bottom a {
+	color: inherit;
+	transition: opacity .3s cubic-bezier(.215,.61,.355,1);
+}
 .footer__bottom a:hover {opacity: .6}
 .footer__bottom a b {
 	color: #fff;

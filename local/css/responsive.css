@@ -77,7 +77,8 @@
 	.s-statistic .col-sm-6 {margin-bottom: 30px}
 }
 @media (max-width: 969px){
-	.header__contacts .row .header__tel,.header__services .col-4 i{display: none}
+	.header__contacts .row .header__logo{width: 100%;flex: 0 0 100%; max-width: 100%;padding-bottom: 0;}
+	.header__services .col-4 i{display: none}
 	.spoiler .is-accent{max-width: 100%}
 	.s-ask .col-md-6 {flex: 0 0 100%; max-width: 100%}
 	.s-ask .col-md-6:last-of-type{padding: 0}
@@ -96,11 +97,16 @@
 }
 @media (max-width: 767px){
 	.spoiler span:first-of-type{padding-bottom: .4em}
-	.header__contacts .row > div{min-width: 35%}
+	.header__contacts .row > div{min-width: 31%}
 }
 @media (max-width: 720px){
 	.brands-slider .slide {height: 160px; padding: 30px 36px}
 	.s-ask .container{top: -15px}
+}
+@media (max-width: 690px){
+	.header__contacts .row .header__logo{order: -2}
+	.header__contacts .row .header__tel{width: 100%;max-width: 100%;order:-1;padding-bottom: 5px;}
+	.header__contacts .row > div{min-width: 35%;}
 }
 @media (max-width: 670px){
 	.s-why .row {display: block;padding-top: 20px}
@@ -131,7 +137,7 @@
 	.intro-slider .slide{padding: 20px 10px}
 	.footer__list{columns: auto}
 	.spoiler span:first-of-type {padding-bottom: .1em}
-	.header__contacts .row .header__logo {padding: 26px 15px 10px}
+	.header__contacts .row .header__logo {padding: 26px 15px 0}
 	.header__contacts .row .header__days,.header__contacts .row .header__address {padding: 10px 15px}
 	.btn {min-width: 180px;padding: 13px 16px}
 	.statistic__value {font-size: 3.6em}
