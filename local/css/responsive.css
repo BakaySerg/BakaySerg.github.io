@@ -104,16 +104,17 @@
 	.s-ask .container{top: -15px}
 }
 @media (max-width: 690px){
-	.header__contacts .row .header__logo{order: -2}
-	.header__contacts .row .header__tel{width: 100%;max-width: 100%;order:-1;padding-bottom: 5px;}
-	.header__contacts .row > div{min-width: 35%;}
+	.header__contacts .row .header__logo{order: -2;flex: 0 0 55%;max-width: 55%;}
+	.header__contacts .row .header__tel{max-width: 35%;order:-1;padding-bottom: 5px;}
+	.header__contacts .row > div{min-width: 36%;flex: 0 0 auto;}
+	.header__contacts .row .header__tel b{font-size: 22px;}
 }
 @media (max-width: 670px){
 	.s-why .row {display: block;padding-top: 20px}
 	.s-why .col-md-4 {-ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 460px;width: 100%;margin: 0 auto 20px}
 	.header__services .col-4 {width: 100%;flex: 0 0 100%; max-width: 100%;border: none; border-bottom: 1px solid rgba(238,238,238,.15)}
 	.header__services .col-4:first-of-type {border-left: none}
-	.spoiler {height: auto;padding: 12px 20px 12px 8px}
+	.spoiler {height: auto;padding: 12px 20px 8px 8px}
 	.header__services--list {position: relative; top: 0}
 }
 @media (max-width: 600px){
@@ -132,15 +133,24 @@
 	.footer__list-box {padding-top: 40px}
 	.s-services .btn-outlined {right: 11px; top: 2px;padding: 6px 25px;}
 }
+@media (max-width: 520px){
+	.header__contacts .row .header__logo, .header__contacts .row .header__tel, .header__contacts .row > div{flex: 0 0 100%;max-width: 100%;}
+	.header__contacts .row .header__logo{padding: 22px 15px 5px;}
+	.header__contacts .row .header__tel{padding-bottom: 10px;}
+	.header__contacts .row .header__address{padding-bottom: 0;}
+	.header__contacts .row > div br {display: none;}
+	.header__address:before, .header__days:before, .footer__address:before, .footer__days:before{margin-top: 0;}
+}
 @media (max-width: 480px){
 	.brands-slider .slide{padding: 24px}
 	.intro-slider .slide{padding: 20px 10px}
 	.footer__list{columns: auto}
-	.spoiler span:first-of-type {padding-bottom: .1em}
+	.spoiler span:first-of-type {padding-bottom: 0}
 	.header__contacts .row .header__logo {padding: 26px 15px 0}
-	.header__contacts .row .header__days,.header__contacts .row .header__address {padding: 10px 15px}
 	.btn {min-width: 180px;padding: 13px 16px}
 	.statistic__value {font-size: 3.6em}
+	.intro-slider__content{min-height: 264px;padding: 40px 30px 64px;}
+	.intro-slider .slick-dots {bottom: 39px;}
 }
 @media (max-width: 380px){
 	a.top__link {font-size: 1.2em}
@@ -150,7 +160,8 @@
 	.s-ask .form{padding: 24px 20px}
 	.s-ask .col-md-6:first-of-type {padding: 30px 15px 15px 31px}
 	.brands-slider .slide {height: 125px}
-	.intro-slider__content{min-height: 280px}
+	.services-slider .slide {padding: 70px 9px 12px;}
+	.services-slider__text{left: 9px;right: 9px;}
 }
 @media (max-width: 359px){
 	.services-slider .slide {padding: 66px 10px 11px}
@@ -163,7 +174,8 @@
 	.brands-slider .slide {height: 100px; padding: 22px}
 	.s-footer .justify-content-between {justify-content: center}
 	.footer__bottom .col-auto {padding-bottom: 8px}
-	.s-services .h2 {margin-left: 40px}
+	.s-services .h2 {margin-left: 30px}
+	[data-text]:before {top: 3px; left: -24px;}
 	.s-services .btn-outlined {right: 7px}
 }
 @media (max-width: 319px){
