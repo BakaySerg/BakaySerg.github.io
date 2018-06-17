@@ -1,18 +1,5 @@
-function showPage() {
-  setTimeout(function(){
-      document.body.classList.remove('js-loading');
-      setTimeout(function(){
-      $(".loader").fadeOut();
-      },500);
-  });
-
-}
-document.body.classList.add('js-loading');
-
-
 $(document).ready(function(){
   "use strict";
-
   
     // Nav    
     $('a.top__link').on('click', function(event) {
@@ -44,6 +31,7 @@ $(document).ready(function(){
       speed:660,
       fade: true,
       arrows: false,
+      // slide: ".intro__slide",
       slidesToShow: 1,
       slidesToScroll: 1
     });
@@ -112,6 +100,7 @@ $(document).ready(function(){
       });
     };
 
+    //mask
+    $("[type=tel]").mask("+7 (999) 999-9999");
      
 });
-$(window).on('load', showPage);
