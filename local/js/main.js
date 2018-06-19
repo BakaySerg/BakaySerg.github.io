@@ -100,24 +100,30 @@ $(document).ready(function(){
       });
     };
 
-    // var show = true;
-    // var countbox = ".counts";
-    // $(window).on("scroll load resize", function() {
-    //   if (!show)
-    //     return true;
-    //   var w_top = $(window).scrollTop();
-    //   var e_top = $(countbox).offset().top;
-    //   var w_height = $(window).height();
-    //   var d_height = $(document).height();
-    //   var e_height = $(countbox).outerHeight();
-    //   if (w_top + 750 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-    //     $(".spincrement").spincrement({
-    //      thousandSeparator: " ",
-    //      duration: 3000
-    //   });
-    //     show = false;
-    //   }
-    //   });
+    //counter statistic
+    if ( $('.s-statistic').length) {
+
+       $(window).scroll(function() {
+          if($(window).scrollTop() + $(window).height() >= $('.s-statistic').offset().top) {
+            countStats();                
+          }
+       });
+
+       function countStats(){
+         $('.s-statistic .statistic__value').each(function() {
+             var $this = $(this),
+                 countTo = $this.attr('data-count');
+             $({countNum: $this.text() }).animate({
+                 countNum: countTo
+             }, {
+                 duration: 1000,
+                 easing: 'swing',
+                 step: function() {$this.text(Math.floor(this.countNum));},
+                 complete: function() {$this.text(this.countNum);}
+             });
+         });
+       };
+    };
 
     //mask
     $("[type=tel]").mask("+7 (999) 999-9999");
