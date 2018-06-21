@@ -170,66 +170,68 @@ $(document).ready(function(){
     };
 
     //form
-    $(".request__form").submit(function(event) {
-      event.preventDefault();
-      $.ajax({
-        type: 'POST',
-        url: 'mail.php',
-        data: $(this).serialize(),
-        success: function(){  
-          $.magnificPopup.open({
-            items: {
-              src: '<div id="success" class="small-pop-up"><h4 class="h4">Победа!</h4><p>Всё получилось...</p></div>',
-              type: 'inline',
-              mainClass: 'mfp-fade'
-            }
-          });
-          setTimeout(function(){$.magnificPopup.close()},3400);
-        },
-        error: function() {
-          $.magnificPopup.open({
-            items: {
-              src: '<div id="error" class="small-pop-up"><h4 class="h4">Ошибка соединения</h4><p>Попробуйте позже...</p></div>',
-              type: 'inline',
-              mainClass: 'mfp-fade'
-            }
-          });
-          setTimeout(function(){$.magnificPopup.close()},3400);
-        }
-      }).done(function() {$(".request__form").trigger("reset");});
-      return false;
-    });
+    // $(".request__form").submit(function(event) {
+    //   event.preventDefault();
+    //   $.ajax({
+    //     type: 'POST',
+    //     url: 'mail.php',
+    //     data: $(this).serialize(),
+    //     success: function(){  
+    //       $.magnificPopup.open({
+    //         items: {
+    //           src: '<div id="success" class="small-pop-up"><h4 class="h4">Победа!</h4><p>Всё получилось...</p></div>',
+    //           type: 'inline',
+    //           mainClass: 'mfp-fade'
+    //         }
+    //       });
+    //       setTimeout(function(){$.magnificPopup.close()},3400);
+    //     },
+    //     error: function() {
+    //       $.magnificPopup.open({
+    //         items: {
+    //           src: '<div id="error" class="small-pop-up"><h4 class="h4">Ошибка соединения</h4><p>Попробуйте позже...</p></div>',
+    //           type: 'inline',
+    //           mainClass: 'mfp-fade'
+    //         }
+    //       });
+    //       setTimeout(function(){$.magnificPopup.close()},3400);
+    //     }
+    //   }).done(function() {$(".request__form").trigger("reset");});
+    //   return false;
+    // });
 
     //mask
     $("[type=tel]").mask("+7 (999) 999-9999");
 
     //Гугл карта
-    jQuery(function($) {
-      var LatMarker = new google.maps.LatLng(56.1688, 40.4942083),
-          LatCenter = new google.maps.LatLng(56.1690312, 40.49256),
-          googlemap = new google.maps.Map(document.getElementById('map'),
-          {
-            center: LatCenter,
-            zoom: 17,
-            scrollwheel: false,
-            mapTypeControl: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-          }
-        );
-        var contentString = 
-            '<div id="content">'+
-            '<b id="siteNotice">ул. Добросельская, 212а.</b>'+
-            '</div>';
-        var infowindow = new google.maps.InfoWindow({
-         content: contentString
-       });       
-        var marker = new google.maps.Marker({
-              position: LatMarker,
-              map: googlemap,
-              title:"ул. Добросельская, 212а."           
-          });
-        infowindow.open(map, marker);
-        marker.addListener('click', function() {infowindow.open(map, marker);});
+    if ($('#map').length){
+       jQuery(function($) {
+         var LatMarker = new google.maps.LatLng(56.1688, 40.4942083),
+             LatCenter = new google.maps.LatLng(56.1690312, 40.49256),
+             googlemap = new google.maps.Map(document.getElementById('map'),
+             {
+               center: LatCenter,
+               zoom: 17,
+               scrollwheel: false,
+               mapTypeControl: false,
+               mapTypeId: google.maps.MapTypeId.ROADMAP
+             }
+           );
+           var contentString = 
+               '<div id="content">'+
+               '<b id="siteNotice">ул. Добросельская, 212а.</b>'+
+               '</div>';
+           var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });       
+           var marker = new google.maps.Marker({
+                 position: LatMarker,
+                 map: googlemap,
+                 title:"ул. Добросельская, 212а."           
+             });
+           infowindow.open(map, marker);
+           marker.addListener('click', function() {infowindow.open(map, marker);});
       });
+    }
      
 });

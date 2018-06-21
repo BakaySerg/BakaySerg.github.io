@@ -1,7 +1,7 @@
 @media(min-width: 992px){
 	.order-md-last,.text-md-right {text-align: right}
-	.s-contact-request .request__form {padding: 28px 50px 30px 35px;}
-	.s-contact-request:before {content: ''; position: absolute; top: 0;right: 50%;width: 50vw;height: 100%;background-color: rgba(0,128,202,.85);z-index: 8;}
+	.s-contact-request .request__form {padding: 28px 50px 30px 35px}
+	.s-contact-request:before {content: ''; position: absolute; top: 0;right: 50%;width: 50vw;height: 100%;background-color: rgba(0,128,202,.85);z-index: 8}
 }
 @media(min-width: 1024px){
 	.navbar {max-width: calc(100% - 395px);float: left}
@@ -44,6 +44,13 @@
 	.navbar {max-width: calc(100% - 270px)}
 	.footer__bottom{padding: 16px}
 	.s-services .btn-outlined{right: 14px;top: 4px}
+	.s-other-service {padding: 26px 15px 20px}
+	.s-other-service .container{margin-bottom: 16px}
+	.other-service__item {padding: 26px 20px 26px 20px}
+	.other-service__item .h3 {font-size: 1.9em}
+	.other-service__price-box b{font-size: 1.9em}
+	.other-service__price-category{font-size: 1.3em}
+	.other-service__price-box i {margin: 11px 16px 0}
 }
 @media(max-width: 1025px){
 	.navbar {max-width: calc(100% - 250px)}
@@ -60,6 +67,7 @@
 	.spoiler {padding: 14px 25px 14px 8px}
 	.spoiler:after{right: 3px}
 	.s-footer .col-md-6 {padding-left: 30px}
+	.s-specific .col-lg-8 {padding: 26px 33px}
 }
 @media(max-width: 1023px){
 	.top{top: 0;background-color:#fff;overflow: visible!important;min-height: 43px;padding-bottom: 2px}
@@ -82,11 +90,12 @@
 	.header__contacts .row .header__logo {min-width: 230px}
 	.s-statistic .col-sm-6 {margin-bottom: 30px}
 	.s-contact-request{background-color: rgba(0,128,202,.85)}
-	.s-contact-request .request__box{margin: auto;}
-	#map {position: relative;width: 100%;height: 250px;}
-	.s-contact {padding: 20px 10px 10px;}
-	.s-contact .col-lg-6 p{max-width: 800px;}
-	.s-contact .col-lg-6 p:last-of-type + br {display: none;}
+	.s-contact-request .request__box{margin: auto}
+	#map {position: relative;width: 100%;height: 250px}
+	.s-contact {padding: 20px 10px 10px}
+	.s-contact .col-lg-6 p{max-width: 800px}
+	.s-contact .col-lg-6 p:last-of-type + br {display: none}
+	.s-other-service .col{padding: 12px;display: -ms-flexbox; display: flex;justify-content: center;align-items: center}
 }
 @media (max-width: 969px){
 	.header__contacts .row .header__logo{width: 100%;flex: 0 0 100%; max-width: 100%;padding-bottom: 0}
@@ -107,11 +116,19 @@
 	.intro-slider__content{margin: auto}
 	.intro-slider .slick-dots{left: 50%;transform: translateX(-50%)}
 	.garant__descr i{width: 160px;height: 160px; min-width: 160px; background-size: 100px;margin-right: 40px;margin-bottom: 9px}
+	.other-service__item .h3,.other-service__price-box b {font-size: 1.6em}
+	.other-service__price-category {font-size: 1.2em}
+	.other-service__price-box{padding-bottom: 15px}
 }
 @media (max-width: 767px){
 	.spoiler span:first-of-type{padding-bottom: .4em}
 	.header__contacts .row > div{min-width: 31%}
+	.s-type-descr {padding: 34px 0 28px}
 	.s-type-descr .order-md-last {margin-bottom: 20px}
+	.s-specific .container{box-shadow: none}
+	.specific__logo{padding: 25px 20px 22px;border-right: none;width: 100%}
+	.s-specific {padding: 30px 0 0}
+	.s-other-service .col {padding: 20px 15px 9px}
 }
 @media (max-width: 720px){
 	.brands-slider .slide {height: 160px; padding: 30px 36px}
@@ -129,7 +146,7 @@
 	.s-why .col-md-4 {-ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 460px;width: 100%;margin: 0 auto 20px}
 	.header__services .col-4 {width: 100%;flex: 0 0 100%; max-width: 100%;border: none; border-bottom: 1px solid rgba(238,238,238,.15)}
 	.header__services .col-4:first-of-type {border-left: none}
-	.spoiler {height: auto;padding: 12px 20px 8px 8px}
+	.spoiler {height: auto;padding: 13px 20px 8px 8px}
 	.header__services--list {position: relative; top: 0}
 	.callme__box{display: block}
 	.callme__icon{display: block;margin: 0 auto 22px}
@@ -163,6 +180,7 @@
 	.footer__list-box {padding-top: 40px}
 	.s-services .btn-outlined {right: 11px; top: 2px;padding: 6px 25px}
 	.request__form{padding: 28px 34px}
+	.other-service__item .h3, .other-service__price-box b {font-size: 1.4em;line-height: 1.2}
 }
 @media (max-width: 520px){
 	.header__contacts .row .header__logo, .header__contacts .row .header__tel, .header__contacts .row > div{flex: 0 0 100%;max-width: 100%}
@@ -198,9 +216,13 @@
 	.request__box h3 {padding: 0 0 .7em; text-align: center}
 	.request__form{padding: 26px}
 	.request__label input{font-size: 16px}
+	.other-service__price-box i{width: 0;min-width: 0;margin: 0 9px}
+	.other-service__item {padding: 16px 14px 25px 20px}
 }
 @media (max-width: 380px){
 	a.top__link {font-size: 1.2em}
+	.aux__header {padding: 18px 0 20px}
+	.header__services--list{padding: 18px 18px 16px;}
 	.s-ask .container {top: -10px}
 	.s-statistic {padding: 26px 0 5px}
 	.h3 {font-size: 1.6em}
@@ -219,6 +241,10 @@
 	.price__box {padding: 10px 8px 0}
 	.request__form {padding: 22px}
 	.top .right{right: 6px}
+	.aux__header h2 {font-size: 1.8em}
+	.s-specific .col-lg-8 {padding: 24px 16px}
+	.other-service__item .h3, .other-service__price-box b{font-size: 1.3em;color: #111}
+	.s-other-service{padding: 15px 11px}
 }
 @media (max-width: 359px){
 	.services-slider .slide {padding: 66px 10px 11px}
@@ -234,7 +260,6 @@
 	.s-services .h2 {margin-left: 30px}
 	[data-text]:before {top: 3px; left: -24px}
 	.s-services .btn-outlined {right: 7px}
-	.aux__header h2 {font-size: 2em}
 	.why-mini__item {padding: 6px 4px 8px}
 	.callme__form--remark {font-size: 1.3em}
 	.form-group .btn-invert{width: 100%}
@@ -243,6 +268,13 @@
 	.request__form {padding: 20px 15px 22px}
 	.request__form label[for=agree] {padding: 8px 0 4px}
 	.request__form label[for=agree] span {font-size: 0.92em}
+	.specific__logo {padding: 12px 20px 15px}
+	.s-specific p{font-size: 1em}
+	.other-service__item {padding: 15px 13px 20px 16px}
+	.other-service__price-box b {font-size: 1.1em}
+	.other-service__price-category {font-size: 1em}
+	.other-service__price-box i{margin: 0 4px}
+	.s-other-service .col{padding-top: 15px}
 }
 @media (max-width: 319px){
 	.navbar-nav li{text-align: left}
