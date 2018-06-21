@@ -102,7 +102,6 @@ $(document).ready(function(){
 
     //counter statistic
     if ( $('.s-statistic').length) {
-
        $(window).scroll(function() {
           if($(window).scrollTop() + $(window).height() >= $('.s-statistic').offset().top) {
             countStats();                
@@ -125,7 +124,66 @@ $(document).ready(function(){
        };
     };
 
+    // Попап
+    if ($('.js-popup').length){
+      $('.js-popup').magnificPopup({
+         type: 'inline',
+         removalDelay: 300,
+         fixedContentPos: true,
+         fixedBgPos: true,
+         mainClass: 'mfp-fade',
+         closeOnBgClick: true,
+         enableEscapeKey:true
+      });
+    };
+
+    // Попап
+    if ($('.js-popup-ajax').length){
+      $('.js-popup-ajax').magnificPopup({
+         type: 'ajax',
+         settings: {cache:true},
+         removalDelay: 300,
+         fixedContentPos: true,
+         fixedBgPos: true,
+         mainClass: 'mfp-fade',
+         closeOnBgClick: true,
+         tError: 'Контент не загрузился :(',
+         tLoading: 'ЗАГРУЗКА...',
+         cursor: 'mfp-ajax-cur',
+         enableEscapeKey:true 
+      });
+    };
+
     //mask
     $("[type=tel]").mask("+7 (999) 999-9999");
+
+    //Гугл карта
+    jQuery(function($) {
+      var LatMarker = new google.maps.LatLng(56.1688, 40.4942083),
+          LatCenter = new google.maps.LatLng(56.1690312, 40.49256),
+          googlemap = new google.maps.Map(document.getElementById('map'),
+          {
+            center: LatCenter,
+            zoom: 17,
+            scrollwheel: false,
+            mapTypeControl: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+        );
+        var contentString = 
+            '<div id="content">'+
+            '<b id="siteNotice">ул. Добросельская, 212а.</b>'+
+            '</div>';
+        var infowindow = new google.maps.InfoWindow({
+         content: contentString
+       });       
+        var marker = new google.maps.Marker({
+              position: LatMarker,
+              map: googlemap,
+              title:"ул. Добросельская, 212а."           
+          });
+        infowindow.open(map, marker);
+        marker.addListener('click', function() {infowindow.open(map, marker);});
+      });
      
 });

@@ -1,5 +1,7 @@
 @media(min-width: 992px){
 	.order-md-last,.text-md-right {text-align: right}
+	.s-contact-request .request__form {padding: 28px 50px 30px 35px;}
+	.s-contact-request:before {content: ''; position: absolute; top: 0;right: 50%;width: 50vw;height: 100%;background-color: rgba(0,128,202,.85);z-index: 8;}
 }
 @media(min-width: 1024px){
 	.navbar {max-width: calc(100% - 395px);float: left}
@@ -11,6 +13,8 @@
 	.header__services--list{display: block!important;height: auto!important; transform: scaleY(0.9);transform-origin: center top; opacity: 0;visibility: hidden; transition: .6s .5s}
 	.header__services .col-4:hover .header__services--list{transform: scaleY(1);opacity: 1;visibility: visible; transition: .3s .3s}
 	.s-type-descr .col-md-7 {padding-right: 40px}
+	.request__label-box {display:-ms-flexbox; display: flex; justify-content: space-between}
+	.request__label-box .request__label {width: 46%}
 }
 @media(min-width: 1366px){
 	.slick-prev {left: -66px}
@@ -77,6 +81,12 @@
 @media (max-width: 991px){
 	.header__contacts .row .header__logo {min-width: 230px}
 	.s-statistic .col-sm-6 {margin-bottom: 30px}
+	.s-contact-request{background-color: rgba(0,128,202,.85)}
+	.s-contact-request .request__box{margin: auto;}
+	#map {position: relative;width: 100%;height: 250px;}
+	.s-contact {padding: 20px 10px 10px;}
+	.s-contact .col-lg-6 p{max-width: 800px;}
+	.s-contact .col-lg-6 p:last-of-type + br {display: none;}
 }
 @media (max-width: 969px){
 	.header__contacts .row .header__logo{width: 100%;flex: 0 0 100%; max-width: 100%;padding-bottom: 0}
@@ -185,6 +195,7 @@
 	.form-group .btn-invert{margin-left: 0;min-width: 170px}
 	.why-mini__item{padding: 9px}
 	.aux__header h2{font-size: 2.1em}
+	.request__box h3 {padding: 0 0 .7em; text-align: center}
 	.request__form{padding: 26px}
 	.request__label input{font-size: 16px}
 }
@@ -208,7 +219,6 @@
 	.price__box {padding: 10px 8px 0}
 	.request__form {padding: 22px}
 	.top .right{right: 6px}
-	.request__box h3 {padding: 0 0 0.9em; text-align: center}
 }
 @media (max-width: 359px){
 	.services-slider .slide {padding: 66px 10px 11px}
