@@ -146,13 +146,59 @@ $(document).ready(function(){
          fixedContentPos: true,
          fixedBgPos: true,
          mainClass: 'mfp-fade',
-         closeOnBgClick: true,
+         closeOnBgClick: false,
          tError: 'Контент не загрузился :(',
          tLoading: 'ЗАГРУЗКА...',
          cursor: 'mfp-ajax-cur',
-         enableEscapeKey:true 
+         enableEscapeKey:true,
+         callbacks: {
+           // parseAjax: function(mfpResponse) {
+           //   // mfpResponse.data is a "data" object from ajax "success" callback
+           //   // for simple HTML file, it will be just String
+           //   // You may modify it to change contents of the popup
+           //   // For example, to show just #some-element:
+           //   // mfpResponse.data = $(mfpResponse.data).find('#some-element');
+           //   // mfpResponse.data must be a String or a DOM (jQuery) element
+           //   console.log('Ajax content loaded:', mfpResponse);
+           // },
+           ajaxContentAdded: function() {
+             // Ajax content is loaded and appended to DOM
+             $("[type=tel]").mask("+7 (999) 999-9999");
+           }
+         }
       });
     };
+
+    //form
+    $(".request__form").submit(function(event) {
+      event.preventDefault();
+      $.ajax({
+        type: 'POST',
+        url: 'mail.php',
+        data: $(this).serialize(),
+        success: function(){  
+          $.magnificPopup.open({
+            items: {
+              src: '<div id="success" class="small-pop-up"><h4 class="h4">Победа!</h4><p>Всё получилось...</p></div>',
+              type: 'inline',
+              mainClass: 'mfp-fade'
+            }
+          });
+          setTimeout(function(){$.magnificPopup.close()},3400);
+        },
+        error: function() {
+          $.magnificPopup.open({
+            items: {
+              src: '<div id="error" class="small-pop-up"><h4 class="h4">Ошибка соединения</h4><p>Попробуйте позже...</p></div>',
+              type: 'inline',
+              mainClass: 'mfp-fade'
+            }
+          });
+          setTimeout(function(){$.magnificPopup.close()},3400);
+        }
+      }).done(function() {$(".request__form").trigger("reset");});
+      return false;
+    });
 
     //mask
     $("[type=tel]").mask("+7 (999) 999-9999");
