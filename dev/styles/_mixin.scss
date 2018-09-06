@@ -1,0 +1,33 @@
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%pseudo {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+@mixin btn {
+  display: inline-block;
+  white-space: nowrap;
+  user-select: none;
+  text-align: center;  
+  outline-color:transparent;
+  transition:.3s ease;
+  cursor: pointer;
+}
+
+%centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+// em()
+$browser-context: 14; // Default
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}

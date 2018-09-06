@@ -1,0 +1,16 @@
+// reset & base style
+@import 'components/base';
+
+// vars & mixins
+@import "fonts";
+@import "vars";
+@import "mixin";
+
+// libs
+@import "libs/slick-theme.scss";
+
+// components
+@import 'components/header';
+@import 'components/body';
+@import 'components/footer';
+@import 'components/responsive';

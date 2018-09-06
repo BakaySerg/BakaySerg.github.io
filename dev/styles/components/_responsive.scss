@@ -1,0 +1,264 @@
+@media(min-width: 1366px) and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+	.s-intro {
+		background-image: url(../img/Car@2x.png);
+	}
+	.intro__timer-box > img {
+		object-fit: cover;
+		width: 100%;
+	}
+}
+@media(min-width: 1600px){
+	.container {
+		max-width: 1200px;
+	}
+	.top .container {
+		max-width: 1320px;
+	}
+	.top .container:before{
+		right: 105%;
+	}
+	.intro__timer-box {
+		margin-left: -30px;
+	}
+	.s-intro {
+		min-height: 650px;
+	}
+	.intro__timer-box {
+		max-height: 100%;
+		min-width: 700px;
+	}
+	.intro__timer{
+		left: 53%;
+		&:before {
+			left: -3px;
+		}
+	}
+	.intro__timer-box:after{
+		left: 45%;
+	}
+	.quote-slider-box{
+		width: 88%;
+		&:after {
+			left: 114%;
+		}
+	}
+	.quote-slider__content {
+		max-width: 650px;
+		.content__text {
+			min-height: 144px;
+		}
+		.content__text p {
+			font-size: 1.34em;
+		}
+		.content__author {
+			font-size: 1.1em;
+		}
+	}
+	.s-timeline {
+	   padding: 85px 0;
+	}
+	.timeline__container{
+		margin-top: 80px;
+	}
+	.timeline__item .timeline__inner{
+		padding-bottom: 30px;
+	}
+	.timeline__inner .h4 {
+		padding-bottom: .5em;
+		font-size: em(18);
+	}
+	.timeline__item--last .h4 {
+		font-size: em(24);
+	}
+	.timeline__inner li {
+		font-size: 1.1em;
+		padding-bottom: .2em;
+	}
+}
+@media(min-width: 1900px){
+	.s-intro {
+		background-image: url(../img/Car@2x.png);
+	}
+	.intro__timer-box {
+		min-width: 790px;
+	}
+	.intro__timer:before {
+		left: -54px;
+	}
+	.intro__timer {
+		left: 55%;
+		padding: 50px 20px;
+	}
+	.quote-slider-box {
+		width: 80%;
+	}
+}
+@media(min-width: 2000px){
+	.h1 {
+		font-size: 3.44em;
+	}
+	.top .container {
+		max-width: 1600px;
+	}
+	.intro__title-box {
+		max-width: 834px;
+	}
+	.intro__timer-box {
+		margin-left: 390px;
+	}
+	.intro__timer-box{
+		overflow: visible;
+	}
+	.intro__timer {
+		left: 27%;
+		max-width: 430px;
+	}
+	.intro__timer:before{
+		width: 320%;
+	}
+	.s-quote {
+		margin-top: 60px;
+	}
+	.quote-slider-box {
+		width: 75%;
+	}
+	.quote-slider .slick-slide{
+		min-height: 500px;
+	}
+	.quote-slider-box:after {
+		left: 116%;
+	}
+	.btn {
+		min-width: 190px;
+		padding: 23px 26px 21px;
+	}
+	.footer__soc,.footer__bottom {
+		padding: 44px 0;
+	}
+}
+@media(max-width: 1280px){
+	.quote-slider-box {
+		width: 96%;
+	}
+}
+@media(max-width: 1250px){
+	.top .container{
+		padding: 16px 15px;
+	}
+	.top .container:before {
+		content: none;
+	}
+	.s-intro {
+		min-height: 560px;
+	}
+	.intro__timer-box {
+		margin-left: -162px;
+		max-height: 608px;
+		> img {
+			height: 100%;
+			width: auto;
+		}
+	}
+	.quote-slider__content {
+		max-width: 580px;
+		padding: 28px 25px;
+	}
+	.quote-slider-box:before,.quote-slider-box:after,.slick-arrow:before {
+		transform: skewX(37deg);
+	}
+	.quote-slider-box:after {
+		left: 115%;
+	}
+}
+@media(max-width: 1200px){
+	.top .container {
+		padding: 16px 18px;
+	}
+	.s-intro {
+		min-height: auto;
+		background-position: left center;
+	}
+	.intro__wrap {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.intro__title-box {
+		padding: 150px 70px 127px;
+	}
+	.intro__timer-box > img {
+		display: none;
+	}
+	.intro__timer-box {
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: flex-end;
+		overflow: visible;
+	}
+	.intro__timer {
+		position: relative;
+		left: -50px;
+		bottom: 0;
+		transform: none;
+		padding: 26px 20px;
+	}
+	.intro__timer:before {
+		transform: skewX(-35deg) translateX(1.7%);
+		opacity: .92;
+		border: 8px double #fff;
+		border-bottom-width: 6px;
+		border-top-left-radius: 5px;
+	}
+	.intro__timer-box:after {
+		content: none;
+	}
+	.quote-slider-box {
+		width: 98%;
+	}
+	.timer {
+		> div {
+			div {
+				padding-top: .1em;
+				font-size: em(42);
+			}
+		}
+	}
+	.s-quote {
+		margin-top: 35px;
+	}
+	.quote-slider__content {
+		max-width: 470px;
+	}
+	.quote-slider__content:before {
+		top: 31px;
+		right: 99%;
+		width: 90px;
+		height: 57px;
+	}
+	.quote-slider .slick-slide{
+		min-height: 360px;
+	}
+	.footer__soc .container {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.timeline__item--right .timeline__inner {
+		padding: 0 15px 16px 90px;
+	}
+	.timeline__item--right .h4:before {
+		width: 53px;
+	}
+	.timeline__inner .h4 {
+		padding-bottom: .4em;
+	}
+	.timeline__item.vp:after {
+		background-color: #2998cc;
+		box-shadow: 0 0 0 6px #fff, 0 0 0 7px #2998cc, 0 0 0 14px #fff;
+	}
+}
+/* IE 11*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.quote-slider__content {
+		left: 28.3%;
+	}
+}

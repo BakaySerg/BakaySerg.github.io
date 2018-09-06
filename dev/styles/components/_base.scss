@@ -1,0 +1,66 @@
+@-ms-viewport {
+	width: device-width
+}
+
+html {
+	font-family: sans-serif;
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar
+}
+
+*,*::before,*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit
+}
+
+button,input,select,textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit
+}
+
+a,button {
+	border-radius: 0;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+section {
+	width: 100%;
+	position: relative;
+}
+a,a:focus {
+	text-decoration:none;
+	outline:0;
+	cursor: pointer;
+	transition: .3s;
+	user-select: none;
+}
+img {
+	border: 0;
+	max-width: 100%;
+	height: auto;
+	vertical-align: top
+}
+
+svg {
+	max-width: 100%
+}
+
+address {
+	line-height: inherit;
+	font-style: normal
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse
+}
+
+.img-responsive {
+	display: block;
+	width: 100%;
+	height: auto
+}
