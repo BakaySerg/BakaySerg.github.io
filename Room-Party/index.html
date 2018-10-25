@@ -326,11 +326,11 @@
 				</label>
 				<label class="input-group--mini">
 					<span>Интересующая дата</span>
-					<input id="date" type="text" name="date" class="form__date">
+					<input type="text" name="date" class="form__date">
 				</label>
 				<label class="input-group--mini">
 					<span>Интересующее время</span>
-					<select id="time" name="time" class="form__time">
+					<select name="time" class="form__time">
 						<option value="8:00">8:00</option>
 						<option value="9:00">9:00</option>
 						<option value="10:00">10:00</option>
@@ -373,6 +373,48 @@
 		
 
 	</div><!-- /wrapper-->
+
+	<!-- popup -->
+	<div id="popup" class="small-pop-up mfp-hide">
+		<form action="#" class="form">
+			<h3 class="h3">Оформить заявку</h3>
+			<label>
+				<input type="text" name="name" placeholder="Ваше имя">
+			</label>
+			<label>
+				<input type="email" name="mail" placeholder="Адрес электронной почты" required>
+			</label>
+			<label>
+				<input type="tel" name="tel" placeholder="Контактный телефон">
+			</label>
+			<label class="input-group--mini">
+				<span>Интересующая дата</span>
+				<input type="text" name="date" class="form__date">
+			</label>
+			<label class="input-group--mini">
+				<span>Интересующее время</span>
+				<select name="time" class="form__time">
+					<option value="8:00">8:00</option>
+					<option value="9:00">9:00</option>
+					<option value="10:00">10:00</option>
+					<option value="11:00">11:00</option>
+					<option value="12:00">12:00</option>
+					<option value="13:00">13:00</option>
+					<option value="14:00">14:00</option>
+					<option value="15:00">15:00</option>
+					<option value="16:00">16:00</option>
+					<option value="17:00">17:00</option>
+					<option value="18:00">18:00</option>
+				</select>
+			</label>
+			<label>
+				<span>Комментарии</span>
+				<textarea name="message" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+			</label>
+			<button class="form__btn" type="submit">Отправить</button>
+			<div class="form__remark">*Нажимая на кнопку, вы даете согласие на обработку ваших персональных данных и&nbsp;соглашаетесь с политикой конфиденциальности.</div>
+		</form>
+	</div>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/smoothscroll.js"></script>

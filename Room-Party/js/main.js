@@ -32,7 +32,7 @@ $(document).ready(function(){
     };
 
     //Дата
-    flatpickr("#date",{
+    flatpickr("[name=date]",{
       dateFormat: "d-M-Y",
       // -- выходные --
       // "disable": [
@@ -43,15 +43,6 @@ $(document).ready(function(){
       // ],
       "locale": {"firstDayOfWeek": 1 }
     });
-    // flatpickr("#time",{
-    //   enableTime: true,
-    //   noCalendar: true,
-    //   dateFormat: "H:i",
-    //   // time_24hr: true,
-    //   defaultDate: "07:00",
-    //   minDate: "07:00",
-    //   maxDate: "20:00"
-    // });
 
     //mask
     $("[type=tel]").mask("+7 (999) 999-9999");
@@ -82,5 +73,20 @@ $(document).ready(function(){
         return false;
     });
 
+    // Попап ЗАКАЗА
+    $('.js-popup').click(function(e) {
+        const subject = $(this).parent().siblings('.h3').text();
+        $('.small-pop-up [name="message"]').text('Выбранный пакет:' + '\n— ' + subject);
+    })
+      .magnificPopup({
+          type: 'inline',
+          removalDelay: 300,
+          fixedContentPos: true,
+          fixedBgPos: true,
+          mainClass: 'mfp-fade',
+          closeBtnInside: true,
+          enableEscapeKey: true,
+          closeOnBgClick: true          
+    });
      
 });

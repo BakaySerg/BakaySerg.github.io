@@ -2,7 +2,6 @@
 	.navbar-toggle {display: none} 
 	#expand {display: block}
 	.navbar-nav{padding: 0; width: 100%; display: -ms-flexbox; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; position: relative; }
-	/*.navbar-nav li{ }*/
 	a.nav__link {padding: 9px;height: 60px; text-align: center;display:-ms-flexbox; display: flex;justify-content: center; align-items: center}
 }
 @media(max-height: 720px) and (max-width: 1366px){
@@ -62,8 +61,6 @@
 	.packages__list-item ul {font-size: .766em}
 	.packages__price{font-size: 1.4em}
 }
-@media (max-width: 800px){
-}
 @media(max-width: 767px){
 	.top{overflow: visible!important;height: auto;box-shadow: 0 2px 20px rgba(15,13,23,.2)}
 	.top + section, .top + div{margin-top: 0}
@@ -120,9 +117,9 @@
 	.packages__list > div{flex: 0 0 100%;max-width: 100%}
 }
 @media (max-width: 575px){
-	.h1 {font-size: 3.4em;text-shadow: 0 1px 3px rgba(20,15,15,.3);}
-	.s-intro .h2 {font-size: 1.36em;text-shadow: 0 1px 3px rgba(20,15,15,.3);}
-	.intro__address{text-shadow: 0 1px 3px rgba(20,15,15,.3);}
+	.h1 {font-size: 3.4em;text-shadow: 0 1px 3px rgba(20,15,15,.3)}
+	.s-intro .h2 {font-size: 1.36em;text-shadow: 0 1px 3px rgba(20,15,15,.3)}
+	.intro__address{text-shadow: 0 1px 3px rgba(20,15,15,.3)}
 	.inside__item{text-align: center;margin-bottom: 15px}
 	.inside__item i{margin: 0 0 6px}
 	.inside__descr p{margin: auto}
@@ -146,23 +143,25 @@
 	.s-rent .title {font-size: 1.8em}
 	.rent__list {padding-top: 0.4em; padding-bottom: 1em}
 	.box--white {background-color: rgba(255, 255, 255, 0.7)}
-	.s-packages {padding: 40px 0 20px;}
-	.packages__list,.packages__list > div{padding: 0;}
+	.s-packages {padding: 40px 0 20px}
+	.packages__list,.packages__list > div{padding: 0}
+	.small-pop-up .form {padding: 30px 15px 22px}
 }
 @media (max-width: 380px){
-	.h1 {font-size: 2.44em;}
-	.s-intro .h2 {font-size: 1.04em; letter-spacing: .07em;padding-bottom: 2.2em;}
-	.intro__address {font-size: 1.2em; letter-spacing: .04em;}
-	.h2, .s-events .title{font-size: 1.8em;}
-	.s-contact .container {max-width: 340px;}
-	.contact__box{padding: 40px 15px;}
-	.contact__title {margin-top: 2em;}
-	.contact__tel{font-size: 1.5em;}
-	.s-contact {min-height: 536px;}
+	.h1 {font-size: 2.44em}
+	.s-intro .h2 {font-size: 1.04em; letter-spacing: .07em;padding-bottom: 2.2em}
+	.intro__address {font-size: 1.2em; letter-spacing: .04em}
+	.h2, .s-events .title{font-size: 1.8em}
+	.s-contact .container {max-width: 340px}
+	.contact__box{padding: 40px 15px}
+	.contact__title {margin-top: 2em}
+	.contact__tel{font-size: 1.5em}
+	.s-contact {min-height: 536px}
 }
 @media (max-width: 359px){
-	.h2, .h3, .title,.s-events .title {font-size: 1.5em;}
+	.h2, .h3, .title,.s-events .title {font-size: 1.5em}
 	.s-rent .title {font-size: 1.6em}
-	.form input, .form select, .form textarea{padding-left: 20px;}
-	.form__btn {padding: 17px 38px 16px;}
+	.form input, .form select, .form textarea{padding-left: 20px}
+	.form__btn {padding: 17px 38px 16px}
+	.form input, .form select, .form textarea {height: 50px;}
 }
