@@ -72,18 +72,8 @@
 	.intro__pagin-icon {width: 54px; height: 54px;}
 	.intro__slider-descr{width: 290px;min-width: 290px;}
 	.intro__slider-pict {max-width: 789px; padding: 0 calc(5% + 30px); margin: 0 auto -44px;}
-/*	.intro__pagin-item:nth-child(1) .intro__pagin-icon{background-position: 4px 4px}
-	.intro__pagin-item:nth-child(2) .intro__pagin-icon{background-position: -44px 5px}
-	.intro__pagin-item:nth-child(3) .intro__pagin-icon{background-position: -94px 4px}
-	.intro__pagin-item:nth-child(4) .intro__pagin-icon{background-position: -144px 6px}
-	.intro__pagin-item:nth-child(5) .intro__pagin-icon{background-position: -194px 5px}
-	.intro__pagin-item:nth-child(6) .intro__pagin-icon{background-position: -244px 7px}
-	.slick-current.intro__pagin-item:nth-child(1) .intro__pagin-icon{background-position: 5px -45px}
-	.slick-current.intro__pagin-item:nth-child(2) .intro__pagin-icon{background-position: -44px -44px}
-	.slick-current.intro__pagin-item:nth-child(3) .intro__pagin-icon{background-position: -95px -47px}
-	.slick-current.intro__pagin-item:nth-child(4) .intro__pagin-icon{background-position: -143px -44px}
-	.slick-current.intro__pagin-item:nth-child(5) .intro__pagin-icon{background-position: -193px -46px}
-	.slick-current.intro__pagin-item:nth-child(6) .intro__pagin-icon{background-position: -245px -44px}*/
+	.intro__pagin-icon {background-position: -22px -123px;}
+	.slick-current.intro__pagin-item .intro__pagin-icon {background-position: -21px -21px;}
 	.intro__pagin-text {line-height: 0.9;}
 }
 @media (max-height: 700px){
