@@ -107,7 +107,7 @@ jQuery(document).ready(function(){
             centerMode:true,
             arrows: false,
             draggable:true,
-            centerPadding:'25px'
+            centerPadding:'20px'
           }
         }]
       });
@@ -133,13 +133,10 @@ jQuery(document).ready(function(){
             draggable:true
           }
           },{
-          breakpoint: 480,
+          breakpoint: 671,
           settings: {
             slidesToShow: 1,
-            centerMode:true,
-            arrows: false,
-            draggable:true,
-            centerPadding:'30px'
+            draggable:true
           }
         }]
       });
@@ -156,7 +153,18 @@ jQuery(document).ready(function(){
         prevArrow: '<i class="slick-arrow slick-prev"><svg viewBox="0 0 32 32"><use xlink:href="#i-arrow-left"/></svg></i>',
         nextArrow: '<i class="slick-arrow slick-next"><svg viewBox="0 0 32 32"><use xlink:href="#i-arrow-right"/></svg></i>',
         speed:660,
-        slidesToShow: 1
+        slidesToShow: 1,
+        responsive: [{          
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            centerMode:true,
+            arrows: false,
+            draggable:true,
+            infinite: false,
+            centerPadding:'10px'
+          }
+        }]
       });
     };
 

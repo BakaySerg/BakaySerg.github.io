@@ -91,7 +91,7 @@
 	a.nav__link{padding: 3px;line-height: 1;font-size: .8em}
 	a.nav__link span {padding-bottom: 1px}
 	.cart__icon i {width: 42px; height: 44px}
-	.cart__icon > span{font-size: .889em;padding: 1px 3px 2px;top: 0;right: 2px}	
+	.cart__icon > span{font-size: .889em;padding: 1px 3px;top: 0;right: 2px}	
 	.s-intro .container {max-width: 1200px}
 	.h1 {font-size: 2.7em; padding-bottom: 0.4em;padding-left: 12px}
 	.intro__slider-descr .h4 {padding: 6px 18px}
@@ -153,7 +153,7 @@
 	.contact__address-nav{padding: 13px 8px 9px}
 	.address__link,.contact__address > div, .contact__address > a{font-size: 1em}
 	.contacts__map-box {padding: 4em 0 7em}
-	select{height: 48px}
+	select{height: 48px;	box-shadow: inset 0 1px 3px rgba(1,1,1,.03)}
 	.data__title{font-size: 1.14em}
 	.order__img{margin-right: 1em}
 	div.order__data {max-width: 315px; min-width: 315px}
@@ -187,7 +187,6 @@
 	.icon {transform: scale(0.77);margin-right: 0}
 	.h2,.article__title{font-size: 1.5em}
 	.term-description{font-size: 1em}
-	select{height: 52px}
 	.header__contacts {padding: 2px 7px; flex-grow: 0.4; justify-content: flex-end}
 	.navbar {width: auto; flex-grow: 1}
 	.footer__logo {margin-right: calc(2.6% + 17px)}
@@ -296,7 +295,7 @@
 	.footer__nav a {text-decoration: underline; text-decoration-color: #73cc3a}
 	.footer__contacts {padding: 0 20px 0 0; align-items: flex-start; flex-grow: 1; max-width: 733px;flex-wrap: wrap}
 	.footer__contacts .i {margin-right: 14px}
-	.footer__nav li:before {content: '';width: 5px;height: 5px;border: 1px solid #73cc3a;border-radius: 50%; display: inline-block;vertical-align: middle;margin-right: 1em}
+	.footer__nav li:before {content: '';	width: 7px; height: 7px; border: 1px solid #18b261;border-radius: 50%; display: inline-block;vertical-align: middle;margin-right: 1em}
 	.s-sertificates {background-position: calc(100% + 470px) 68%}
 	.doc__box {max-width: 190px;margin: 0 auto 35px}
 	.intro__slider-list li {padding: 4px 0}
@@ -326,7 +325,7 @@
 	.line__slider .slick-list {padding-top: 10px!important}
 	.s-what {padding: 2em 0 4em}
 	.category__list{padding-top: .5em}
-	.slick-next, .slick-prev {width: 40px; height: 40px}
+	.slick-next, .slick-prev {width: 44px; height: 44px}
 }
 @media(max-width: 1023px){
 	.top{background-image: linear-gradient(to left,#f6f6f4,#f6f6f4,#fdfdfd)}
@@ -385,6 +384,8 @@
 	.intro__slider-pict {padding: 22px calc(2% + 15px) 20px}
 	.about__content {width: 60%}
 	.about__bg {width: calc(100% - 308px); margin: 0 -95px 0 -13px; padding-top: 68px}
+	.article__slider .slick-next {right: 0; top: 47%}
+	.article__slider .slick-prev {left: 0; top: 47%}
 	.s-today {padding: 0 0 4em}
 	.s-today .container{flex-wrap: wrap}
 	div.article__text-box--great {flex: 0 0 100%; min-width: 100%}
@@ -395,7 +396,6 @@
 	.doc__list .col-md-3 {padding: 0 10px}
 	.doc__box {margin: 0 auto 20px; padding: 19px 17px 16px}
 	.doc__name {font-size: .92em}
-	select {height: 48px}
 }
 @media (max-width: 969px){
 	.footer__container{padding-bottom: 20px}
@@ -431,6 +431,7 @@
 	.doc__box {margin: 0 auto 20px}
 	.doc__img {margin: 0 auto .4em; min-height: 70px}
 	.doc__img i{width: 58px;height: 70px;transform: translate(-50%,-36%)}
+	.about__bg {width: calc(100% - 256px); margin: 0 -146px 0 -59px}
 }
 @media (max-width: 767px){
 	.s-what .what__tab-item,.tab {padding: 10px; min-width: 108px}
@@ -458,7 +459,9 @@
 	.contact__address, .contact_content {padding: 19px 15px 0}
 	.address span, .contact__address a span {max-width: calc(100% - 3em)}
 	.address, .contact__address a{font-size: .9em}
-	.form .btn {margin-top: 0.4em}
+	.form .btn {margin-top: .4em}
+	.about__content {width: 100%;max-width: 100%}
+	.about__bg{width: 100%;max-width: 100%;padding: 0 10px;margin: -10px auto 0}
 }
 @media (max-width: 720px){
 	.footer__logo{display: none}
@@ -474,12 +477,22 @@
 	.icon__home:before {width: 12px; height: 12px; vertical-align: 1px; margin: -2px 4px -2px 0}
 	.form__half {flex: 1 0 100%; max-width: 100%}
 	.form {max-width: 540px;margin: 10px auto 0}
+	.history__slider-item .article__text-box{padding: 0}
 }
 @media (max-width: 670px){
 	.news__item--subscribe {padding: 16px calc(2% + 8px)}
 	.subscribe__title{font-size: 1.1em;padding: 13px 0 31px;background-size: auto 78%;background-position: 50% 19%}
 	.footer__nav ul {max-height: none}
 	.footer__nav li {flex: 1 1 50%; max-width: 50%}
+	.s-history .container{padding: 0}
+	.history__slider-item .article__text-box{padding: 0 15px}
+	.history__pict {min-width: 80px; max-width: 141px}
+	.history__slider .slick-list {padding-top: 80px}
+	.history__distance {font-size: 2em}
+	.history__year {max-width: 600px}
+	.history__slider .slick-next {right: calc(50% - 180px)}
+	.history__slider .slick-prev {left: calc(50% - 180px)}
+	.s-today {padding: 0 0 2em}
 }
 @media (max-width: 640px){
 	.h2, .article__title {font-size: 1.4em}
@@ -526,26 +539,35 @@
 	.header__contacts a {margin: 0 4px; padding: 6px 7px; text-align: center}
 	a.header__contacts-cart{padding: 3px}
 	.i {margin: 0}
-	.top__lang {position: absolute; top: calc(100% + 14px); right: 67px;background-color: #fff}
+	.top__lang {position: absolute; top: calc(100% + 15px); right: 67px;background-color: #fff}
 	.cart__icon i {margin: -8px 4px -8px 0}
+	.cart__icon > span{top: -2px}
 	.lang__list {padding: 35px 9px 6px;top: -7px}
 	.footer__contacts address br {display: initial}
 	.footer__contacts a, .footer__contacts address {line-height: 1.3}
+	.s-history {padding: 4em 0 .3em; margin-bottom: 0}
 }
 @media (max-width: 550px){
 	.h1 {font-size: 2.2em}
-	.h1 b, .is-light-text {font-size: 1.4rem}
-	.what__promo .h4{font-size: 1.1em}	
+	.h1 b, .is-light-text {font-size: 1.25rem}
+	.what__promo .h4{font-size: 1.2em}	
 	.intro__slider-pict{max-width: 440px}
 	.intro__slider-descr .box{max-width: 380px;margin: auto}
 	.slick-dots li{margin: 0 3px}
 	.s-what .what__tab-slide,.category__list{justify-content: center}
 	.what__tab-slide .box, .category__list .box {flex: 1 1 100%; max-width: 340px}
 	.doc__list .col-md-3 {flex: 0 0 50%; max-width: 50%}
+	.profit-loader {width: 50px; height: 50px}
+	.profit-loader i {width: 32px; height: 32px}
+	.about__bg{padding: 0}
+	.s-about {padding-top: 2.2em}
+	.s-about .h1 {font-size: 2.2em}
+	.sertificates__slider .slick-prev{left: -3px}
+	.sertificates__slider .slick-next{right: -3px}
+	.sertificates__slider-box{padding: 0}
 }
 @media (max-width: 481px){
 	.h1 {font-size: 2em}
-	.h1 b, .is-light-text {font-size: 1.3rem}
 	.what__tab-slide .box,.category__list .box{flex: 1 1 100%;max-width: 300px; margin: 0 auto 20px}
 	.what__tab-slide .box .h5, .category__list .box .h5 {padding: 1em 0;margin: 0}
 	.intro__slider-descr .h4 {padding: 4px 20px}
@@ -559,7 +581,8 @@
 	.s-delivery > img {margin: 0 -21px -46px; width: calc(100% + 60px); max-width: calc(100% + 60px)}
 	.footer__bottom {padding: 14px 14px; margin: 0 10px}
 	.footer__nav, .footer__contacts {padding: 0 15px}
-	.footer__nav{margin-bottom: 25px}
+	.footer__nav{margin-bottom: 29px}
+	.footer__container {padding-bottom: 10px}
 	.intro__slider-descr .box {max-width: 334px}
 	.intro__slider-link {font-size: 1em}
 	.icon-ava {width: 50px; min-width: 50px; height: 50px}
@@ -571,9 +594,31 @@
 	.gm-fullscreen-control {margin-top: 16px!important}
 	.contacts__map-box .container {padding: 0 2px}
 	select {height: 46px}
+	.choise__current {margin: 7px 0}
+	.category__choise a, .choise__current{padding: 3px 22px}
+	.category__choise-list a {margin: 3px 0}
+	.category__choise:hover .category__choise-list {height: 195px}
+	.news__box--page .news__item {margin: 0 auto 20px}
+	.news__box--page {padding-top: 1em}
+	.s-news {padding: 1.7em 0}
+	.article__text-box{padding: 0 0 1em}
+	.article__bg{padding: 0;margin-bottom: 1em}
+	.s-news-article {padding: 1em 0 .5em}
+	.s-video {margin-bottom: .9em;padding: 3em 15px}
+	.s-about:before, .s-history:before {bottom: -40px; height: 70px}
+	.s-line {padding: 2.2em 0}
+	.line__slider .slick-list {padding-top: 10px!important}
+	.what__promo{border-radius: 0}
+	.news__box--main {padding-top: .5em}
+	.news__item {margin: 0 10px 10px}
+	.s-doc {padding: 2em 0 .5em}
+	.tab-box .h2{padding-bottom: .8em}
+	.s-sertificates{background: none;padding-bottom: 1em}	
+	.s-sertificates:after {top: 33px; left: auto; right: 2px; width: 110px; height: 48px}
 }
 @media (max-width: 380px){
 	.h2, .article__title {font-size: 1.3em}
+	.s-about .h1 {font-size: 2em}
 	.term-description {font-size: .92em}
 	.tab-box {border-bottom-width: 1px}
 	.s-what .what__tab-item, .tab {padding: 8px; min-width: 72px;font-size: .78em}
@@ -591,6 +636,21 @@
 	.intro__slider-pict {padding: 28px 21px 0}
 	.navbar-toggle--strap {padding: 2px 11px 3px;min-width: 92px}
 	a.nav__link{font-size: .9em}
+	.history__slider .slick-next {right: calc(50% - 150px); top: -30px}
+	.history__slider .slick-prev {left: calc(50% - 150px); top: -30px}
+	.history__pict {max-width: 112px}
+	.history__slider .slick-list {padding-top: 70px}
+	.about__content{padding: 0}
+	.s-about .h1{padding-bottom: .4em}
+	.article__slider{padding: 0}
+	.article__slider .slick-list{overflow: visible}
+	.article__slider-item{padding: 0;margin: 0 3px}
+	.s-today{padding-bottom: 1em}
+	.s-doc .container {padding: 0 7px}
+	.s-what .what__tab-item, .tab{min-width: 68px}
+	.doc__list .col-md-3 {padding: 0 8px}
+	.doc__box {margin: 0 auto 15px; padding: 14px 15px 15px}
+	.doc__list {padding-top: 17px}
 }
 @media (max-width: 359px){
 	.footer__bottom {padding: 14px 10px; margin: 0 5px}
@@ -600,7 +660,7 @@
 	.doc__name {font-size: 0.8em; padding-top: .2em; line-height: 1.1;margin-right: -3px}
 	.intro__slider-list {padding: 6px 16px}
 	.s-line .line__slider-item {margin: 0 5px 15px}
-	.s-line {padding: 2.6em 0}
+	.s-line {padding: 2.2em 0}
 	.footer__nav, .footer__contacts {padding: 0 5px}
 	.footer__address span {display: inline-block; max-width: 87%}
 	.address__link, .contact__address > div, .contact__address > a {font-size: .8em}
@@ -612,6 +672,9 @@
 	.header__contacts a {margin: 0 3px}
 	.top__lang{right: 65px}
 	.header__contacts{margin-right: 96px}
+	.news__item--subscribe {padding: 18px 10px}
+	.s-what .what__tab-item, .tab{font-size: 12px;padding: 8px 7px}
+	.s-sertificates .container{padding: 0 6px}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.product__tab-content,.product__tab-menu {max-height: 580px}
