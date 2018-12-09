@@ -80,7 +80,7 @@
 	.header__contacts a{padding: 6px 3px 2px}
 	.btn{height: auto;padding: 15px}
 	.btn--sm {padding: 11px 20px}
-	.btn--md{height: 54px;margin-top: .7em}
+	.btn--md{height: 54px;margin-top: .8em}
 	.btn--lg {padding: 24px;margin: 35px auto 15px}
 	.btn--outline {max-width: 308px; padding: 24px;margin: 35px auto 15px}
 	.footer__nav {column-gap: 26px}
@@ -302,6 +302,7 @@
 	.sertificates__thumbnails .doc__box {max-height: 130px}	
 }
 @media(max-width: 1099px){
+	.h3 {font-size: 1.2em;padding-bottom: .4em}
 	.md-no-gutters{padding-left: 0;padding-right: 0}
 	.header + div, .header + section, .header + article {margin-top: 88px}
 	.s-news-article .container{max-width: 840px}
@@ -328,18 +329,19 @@
 	.slick-next, .slick-prev {width: 44px; height: 44px}
 	.order__title{margin-bottom: .7em}
 	.order__box {padding: 26px}
-	.order__box > div{min-width: auto;}
-	div.order__data {max-width: 300px; min-width: 300px;}
-	.order__cancel{padding: 4px;}
-	.order__cancel i {width: 30px; min-width: 30px; height: 30px; line-height: 27px;margin-right: 0;}
+	.order__box > div{min-width: auto}
+	div.order__data {max-width: 300px; min-width: 300px}
+	.order__cancel{padding: 4px}
+	.order__cancel i {width: 30px; min-width: 30px; height: 30px; line-height: 27px;margin-right: 0}
 	.order__cancel > span {display: none}
-	.order__img{width: 124px;}
-	.order__box{margin-bottom: 18px;}
-	.order__form-wrap .btn--outline {font-size: .92em;}
-	.input-group--lg input{height: 58px;padding: 5px 18px 5px 55px;font-size: .92em;}
+	.order__img{width: 124px}
+	.order__box{margin-bottom: 18px}
+	.order__form-wrap .btn--outline {font-size: .92em}
+	.input-group--lg input{height: 58px;padding: 5px 18px 5px 55px;font-size: .92em}
 	.input-group--lg input + .is-accent, .input-group--lg textarea + .is-accent {height: 20px; width: 22px; top: 19px; left: 21px}
-	.input-group--lg input + .is-user{height: 24px;width: 26px;top: 17px;}
+	.input-group--lg input + .is-user{height: 24px;width: 26px;top: 17px}
 	.order__newsletter {position: absolute; top: calc(50% - 13px)}
+	.detail__table,.detail__item p {font-size: 0.89em}
 }
 @media(max-width: 1023px){
 	.top{background-image: linear-gradient(to left,#f6f6f4,#f6f6f4,#fdfdfd)}
@@ -380,7 +382,7 @@
 	.md-left,.md-right{float: none; width: 100%;max-width: 640px;margin: auto}
 	.product__code, .product__type{font-size: .92em}
 	.product__support,.product__count {max-width: 540px;margin: 0 auto 10px}
-	.product__attributes {padding: .9em 10px .9em 0;}
+	.product__attributes {padding: .9em 10px .9em 0}
 	.support__list{justify-content: center}
 	.is-option{min-width: 96px;margin-right: 10px}
 	.support__list li{margin: 0 1px 8px}
@@ -389,9 +391,15 @@
 	.more-toggle{max-width: 321px}
 	.icon {display: inline-block;margin-right: 13px;min-width: 34px}
 	.nav__item-5 .icon,.nav__item-2 .icon {margin-right: 10px}
-	.order__form-half {flex: 1 0 100%; max-width: 100%;}
+	.order__form-half {flex: 1 0 100%; max-width: 100%}
 	.input-group--lg {max-width: calc(50% - 6px)}
-	.order__title .link--md {margin-left: -56px;}
+	.order__title .link--md {margin-left: -56px}
+	.s-product {padding: 2.5em 0 1em}
+	.more__specification table, .more__instruction table, .table{border-radius: 26px}
+	.more__specification table td, .more__instruction table td, .table td {padding: 5px}
+	.more__specification table tr:first-child, .more__instruction table tr:first-child, .table tr:first-child {font-size: 1.2em; }
+	.more__specification table td:not(:last-child), .more__instruction table td:not(:last-child), .table td:not(:last-child) {height: 68px;line-height: 1.1}
+	.more__specification table tr:first-child td, .more__instruction table tr:first-child td, .table tr:first-child td {height: 70px; min-width: 130px}
 }
 @media (max-width: 991px){
 	.what__tab-slide {flex-wrap: wrap}
@@ -415,20 +423,20 @@
 	.doc__list .col-md-3 {padding: 0 10px}
 	.doc__box {margin: 0 auto 20px; padding: 19px 17px 16px}
 	.doc__name {font-size: .92em}
-	.order__list,.order__form-wrap {max-width: 780px;margin: auto;}
-	.order__box{flex-wrap: wrap;padding: 40px 30px 20px;border-radius: 26px;}
+	.order__list,.order__form-wrap {max-width: 780px;margin: auto}
+	.order__box{flex-wrap: wrap;padding: 40px 30px 20px;border-radius: 26px}
 	.order__img {width: 150px}
-	div.order__data,div.order__support {max-width: 50%; min-width: 50%;padding: 0 15px;}
-	.order__img {margin: 0;}
-	.order__count {padding: 15px 0 0;}
-	.order__count .is-option {display: none;}
-	.order__box .is-option{text-align: left;}
-	.order__support {min-height: auto; max-height: none;}
-	.order__img {width: 270px; padding: 0 calc(11% - 10px); text-align: center;}
-	.order__count .weight {max-width: 270px;}
-	.order__cancel{margin: 0;position: absolute;top: 10px;right: 14px;}
-	.order__support-items{max-width: 100%;max-height: none;display: block;padding: 0;}	
-	.detail__table td:first-child{padding-right: 14px;}
+	div.order__data,div.order__support {max-width: 50%; min-width: 50%;padding: 0 15px}
+	.order__img {margin: 0}
+	.order__count {padding: 15px 0 0}
+	.order__count .is-option {display: none}
+	.order__box .is-option{text-align: left}
+	.order__support {min-height: auto; max-height: none}
+	.order__img {width: 270px; padding: 0 calc(11% - 10px); text-align: center}
+	.order__count .weight {max-width: 270px}
+	.order__cancel{margin: 0;position: absolute;top: 10px;right: 14px}
+	.order__support-items{max-width: 100%;max-height: none;display: block;padding: 0}	
+	.detail__table td:first-child{padding-right: 14px}
 	.more__detail {columns: 2 auto; column-gap: 3%}
 }
 @media (max-width: 969px){
@@ -447,7 +455,6 @@
 	.top__nav a {padding: 8px 6px; margin: 0 0 0 12px}
 	.footer__contacts address br {display: none}
 	.order__newsletter {left: calc(50% + 168px)}
-	.more__specification table, .more__instruction table, .table{border-radius: 26px;}
 }
 @media (max-width: 800px){
 	.line__slider .slick-list {padding-top: 22px!important}
@@ -459,15 +466,16 @@
 	.more__detail,.more__listbox{columns: 1;column-gap: 0}
 	.more__list li {padding: 8px 9px 8px 39px}
 	.more__list li:before{width: 16px;height: 16px}
-	.more__specification table td, .more__instruction table td, .table td {padding: 5px}
-	.more__specification table tr:first-child, .more__instruction table tr:first-child, .table tr:first-child {font-size: 1.2em; }
-	.more__specification table td:not(:last-child), .more__instruction table td:not(:last-child), .table td:not(:last-child) {height: 68px;line-height: 1.1}
-	.more__specification table tr:first-child td, .more__instruction table tr:first-child td, .table tr:first-child td {height: 70px; min-width: 130px}
 	.container.md-no-gutters{max-width: 740px}
 	.doc__box {margin: 0 auto 20px}
 	.doc__img {margin: 0 auto .4em; min-height: 70px}
 	.doc__img i{width: 58px;height: 70px;transform: translate(-50%,-36%)}
 	.about__bg {width: calc(100% - 256px); margin: 0 -146px 0 -59px}
+	.btn--sm{font-size: 15px}
+	.more__specification table tr:first-child td, .more__instruction table tr:first-child td, .table tr:first-child td {height: 58px; font-size: 0.88em}
+	.more__specification table td:not(:last-child), .more__instruction table td:not(:last-child), .table td:not(:last-child) {height: 56px}
+	.more__specification table, .more__instruction table, .table{margin-top: .4em}
+	.s-details .more-toggle {margin: 1.3em auto 2.6em}
 }
 @media (max-width: 767px){
 	.s-what .what__tab-item,.tab {padding: 10px; min-width: 108px}
@@ -499,8 +507,8 @@
 	.about__content {width: 100%;max-width: 100%}
 	.about__bg{width: 100%;max-width: 100%;padding: 0 10px;margin: -10px auto 0}
 	.s-about .container {flex-wrap: wrap}
-	.order__newsletter{position: relative;top: 0;left: 0;text-align: center;display: block;padding-top: 8px;}
-	.order__newsletter [type=checkbox]{margin-left: .6em;vertical-align: -7px;width: 25px;height: 25px;}
+	.order__newsletter{position: relative;top: 0;left: 0;text-align: center;display: block;padding-top: 8px}
+	.order__newsletter [type=checkbox]{margin-left: .6em;vertical-align: -7px;width: 25px;height: 25px}
 	.order__newsletter span{max-width: none;	font-size: 0.834em}
 }
 @media (max-width: 720px){
@@ -533,14 +541,15 @@
 	.history__slider .slick-next {right: calc(50% - 180px)}
 	.history__slider .slick-prev {left: calc(50% - 180px)}
 	.s-today {padding: 0 0 2em}
-	.order__title {flex-wrap: wrap;margin-bottom: 0;}
-	.order__title .link--md{margin-left: 0;}
-	.order__title .h2{order: 5;width: 100%;margin-top: 16px;}
+	.order__title {flex-wrap: wrap;margin-bottom: 0}
+	.order__title .link--md{margin-left: 0}
+	.order__title .h2{order: 5;width: 100%;margin-top: 16px}
 	.product__tab-content {max-width: 470px; min-height: 431px; padding: 7px 34px 18px}
-	.product__tab-menu{padding-top: 2%;max-width: 98px;}
-	.more__specification table tr:first-child td, .more__instruction table tr:first-child td, .table tr:first-child td {height: 58px; font-size: 0.88em}
-	.more__specification table td:not(:last-child), .more__instruction table td:not(:last-child), .table td:not(:last-child) {height: 56px}
-	.more__specification table, .more__instruction table, .table{padding-top: .8em;}
+	.product__tab-menu{padding-top: 2%;max-width: 98px}
+	.product__title {font-size: 1.5em}
+	.product__title + strong {font-size: .89em}
+	.weight{max-width: 290px}
+	.weight input{max-width: 166px}
 }
 @media (max-width: 640px){
 	.h2, .article__title {font-size: 1.4em}
@@ -557,25 +566,30 @@
 	.term-description{max-width: 492px}
 	.btn{max-width: 210px}
 	.btn--lg{max-width: 250px;padding: 19px}
-	.order__form-wrap .btn--outline{max-width: 260px;}
+	.product__count .btn--md {max-width: 280px}
+	.order__form-wrap .btn--outline{max-width: 260px}
 	.news__box--main .news__item {flex: 1 0 100%; max-width: 370px}
 	.subscribe__title {font-size: 1.2em}
 	.article__img-r{float: none;margin-left: 0; width: 100%;max-width: 100%}
 	.news__item--subscribe {box-shadow: 0 2px 12px 1px rgba(1,1,1,.08);margin-bottom: 15px}
 	.news__item--subscribe{padding: 22px}
 	.subscribe__title {padding: 19px 0 38px; margin-bottom: 11px}
-	.order__form-half{flex-wrap: wrap;}
-	.input-group--lg{max-width: 100%;}
-	div.order__data, div.order__support {width: 100%;max-width: 100%;padding: 10px 0 0;}
-	.order__list, .order__form-wrap {max-width: 430px;} 
+	.order__form-half{flex-wrap: wrap}
+	.input-group--lg{max-width: 100%}
+	div.order__data, div.order__support {width: 100%;max-width: 100%;padding: 10px 0 0}
+	.order__list, .order__form-wrap {max-width: 430px} 
 	.order__box{justify-content: center}
-	.order__count .weight{margin-bottom: .5em;}
+	.order__count .weight{margin-bottom: .5em}
 	.order__count{order: -1}
 	.order__img{order: -2}
-	.order__img {padding: 0 calc(13% - 10px);}
+	.order__img {padding: 0 calc(13% - 10px)}
+	.more__specification table tr:first-child, .more__instruction table tr:first-child, .table tr:first-child {font-size: 1em}
+	.product__more .more__instruction table td, .product__more .table td {height: 56px; font-size: .86em;max-width: 460px; min-width: 10px}
+	.product__more .tab-pane.active .more__specification,.product__more .tab-pane.active  .more__instruction {overflow-x: scroll}
+	.more__specification table, .more__instruction table, .table{/*min-width: 588px;*/ min-width: 644px;margin-bottom: 5px}
 }
 @media (max-width: 590px){
-	::-webkit-scrollbar{width: 3px; height: 3px}
+	::-webkit-scrollbar{width: 4px; height: 4px}
 	.open--sidemenu {max-height: 100vh; overflow: hidden}
 	.top{z-index: 9}
 	.top__nav {display: block; width: 258px; height: 100vh; background-color: #f2f2f2; padding: 50px 27px 0; position: fixed; top: 0; right: 0; z-index: 999; border-top: 1px solid #73cc3a; filter: drop-shadow(-3px 0 39px rgba(1,1,1,0)); pointer-events: none; transform: translateX(100%); transition: transform .4s cubic-bezier(.23,.61,.355,1)}
@@ -623,6 +637,19 @@
 	.sertificates__slider .slick-prev{left: -3px}
 	.sertificates__slider .slick-next{right: -3px}
 	.sertificates__slider-box{padding: 0}
+	.tab {margin: 0 2px}
+	.product__tab-content {min-height: 370px; padding: 6px 10px 15px}
+	.more__tab-content {padding-top: 1em}
+	.tab > a{min-width: 78px}
+	.tab{min-width: 90px}
+	.more__bar{flex-wrap: wrap;align-items: flex-start}
+	.more__bar-action {flex-grow: 0;margin-left: auto; flex-flow: column-reverse wrap;align-items: flex-end;justify-content: flex-start}
+	.more__bar-action > a{margin-left: 0;font-size: .9em}
+	.more__bar-action > button{max-width: 186px;margin: 0 0 10px}
+	.link--sm i{margin-right: 6px;vertical-align: -2px}
+	.s-what .what__tab-item, .tab{padding: 10px 8px}
+	.s-details {padding-bottom: 2em}
+	.detail__table {margin-bottom: .8em}
 }
 @media (max-width: 481px){
 	.h1 {font-size: 2em}
@@ -670,22 +697,31 @@
 	.news__box--main {padding-top: .5em}
 	.news__item {margin: 0 10px 10px}
 	.s-doc {padding: 2em 0 .5em}
-	.tab-box .h2{padding-bottom: .8em}
+	.tab-box .h2{padding-bottom: .6em}
 	.s-sertificates{background: none;padding-bottom: 1em}	
 	.s-sertificates:after {top: 33px; left: auto; right: 2px; width: 110px; height: 48px}
-	.order__title{padding: 15px 0;}
+	.order__title{padding: 15px 0}
 	.link--md {font-size: .88em}
-	.data__title{padding-bottom: .7em;}
+	.data__title{padding-bottom: .7em}
 	.order__box .is-option{margin-bottom: 0}
 	.order__support-items {margin-top: .1em}
-	.order__box {padding: 28px 25px 21px;}
-	.link--md i{width: 21px;height: 25px;}
-	.s-order{padding-bottom: .7em;}
-	.order__img {width: 200px;}
+	.order__box {padding: 28px 25px 21px}
+	.link--md i{width: 21px;height: 25px}
+	.s-order{padding-bottom: .7em}
+	.order__img {width: 200px}
 	.order__count .weight {max-width: 290px}
-	.order__form-wrap{padding-top: 5px;}
-	.input-group--lg input {height: 54px;}
-	.input-group--lg input + .is-accent, .input-group--lg textarea + .is-accent{top: 17px;}
+	.order__form-wrap{padding-top: 5px}
+	.input-group--lg input {height: 54px}
+	.input-group--lg input + .is-accent, .input-group--lg textarea + .is-accent{top: 17px}
+	.support__list li{min-width: 56px}
+	.product__tab-content {min-height: 300px}
+	.s-details .tab-menu {margin-top: 10px;flex-wrap: wrap;justify-content: flex-start}
+	.s-details .tab {border: 1px solid #b7f3d7;border-radius: 2em;margin: 3px}
+	.s-details .tab.active {border-color: #18b261}
+	.tab-box {border-bottom-width: 1px; padding-bottom: 5px}
+	.support__list{justify-content: flex-start}
+	.more__list li {padding: 5px 0 0 30px}
+	.more__list li:before {width: 12px; height: 12px}
 }
 @media (max-width: 380px){
 	.h2, .article__title {font-size: 1.3em}
@@ -695,7 +731,7 @@
 	.s-what .what__tab-item, .tab {padding: 8px; min-width: 72px;font-size: .78em}
 	.doc__img {margin: .1em auto .3em; min-height: 57px}
 	.doc__img i {width: 44px; height: 55px}
-	.btn--sm {padding: 7px 11px}
+	.btn--sm {padding: 9px 11px}
 	.intro__slider-descr{min-width: auto}
 	.line__pict{padding-bottom: .3em}
 	.line__slider-item .box {padding: 25px 24px 20px}
@@ -722,6 +758,19 @@
 	.doc__list .col-md-3 {padding: 0 8px}
 	.doc__box {margin: 0 auto 15px; padding: 14px 15px 15px}
 	.doc__list {padding-top: 17px}
+	.product__attributes {flex-wrap: wrap}
+	.product__type {width: 100%;padding-top: 6px}
+	.product__tab-content {width: calc(100% - 118px)}
+	.product__tab {padding: 5px 10px}
+	.product__tab-menu {padding-top: 10px; max-width: 90px}
+	.support__list li span{font-size: 11px}
+	.support__list li {min-width: 51px}
+	.tab-box .h2 {font-size: 1.2em}
+	.detail__table td {height: 35px}
+	.detail__table td:first-child{padding-right: 11px;white-space: normal;line-height: 1.1}
+	.more__listbox{padding-top: 0}
+	.order__box {padding: 26px 25px 18px; margin-bottom: 15px}
+	.order__cancel{top: 6px; right: 10px}
 }
 @media (max-width: 359px){
 	.footer__bottom {padding: 14px 10px; margin: 0 5px}
@@ -746,7 +795,17 @@
 	.news__item--subscribe {padding: 18px 10px}
 	.s-what .what__tab-item, .tab{font-size: 12px;padding: 8px 7px}
 	.s-sertificates .container{padding: 0 6px}
-	.order__title .link--md{width: 100%;margin-top: .1em;color: #73cc3a;text-transform: none;}
+	.order__title .link--md{width: 100%;margin-top: .1em;color: #73cc3a;text-transform: none}
+	.product__title {font-size: 1.2em; padding-bottom: .5em}
+	.product__code, .product__type {font-size: .834em}
+	.product__tab-content {width: calc(100% - 84px); padding: 5px 5px 9px}
+	.product__tab-menu{max-width: 72px}
+	.more-toggle {font-size: .88em}
+	.tab-box .h2 {font-size: 1.1em; padding-bottom: .2em}
+	.more__bar-action{margin-left: 0;flex-flow: row wrap}
+	.more__bar-action > button {margin: 10px 0 0}
+	.detail__item{padding-bottom: 5px}
+	.more__list{font-size: .92em}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.product__tab-content,.product__tab-menu {max-height: 580px}
