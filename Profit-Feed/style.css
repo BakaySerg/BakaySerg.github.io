@@ -2453,6 +2453,7 @@ select,.choise__current {
 .order__title .h2 {padding-bottom: 0}
 
 .order__box {
+	position: relative;
 	display: -ms-flexbox;
 	display: flex;
 	justify-content: space-between;
@@ -2460,7 +2461,7 @@ select,.choise__current {
 	border: 1px solid #d5d5d3;
 	border-radius: 35px;
 	padding: 38px 44px;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 }
 .order__box > div {min-width: 7%}
 
@@ -2627,9 +2628,13 @@ div.order__data {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+	outline-color: transparent;
 	cursor: pointer;
 }
-.order__newsletter [type=checkbox]:checked {background: #73cc3a url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAYAAAAGRPQsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNpi/P//PwOFgAuItwKxFBOFBrEB8RogdgDi/wwgl5GJmYF4+X8IeALEipQYNg1q0Bsg1gEHF5kGtUAN+gLE5jBxcgwqghr0C4idkeVINSgRatBfIA5ClwcRXkBsSoRBAVBDQCAJmxoQ8RuIvwGxLR6DnID4J9SgYlzqQEQ3VNFHIDbAosgMiD9B1bThcz2IYATi+VDFr4FYBUmBFlQMBGZC1eI1DJYA10M1PQRiGSCWhyZGEFgJVcNAjGEgzAbE+6CarwLxHSh7B1SOgRTDQJgPiE/9R4BjQMxFbNJhxFJqiALxbnDGhWTgj8TmeoAAAwDHteOQaIDxkwAAAABJRU5ErkJggg==') 55% center no-repeat}
+.order__newsletter [type=checkbox]:checked {
+	background: #73cc3a url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAYAAAAGRPQsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPZJREFUeNpi/P//PwOFgAuItwKxFBOFBrEB8RogdgDi/wwgl5GJmYF4+X8IeALEipQYNg1q0Bsg1gEHF5kGtUAN+gLE5jBxcgwqghr0C4idkeVINSgRatBfIA5ClwcRXkBsSoRBAVBDQCAJmxoQ8RuIvwGxLR6DnID4J9SgYlzqQEQ3VNFHIDbAosgMiD9B1bThcz2IYATi+VDFr4FYBUmBFlQMBGZC1eI1DJYA10M1PQRiGSCWhyZGEFgJVcNAjGEgzAbE+6CarwLxHSh7B1SOgRTDQJgPiE/9R4BjQMxFbNJhxFJqiALxbnDGhWTgj8TmeoAAAwDHteOQaIDxkwAAAABJRU5ErkJggg==') 55% center no-repeat;	
+	background-size: 16px;
+}
 
 /*==========================
 	about
@@ -2641,14 +2646,11 @@ div.order__data {
 	padding-bottom: 0.6em;
 	font-size: 2.8em;
 }
-/*.s-about .h1 b {font-size: 1.6rem}*/
-
 .s-about .more-toggle {color: #73cc3a}
 
 .s-about .container {
 	display:-ms-flexbox; 
 	display: flex;
-	flex-wrap: wrap;
 }
 .about__content {
 	width: 45%;
@@ -2735,7 +2737,6 @@ div.order__data {
 	font-size: 2em;
 	margin-bottom: .4em;
 	opacity: .1;
-	/*will-change: filter;*/
 	transition: 1.4s .2s;
 }
 .slick-active .history__year > span{opacity: 1}
@@ -2748,6 +2749,7 @@ div.order__data {
 	transform: matrix(1,0,-0.1,.86,3,0);
 	transform-origin: center bottom;
 	transition: .5s ease-out .2s;
+	will-change: transform;
 }
 .slick-active .history__pict {
 	opacity: 1;
