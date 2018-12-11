@@ -52,7 +52,6 @@
 	.history__pict {min-width: 160px; max-width: 41%}
 	.s-sertificates {background-position: calc(100% + 618px) 68%; background-size: auto 59%}
 	.sertificates__thumbnails .slick-slide img {max-height: 131px}
-	/*.sertificates__thumbnails .doc__box{max-height: 154px;min-height: 154px}*/
 }
 @media(max-width: 1450px){
 	.h1 {font-size: 3.2em; padding-bottom: 0.5em}
@@ -98,7 +97,8 @@
 	.intro__slider-list .icon-ava {width: 40px; height: 42px}
 	.intro__slider-link {font-size: 1.1em}
 	.count{font-size: .7223rem}
-	.s-about:before,.s-history:before {bottom: -48px; height: 150px}
+	.s-about:before {bottom: -48px; height: 150px}
+	.s-history:before{content: none}
 	.contacts__map-box:before {top: -30px;height: 90px}
 	.intro__slider-list li {display: block; padding: 2px 0}
 	.intro__slider-list {padding: 7px 27px}
@@ -179,9 +179,8 @@
 	.s-sertificates:after {width: 138px; height: 62px}
 	.box--temp .h5{font-size: 1.5em}
 }
-@media (max-height: 700px){
-	.header + div, .header + section, .header + article {margin-top: 90px}
-}
+@media (max-height: 700px){.header + div, .header + section, .header + article {margin-top: 90px}}
+
 @media(max-width: 1299px){
 	.header + div, .header + section, .header + article {margin-top: 90px}
 	.icon {transform: scale(0.77);margin-right: 0}
@@ -422,7 +421,7 @@
 	.doc__list{padding-top: 25px}
 	.doc__list .col-md-3 {padding: 0 10px}
 	.doc__box {margin: 0 auto 20px; padding: 19px 17px 16px}
-	.doc__name {font-size: .92em}
+	.doc__name {font-size: .9em;	min-height: 43px}
 	.order__list,.order__form-wrap {max-width: 780px;margin: auto}
 	.order__box{flex-wrap: wrap;padding: 40px 30px 20px;border-radius: 26px}
 	.order__img {width: 150px}
@@ -468,8 +467,8 @@
 	.more__list li:before{width: 16px;height: 16px}
 	.container.md-no-gutters{max-width: 740px}
 	.doc__box {margin: 0 auto 20px}
-	.doc__img {margin: 0 auto .4em; min-height: 70px}
-	.doc__img i{width: 58px;height: 70px;transform: translate(-50%,-36%)}
+	.doc__img {margin: 0 auto .4em; min-height: 70px;max-height: 70px}
+	.doc__img i{width: 58px;height: 70px;transform: translate(-50%,-46%)}
 	.about__bg {width: calc(100% - 256px); margin: 0 -146px 0 -59px}
 	.btn--sm{font-size: 15px}
 	.more__specification table tr:first-child td, .more__instruction table tr:first-child td, .table tr:first-child td {height: 58px; font-size: 0.88em}
@@ -585,7 +584,7 @@
 	.order__img {padding: 0 calc(13% - 10px)}
 	.more__specification table tr:first-child, .more__instruction table tr:first-child, .table tr:first-child {font-size: 1em}
 	.product__more .more__instruction table td, .product__more .table td {height: 56px; font-size: .86em;max-width: 460px; min-width: 10px}
-	.product__more .tab-pane.active .more__specification,.product__more .tab-pane.active  .more__instruction {overflow-x: scroll}
+	.is-table-scroll {overflow-x: scroll}
 	.more__specification table, .more__instruction table, .table{/*min-width: 588px;*/ min-width: 644px;margin-bottom: 5px}
 }
 @media (max-width: 590px){
@@ -612,12 +611,13 @@
 	a.header__contacts-cart{padding: 3px}
 	.i {margin: 0}
 	.top__lang {position: absolute; top: calc(100% + 15px); right: 67px;background-color: #fff}
+	.lang__current {padding: 0 2px 9px 0}
 	.cart__icon i {margin: -8px 4px -8px 0}
 	.cart__icon > span{top: -2px}
 	.lang__list {padding: 35px 9px 6px;top: -7px}
 	.footer__contacts address br {display: initial}
 	.footer__contacts a, .footer__contacts address {line-height: 1.3}
-	.s-history {padding: 4em 0 .3em; margin-bottom: 0}
+	.s-history {padding: 4em 0 .3em; margin-bottom: .9em}
 }
 @media (max-width: 550px){
 	.h1 {font-size: 2.2em}
@@ -690,16 +690,17 @@
 	.article__bg{padding: 0;margin-bottom: 1em}
 	.s-news-article {padding: 1em 0 .5em}
 	.s-video {margin-bottom: .9em;padding: 3em 15px}
-	.s-about:before, .s-history:before {bottom: -40px; height: 70px}
+	.s-about:before, .s-history:before {bottom: -25px; height: 70px}
 	.s-line {padding: 2.2em 0}
 	.line__slider .slick-list {padding-top: 10px!important}
 	.what__promo{border-radius: 0}
 	.news__box--main {padding-top: .5em}
 	.news__item {margin: 0 10px 10px}
 	.s-doc {padding: 2em 0 .5em}
+	.tab-menu{justify-content: space-between;}
 	.tab-box .h2{padding-bottom: .6em}
 	.s-sertificates{background: none;padding-bottom: 1em}	
-	.s-sertificates:after {top: 33px; left: auto; right: 2px; width: 110px; height: 48px}
+	.s-sertificates:after {top: 31px;left: auto;right: 9px;width: 90px;height: 41px}
 	.order__title{padding: 15px 0}
 	.link--md {font-size: .88em}
 	.data__title{padding-bottom: .7em}
@@ -715,13 +716,24 @@
 	.input-group--lg input + .is-accent, .input-group--lg textarea + .is-accent{top: 17px}
 	.support__list li{min-width: 56px}
 	.product__tab-content {min-height: 300px}
-	.s-details .tab-menu {margin-top: 10px;flex-wrap: wrap;justify-content: flex-start}
+	.s-details .tab-menu {margin-top: 0;flex-wrap: wrap;justify-content: flex-start}
 	.s-details .tab {border: 1px solid #b7f3d7;border-radius: 2em;margin: 3px}
 	.s-details .tab.active {border-color: #18b261}
-	.tab-box {border-bottom-width: 1px; padding-bottom: 5px}
+	.tab-box:not(.s-doc .tab-box) {border-bottom-width: 1px; padding-bottom: 5px}
 	.support__list{justify-content: flex-start}
 	.more__list li {padding: 5px 0 0 30px}
 	.more__list li:before {width: 12px; height: 12px}
+	.slick-arrow.slick-arrow--light,.slick-arrow.slick-arrow--light:hover{background-color: transparent;border: none}
+	.sertificates__slider .slick-prev,.article__slider .slick-prev  {left: -14px}
+	.sertificates__slider .slick-next,.article__slider .slick-next {right: -14px}
+	.slick-arrow,.slick-arrow:hover {background: none;padding: 1px}
+	.slick-arrow svg {stroke: #555}
+	.article__slider-item{padding: 0 4px}
+	.s-history {padding: 3em 0 .3em}
+	.product__tab-content>.tab-pane:before {top: 0;left: -5%;width: 110%;height: 110%}
+	.weight input {height: 34px}
+	.more__specification table, .more__instruction table, .table {border-radius: 20px}
+	.more__tab-content {padding-top: .3em}
 }
 @media (max-width: 380px){
 	.h2, .article__title {font-size: 1.3em}
@@ -729,7 +741,7 @@
 	.term-description {font-size: .92em}
 	.tab-box {border-bottom-width: 1px}
 	.s-what .what__tab-item, .tab {padding: 8px; min-width: 72px;font-size: .78em}
-	.doc__img {margin: .1em auto .3em; min-height: 57px}
+	.doc__img {margin: .1em auto .3em; min-height: 57px;max-height: 57px}
 	.doc__img i {width: 44px; height: 55px}
 	.btn--sm {padding: 9px 11px}
 	.intro__slider-descr{min-width: auto}
@@ -750,16 +762,16 @@
 	.about__content{padding: 0}
 	.s-about .h1{padding-bottom: .4em}
 	.article__slider{padding: 0}
-	.article__slider .slick-list{overflow: visible}
-	.article__slider-item{padding: 0;margin: 0 3px}
+	/*.article__slider .slick-list{overflow: visible}*/
+	.article__slider-item{padding: 0;margin: 0 1px}
 	.s-today{padding-bottom: 1em}
 	.s-doc .container {padding: 0 7px}
 	.s-what .what__tab-item, .tab{min-width: 68px}
-	.doc__list .col-md-3 {padding: 0 8px}
-	.doc__box {margin: 0 auto 15px; padding: 14px 15px 15px}
+	.doc__list .col-md-3 {padding: 0 7px}
+	.doc__box {margin: 0 auto 14px; padding: 14px 15px 15px}
 	.doc__list {padding-top: 17px}
 	.product__attributes {flex-wrap: wrap}
-	.product__type {width: 100%;padding-top: 6px}
+	.product__type {width: 100%;padding-top: 3px}
 	.product__tab-content {width: calc(100% - 118px)}
 	.product__tab {padding: 5px 10px}
 	.product__tab-menu {padding-top: 10px; max-width: 90px}
@@ -771,13 +783,14 @@
 	.more__listbox{padding-top: 0}
 	.order__box {padding: 26px 25px 18px; margin-bottom: 15px}
 	.order__cancel{top: 6px; right: 10px}
+	.product__attributes {padding: .7em 0}
 }
 @media (max-width: 359px){
 	.footer__bottom {padding: 14px 10px; margin: 0 5px}
 	.footer__nav li {flex: 1 1 100%; max-width: 100%}
 	.doc__box {margin: 0 auto 14px; padding: 16px 15px 14px}
 	.doc__list .col-md-3{padding: 0 7px}
-	.doc__name {font-size: 0.8em; padding-top: .2em; line-height: 1.1;margin-right: -3px}
+	.doc__name {font-size: 0.8em; padding-top: .2em; line-height: 1.1;min-height: 36px}
 	.intro__slider-list {padding: 6px 16px}
 	.s-line .line__slider-item {margin: 0 5px 15px}
 	.s-line {padding: 2.2em 0}
@@ -801,11 +814,14 @@
 	.product__tab-content {width: calc(100% - 84px); padding: 5px 5px 9px}
 	.product__tab-menu{max-width: 72px}
 	.more-toggle {font-size: .88em}
-	.tab-box .h2 {font-size: 1.1em; padding-bottom: .2em}
+	.tab-box .h2 {font-size: 1.1em; padding-bottom: .6em}
 	.more__bar-action{margin-left: 0;flex-flow: row wrap}
 	.more__bar-action > button {margin: 10px 0 0}
 	.detail__item{padding-bottom: 5px}
 	.more__list{font-size: .92em}
+	.product__attributes {padding: .6em 0}
+	.product__type{padding-top: 2px}
+	.product__tab-content {min-height: 270px}
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 	.product__tab-content,.product__tab-menu {max-height: 580px}

@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
 
     jQuery(".header").scrollupbar();
   
-    // Nav    
+    // Nav
     (function(jQuery) {
         jQuery('.navbar-toggle--burger').click(function(e){
           e.preventDefault();
@@ -15,8 +15,7 @@ jQuery(document).ready(function(){
         jQuery('.top__nav-overlay').click(function(e){
           jQuery('body').removeClass('open--sidemenu');
         });
-      })(jQuery); 
-
+    })(jQuery);
 
     // intro-slider
     if (jQuery(".intro__slider").length) {
@@ -153,18 +152,7 @@ jQuery(document).ready(function(){
         prevArrow: '<i class="slick-arrow slick-prev"><svg viewBox="0 0 32 32"><use xlink:href="#i-arrow-left"/></svg></i>',
         nextArrow: '<i class="slick-arrow slick-next"><svg viewBox="0 0 32 32"><use xlink:href="#i-arrow-right"/></svg></i>',
         speed:660,
-        slidesToShow: 1,
-        responsive: [{          
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            centerMode:true,
-            arrows: false,
-            draggable:true,
-            infinite: false,
-            centerPadding:'10px'
-          }
-        }]
+        slidesToShow: 1
       });
     };
 
@@ -249,7 +237,7 @@ jQuery(document).ready(function(){
          else {
             selector.val(value + 1 + " " + result);
             selector.trigger("change");
-     }
+         }
      }
      function decerment(selector,minValue,units){
           var value = selector.val() != undefined ? parseInt(selector.val()) : 0;
@@ -314,6 +302,5 @@ jQuery(document).ready(function(){
          });
        });
     };
-
      
 });
