@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="544" height="544" viewBox="-7 -7 552 552">
+  <defs>
+    <style> .cls-2 {stroke: url(#linear-gradient-1); stroke-width: 88.62px; fill: none;}
+    </style>
+    <linearGradient id="linear-gradient-1" gradientUnits="userSpaceOnUse" x1="270" y1="496" x2="270" y2="44.5">
+      <stop offset="0" stop-color="#abf8d8"/>
+      <stop offset="1" stop-color="#80ebe5"/>
+    </linearGradient>
+  </defs>
+  <path d="M44.305,330.554 C44.305,330.554 104.861,104.810 104.861,104.810 C104.861,104.810 330.860,44.323 330.860,44.323 C330.860,44.323 496.302,209.579 496.302,209.579 C496.302,209.579 435.746,435.322 435.746,435.322 C435.746,435.322 209.747,495.810 209.747,495.810 C209.747,495.810 44.305,330.554 44.305,330.554 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>
