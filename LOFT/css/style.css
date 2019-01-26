@@ -111,7 +111,7 @@ p {padding-bottom: 1.3em}
 
 .align-self-center {align-self: center}
 /*===============================
- -
+  lines
 ================================*/
 .decolines {
 	position: fixed;
@@ -220,7 +220,9 @@ a.nav__link:hover ,.active a.nav__link{
 .link{
 	display: block;
 	white-space: nowrap;
+	cursor: pointer;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	transition: .3s;
 }
 .link--pink {
 	font-size: 0.89em;
@@ -302,8 +304,6 @@ a.nav__link:hover ,.active a.nav__link{
 /*==========================
 	relation
 ===========================*/
-.ai-c {align-self: center}
-
 .s-relation {
 	background: url(../img/rel-bg.jpg) left top no-repeat; 
 	background-size: 41% auto;
@@ -317,7 +317,7 @@ a.nav__link:hover ,.active a.nav__link{
 	bottom: -5px;
 	left: 6em;
 	height: 46%;
-	width: 300%;
+	width: 200%;
 	background-color: #ededed;
 }
 .relation__gallery-item {margin-bottom: 30px}
@@ -367,6 +367,46 @@ a.nav__link:hover ,.active a.nav__link{
 .privileges__text > div .link {color: #0232f4}
 
 .privileges__text > div .link:hover {color: #f04681}
+
+.privileges__box {
+	position: relative;
+	user-select: none;
+}
+.privileges__box .link {display: inline-block}
+
+.privileges__tooltip {
+	position: absolute;
+	bottom: 35px;
+	left: -1px;
+	width: 100%;
+	background-color: #f04681;
+	color: #fff;
+	padding: 15px 21px;
+	transform: translateY(6px);
+	opacity: 0;
+	transition: transform .3s, opacity .2s;
+}
+.privileges__box .link:hover ~ .privileges__tooltip {
+	opacity: 1;
+	transform: translateY(0);
+}
+.privileges__tooltip:after{
+	content: ''; 
+	position: absolute; 
+	top:100%;
+	left: 0;
+	border-top: 8px solid #f04681;
+	border-left: 11px solid #f04681;
+	border-right: 11px solid transparent;
+	border-bottom: 8px solid transparent;
+}
+.privileges__tooltip b {
+	display: block;
+	font-size: 1.2em;
+	font-weight: 700;
+	padding-bottom: .3em;
+}
+.privileges__tooltip span {font-size: 1rem}
 /*===============================
   about
 ================================*/
@@ -779,10 +819,4 @@ img.developer__logo {margin-bottom: 4.7em}
 	cursor: pointer;
 	transition: .3s;
 }
-.footer__dev span:hover  {color: #76a8fb} 
-/*===============================
-  aminations
-================================*/
-.anim {
-	transition: 0.6s cubic-bezier(.215,.61,.355,1);
-}
+.footer__dev span:hover  {color: #76a8fb}

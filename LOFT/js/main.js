@@ -1,22 +1,18 @@
 $(document).ready(function(){
-  "use strict";
+  // "use strict";
 
     // Ruffles
     var ww = $(window).width(),
         wh = $(window).height();
     //only desktop
     if ( ww > 1023) { 
-      $('.h2').addClass("x-18").viewportChecker({
-        classToAdd: 'anim-play',
-        offset: 50
+      $('.ty-d, .tx-l, .tx-r').viewportChecker({
+        classToAdd: 'anim-tranform',
+        offset: 120
       });
-      $('.half').addClass("trnslx").viewportChecker({
-        classToAdd: 'anim-play',
-        offset: 100
-      });
-      $('.s-pa').addClass("cliptrapez").viewportChecker({
-        classToAdd: 'anim-play',
-        offset: 320
+      $('.cl-l').viewportChecker({
+        classToAdd: 'anim-clippath',
+        offset: 130
       });
     };
   
@@ -113,7 +109,7 @@ $(document).ready(function(){
         mainClass: 'mfp-rotate-bottom'
     });
 
-    // variants slider (tabs)
+    // variants (tabs)
     $(".variants__slider").slick({
         arrows: false,
         speed:500,
