@@ -2,10 +2,10 @@ $(document).ready(function(){
   // "use strict";
 
     // Ruffles
-    var ww = $(window).width(),
-        wh = $(window).height();
+    var ww = $(window).width();
+
     //only desktop
-    if ( ww > 1023) { 
+    if ( ww > 310) { 
       $('.ty-d, .tx-l, .tx-r').viewportChecker({
         classToAdd: 'anim-tranform',
         offset: 120
@@ -85,7 +85,7 @@ $(document).ready(function(){
         type: 'image',
         tLoading: 'Загрузка...',
         mainClass: 'mfp-zoom-in',
-        removalDelay: 310,
+        removalDelay: 355,
         fixedContentPos: true,
         fixedBgPos: true,
         autoFocusLast:true,
@@ -98,6 +98,24 @@ $(document).ready(function(){
         image: {
           tError: '<a href="%url%">Изображение #%curr%</a> не загружается.',
           titleSrc: function(item) {return item.el.attr('title');}
+        },
+        callbacks: {
+          open: function() {
+              $.magnificPopup.instance.next = function() {
+                  var self = this;
+                  self.wrap.removeClass('mfp-image-loaded');
+                  setTimeout(function() { $.magnificPopup.proto.next.call(self); }, 120);
+              }
+              $.magnificPopup.instance.prev = function() {
+                  var self = this;
+                  self.wrap.removeClass('mfp-image-loaded');
+                  setTimeout(function() { $.magnificPopup.proto.prev.call(self); }, 120);
+              }
+          },
+          imageLoadComplete: function() { 
+              var self = this;
+              setTimeout(function() { self.wrap.addClass('mfp-image-loaded'); }, 16);
+          }
         }
       });
     });
