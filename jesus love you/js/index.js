@@ -22,7 +22,7 @@ function (tex) {
   texture.minFilter = THREE.LinearFilter;
 
   loader.load(
-  'text.jpg',
+  'ses.jpg',
   function (tex) {
     _500 = tex;
 
