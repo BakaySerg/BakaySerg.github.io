@@ -4,12 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Thank You - 500</title>
-  
-  
-  
+
       <link rel="stylesheet" href="css/style.css">
 
-  
 </head>
 
 <body>
@@ -22,7 +19,7 @@
 </script>
 <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
 <script id="fragmentShader" type="x-shader/x-fragment">
-  
+
   uniform vec2 u_resolution;
   uniform float u_pxaspect;
   uniform vec2 u_mouse;
@@ -30,7 +27,7 @@
   uniform sampler2D u_noise;
   uniform sampler2D u_text500;
   uniform bool u_mousemoved;
-  
+
   #define PI 3.141592653589793
   #define TAU 6.283185307179586
 
@@ -40,27 +37,27 @@
   const float lightStrength = 3.5;
   const vec3 lightcolour = vec3(1.5, 1.6, .6); // the colour of the light
   const vec3 falloffcolour = vec3(.0, 1.0, 2.3); // the colour of the falloff
-  const vec3 bgcolour = vec3(.0, 0.25, .25); // the base colour of the render
+  const vec3 bgcolour = vec3(.0, 0.15, .15); // the base colour of the render
   const float falloff = .5;
   const int samples = 12; // The number of samples to take
   const float density = .98; // The density of the "smoke"
   const float weight = .25; // how heavily to apply each step of the supersample
   const int octaves = 1; // the number of octaves to generate in the FBM noise
   const float seed = 43758.5453123; // A random seed :)
-  
+
   vec2 res = u_resolution / u_pxaspect;
-  
+
   float starSDF(vec2 st, int V, float s) {
       // st = st*4.-2.;
       float a = atan(st.y, st.x)/TAU;
       float seg = a * float(V);
-      a = ((floor(seg) + 0.5)/float(V) + 
-          mix(s,-s,step(.5,fract(seg)))) 
+      a = ((floor(seg) + 0.5)/float(V) +
+          mix(s,-s,step(.5,fract(seg))))
           * TAU;
       return abs(dot(vec2(cos(a),sin(a)),
                      st));
   }
-  
+
   float random2d(vec2 uv) {
     uv /= 256.;
     vec4 tex = texture2D(u_noise, uv);
@@ -71,7 +68,7 @@
                 dot(st,vec2(269.5,183.3)) );
       return -1.0 + 2.0*fract(sin(st)*seed);
   }
-  
+
   // Value Noise by Inigo Quilez - iq/2013
   // https://www.shadertoy.com/view/lsf3WH
   float noise(vec2 st, float seed) {
@@ -83,7 +80,7 @@
     vec2 rg = texture2D(u_noise, (uv+0.5) / 256., 0.).yx - .5;
     return mix( rg.x, rg.y, f.z );
   }
-  
+
   float fbm1(in vec2 _st, float seed) {
     float v = 0.0;
     float a = 0.5;
@@ -98,7 +95,7 @@
     }
     return v + .4;
   }
-  
+
   float pattern(vec2 uv, float seed, float time, inout vec2 q, inout vec2 r) {
 
     q = vec2( fbm1( uv + vec2(0.0,0.0), seed ),
@@ -111,7 +108,7 @@
 
     return rtn;
   }
-  
+
   float tri(vec2 uv) {
     uv = (uv * 2.-1.)*2.;
     return max(abs(uv.x) * 0.866025 + uv.y * 0.5, -uv.y * 0.5);
@@ -123,58 +120,58 @@
 
   float shapes(vec2 uv) {
 //     vec2 _uv = uv * .1;
-    
+
 //     const float k = 6.0;
 //     const float w = 2.0;
 //     const float t = .5;
-    
+
 //     float i = floor(length(uv)*k);
-    
+
 //     float c = cos(cos(u_time * .3) * 3. / i * 5.);
 //     float s = sin(cos(u_time * .3) * 3. / i * 5.);
 //     uv *= mat2(c, -s, s, c);
-    
+
 //     vec2 radial = vec2(i, atan(uv.y, uv.x));
-    
-//     radial = vec2((i + .5)*(1.0/k), 
+
+//     radial = vec2((i + .5)*(1.0/k),
 //              (floor(radial.y*(1.0/PI)*(i*w+t)) + 0.5 ) * PI/(i*w+t));
-  
+
 //     vec2 cart = vec2(cos(radial.y), sin(radial.y)) * radial.x;
-    
+
 //     float shade = length(uv-cart) * 30.;
-    
+
 //     return smoothstep(0.5, 0.5 + fwidth(shade), shade - 0.02);
-    
+
     uv += u_mouse * .1;
-    
+
     float aspect = res.x / res.y;
-    
+
     float scale = 1. / aspect * .3;
-    
+
     return texture2D(u_text500, (uv) * scale + .5, -1.).x;
-    
+
   }
-  
+
   float occlusion(vec2 uv, vec2 lightpos, float objects) {
     return (1. - smoothstep(0.0, lightStrength, length(lightpos - uv))) * (1. - objects);
   }
-  
+
   vec4 mainRender(vec2 uv, inout vec4 fragcolour) {
-  
+
     float scale = 4.;
     uv *= scale;
-    
+
     float exposure = exposure + (sin(u_time) * .5 + 1.) * .05;
 
     vec2 _uv = uv;
     vec2 lightpos = (vec2(u_mouse.x, u_mouse.y * -1.)) / u_resolution.y;
     lightpos = u_mouse * scale;
-    
+
     if(!u_mousemoved) {
       // lightpos.x += cos(u_time * .25);
       // lightpos.y += sin(u_time * .5);
     }
-    
+
     float obj = shapes(uv);
     float map = occlusion(uv, lightpos, obj);
     // dither = 0.;
@@ -196,9 +193,9 @@
       if(addNoise) {
         uv += _pattern / 16.;
       }
-      
+
       float movement = u_time * 20. * float(i + 1);
-      
+
       float dither = random2d(uv * 512. + mod(vec2(movement*sin(u_time * .5), -movement), 1000.)) * 2.;
 
       float stepped_map = occlusion(uv, lightpos, shapes(_uv+dtc*dither));
@@ -213,14 +210,14 @@
     vec3 lightcolour = mix(lightcolour, falloffcolour, l*falloff);
 
     vec3 colour = vec3(basecolour+map*exposure*lightcolour);
-    
+
     fragcolour = vec4(colour,1.0);
     return fragcolour;
   }
 
 void main() {
   vec2 uv = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / min(u_resolution.y, u_resolution.x);
-  
+
   mainRender(uv, gl_FragColor);
 }
 </script>
@@ -228,7 +225,7 @@ void main() {
 <div id="container" touch-action="none"></div>
   <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/982762/ccapture.js'></script>
 
-  
+
 
     <script  src="js/index.js"></script>
 
